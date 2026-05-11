@@ -22,6 +22,7 @@ os.makedirs(REPORT_DIR, exist_ok=True)
 DATE = datetime.now().strftime("%Y-%m-%d")
 CURRENT_YEAR = str(datetime.now().year)
 NEXT_YEAR = str(datetime.now().year + 1)
+CURRENT_MONTH = datetime.now().strftime("%Y年%-m月")  # e.g. "2026年5月"
 
 
 def deepseek(system: str, user: str) -> str:
@@ -58,6 +59,7 @@ def tavily_search(query: str, max_results: int = 6) -> list:
             "search_depth": "advanced",
             "include_answer": False,
             "max_results": max_results,
+            "days": 7,
         },
         timeout=30,
     )
@@ -93,28 +95,28 @@ def find_prev_raw(label: str, exclude: str = "") -> dict | None:
 
 
 def get_search_queries(label: str) -> list:
-    """每个 topic 的动态搜索查询列表，年份运行时注入"""
+    """每个 topic 的动态搜索查询列表，日期运行时注入"""
     queries = {
         "ai-sdlc-tools": [
-            f"AI coding assistant 软件工程 SDLC 趋势 {CURRENT_YEAR}",
-            f"Cursor Copilot Codeium AI 编程 工具 最新 {CURRENT_YEAR}",
-            f"AI SDLC automation CICD testing code review {CURRENT_YEAR}",
+            f"AI coding assistant 软件工程 SDLC {CURRENT_MONTH}",
+            f"Cursor Copilot Codeium AI 编程 工具 {CURRENT_MONTH}",
+            f"AI SDLC automation CICD testing code review {CURRENT_MONTH}",
             f"大模型 软件开发 自动化 代码生成 {CURRENT_YEAR} {NEXT_YEAR}",
-            f"AI powered software development lifecycle trends {CURRENT_YEAR}",
+            f"AI powered software development lifecycle trends {CURRENT_MONTH}",
         ],
         "build-acceleration": [
-            f"编译加速 分布式编译 C++ 行业 {CURRENT_YEAR}",
-            f"distributed compilation build acceleration C++ {CURRENT_YEAR} {NEXT_YEAR}",
-            f"mold sccache ccache build cache 编译 优化 {CURRENT_YEAR}",
-            f"C++ build systems cmake bazel buck2 comparison {CURRENT_YEAR}",
-            f"build pipeline optimization CI acceleration techniques {CURRENT_YEAR}",
+            f"编译加速 分布式编译 C++ {CURRENT_MONTH}",
+            f"distributed compilation build acceleration C++ {CURRENT_MONTH}",
+            f"mold sccache ccache build cache 编译 优化 {CURRENT_MONTH}",
+            f"C++ build systems cmake bazel buck2 {CURRENT_MONTH}",
+            f"build pipeline optimization CI acceleration {CURRENT_MONTH}",
         ],
         "incredibuild": [
-            f"Incredibuild 分布式编译 最新 动态 {CURRENT_YEAR}",
-            f"Incredibuild distributed compilation news {CURRENT_YEAR} {NEXT_YEAR}",
-            f"Incredibuild 竞品 Nocc FASTBuild EngFlow BuildBarn {CURRENT_YEAR}",
-            f"Incredibuild competitor comparison distributed build {CURRENT_YEAR}",
-            f"分布式编译 行业格局 加速 方案 C++ {CURRENT_YEAR}",
+            f"Incredibuild 分布式编译 动态 {CURRENT_MONTH}",
+            f"Incredibuild distributed compilation news {CURRENT_MONTH}",
+            f"Incredibuild 竞品 Nocc FASTBuild EngFlow BuildBarn {CURRENT_MONTH}",
+            f"Incredibuild competitor comparison distributed build {CURRENT_MONTH}",
+            f"分布式编译 行业格局 加速 方案 C++ {CURRENT_MONTH}",
         ],
     }
     return queries.get(label, queries["incredibuild"])
