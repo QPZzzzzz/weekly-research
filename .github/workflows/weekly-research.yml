@@ -1,4 +1,4 @@
-name: Incredibuild Industry Research
+name: Weekly Research Report
 
 on:
   schedule:
@@ -10,16 +10,25 @@ env:
   RAW_DIR: raw_sources
   MEMORY_DIR: memory
   REPORT_DIR: reports
-  # Obsidian 目标路径
   OBSIDIAN_REPO: QPZzzzzz/obsidian-data
-  OBSIDIAN_TARGET_DIR: 行业信息/incredibuild
+  OBSIDIAN_BASE_DIR: 学习/行业信息
 
 jobs:
   # ═══════════════════════════════════════════════════════════
-  # Phase 1: 多轮搜索 + 结构化采集
+  # Phase 1: Matrix 并行搜索 + 结构化采集
   # ═══════════════════════════════════════════════════════════
   collect:
-    name: Collect sources
+    name: "Collect - ${{ matrix.label }}"
+    strategy:
+      matrix:
+        include:
+          - topic: 'SDLC 中的 AI 工具 Cursor Copilot 代码生成 自动化 CICD'
+            label: 'ai-sdlc-tools'
+          - topic: '编译加速 分布式编译 C++ 行业 build cache 趋势'
+            label: 'build-acceleration'
+          - topic: 'Incredibuild 分布式编译 竞品对比 行业格局'
+            label: 'incredibuild'
+      fail-fast: false
     runs-on: ubuntu-latest
     timeout-minutes: 20
 
@@ -39,19 +48,21 @@ jobs:
         env:
           TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          TOPIC: ${{ matrix.topic }}
+          LABEL: ${{ matrix.label }}
         run: python scripts/research.py phase1
 
       - name: Upload raw data
         uses: actions/upload-artifact@v4
         with:
-          name: raw-data
+          name: raw-${{ matrix.label }}
           path: raw_sources/
 
   # ═══════════════════════════════════════════════════════════
-  # Phase 2: 报告生成
+  # Phase 2: 报告生成（串行，遍历所有 label）
   # ═══════════════════════════════════════════════════════════
   generate:
-    name: Generate report
+    name: Generate Reports
     needs: collect
     if: success()
     runs-on: ubuntu-latest
@@ -69,25 +80,26 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
-      - name: Download raw data
+      - name: Download all raw data
         uses: actions/download-artifact@v4
         with:
-          name: raw-data
+          pattern: raw-*
           path: raw_sources/
+          merge-multiple: true
 
-      - name: Phase 2 - Generate report & memory
+      - name: Phase 2 - Generate reports for all labels
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: python scripts/research.py phase2
 
-      - name: Upload report
+      - name: Upload reports
         uses: actions/upload-artifact@v4
         with:
-          name: report
+          name: reports
           path: reports/
 
   # ═══════════════════════════════════════════════════════════
-  # 推送报告到 Obsidian
+  # Phase 3: 推送报告到 Obsidian
   # ═══════════════════════════════════════════════════════════
   push:
     name: Sync to Obsidian
@@ -96,16 +108,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Download report
+      - name: Download reports
         uses: actions/download-artifact@v4
         with:
-          name: report
+          name: reports
           path: reports/
         continue-on-error: true
 
       - name: Push to Obsidian vault
         run: |
-          # 检查是否有报告文件
           REPORT_COUNT=$(ls reports/*.md 2>/dev/null | wc -l)
           if [ "$REPORT_COUNT" -eq 0 ]; then
             echo "ℹ️ 没有报告文件，跳过同步"
@@ -114,45 +125,25 @@ jobs:
 
           DATE=$(date +%Y-%m-%d)
 
-          # Clone Obsidian 私有仓库
           git clone https://x-access-token:${{ secrets.GH_PAT }}@github.com/${{ env.OBSIDIAN_REPO }}.git obsidian-vault
 
-          # 创建目标目录：行业信息/incredibuild/
-          TARGET="obsidian-vault/${{ env.OBSIDIAN_TARGET_DIR }}"
+          TARGET="obsidian-vault/${{ env.OBSIDIAN_BASE_DIR }}/${DATE}"
           mkdir -p "$TARGET"
 
-          # 复制报告文件
           for f in reports/*.md; do
             [ ! -f "$f" ] && continue
             cp "$f" "$TARGET/"
-            echo "  📄 $(basename "$f")"
+            echo "  📄 $(basename "$f") → ${{ env.OBSIDIAN_BASE_DIR }}/${DATE}/"
           done
 
-          # 更新目录索引 (README)
-          INDEX="$TARGET/README.md"
-          {
-            echo "# Incredibuild 行业调研"
-            echo ""
-            echo "自动更新于 $(date '+%Y-%m-%d %H:%M')"
-            echo "调度频率: 周一/三/五/日"
-            echo ""
-            echo "## 报告列表"
-            echo ""
-            for f in "$TARGET"/*.md; do
-              b=$(basename "$f")
-              [ "$b" != "README.md" ] && echo "- [${b%.md}]($b)"
-            done
-          } > "$INDEX"
-
-          # Commit & push
           cd obsidian-vault
           git config user.name "weekly-research-bot"
           git config user.email "bot@weekly-research"
-          git add "${{ env.OBSIDIAN_TARGET_DIR }}/"
+          git add "${{ env.OBSIDIAN_BASE_DIR }}/${DATE}/"
           if git diff --cached --quiet; then
             echo "ℹ️ 没有新内容需要同步"
           else
-            git commit -m "incredibuild: ${DATE} 行业调研报告"
+            git commit -m "weekly-research: ${DATE} 调研报告"
             git push
-            echo "✅ 已同步到 Obsidian: ${{ env.OBSIDIAN_TARGET_DIR }}/"
+            echo "✅ 已同步到 Obsidian: ${{ env.OBSIDIAN_BASE_DIR }}/${DATE}/"
           fi
