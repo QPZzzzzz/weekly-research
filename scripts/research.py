@@ -204,7 +204,7 @@ def phase2():
     print(f"[Phase 2] 生成报告 — {DATE}")
 
     # 找最新的 JSON
-    files = sorted(glob.glob(f"{RAW_DIR}/incredibuild*.json"), reverse=True)
+    files = sorted(glob.glob(f"{RAW_DIR}/*-incredibuild.json"), reverse=True)
     if not files:
         print("  ⚠️ 找不到原始数据")
         return
