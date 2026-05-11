@@ -53,7 +53,7 @@ jobs:
   generate:
     name: Generate report
     needs: collect
-    if: always()
+    if: success()
     runs-on: ubuntu-latest
     timeout-minutes: 15
 
@@ -101,9 +101,17 @@ jobs:
         with:
           name: report
           path: reports/
+        continue-on-error: true
 
       - name: Push to Obsidian vault
         run: |
+          # 检查是否有报告文件
+          REPORT_COUNT=$(ls reports/*.md 2>/dev/null | wc -l)
+          if [ "$REPORT_COUNT" -eq 0 ]; then
+            echo "ℹ️ 没有报告文件，跳过同步"
+            exit 0
+          fi
+
           DATE=$(date +%Y-%m-%d)
 
           # Clone Obsidian 私有仓库
