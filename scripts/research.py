@@ -8,9 +8,9 @@ Weekly Research Pipeline
 import os, sys, json, glob, requests
 from datetime import datetime
 
-# Config from env
-TAVILY_API_KEY = os.environ["TAVILY_API_KEY"]
-DEEPSEEK_API_KEY = os.environ["DEEPSEEK_API_KEY"]
+# Config from env（按需加载，phase2 不需要 Tavily）
+TAVILY_API_KEY = os.environ.get("TAVILY_API_KEY", "")
+DEEPSEEK_API_KEY = os.environ.get("DEEPSEEK_API_KEY", "")
 RAW_DIR = os.environ.get("RAW_DIR", "raw_sources")
 MEMORY_DIR = os.environ.get("MEMORY_DIR", "memory")
 REPORT_DIR = os.environ.get("REPORT_DIR", "reports")
