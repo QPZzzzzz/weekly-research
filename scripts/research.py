@@ -21,21 +21,26 @@ os.makedirs(REPORT_DIR, exist_ok=True)
 
 DATE = datetime.now().strftime("%Y-%m-%d")
 
-# 多维度搜索查询（覆盖中英文 + 不同平台视角）
+# 搜索查询（三个维度：Incredibuild 最新 → 行业动态 → 竞品情报）
 SEARCH_QUERIES = [
-    # 中文
-    "Incredibuild 分布式编译 2025 2026",
-    "Incredibuild 编译加速 C++ 游戏开发",
-    "分布式编译 工具 对比 distcc nocc fastbuild 2025",
-    "C++ 编译加速 行业方案 Incredibuild",
-    # 英文
+    # ── 维度一：Incredibuild 最新信息 ──
+    "Incredibuild 2025 2026 最新 动态",
+    "Incredibuild 产品 更新 新功能 2025",
+    "Incredibuild 分布式编译 加速 C++ 游戏开发",
     "Incredibuild distributed compilation 2025 2026 news",
-    "C++ build acceleration tools comparison Incredibuild alternatives",
+    "Incredibuild partnership customer case study 2025",
+    # ── 维度二：行业信息 ──
+    "分布式编译 编译加速 行业 趋势 2025 2026",
+    "C++ 编译加速 行业方案 市场 2025",
+    "build acceleration market trends CI pipeline 2025 2026",
     "distributed compilation game development UE Unity 2025 2026",
-    "build cache optimization CI pipeline acceleration 2025",
-    # 竞品
-    "Nocc FASTBuild EngFlow Incredibuild comparison 2025",
+    "build cache optimization remote execution C++ 2025",
+    # ── 维度三：行业竞品 ──
+    "Incredibuild 竞品 对比 Nocc FASTBuild EngFlow 2025",
+    "Nocc FASTBuild EngFlow distributed compilation comparison 2025",
     "mold linker sccache ccache distributed build C++ 2025",
+    "distributed build tools landscape competitor analysis 2025 2026",
+    "BuildBarn Incredibuild alternative 2025",
 ]
 
 
@@ -171,7 +176,7 @@ def phase1():
     {{"title": "标题", "url": "链接", "platform": "来源平台", "summary": "一句话摘要", "relevance": "high/medium/low", "tags": ["标签"]}}
   ],
   "signals": [
-    {{"signal": "值得关注的信号", "direction": "up/down/new/stable", "evidence": "支撑依据", "category": "产品/竞品/行业/技术"}}
+    {{"signal": "值得关注的信号", "direction": "up/down/new/stable", "evidence": "支撑依据", "category": "Incredibuild/行业/竞品"}}
   ],
   "trends": [
     {{"trend": "趋势描述", "evidence": "证据", "momentum": "rising/stable/declining"}}
@@ -223,7 +228,7 @@ def phase2():
     report = deepseek(
         "你是一个产业调研报告撰写师。用中文撰写，使用 Markdown 格式。",
         f"""
-基于以下原始数据，撰写一份全面的 Incredibuild 行业调研报告。
+基于以下原始数据，撰写一份全面的 Incredibuild 行业调研报告。搜索覆盖三个维度：Incredibuild 最新信息、行业动态、竞品情报。
 
 ## 本期数据
 来源数: {raw_data.get('total_sources', 0)}
@@ -254,22 +259,23 @@ def phase2():
 
 ## 报告结构
 
-### 本期核心发现
-每条：**发现** + 来源依据
+### 一、Incredibuild 最新动态
+- 产品更新、新功能、商业合作、客户案例
+- 每条：**发现** + 来源依据
 
-### 多维搜索摘要（覆盖 Google / 知乎 / Twitter / 技术社区 / 百度等）
-- 按来源/语言分类列出关键信息
+### 二、行业动态
+- 编译加速 / 分布式编译领域的市场趋势、技术演进
+- 行业热点话题、值得关注的早期信号
 
-### 趋势变化分析（对比上期）
+### 三、竞品情报
+- 竞品动态（Nocc / FASTBuild / EngFlow / BuildBarn / sccache 等）
+- 竞品对比变化、新进入者、行业格局变化
+
+### 四、趋势对比分析（对比上期）
 - 新出现的信号 vs 已消退的信号
 - 热度变化方向
-- 值得关注的早期信号
 
-### 竞品与行业格局
-- 新产品/项目动态
-- 竞品对比变化
-
-### 数据来源
+### 五、数据来源
 所有参考链接列表""",
     )
 
