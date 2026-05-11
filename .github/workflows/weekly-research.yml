@@ -1,0 +1,174 @@
+name: Weekly Research Report
+
+on:
+  schedule:
+    # 每周一 UTC 01:00（北京时间 09:00）
+    - cron: '0 1 * * 1'
+  workflow_dispatch:
+    inputs:
+      topics:
+        description: '自定义话题（JSON 格式覆盖默认 matrix，选填）'
+        required: false
+        default: ''
+
+env:
+  RAW_DIR: raw_sources
+  MEMORY_DIR: memory
+  REPORT_DIR: reports
+  # 目标 Obsidian 仓库
+  OBSIDIAN_REPO: QPZzzzzz/obsidian-data
+  OBSIDIAN_REPORT_DIR: Weekly Reports
+
+jobs:
+  # ═══════════════════════════════════════════════════════════
+  # Phase 1: 搜索 + 结构化采集（Matrix 并行）
+  # ═══════════════════════════════════════════════════════════
+  phase1-collect:
+    name: "Collect - ${{ matrix.label }}"
+    strategy:
+      matrix:
+        include:
+          - topic: '编译加速 C++ 行业动态 2025 2026'
+            label: 'build-acceleration'
+          - topic: 'Incredibuild 业务相关 分布式编译 竞品对比'
+            label: 'incredibuild'
+          - topic: 'AI 软件开发工具 SDLC 自动化趋势 CICD'
+            label: 'ai-sdlc-tools'
+      fail-fast: false
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Phase 1 - Collect raw sources
+        env:
+          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          TOPIC: ${{ matrix.topic }}
+          LABEL: ${{ matrix.label }}
+        run: python scripts/research.py phase1
+
+      - name: Upload raw data
+        uses: actions/upload-artifact@v4
+        with:
+          name: raw-${{ matrix.label }}
+          path: raw_sources/
+
+  # ═══════════════════════════════════════════════════════════
+  # Phase 2: 合并原始数据 → 生成报告 + Memory（单 job）
+  # ═══════════════════════════════════════════════════════════
+  phase2-report:
+    name: Generate Reports
+    needs: phase1-collect
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Download all raw data
+        uses: actions/download-artifact@v4
+        with:
+          pattern: raw-*
+          merge-multiple: true
+          path: raw_sources/
+
+      - name: Phase 2 - Generate reports & memory
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+        run: |
+          python scripts/research.py phase2
+          echo "报告列表:"
+          ls -la reports/
+
+      - name: Upload reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: final-reports
+          path: reports/
+
+      - name: Upload memory
+        uses: actions/upload-artifact@v4
+        with:
+          name: research-memory
+          path: memory/
+
+  # ═══════════════════════════════════════════════════════════
+  # 推送报告到 Obsidian 私有仓库
+  # ═══════════════════════════════════════════════════════════
+  push-to-obsidian:
+    name: Sync to Obsidian
+    needs: phase2-report
+    if: success()
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download reports
+        uses: actions/download-artifact@v4
+        with:
+          name: final-reports
+          path: reports/
+
+      - name: Push to Obsidian vault
+        run: |
+          DATE=$(date +%Y-%m-%d)
+
+          # Clone Obsidian 私有仓库
+          git clone https://x-access-token:${{ secrets.GH_PAT }}@github.com/${{ env.OBSIDIAN_REPO }}.git obsidian-vault
+
+          TARGET="obsidian-vault/${{ env.OBSIDIAN_REPORT_DIR }}"
+          mkdir -p "$TARGET"
+
+          # 复制报告
+          for f in reports/*.md; do
+            [ ! -f "$f" ] && continue
+            cp "$f" "$TARGET/"
+          done
+
+          # 更新 README 索引
+          INDEX="$TARGET/README.md"
+          {
+            echo "# 每周调研报告"
+            echo ""
+            echo "自动更新于 $(date '+%Y-%m-%d %H:%M')"
+            echo ""
+            echo "## 报告列表"
+            echo ""
+            for f in "$TARGET"/*.md; do
+              b=$(basename "$f")
+              [ "$b" != "README.md" ] && echo "- [${b%.md}]($b)"
+            done
+          } > "$INDEX"
+
+          # Commit & push
+          cd obsidian-vault
+          git config user.name "weekly-research-bot"
+          git config user.email "bot@weekly-research"
+          git add "${{ env.OBSIDIAN_REPORT_DIR }}/"
+          if git diff --cached --quiet; then
+            echo "ℹ️ 没有新内容需要同步"
+          else
+            git commit -m "weekly: ${DATE} 调研报告"
+            git push
+            echo "✅ 已同步到 Obsidian 仓库"
+          fi
