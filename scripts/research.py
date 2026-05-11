@@ -26,8 +26,7 @@ NEXT_YEAR = str(datetime.now().year + 1)
 
 def deepseek(system: str, user: str) -> str:
     if not DEEPSEEK_API_KEY:
-        print("  ❌ DEEPSEEK_API_KEY 未设置")
-        sys.exit(1)
+        raise RuntimeError("DEEPSEEK_API_KEY 未设置")
     resp = requests.post(
         "https://api.deepseek.com/chat/completions",
         headers={
@@ -50,8 +49,7 @@ def deepseek(system: str, user: str) -> str:
 
 def tavily_search(query: str, max_results: int = 6) -> list:
     if not TAVILY_API_KEY:
-        print("  ❌ TAVILY_API_KEY 未设置")
-        sys.exit(1)
+        raise RuntimeError("TAVILY_API_KEY 未设置")
     resp = requests.post(
         "https://api.tavily.com/search",
         json={
@@ -244,9 +242,10 @@ def phase2(label: str = ""):
     prev_signals = json.dumps(prev_data.get("signals", []) if prev_data else [], ensure_ascii=False, indent=2)
     prev_trends = json.dumps(prev_data.get("trends", []) if prev_data else [], ensure_ascii=False, indent=2)
 
-    report = deepseek(
-        "你是一个产业调研报告撰写师。用中文撰写，使用 Markdown 格式。",
-        f"""基于以下原始数据，撰写「{topic}」调研报告。
+    try:
+        report = deepseek(
+            "你是一个产业调研报告撰写师。用中文撰写，使用 Markdown 格式。",
+            f"""基于以下原始数据，撰写「{topic}」调研报告。
 
 ## 本周数据
 来源数: {raw_data.get('total_sources', 0)}
@@ -290,7 +289,10 @@ def phase2(label: str = ""):
 
 ### 数据来源
 所有参考链接列表（Markdown 链接格式）""",
-    )
+        )
+    except RuntimeError as e:
+        print(f"  ❌ {label} 报告生成失败: {e}")
+        return
 
     report_file = f"{REPORT_DIR}/{DATE}-{label}.md"
     with open(report_file, "w", encoding="utf-8") as f:
@@ -302,9 +304,10 @@ def phase2(label: str = ""):
     print(f"  ✅ 报告已生成: {report_file}")
 
     # 更新 memory
-    memory_content = deepseek(
-        "你是一个信息提取器。输出简洁 Markdown。",
-        f"""从以下报告和信号中提取关键记忆点，供下次调研参考：
+    try:
+        memory_content = deepseek(
+            "你是一个信息提取器。输出简洁 Markdown。",
+            f"""从以下报告和信号中提取关键记忆点，供下次调研参考：
 - 涉及的公司/产品/项目名称
 - 重要趋势信号（方向 + 描述）
 - 值得长期跟踪的话题
@@ -315,9 +318,11 @@ def phase2(label: str = ""):
 
 原始信号：
 {signals}""",
-    )
-    write_memory(label, memory_content)
-    print(f"  ✅ Memory 已更新: {MEMORY_DIR}/{label}.md")
+        )
+        write_memory(label, memory_content)
+        print(f"  ✅ Memory 已更新: {MEMORY_DIR}/{label}.md")
+    except RuntimeError as e:
+        print(f"  ❌ {label} memory 更新失败: {e}")
 
 
 # ── Entry ──────────────────────────────────────────────────
@@ -337,9 +342,10 @@ if __name__ == "__main__":
             labels = set()
             for f in sorted(glob.glob(f"{RAW_DIR}/*.json")):
                 basename = os.path.basename(f)
-                parts = basename.replace(".json", "").split("-", 1)
-                if len(parts) > 1:
-                    labels.add(parts[1])
+                name = basename.replace(".json", "")
+                # Filename format: YYYY-MM-DD-{label}.json — first 11 chars are date + dash
+                if len(name) > 11 and name[4] == "-" and name[7] == "-":
+                    labels.add(name[11:])
             if not labels:
                 print("  ⚠️ 没有找到任何 raw JSON 文件")
             for label in sorted(labels):
