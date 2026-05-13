@@ -2,8 +2,8 @@ name: Weekly Research Report
 
 on:
   schedule:
-    # 周一、三、五、日 UTC 01:00（北京时间 09:00）
-    - cron: '0 1 * * 1,3,5,0'
+    # 周一、三、五、日 UTC 01:17（北京时间 09:17）— 避开整点以降低 scheduler 延迟
+    - cron: '17 1 * * 1,3,5,0'
   workflow_dispatch:
 
 env:
