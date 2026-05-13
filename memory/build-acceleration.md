@@ -2,32 +2,17 @@
 
 最后更新: 2026-05-13
 
-### 关键记忆点（供下次调研参考）
-
-#### 公司/产品/项目
-- **Microsoft**: Visual Studio 2026 (AI 集成, C++23 支持), MSVC 工具集
-- **Mozilla**: sccache (云存储编译缓存)
-- **Incredibuild**: 虚拟化分布式编译 (客户: Adobe)
-- **Google**: Bazel (分布式缓存/远程构建), Buck2 (Rust 重写)
-- **美团**: 分布式编译 + 预编译头文件 + CCache 实战经验
-- **其他**: ccache (v4.13.5), Build2, Meson
-
-#### 重要趋势信号
-- **AI 深度融合**: VS 2026 集成 Copilot；Gartner 预测 2026 年 75% DevOps 团队用 AI 预测构建失败。
-- **缓存标准化**: ccache/sccache 成为 CI/CD 标配，sccache 向云端演进 (支持 GitHub Actions, 多语言)。
-- **分布式编译普及**: Incredibuild (大型项目) 与 Bazel (新一代构建系统) 并行发展。
-- **构建系统多样化**: Bazel/Buck2 追求语言无关性 (Rust 重写)；CMake 仍为主流但新系统受关注。
-- **云成本驱动优化**: 缓存 + 分布式编译可将构建时间从 45 分钟降至 8 分钟，直接降低云资源成本。
-
-#### 值得长期跟踪的话题
-1.  **AI 在 CI/CD 中的落地**: 预测构建失败、智能缓存策略、自动优化编译参数。
-2.  **sccache 生态演进**: 云存储支持 (S3/GCS)、多语言扩展 (Rust/C++)、与 GitHub Actions 集成深度。
-3.  **Bazel vs Incredibuild**: 新一代构建系统 vs 传统分布式编译方案，在大型 C++ 项目中的性能与易用性对比。
-4.  **C++ 模块化对构建系统的影响**: C++23/26 模块支持如何改变缓存和分布式编译策略。
-5.  **云成本优化实践**: 具体案例 (如美团) 的缓存命中率、分布式节点调度策略。
-
-#### 竞品动态
-- **Incredibuild**: 持续输出高质量指南 (构建加速、系统选择)，强调虚拟化分布式处理。
-- **Bazel**: 下一代版本 (Buck2) 用 Rust 重写，强调语言无关性，挑战传统构建系统。
-- **Microsoft**: 通过 VS 2026 深度集成 AI 和 C++ 标准，强化 MSVC 工具链性能与安全。
-- **Mozilla**: 维护 sccache 开源项目，推动云存储缓存标准，影响力显著 (Hacker News 讨论)。
+- **公司/产品/项目**: Microsoft Visual Studio 2026, MSVC 14.51, ccache, sccache, CMake, Bazel, Buck2, Incredibuild, GitNexa, Kellton, JetBrains TeamCity, CISA/FBI
+- **重要趋势信号**:
+    - **AI 驱动编译优化** (方向: 新趋势, 描述: AI 从辅助编码进入智能编译，用于预测性缓存、测试选择和自愈管道, 强度: high)
+    - **sccache 生态崛起** (方向: 上升, 描述: sccache 凭借多语言支持和云原生特性，在 CI/CD 中成为缓存标配，C/C++ 和 Rust 命中率高, 强度: high)
+    - **构建系统格局变化** (方向: 持续, 描述: CMake 主流，Bazel/Buck2 在大型项目中挑战传统方案，但易用性仍是门槛, 强度: medium)
+    - **美国政策压力** (方向: 下降, 描述: CISA/FBI 要求关键软件避免 C/C++，推动向 Rust 迁移，间接促进跨语言构建优化需求, 强度: medium)
+    - **云成本优化驱动** (方向: 持续, 描述: 缓存+分布式编译组合是降本增效核心方案，构建时间可从 45 分钟降至 8 分钟, 强度: high)
+- **值得长期跟踪的技术方向**: AI 智能编译 (预测性缓存、自愈管道), 跨语言分布式构建 (sccache, Buck2), 内存安全语言迁移 (Rust), 构建系统易用性改进
+- **竞品动态**:
+    - **Microsoft**: VS 2026 Profiler Agent 支持 C++ 单元测试自动优化；MSVC 14.51 支持新架构
+    - **Meta**: Buck2 用 Rust 重写，强调语言无关性和增量构建，挑战 Bazel
+    - **sccache**: 在 C/C++ 和 Rust 构建中缓存命中率高，支持 Swift 等多语言
+    - **Incredibuild**: 持续输出构建加速指南，强调虚拟化分布式处理
+    - **JetBrains TeamCity**: 以“自优化管道”和“智能测试分割”为特色
