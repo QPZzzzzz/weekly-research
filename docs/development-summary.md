@@ -1,14 +1,14 @@
 # Weekly Research Pipeline — 开发过程总结
 
 **项目：** `QPZzzzzz/weekly-research`
-**最后更新：** 2026-05-12
+**最后更新：** 2026-05-13
 **本地路径：** `~/Desktop/weekly-research`
 
 ---
 
 ## 项目概述
 
-基于 GitHub Actions 的自动化行业调研系统。每周一/三/五/日北京时间 09:00 自动运行，通过 Tavily Search API 进行多轮搜索，DeepSeek 结构化分析与报告生成，最终将报告推送到 Obsidian 私有仓库。
+基于 GitHub Actions 的自动化行业调研系统。每周一/三/五/日北京时间 09:17 自动运行，通过 Tavily Search API 进行多轮搜索，DeepSeek 结构化分析与报告生成，最终将报告推送到 Obsidian 私有仓库。
 
 ### 三个调研方向
 
@@ -31,7 +31,7 @@
 ## 架构
 
 ```
-GitHub Actions (cron: 周一/三/五/日 09:00 北京时间)
+GitHub Actions (cron: 周一/三/五/日 09:17 北京时间)
 
 Phase 1: Matrix 并行搜索 (3 jobs, fail-fast: false)
 ├── Collect: ai-sdlc-tools       → raw_sources/{DATE}-ai-sdlc-tools.json
@@ -90,6 +90,7 @@ weekly-research/
 | `ad218b4` | **update:** 单 topic 聚焦 Incredibuild, 多轮搜索, 一周四跑 |
 | `1972b96` | **fix:** make Tavily API key optional for Phase 2 |
 | `27cb4cc` | **init:** weekly research pipeline |
+| `91e7e1b` | **fix:** cron 分钟从 00 改为 17，避开整点降低 GitHub scheduler 延迟风险 |
 
 ---
 
@@ -111,6 +112,14 @@ weekly-research/
 - **问题：** 查询中只有年份 "2026"，Tavily API 无 `days` 参数，返回 2025 年 12 月旧数据
 - **修复：** API 增加 `days=7` + 查询细化到月份 "2026年5月"
 
+### 5. Cron 定时任务从未触发（`91e7e1b`）
+- **问题：** 5 月 13 日早上未自动触发。排查发现全部 12 次运行均为 `workflow_dispatch`，零次 `schedule` 事件。Cron `0 1 * * 1,3,5,0` (UTC 01:00 = 北京 09:00) 语法正确，但 GitHub Actions scheduler 对整点任务有拥堵延迟，尤其对新仓库会跳过
+- **修复：** 分钟从 `00` 改为 `17`（UTC 01:17 = 北京 09:17），避开整点高峰。GitHub 官方建议"pick an off-minute to reduce scheduler contention"
+
+### 6. Sync to Obsidian 推送失败（Run #12）
+- **问题：** 手动触发 Run #12 在 Phase 3（Sync to Obsidian）失败。仓库 `QPZzzzzz/obsidian-data` 存在且代码中地址一致，但 `git clone` 报错
+- **修复：** 更新 `GH_PAT` Secret（Classic token, `repo` + `workflow` 权限，过期时间 2027 年）。Run #13 验证通过，全部 5 个 job 成功
+
 ---
 
 ## 所需 GitHub Secrets
@@ -125,5 +134,5 @@ weekly-research/
 
 ## 触发方式
 
-- **自动：** 每周一/三/五/日 UTC 01:00（北京时间 09:00）
+- **自动：** 每周一/三/五/日 UTC 01:17（北京时间 09:17）
 - **手动：** [Actions 页面](https://github.com/QPZzzzzz/weekly-research/actions/workflows/weekly-research.yml) → "Run workflow"
