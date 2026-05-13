@@ -91,6 +91,8 @@ weekly-research/
 | `1972b96` | **fix:** make Tavily API key optional for Phase 2 |
 | `27cb4cc` | **init:** weekly research pipeline |
 | `91e7e1b` | **fix:** cron 分钟从 00 改为 17，避开整点降低 GitHub scheduler 延迟风险 |
+| `5d4e5bd` | **docs:** 记录 Cron 不触发 + Sync to Obsidian 失败两个问题的排查与修复 |
+| `2286c64` | **fix:** persist raw_sources/ + memory/ 到 repo 以支持跨期趋势对比 |
 
 ---
 
@@ -119,6 +121,10 @@ weekly-research/
 ### 6. Sync to Obsidian 推送失败（Run #12）
 - **问题：** 手动触发 Run #12 在 Phase 3（Sync to Obsidian）失败。仓库 `QPZzzzzz/obsidian-data` 存在且代码中地址一致，但 `git clone` 报错
 - **修复：** 更新 `GH_PAT` Secret（Classic token, `repo` + `workflow` 权限，过期时间 2027 年）。Run #13 验证通过，全部 5 个 job 成功
+
+### 7. 报告始终显示"首期"、无跨期对比（`2286c64`）
+- **问题：** 每次运行报告中趋势分析都显示"首期，暂无对比"。`raw_sources/` 和 `memory/` 数据仅在 artifact 中流转（Phase 1 → upload → download → Phase 2），从未持久化到 repo。`find_prev_raw()` 永远找不到上期 JSON，`read_memory()` 永远返回空白
+- **修复：** 在 `generate` job 新增 **Persist raw data & memory to repo** 步骤。Phase 2 结束后，将 `raw_sources/` + `memory/` commit 推回 `weekly-research` repo。下次运行时 checkout 自带历史数据，artifact 下载叠加上去，`find_prev_raw()` 即可找到上期数据进行对比。Run #14 验证通过，下次定时运行（周五）生效
 
 ---
 
