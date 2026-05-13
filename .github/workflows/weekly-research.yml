@@ -71,6 +71,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          persist-credentials: false
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -97,6 +99,23 @@ jobs:
         with:
           name: reports
           path: reports/
+
+      - name: Persist raw data & memory to repo
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: |
+          git config user.name "weekly-research-bot"
+          git config user.email "bot@weekly-research"
+          git remote set-url origin https://x-access-token:${GH_PAT}@github.com/QPZzzzzz/weekly-research.git
+          git add raw_sources/ memory/
+          if git diff --cached --quiet; then
+            echo "ℹ️ 没有需要持久化的数据"
+          else
+            git commit -m "data: persist raw data & memory — $(date +%Y-%m-%d)"
+            git pull --rebase origin main
+            git push
+            echo "✅ raw_sources + memory 已持久化到 repo"
+          fi
 
   # ═══════════════════════════════════════════════════════════
   # Phase 3: 推送报告到 Obsidian
