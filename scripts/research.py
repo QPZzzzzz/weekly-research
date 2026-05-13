@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
 """
-Weekly Research Pipeline — Matrix 多主题架构
+Weekly Research Pipeline — Matrix 多主题架构 + Multi-Agent
 - Phase 1: 多轮搜索 → DeepSeek 结构化分析 → JSON (per label)
-- Phase 2: JSON → DeepSeek 报告生成 → Markdown + Memory (per label)
+- Phase 2: Multi-Agent 协作
+    Agent 1 (Trend Agent):   本期信号 vs 上期信号 → 结构化 diff
+    Agent 2 (Writer Agent):  信号 + diff + memory → Markdown 报告
+    Agent 3 (Memory Agent):  报告 → 历史记忆提取
 """
 
 import os, sys, json, glob, requests
@@ -46,6 +49,15 @@ def deepseek(system: str, user: str) -> str:
     )
     resp.raise_for_status()
     return resp.json()["choices"][0]["message"]["content"]
+
+
+def deepseek_json(system: str, user: str) -> dict:
+    """Call DeepSeek and parse JSON response, with cleanup"""
+    raw = deepseek(system, user)
+    raw = raw.strip()
+    if raw.startswith("```"):
+        raw = "\n".join(raw.split("\n")[1:-1])
+    return json.loads(raw)
 
 
 def tavily_search(query: str, max_results: int = 6) -> list:
@@ -120,6 +132,155 @@ def get_search_queries(label: str) -> list:
         ],
     }
     return queries.get(label, queries["incredibuild"])
+
+
+# ── Multi-Agent Functions (Phase 2) ──────────────────────────
+
+
+def trend_agent(label, current_signals, current_trends,
+                prev_signals, prev_trends, memory) -> dict:
+    """Agent 1: 跨期趋势对比。结构化 diff 本期 vs 上期信号"""
+    if not prev_signals and not prev_trends:
+        return {"is_first_run": True, "note": "首期运行，暂无对比数据"}
+
+    curr_sig = json.dumps(current_signals, ensure_ascii=False, indent=2)
+    curr_tr = json.dumps(current_trends, ensure_ascii=False, indent=2)
+    prev_sig = json.dumps(prev_signals, ensure_ascii=False, indent=2)
+    prev_tr = json.dumps(prev_trends, ensure_ascii=False, indent=2)
+
+    try:
+        result = deepseek_json(
+            "你是一个产业趋势对比分析师。只输出 JSON，不要 markdown 代码块，不要额外说明。严格基于给定数据，不要编造。",
+            f"""对比本期和上期的产业信号与趋势，执行结构化 diff。
+
+历史记忆：
+{memory}
+
+本期信号：
+{curr_sig}
+
+本期趋势：
+{curr_tr}
+
+上期信号：
+{prev_sig}
+
+上期趋势：
+{prev_tr}
+
+输出 JSON：
+{{
+  "is_first_run": false,
+  "new_signals": [
+    {{"name": "新出现信号", "significance": "high/medium/low",
+      "category": "产品/技术/行业/竞品", "what_changed": "具体变化描述"}}
+  ],
+  "disappeared_signals": [
+    {{"name": "已消退信号", "likely_reason": "可能原因",
+      "was_significance": "上期级别 high/medium/low"}}
+  ],
+  "strengthened": [
+    {{"name": "信号名", "from": "上期强度 high/medium/low",
+      "to": "本期强度 high/medium/low", "evidence": "强化证据"}}
+  ],
+  "weakened": [
+    {{"name": "信号名", "from": "上期强度", "to": "本期强度",
+      "evidence": "弱化证据"}}
+  ],
+  "hotness_shift": "整体热度变化：升温/降温/持平，一句话总结",
+  "early_signals_to_watch": ["描述1", "描述2"]
+}}
+
+要求：
+- 如果某项确实无变化，用空列表 []
+- 信号强度必须基于实际数据判断
+- 不要为了凑数编造变化"""
+        )
+        return result
+    except Exception as e:
+        print(f"  ⚠️ Trend Agent 失败: {e}，回退到无对比模式")
+        return {"is_first_run": True, "note": f"趋势对比暂不可用 ({e})"}
+
+
+def writer_agent(topic: str, raw_data: dict, trend: dict, memory: str) -> str:
+    """Agent 2: 报告撰写。整合信号、趋势 diff、历史记忆 → Markdown"""
+    sources = json.dumps(raw_data.get("sources", []), ensure_ascii=False, indent=2)
+    signals = json.dumps(raw_data.get("signals", []), ensure_ascii=False, indent=2)
+    trends_raw = json.dumps(raw_data.get("trends", []), ensure_ascii=False, indent=2)
+    companies = json.dumps(raw_data.get("companies_mentioned", []), ensure_ascii=False)
+    hot_topics = json.dumps(raw_data.get("hot_topics", []), ensure_ascii=False)
+    trend_analysis = json.dumps(trend, ensure_ascii=False, indent=2)
+
+    # Build the trend section prompt based on whether we have comparison data
+    if trend.get("is_first_run"):
+        trend_section_prompt = "#### 趋势变化分析\n标注\"首期运行，暂无对比数据\"，说明将在下期报告中提供趋势变化分析。"
+    else:
+        trend_section_prompt = f"""#### 趋势变化分析（严格基于以下结构化 diff，不要重新分析原始数据）
+
+结构化趋势 diff：
+{trend_analysis}
+
+在此章节中：
+1. 列出**新出现的信号**（按 significance 排序），每条说明为什么值得关注
+2. 列出**已消退的信号**，分析可能原因
+3. 列出**信号强度变化**（strengthened / weakened），用 → 符号清晰标注变化方向
+4. 总结**整体热度变化**，引用 early_signals_to_watch"""
+
+    return deepseek(
+        "你是一个产业调研报告撰写师。用中文撰写，使用 Markdown 格式。报告要有洞察力，数据驱动的结论。",
+        f"""撰写关于「{topic}」的产业调研报告。
+
+## 本期数据概览
+来源数: {raw_data.get('total_sources', 0)}
+涉及公司: {companies}
+热点话题: {hot_topics}
+
+## 本期结构化信号
+{signals}
+
+## 本期趋势
+{trends_raw}
+
+## 历史记忆
+{memory}
+
+## 来源详情
+{sources}
+
+## 报告结构（严格按此输出）
+
+### 本周核心发现
+每条：**发现** + 依据 + 来源链接。按重要性排序，挑最有价值的 3-5 条。
+
+### 各平台摘要
+按来源/语言分类列出关键信息（Google / 知乎 / 技术社区 / 百度 / GitHub / Reddit 等）
+
+{trend_section_prompt}
+
+### 数据来源
+所有参考链接列表（Markdown 链接格式，按 relevance 排序）
+"""
+    )
+
+
+def memory_agent(report: str, signals: list) -> str:
+    """Agent 3: 记忆提取。从报告中提取关键点，供下次调研参考"""
+    sig_json = json.dumps(signals, ensure_ascii=False, indent=2)
+    return deepseek(
+        "你是一个信息提取器。输出简洁 Markdown，每条一行。",
+        f"""从以下报告和信号中提取关键记忆点，供下次调研参考：
+
+- 涉及的公司/产品/项目名称
+- 重要趋势信号（方向 + 描述 + 强度 high/medium/low）
+- 值得长期跟踪的技术方向或话题
+- 竞品动态（新产品、融资、合作、技术突破）
+
+报告：
+{report}
+
+信号：
+{sig_json}"""
+    )
 
 
 # ── Phase 1 ────────────────────────────────────────────────
@@ -214,8 +375,11 @@ def phase1():
 # ── Phase 2 ────────────────────────────────────────────────
 
 def phase2(label: str = ""):
-    print(f"[Phase 2] 生成报告 — {DATE}")
+    print(f"\n{'='*60}")
+    print(f"[Phase 2] {label} — Multi-Agent 协作")
+    print(f"{'='*60}")
 
+    # ── 加载数据 ──
     files = sorted(glob.glob(f"{RAW_DIR}/*.json"), reverse=True)
     target = None
     for f in files:
@@ -224,7 +388,7 @@ def phase2(label: str = ""):
             break
 
     if not target:
-        print(f"  ⚠️ 找不到 {label} 的原始数据，搜索 *-{label}.json")
+        print(f"  ⚠️ 找不到 {label} 的原始数据 (搜索 *-{label}.json)")
         return
 
     with open(target, encoding="utf-8") as f:
@@ -234,66 +398,30 @@ def phase2(label: str = ""):
     memory = read_memory(label)
     prev_data = find_prev_raw(label, exclude=target)
 
-    sources = json.dumps(raw_data.get("sources", []), ensure_ascii=False, indent=2)
-    signals = json.dumps(raw_data.get("signals", []), ensure_ascii=False, indent=2)
-    trends = json.dumps(raw_data.get("trends", []), ensure_ascii=False, indent=2)
-    companies = json.dumps(raw_data.get("companies_mentioned", []), ensure_ascii=False)
-    hot_topics = json.dumps(raw_data.get("hot_topics", []), ensure_ascii=False)
+    current_signals = raw_data.get("signals", [])
+    current_trends = raw_data.get("trends", [])
+    prev_signals = prev_data.get("signals", []) if prev_data else []
+    prev_trends = prev_data.get("trends", []) if prev_data else []
 
-    prev_sources = json.dumps(prev_data.get("sources", []) if prev_data else [], ensure_ascii=False, indent=2)
-    prev_signals = json.dumps(prev_data.get("signals", []) if prev_data else [], ensure_ascii=False, indent=2)
-    prev_trends = json.dumps(prev_data.get("trends", []) if prev_data else [], ensure_ascii=False, indent=2)
+    # ── Agent 1: Trend Analysis ──
+    print(f"  🧠 Agent 1/3 (Trend Agent): 跨期信号对比...")
+    trend = trend_agent(label, current_signals, current_trends,
+                        prev_signals, prev_trends, memory)
+    if trend.get("is_first_run"):
+        print(f"     📝 {trend.get('note', '首期运行')}")
+    else:
+        new_n = len(trend.get("new_signals", []))
+        gone_n = len(trend.get("disappeared_signals", []))
+        up_n = len(trend.get("strengthened", []))
+        down_n = len(trend.get("weakened", []))
+        print(f"     📊 新信号:{new_n}  消退:{gone_n}  强化:{up_n}  弱化:{down_n}  |  热度:{trend.get('hotness_shift', 'N/A')}")
 
+    # ── Agent 2: Report Writing ──
+    print(f"  ✍️  Agent 2/3 (Writer Agent): 报告撰写...")
     try:
-        report = deepseek(
-            "你是一个产业调研报告撰写师。用中文撰写，使用 Markdown 格式。",
-            f"""基于以下原始数据，撰写「{topic}」调研报告。
-
-## 本周数据
-来源数: {raw_data.get('total_sources', 0)}
-涉及公司: {companies}
-热点话题: {hot_topics}
-
-来源详情:
-{sources}
-
-信号:
-{signals}
-
-趋势:
-{trends}
-
-## 上期数据（用于对比。首次运行此项为空，请标注"首期，暂无对比"）
-来源:
-{prev_sources}
-
-信号:
-{prev_signals}
-
-趋势:
-{prev_trends}
-
-## 历史记忆
-{memory}
-
-## 报告结构（严格按此输出）
-
-### 本周核心发现
-每条：**发现** + 依据（附来源链接）
-
-### 各平台摘要
-按来源/语言分类列出关键信息（Google / 知乎 / 技术社区 / 百度 等）
-
-### 趋势变化分析（对比上期）
-- 新出现的信号 vs 已消退的信号
-- 热度变化方向（上升/下降/平稳）
-- 值得关注的早期信号
-
-### 数据来源
-所有参考链接列表（Markdown 链接格式）""",
-        )
+        report = writer_agent(topic, raw_data, trend, memory)
     except RuntimeError as e:
-        print(f"  ❌ {label} 报告生成失败: {e}")
+        print(f"  ❌ Writer Agent 失败: {e}")
         return
 
     report_file = f"{REPORT_DIR}/{DATE}-{label}.md"
@@ -305,26 +433,14 @@ def phase2(label: str = ""):
         f.write(report)
     print(f"  ✅ 报告已生成: {report_file}")
 
-    # 更新 memory
+    # ── Agent 3: Memory Update ──
+    print(f"  🗄️  Agent 3/3 (Memory Agent): 记忆提取...")
     try:
-        memory_content = deepseek(
-            "你是一个信息提取器。输出简洁 Markdown。",
-            f"""从以下报告和信号中提取关键记忆点，供下次调研参考：
-- 涉及的公司/产品/项目名称
-- 重要趋势信号（方向 + 描述）
-- 值得长期跟踪的话题
-- 竞品动态
-
-报告：
-{report}
-
-原始信号：
-{signals}""",
-        )
+        memory_content = memory_agent(report, current_signals)
         write_memory(label, memory_content)
         print(f"  ✅ Memory 已更新: {MEMORY_DIR}/{label}.md")
     except RuntimeError as e:
-        print(f"  ❌ {label} memory 更新失败: {e}")
+        print(f"  ⚠️ Memory 更新失败（非致命）: {e}")
 
 
 # ── Entry ──────────────────────────────────────────────────
