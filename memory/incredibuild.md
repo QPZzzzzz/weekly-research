@@ -1,16 +1,17 @@
 # incredibuild — Research Memory
 
-最后更新: 2026-05-13
+最后更新: 2026-05-15
 
-- **公司/产品/项目**: Incredibuild, EngFlow, FASTBuild, BuildNinja, Islo, Jenkins, GitLab, Azure DevOps
+- **公司/产品/项目**: Incredibuild, EngFlow, FASTBuild, Islo (AI沙盒), Jenkins, GitLab, Azure DevOps
 - **重要趋势信号**:
-  - **Incredibuild 战略转型**: 从C++编译加速转向通用执行和智能层，支持C++、Rust、Java，并发布AI代理沙盒Islo。强度: **high**
-  - **EngFlow 性能冲击**: 宣称C++构建速度提升21倍，在金融科技和健康科技领域有应用案例。强度: **high**
-  - **开源替代威胁**: FASTBuild作为免费开源构建系统，持续分流成本敏感型用户。强度: **medium**
-  - **美国C/C++剔除政策**: 2026年前关键软件需剔除C/C++，对Incredibuild核心市场构成下行风险。强度: **high**
-  - **竞争边界模糊化**: Incredibuild被列为与Jenkins、GitLab、Azure DevOps等CI/CD平台竞争。强度: **medium**
-- **长期跟踪方向**: 分布式编译工具向AI和通用执行层演进；开源构建系统（如FASTBuild）社区活跃度；美国C/C++剔除政策落地进展；EngFlow市场份额增长。
+  - **Incredibuild 战略转型**: 从C++加速器转向通用执行与智能层，支持Rust/Java等，强度 high
+  - **AI集成构建工具**: Incredibuild发布AI代理沙盒Islo，开辟AI执行与安全管控新场景，强度 high
+  - **EngFlow性能冲击**: 宣称C++构建快21倍，在金融/健康科技领域突破，强度 high
+  - **FASTBuild开源替代**: 持续分流成本敏感用户，社区活跃度稳定，强度 medium
+  - **竞争边界模糊化**: 与Jenkins/GitLab等CI/CD平台直接竞争，强度 medium
+  - **美国C/C++剔除政策**: 对Incredibuild核心市场构成下行风险，强度 high
+- **长期跟踪技术方向**: AI集成构建工具、通用执行层、开源分布式构建、CI/CD平台融合
 - **竞品动态**:
-  - **EngFlow**: 新产品/技术突破，C++构建速度提升21倍，获The New Stack报道。
-  - **FASTBuild**: 开源替代品，持续与Incredibuild竞争。
-  - **Incredibuild**: 发布AI代理沙盒Islo，2026年战略转型为通用执行和智能层。
+  - **Incredibuild**: 战略转型+发布AI沙盒Islo
+  - **EngFlow**: 21倍性能提升，金融/健康科技行业突破
+  - **FASTBuild**: 开源免费，持续吸引成本敏感用户
