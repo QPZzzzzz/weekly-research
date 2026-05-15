@@ -1,14 +1,14 @@
 # Weekly Research Pipeline — 开发过程总结
 
 **项目：** `QPZzzzzz/weekly-research`
-**最后更新：** 2026-05-13
+**最后更新：** 2026-05-15
 **本地路径：** `~/Desktop/weekly-research`
 
 ---
 
 ## 项目概述
 
-基于 GitHub Actions 的自动化行业调研系统。每周一/三/五/日北京时间 09:17 自动运行，通过 Tavily Search API 进行多轮搜索，DeepSeek 结构化分析与报告生成，最终将报告推送到 Obsidian 私有仓库。
+基于 GitHub Actions 的自动化行业调研系统。每周一/三/五/日北京时间凌晨 02:17 自动运行（UTC 18:17），通过 Tavily Search API 进行多轮搜索，DeepSeek 结构化分析与报告生成，最终将报告推送到 Obsidian 私有仓库。
 
 ### 三个调研方向
 
@@ -31,7 +31,7 @@
 ## 架构
 
 ```
-GitHub Actions (cron: 周一/三/五/日 09:17 北京时间)
+GitHub Actions (cron: 周一/三/五/日 02:17 北京时间 / UTC 18:17)
 
 Phase 1: Matrix 并行搜索 (3 jobs, fail-fast: false)
 ├── Collect: ai-sdlc-tools       → raw_sources/{DATE}-ai-sdlc-tools.json
@@ -93,6 +93,8 @@ weekly-research/
 | `91e7e1b` | **fix:** cron 分钟从 00 改为 17，避开整点降低 GitHub scheduler 延迟风险 |
 | `5d4e5bd` | **docs:** 记录 Cron 不触发 + Sync to Obsidian 失败两个问题的排查与修复 |
 | `2286c64` | **fix:** persist raw_sources/ + memory/ 到 repo 以支持跨期趋势对比 |
+| `a7cb8e7` | **refactor:** Phase 2 Multi-Agent 协作 — Trend Agent + Writer Agent + Memory Agent |
+| `95a4d66` | **fix:** cron 调至 UTC 18:17（北京时间次日 02:17），避开凌晨拥堵时段 |
 
 ---
 
@@ -122,9 +124,13 @@ weekly-research/
 - **问题：** 手动触发 Run #12 在 Phase 3（Sync to Obsidian）失败。仓库 `QPZzzzzz/obsidian-data` 存在且代码中地址一致，但 `git clone` 报错
 - **修复：** 更新 `GH_PAT` Secret（Classic token, `repo` + `workflow` 权限，过期时间 2027 年）。Run #13 验证通过，全部 5 个 job 成功
 
-### 7. 报告始终显示"首期"、无跨期对比（`2286c64`）
+### 7. 报告始终显示"首期"、无跨期对比（`2286c64`、`a7cb8e7`）
 - **问题：** 每次运行报告中趋势分析都显示"首期，暂无对比"。`raw_sources/` 和 `memory/` 数据仅在 artifact 中流转（Phase 1 → upload → download → Phase 2），从未持久化到 repo。`find_prev_raw()` 永远找不到上期 JSON，`read_memory()` 永远返回空白
-- **修复：** 在 `generate` job 新增 **Persist raw data & memory to repo** 步骤。Phase 2 结束后，将 `raw_sources/` + `memory/` commit 推回 `weekly-research` repo。下次运行时 checkout 自带历史数据，artifact 下载叠加上去，`find_prev_raw()` 即可找到上期数据进行对比。Run #14 验证通过，下次定时运行（周五）生效
+- **修复：** 分两步——(1) 在 `generate` job 新增 Persist 步骤，将 `raw_sources/` + `memory/` commit 推回 repo；(2) Phase 2 从单次大 prompt 拆为 Multi-Agent（Trend Agent → Writer Agent → Memory Agent），Trend Agent 执行结构化信号 diff（new/disappeared/strengthened/weakened），Writer Agent 基于 diff 撰写报告
+
+### 8. Cron 延迟 4 小时（`95a4d66`）
+- **问题：** 5 月 15 日 cron 设定 UTC 01:17（北京 09:17），实际 05:00 才执行，延迟近 4 小时。即使避开了整点，GitHub Actions scheduler 在北京时间上午仍处高峰期
+- **修复：** cron 调至 UTC 18:17（北京时间次日凌晨 02:17），该时段美国中午、欧洲晚间，scheduler 队列冷门。day-of-week 对应调整：北京周一→UTC 周日(0)，周三→周二(2)，周五→周四(4)，周日→周六(6)
 
 ---
 
@@ -140,5 +146,5 @@ weekly-research/
 
 ## 触发方式
 
-- **自动：** 每周一/三/五/日 UTC 01:17（北京时间 09:17）
+- **自动：** 每周一/三/五/日 UTC 18:17（北京时间次日凌晨 02:17）
 - **手动：** [Actions 页面](https://github.com/QPZzzzzz/weekly-research/actions/workflows/weekly-research.yml) → "Run workflow"
