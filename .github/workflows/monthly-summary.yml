@@ -1,0 +1,171 @@
+name: Monthly Research Report
+
+on:
+  schedule:
+    # 每月 1 号 UTC 18:17（北京时间次日 02:17），汇总上月数据
+    - cron: '17 18 1 * *'
+  workflow_dispatch:
+
+env:
+  RAW_DIR: raw_sources
+  MEMORY_DIR: memory
+  REPORT_DIR: reports
+  OBSIDIAN_REPO: QPZzzzzz/obsidian-data
+  OBSIDIAN_BASE_DIR: 月度报告
+
+jobs:
+  # ═══════════════════════════════════════════════════════════
+  # Phase 1: Matrix 并行搜索（月末最后一轮数据采集）
+  # ═══════════════════════════════════════════════════════════
+  collect:
+    name: "Collect - ${{ matrix.label }}"
+    strategy:
+      matrix:
+        include:
+          - topic: 'SDLC 中的 AI 工具 Cursor Copilot 代码生成 自动化 CICD'
+            label: 'ai-sdlc-tools'
+          - topic: '编译加速 分布式编译 C++ 行业 build cache 趋势'
+            label: 'build-acceleration'
+          - topic: 'Incredibuild 分布式编译 竞品对比 行业格局'
+            label: 'incredibuild'
+      fail-fast: false
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Set report month (上个月)
+        run: echo "REPORT_MONTH=$(date -d 'last month' '+%Y年%-m月')" >> $GITHUB_ENV
+
+      - name: Phase 1 - Multi-source search & analysis
+        env:
+          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          TOPIC: ${{ matrix.topic }}
+          LABEL: ${{ matrix.label }}
+        run: python scripts/research.py phase1
+
+      - name: Upload raw data
+        uses: actions/upload-artifact@v4
+        with:
+          name: raw-${{ matrix.label }}
+          path: raw_sources/
+
+  # ═══════════════════════════════════════════════════════════
+  # Phase 2: 月度聚合 — 收集全月 raw JSON，Multi-Agent 生成月度报告
+  # ═══════════════════════════════════════════════════════════
+  generate:
+    name: Generate Monthly Reports
+    needs: collect
+    if: success()
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Download all raw data
+        uses: actions/download-artifact@v4
+        with:
+          pattern: raw-*
+          path: raw_sources/
+          merge-multiple: true
+
+      - name: Phase 2 - Monthly aggregation
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+        run: python scripts/research.py phase2-monthly
+
+      - name: Upload reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: reports
+          path: reports/
+
+      - name: Persist raw data & memory to repo
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: |
+          git config user.name "weekly-research-bot"
+          git config user.email "bot@weekly-research"
+          git remote set-url origin https://x-access-token:${GH_PAT}@github.com/QPZzzzzz/weekly-research.git
+          git add raw_sources/ memory/
+          if git diff --cached --quiet; then
+            echo "ℹ️ 没有需要持久化的数据"
+          else
+            git commit -m "data: persist raw data & memory (monthly) — $(date +%Y-%m-%d)"
+            git pull --rebase origin main
+            git push
+            echo "✅ raw_sources + memory 已持久化到 repo"
+          fi
+
+  # ═══════════════════════════════════════════════════════════
+  # Phase 3: 推送月度报告到 Obsidian（月度报告/YYYY-MM/）
+  # ═══════════════════════════════════════════════════════════
+  push:
+    name: Sync to Obsidian
+    needs: generate
+    if: success()
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download reports
+        uses: actions/download-artifact@v4
+        with:
+          name: reports
+          path: reports/
+        continue-on-error: true
+
+      - name: Push to Obsidian vault
+        run: |
+          REPORT_COUNT=$(ls reports/*.md 2>/dev/null | wc -l)
+          if [ "$REPORT_COUNT" -eq 0 ]; then
+            echo "ℹ️ 没有报告文件，跳过同步"
+            exit 0
+          fi
+
+          LAST_MONTH=$(date -d 'last month' '+%Y-%m')
+
+          git clone https://x-access-token:${{ secrets.GH_PAT }}@github.com/${{ env.OBSIDIAN_REPO }}.git obsidian-vault
+
+          TARGET="obsidian-vault/${{ env.OBSIDIAN_BASE_DIR }}/${LAST_MONTH}"
+          mkdir -p "$TARGET"
+
+          for f in reports/*.md; do
+            [ ! -f "$f" ] && continue
+            cp "$f" "$TARGET/"
+            echo "  📄 $(basename "$f") → ${{ env.OBSIDIAN_BASE_DIR }}/${LAST_MONTH}/"
+          done
+
+          cd obsidian-vault
+          git config user.name "weekly-research-bot"
+          git config user.email "bot@weekly-research"
+          git add "${{ env.OBSIDIAN_BASE_DIR }}/${LAST_MONTH}/"
+          if git diff --cached --quiet; then
+            echo "ℹ️ 没有新内容需要同步"
+          else
+            git commit -m "monthly-research: ${LAST_MONTH} 月度调研报告"
+            git push
+            echo "✅ 已同步到 Obsidian: ${{ env.OBSIDIAN_BASE_DIR }}/${LAST_MONTH}/"
+          fi

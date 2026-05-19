@@ -23,9 +23,23 @@ os.makedirs(MEMORY_DIR, exist_ok=True)
 os.makedirs(REPORT_DIR, exist_ok=True)
 
 DATE = datetime.now().strftime("%Y-%m-%d")
-CURRENT_YEAR = str(datetime.now().year)
-NEXT_YEAR = str(datetime.now().year + 1)
-CURRENT_MONTH = datetime.now().strftime("%Y年%-m月")  # e.g. "2026年5月"
+NOW = datetime.now()
+# REPORT_MONTH env 用于月度报告：在 1 号运行时指定上个月份
+# 格式 e.g. "2026年5月"，未设置时自动计算
+REPORT_MONTH = os.environ.get("REPORT_MONTH", NOW.strftime("%Y年%-m月"))
+CURRENT_YEAR = str(NOW.year)
+NEXT_YEAR = str(NOW.year + 1)
+CURRENT_MONTH = REPORT_MONTH  # 所有搜索查询用此值
+
+# 上月计算（仅月度报告使用）
+if NOW.month == 1:
+    LAST_MONTH = 12
+    LAST_MONTH_YEAR = NOW.year - 1
+else:
+    LAST_MONTH = NOW.month - 1
+    LAST_MONTH_YEAR = NOW.year
+LAST_MONTH_STR = f"{LAST_MONTH_YEAR}-{LAST_MONTH:02d}"  # e.g. "2026-05"
+LAST_MONTH_LABEL = f"{LAST_MONTH_YEAR}年{LAST_MONTH}月"  # e.g. "2026年5月"
 
 
 def deepseek(system: str, user: str) -> str:
@@ -443,6 +457,194 @@ def phase2(label: str = ""):
         print(f"  ⚠️ Memory 更新失败（非致命）: {e}")
 
 
+# ── Monthly Phase 2 ────────────────────────────────────────
+
+
+def phase2_monthly():
+    """月度聚合：收集上月全部 raw JSON，按 label 聚合，生成月度趋势报告"""
+    print(f"\n{'='*60}")
+    print(f"[Monthly] 月度趋势聚合 — {LAST_MONTH_LABEL}")
+    print(f"{'='*60}")
+
+    # 收集上月所有 raw JSON
+    monthly_files = []
+    for f in sorted(glob.glob(f"{RAW_DIR}/*.json")):
+        basename = os.path.basename(f)
+        if basename.startswith(LAST_MONTH_STR):
+            monthly_files.append(f)
+
+    if not monthly_files:
+        print(f"  ⚠️ 没有找到 {LAST_MONTH_STR} 的 raw JSON 文件")
+        return
+
+    print(f"  📂 聚合 {len(monthly_files)} 份 raw JSON ({monthly_files[0][-30:]} ... {monthly_files[-1][-30:]})")
+
+    # 按 label 分组
+    labels = set()
+    for f in monthly_files:
+        basename = os.path.basename(f)
+        name = basename.replace(".json", "")
+        if len(name) > 11 and name[4] == "-" and name[7] == "-":
+            labels.add(name[11:])
+
+    for label in sorted(labels):
+        print(f"\n  ── {label} ──")
+
+        # 收集该 label 的所有月度数据
+        label_files = [f for f in monthly_files if f.endswith(f"-{label}.json")]
+        label_data = []
+        for f in label_files:
+            with open(f, encoding="utf-8") as pf:
+                label_data.append(json.load(pf))
+
+        topic = label_data[0].get("topic", label)
+        memory = read_memory(label)
+
+        # 聚合所有信号
+        all_signals = []
+        all_trends = []
+        all_companies = set()
+        all_sources = []
+        weekly_dates = []
+
+        for data in label_data:
+            d = data.get("date", "")
+            weekly_dates.append(d)
+            all_signals.extend(data.get("signals", []))
+            all_trends.extend(data.get("trends", []))
+            for c in data.get("companies_mentioned", []):
+                all_companies.add(c)
+            all_sources.extend(data.get("sources", []))
+
+        print(f"     📊 {len(label_files)} 期  信号:{len(all_signals)}  来源:{len(all_sources)}")
+
+        # ── Agent 1: Monthly Trend Analysis ──
+        print(f"     🧠 Monthly Trend Agent: 跨期月度趋势聚合...")
+        sig_json = json.dumps(all_signals, ensure_ascii=False, indent=2)
+        tr_json = json.dumps(all_trends, ensure_ascii=False, indent=2)
+        companies_str = ", ".join(sorted(all_companies))
+        dates_str = ", ".join(weekly_dates)
+
+        try:
+            monthly_trend = deepseek_json(
+                "你是一个月度产业趋势分析师。只输出 JSON，不要 markdown 代码块，不要额外说明。",
+                f"""分析 {LAST_MONTH_LABEL} 全月的产业信号（共 {len(label_files)} 期：{dates_str}），提取月度级别的趋势洞察。
+
+当月全部信号（{len(all_signals)} 条）：
+{sig_json[:8000]}
+
+当月全部趋势（{len(all_trends)} 条）：
+{tr_json[:4000]}
+
+涉及公司：{companies_str}
+历史记忆：{memory[:2000]}
+
+输出 JSON：
+{{
+  "period": "{LAST_MONTH_LABEL}",
+  "weeks_analyzed": {len(label_files)},
+  "monthly_top_signals": [
+    {{"rank": 1, "signal": "全月最值得关注的信号", "persistence": "贯穿全月/月初出现月末消退/月末新出现",
+      "intensity_trend": "从 low→high 的变化过程描述"}}
+  ],
+  "signal_lifecycle": [
+    {{"name": "信号名", "lifecycle": "持续强化/持续弱化/先强后弱/先弱后强/稳定",
+      "weekly_progression": "W1→W2→W3→W4 强度变化"}}
+  ],
+  "hotness_wave": "月度热度波动描述：哪周最热/哪周最冷",
+  "monthly_keywords": ["本月出现频次最高的3-5个关键词"],
+  "vs_last_month": "如果有历史记忆，和上月的整体对比（升温/降温/方向变化）",
+  "outlook": "下月值得关注的方向（2-3条）"
+}}
+
+要求：基于实际数据，不要编造。信号生命周期必须追踪真实现身次数。"""
+            )
+        except Exception as e:
+            print(f"     ⚠️ Monthly Trend Agent 失败: {e}")
+            monthly_trend = {"period": LAST_MONTH_LABEL, "weeks_analyzed": len(label_files),
+                            "note": f"趋势分析失败: {e}"}
+
+        # ── Agent 2: Monthly Report Writing ──
+        print(f"     ✍️  Monthly Writer Agent: 月度报告撰写...")
+        trend_json = json.dumps(monthly_trend, ensure_ascii=False, indent=2)
+        sources_sample = json.dumps(
+            [{"title": s.get("title", ""), "url": s.get("url", ""),
+              "relevance": s.get("relevance", ""), "platform": s.get("platform", "")}
+             for s in all_sources[:30]],
+            ensure_ascii=False, indent=2)
+
+        try:
+            report = deepseek(
+                "你是一个月度产业调研报告撰写师。用中文撰写，使用 Markdown 格式。",
+                f"""基于以下数据，撰写「{topic}」的 {LAST_MONTH_LABEL} 月度趋势报告。
+
+## 月度概览
+分析周期: {LAST_MONTH_LABEL}
+采集期数: {len(label_files)} 期 ({dates_str})
+当月总来源: {len(all_sources)} 条
+当月涉及公司: {companies_str}
+
+## 月度趋势分析（结构化 JSON）
+{trend_json}
+
+## 部分来源
+{sources_sample}
+
+## 历史记忆
+{memory}
+
+## 报告结构（严格按此输出）
+
+### {LAST_MONTH_LABEL} 核心发现
+按重要性列出本月最值得关注的 3-5 条发现，每条附带：
+- **发现摘要** + 依据
+- 📊 **全月走势**：用 week-by-week 描述信号在本月的演变
+- 🔗 来源链接
+
+### 信号生命周期
+用表格展示本月主要信号的演变轨迹：
+| 信号 | W1 状态 | W2 状态 | W3 状态 | W4 状态 | 趋势方向 |
+
+### 竞品与行业格局变化
+本月竞品产品更新/融资/合作，以及行业格局的本月变化
+
+### 月度热度图景
+本月整体热度波动，热度峰值对应的事件
+
+### 下月展望
+值得在下月重点关注的方向（2-3 条，具体可验证的预测或观察点）
+
+### 数据来源
+本月全部参考链接列表"""
+            )
+        except RuntimeError as e:
+            print(f"     ❌ Monthly Writer Agent 失败: {e}")
+            continue
+
+        report_file = f"{REPORT_DIR}/{LAST_MONTH_STR}-{label}-月度报告.md"
+        with open(report_file, "w", encoding="utf-8") as f:
+            f.write(f"# {topic} — {LAST_MONTH_LABEL} 月度趋势报告\n\n")
+            f.write(f"**分析周期：** {LAST_MONTH_LABEL}\n")
+            f.write(f"**采集期数：** {len(label_files)} 期\n")
+            f.write(f"**来源总数：** {len(all_sources)} 条\n\n")
+            f.write("---\n\n")
+            f.write(report)
+        print(f"     ✅ 月度报告已生成: {report_file}")
+
+        # ── Agent 3: Memory Update ──
+        print(f"     🗄️  Monthly Memory Agent: 记忆更新...")
+        try:
+            memory_content = memory_agent(report, all_signals)
+            write_memory(label, memory_content)
+            print(f"     ✅ Memory 已更新")
+        except RuntimeError as e:
+            print(f"     ⚠️ Memory 更新失败: {e}")
+
+    print(f"\n{'='*60}")
+    print(f"[Monthly] 月度报告完成 — {LAST_MONTH_LABEL}")
+    print(f"{'='*60}")
+
+
 # ── Entry ──────────────────────────────────────────────────
 
 if __name__ == "__main__":
@@ -456,12 +658,10 @@ if __name__ == "__main__":
         if arg:
             phase2(arg)
         else:
-            # 无参数时遍历所有 label
             labels = set()
             for f in sorted(glob.glob(f"{RAW_DIR}/*.json")):
                 basename = os.path.basename(f)
                 name = basename.replace(".json", "")
-                # Filename format: YYYY-MM-DD-{label}.json — first 11 chars are date + dash
                 if len(name) > 11 and name[4] == "-" and name[7] == "-":
                     labels.add(name[11:])
             if not labels:
@@ -469,7 +669,11 @@ if __name__ == "__main__":
             for label in sorted(labels):
                 phase2(label)
 
+    elif mode == "phase2-monthly":
+        phase2_monthly()
+
     else:
         print("Usage: python research.py phase1          (needs TOPIC + LABEL env)")
         print("       python research.py phase2 [label]  (omit label to process all)")
+        print("       python research.py phase2-monthly  (monthly aggregation)")
         sys.exit(1)
