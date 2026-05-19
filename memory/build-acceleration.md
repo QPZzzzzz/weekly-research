@@ -1,17 +1,37 @@
 # build-acceleration — Research Memory
 
-最后更新: 2026-05-17
+最后更新: 2026-05-19
 
-- **公司/产品/项目**: 美团, 腾讯 yadcc, sccache, ccache, Incredibuild, Bazel, Buck2, Visual Studio 2022/2026, MSVC.
-- **重要趋势信号**:
-    - **分布式编译+缓存组合成为大型C++项目标配** (high): 美团(45min→8min), 腾讯yadcc(512并发), sccache(58s→30s).
-    - **AI驱动CI/CD管道** (high): VS Copilot集成, AI实现40%构建时间减少.
-    - **缓存工具生态活跃** (high): ccache 4.13.x更新并支持MSVC; sccache强调快速miss和云存储.
-    - **CI/CD管道优化成2026年焦点** (high): 层缓存、AI自优化、临时环境(EaaS).
-    - **现代构建系统(Bazel/Buck2)挑战传统** (medium): 功能强但学习曲线高.
-    - **C++ Modules进入“可用”阶段** (medium): MSVC持续修复.
-- **值得长期跟踪的技术方向**: 分布式编译与缓存组合策略; AI在CI/CD中的智能测试选择与预测性缓存; 缓存工具(ccache/sccache)对Windows生态的扩展; 现代构建系统(Bazel/Buck2)的易用性突破.
-- **竞品动态**:
-    - **新产品/开源**: 腾讯开源yadcc(512并发, 工业生产优化).
-    - **融资/合作**: 无.
-    - **技术突破**: ccache支持MSVC缓存; sccache云存储原生支持; AI驱动管道实现40%构建时间减少.
+### 关键记忆点
+
+**公司/产品/项目**
+- **Visual Studio 2026**: 集成AI Copilot Agent Mode，自动优化C++构建，减少40%时间
+- **ccache**: 2026年3-5月密集发布4.13.2至4.13.6版本，扩展MSVC支持
+- **sccache**: 设计哲学“快速miss优于慢速hit”，原生支持云存储，不破坏构建
+- **腾讯yadcc**: 开源分布式编译系统，支持512并发，用于工业生产
+- **Meta Buck2**: 开源构建系统，核心用Rust编写，规则与核心分离
+- **Incredibuild**: 商业分布式构建方案，强调CI/CD集成
+
+**重要趋势信号**
+- **AI深度嵌入构建优化** (high): VS 2026 Copilot Agent Mode标志AI从“写代码”到“管构建”的跨越
+- **分布式编译+缓存组合成标配** (high): 美团/腾讯实践显示45分钟→8分钟加速效果
+- **CI/CD管道优化成焦点** (high): 2026年指南强调层缓存、AI自优化，部署周期减少32%
+- **缓存工具生态空前活跃** (high): ccache高频迭代，sccache设计理念颠覆传统
+- **现代构建系统挑战传统** (medium): Buck2开源带来新变量，但学习曲线问题仍存
+
+**值得长期跟踪的技术方向**
+- AI驱动构建优化（VS 2026 Copilot Agent Mode的实际效果与普适性）
+- sccache在Windows生态的扩展（与ccache的MSVC支持竞争）
+- Buck2开源后的社区采用情况（能否挑战Bazel地位）
+- 分布式编译+缓存的组合策略（大型C++项目标配）
+- 构建系统易用性与功能性的权衡（Bazel/Buck2 vs Meson）
+
+**竞品动态**
+- **新产品**: Visual Studio 2026 (AI集成), Buck2 (Rust核心开源)
+- **融资**: 无明确融资信息
+- **合作**: 无明确合作信息
+- **技术突破**:
+  - VS 2026 Copilot Agent Mode自动优化构建（40%时间减少）
+  - sccache“快速miss”设计哲学颠覆缓存工具理念
+  - 腾讯yadcc支持512并发分布式编译
+  - ccache密集迭代扩展MSVC支持
