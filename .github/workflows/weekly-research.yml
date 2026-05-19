@@ -94,7 +94,11 @@ jobs:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: python scripts/research.py phase2
 
+      - name: Check if reports exist
+        run: echo "REPORT_COUNT=$(ls reports/*.md 2>/dev/null | wc -l)" >> $GITHUB_ENV
+
       - name: Upload reports
+        if: env.REPORT_COUNT != '0'
         uses: actions/upload-artifact@v4
         with:
           name: reports
