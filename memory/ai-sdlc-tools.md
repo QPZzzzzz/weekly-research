@@ -1,33 +1,25 @@
 # ai-sdlc-tools — Research Memory
 
-最后更新: 2026-05-23
+最后更新: 2026-05-24
 
-### 公司/产品/项目
-- **文心快码 (Comate)**：国产AI编程工具，企业采纳率超44%，C++生成质量第一。
-- **Cursor**：Agent模式，擅长跨文件重构。
-- **Claude Code**：Agent模式，终端体验佳。
-- **GitHub Copilot**：Agent模式，生态整合强。
-- **DeepSeek V4**：国产大模型，1%成本实现顶级模型90%性能。
-- **GPT-5.5、Gemini 3.1 Pro**：腾讯云实测对比模型。
-- **OpenAI Codex CLI、Goose**：开源AI编程工具。
-- **Jenova**：降低AI智能体构建门槛的平台。
-
-### 重要趋势信号
-- **Agentic AI工具全面取代传统代码补全** (high)：所有主流工具转向Agent模式，开发周期从周压缩到小时。
-- **AI编程工具信任度仅29%** (high)：采用率84%但信任度低，催生“AI感知”代码审查和审计工具需求。
-- **AI生成代码导致技术债务风险增加** (high)：瓶颈从代码生成转向协调与集成，需加强架构审计。
-- **CI/CD管道集成AI代理成为关键枢纽** (high)：AI自主生成配置、分析构建失败、编写测试并修复Bug。
-- **国产大模型DeepSeek V4性价比突出** (medium)：以1%成本实现顶级模型90%性能，加速国产AI编程普及。
-- **公民开发者数量预计2028年达1亿** (medium)：非技术用户AI能力扩展，改变人才结构。
-
-### 值得长期跟踪的技术方向/话题
-- **AI感知代码审查与架构审计工具**：应对AI生成代码的质量与安全风险。
-- **AI在CI/CD中的自主测试与修复**：实现从代码生成到交付的闭环。
-- **国产AI编程工具生态**：文心快码、DeepSeek V4等本土化优势与性价比。
-- **Agentic AI开发范式**：从“辅助”到“协作”，工具自主推理、规划、执行。
-
-### 竞品动态
-- **文心快码**：企业采纳率超44%，IDC评估多维度满分，C++生成质量第一。
-- **DeepSeek V4**：腾讯云实测性价比之王，1%成本达顶级模型90%性能。
-- **Cursor、Claude Code、GitHub Copilot**：均转向Agent模式，各有场景优势。
-- **Jenova**：降低AI智能体构建门槛，推动非技术用户参与开发。
+- **公司/产品/项目**: Cursor, GitHub Copilot, Claude Code, Windsurf, 文心快码, DeepSeek V4, Augment Code, Checkmarx, Applitools, Microsoft, Anthropic, IDC, Gartner, LTM, 腾讯云, 吉利, 顺丰
+- **重要趋势信号**:
+    - **Agentic AI 全面取代代码补全** (high): 主流工具转向Agent模式，开发周期从周压缩到小时。
+    - **采用率84% vs 信任度29%** (high): 信任度危机催生AI感知审查与审计工具新赛道。
+    - **CI/CD管道集成AI代理自主化** (high): AI自主生成配置、修复Bug，IDC预测重新定义DevOps。
+    - **国产AI编程工具崛起** (high): 文心快码企业采纳率超44%，DeepSeek V4以1%成本实现90%性能。
+    - **AI编程工具市场整合** (high): 编辑器吸收独立工具功能，向端到端平台发展。
+    - **自然语言驱动开发环境兴起** (medium): “一句话生成应用”降低开发门槛。
+    - **技术债务风险增加** (medium): 瓶颈从生成转向协调与集成。
+- **值得长期跟踪的技术方向/话题**:
+    - Agentic AI 在SDLC中的自主化演进
+    - AI生成代码的信任度与质量审计工具
+    - 自然语言驱动开发对人才结构的影响
+    - 国产AI编程工具的性价比与生态竞争
+- **竞品动态**:
+    - **Cursor**: 获评Gartner企业AI编程智能体魔力象限领导者。
+    - **Claude Code**: 复杂任务token消耗仅为Cursor的1/13，效率优势显著。
+    - **文心快码**: 企业采纳率超44%，C++生成质量第一，在吉利、顺丰落地。
+    - **DeepSeek V4**: 以1%成本实现顶级模型90%性能，腾讯云实测为“性价比之王”。
+    - **Microsoft**: 分享构建端到端Agentic SDLC实践。
+    - **Anthropic**: 发布《2026 Agentic Coding Trends Report》，Augment Code将项目缩短至2周。

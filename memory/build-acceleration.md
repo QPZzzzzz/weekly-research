@@ -1,31 +1,19 @@
 # build-acceleration — Research Memory
 
-最后更新: 2026-05-23
+最后更新: 2026-05-24
 
 ### 关键记忆点
 
-#### 公司/产品/项目
-- **Microsoft**: Visual Studio 2026, `@BuildPerfCpp`, MSVC, Incredibuild
-- **腾讯**: yadcc (开源, 512并发)
-- **美团**: 分布式编译+缓存实践 (45min→8min)
-- **Meta**: Buck2 (Rust, Starlark)
-- **Google**: sccache, Bazel
-- **其他**: ccache, sccache, Nocc, homcc, distcc, CMake, Pigweed, Celonis, GitNexa
-
-#### 重要趋势信号
-- **AI自主构建优化 (high)**: VS 2026 `@BuildPerfCpp` 自动分析瓶颈，减少40%构建时间。
-- **分布式编译+缓存成标配 (high)**: 美团/腾讯案例，构建时间从45分钟降至8分钟。
-- **缓存工具双雄争霸 (medium)**: ccache (本地极致) vs sccache (云原生多语言)，技术路线分化。
-- **CI/CD管道优化新战场 (high)**: 层缓存、路径过滤、增量构建从可选变为必要。
-- **C++26增加编译复杂度 (medium)**: 反射、内存安全等新特性可能催生新优化工具。
-
-#### 值得长期跟踪的技术方向
-- **AI编译优化**: 从辅助分析到自主优化，关注产品化进展。
-- **现代构建系统兼容性**: Buck2/Bazel在C++生态的“最后一公里”问题。
-- **C++26新特性影响**: 反射、内存安全对编译复杂度的实际影响。
-- **CI/CD构建加速**: 层缓存、路径过滤等策略的标准化。
-
-#### 竞品动态
-- **新产品/开源**: 腾讯yadcc (512并发), Meta Buck2, Nocc (分布式编译器), homcc (流量高效).
-- **融资/合作**: Incredibuild集成到VS 2026.
-- **技术突破**: ccache 4.13.6 (扩展MSVC), sccache (云存储+多语言), MSVC性能提升6%.
+- **公司/产品/项目**：Visual Studio 2026、Incredibuild、CMake 4.1.1、ccache、sccache、Buck2、Bazel、Pigweed、GitLab Duo、CircleCI、美团、腾讯、Red Hat、Meta、Tweag、Tony Bai、Xuanwo、Northflank、GitNexa、Medium、Stfalcon、Tech Insider、JWillikers、VirtusLab、Rust Forum、Hacker News、Stack Overflow、LibHunt、博客园、Microsoft Learn、MSVC、MSBuild、distcc、Dmucs、Docker、Xmake、AMD AOCC、Incredibuild (cn)
+- **重要趋势信号**：
+    - **AI工具重塑CI/CD**：AI编码工具增加提交量，AI CI/CD工具提供故障分析。强度：high
+    - **C++26反射增加编译复杂度**：被称“十年火箭引擎”，催生新优化需求。强度：high
+    - **分布式编译+缓存成标配**：集成度加深，VS 2026原生支持。强度：high
+    - **ccache vs sccache分化**：本地极致 vs 云原生多语言，sccache易用性存痛点。强度：medium
+    - **现代构建系统渗透但存挑战**：Buck2/Bazel在C++生态集成需定制。强度：medium
+- **长期跟踪技术方向**：AI CI/CD智能管道管理、C++26反射应对工具、sccache易用性改进、分布式编译平台原生集成、现代构建系统C++兼容性
+- **竞品动态**：
+    - **新产品/集成**：VS 2026深度集成Incredibuild和CMake 4.1.1；AI CI/CD工具（GitLab Duo、CircleCI）提供故障分析。
+    - **技术突破**：MSVC运行时性能提升（Unreal Engine RenderThread提升6%）；C++26反射特性即将引入。
+    - **融资/合作**：无明确融资信息，但Incredibuild与微软深度合作。
+    - **实践案例**：美团、腾讯通过分布式编译将构建时间从45分钟降至8分钟；Red Hat分享编译加速技巧。
