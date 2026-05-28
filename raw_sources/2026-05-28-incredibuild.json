@@ -1,0 +1,380 @@
+{
+  "topic": "Incredibuild 分布式编译 竞品对比 行业格局",
+  "label": "incredibuild",
+  "date": "2026-05-28",
+  "total_sources": 25,
+  "sources": [
+    {
+      "title": "Incredibuild - C++编译加速_分布式编译_联合编译",
+      "url": "https://www.incredibuild.cn",
+      "platform": "incredibuild.cn",
+      "summary": "Incredibuild 中文官网，介绍其分布式编译加速产品及营销追踪机制。",
+      "relevance": "medium",
+      "tags": [
+        "官网",
+        "营销"
+      ]
+    },
+    {
+      "title": "c++编译加速_分布式编译_CI/CD加速 - Incredibuild",
+      "url": "https://www.incredibuild.cn/technology",
+      "platform": "incredibuild.cn",
+      "summary": "详细介绍 Incredibuild 的进程虚拟化技术（Virtualized Distributed Processing™），利用空闲CPU加速编译和测试。",
+      "relevance": "high",
+      "tags": [
+        "技术",
+        "进程虚拟化"
+      ]
+    },
+    {
+      "title": "Introduction to Incredibuild",
+      "url": "https://docs.incredibuild.com/win/10_15/windows/introduction.html",
+      "platform": "docs.incredibuild.com",
+      "summary": "官方文档说明 Incredibuild 工作原理：利用本地网络或云端空闲CPU，将工作站变为超级计算机。",
+      "relevance": "high",
+      "tags": [
+        "文档",
+        "工作原理"
+      ]
+    },
+    {
+      "title": "Incredibuild c++编译加速，更快的构建速度，更智能的开发周期 | 龙智 DragonSoft",
+      "url": "https://www.shdsd.com/incredibuild/index.html",
+      "platform": "shdsd.com",
+      "summary": "龙智作为 Incredibuild 中国授权合作伙伴，提供咨询、销售、实施等服务，强调加速开发周期。",
+      "relevance": "medium",
+      "tags": [
+        "合作伙伴",
+        "中国"
+      ]
+    },
+    {
+      "title": "游戏开发构建加速_着色器编译加速_shader编译c++加速_ue4分布式编译加速_ue联合编译加速_Incredibuild",
+      "url": "https://www.incredibuild.cn/solutions/accelerate-gaming",
+      "platform": "incredibuild.cn",
+      "summary": "Incredibuild 游戏开发解决方案，无需更改代码即可加速本地和云端游戏开发。",
+      "relevance": "medium",
+      "tags": [
+        "游戏",
+        "解决方案"
+      ]
+    },
+    {
+      "title": "Incredibuild: Accelerate Your Development",
+      "url": "https://www.incredibuild.com",
+      "platform": "incredibuild.com",
+      "summary": "Incredibuild 官网强调缓存冗余消除、分布式负载和安全供应链（SBOM）。",
+      "relevance": "high",
+      "tags": [
+        "官网",
+        "缓存",
+        "安全"
+      ]
+    },
+    {
+      "title": "AI agents are running wild on developer machines. Incredibuild has a fix. - The New Stack",
+      "url": "https://thenewstack.io/incredibuild-ai-agents-sandbox-coding",
+      "platform": "thenewstack.io",
+      "summary": "The New Stack 报道 Incredibuild 针对 AI agent 在开发者机器上运行的安全问题提出解决方案。",
+      "relevance": "high",
+      "tags": [
+        "AI",
+        "安全",
+        "媒体"
+      ]
+    },
+    {
+      "title": "Incredibuild Announces $35m Series B Investment Round Led by Hiro Capital - Incredibuild",
+      "url": "https://www.incredibuild.com/news/incredibuild-announces-35m-series-b-investment-round-led-by-hiro-capital",
+      "platform": "incredibuild.com",
+      "summary": "Incredibuild 宣布获得由 Hiro Capital 领投的 3500 万美元 B 轮融资。",
+      "relevance": "high",
+      "tags": [
+        "融资",
+        "B轮"
+      ]
+    },
+    {
+      "title": "Version History - Incredibuild",
+      "url": "https://www.incredibuild.cn/incredibuild-version-history",
+      "platform": "incredibuild.cn",
+      "summary": "Incredibuild 版本历史，新增 NMake 编译加速和输出文件同步控制功能。",
+      "relevance": "low",
+      "tags": [
+        "版本",
+        "更新"
+      ]
+    },
+    {
+      "title": "Distributed Processing: Scalable Build Performance",
+      "url": "https://www.incredibuild.com/distributed-processing",
+      "platform": "incredibuild.com",
+      "summary": "展示客户案例：美国金融机构编译时间减少 95.8%，Safe Software 成本降低 67.2%，并提及 ISO 9001/27001 认证。",
+      "relevance": "high",
+      "tags": [
+        "案例",
+        "合规",
+        "性能"
+      ]
+    },
+    {
+      "title": "Tools Spotlight: Incredibuild - Incredibuild",
+      "url": "https://www.incredibuild.com/news/tools-spotlight-incredibuild-html",
+      "platform": "incredibuild.com",
+      "summary": "介绍 Incredibuild for Visual Studio 版本，增加工具栏和 Build Monitor 等增强功能。",
+      "relevance": "medium",
+      "tags": [
+        "Visual Studio",
+        "集成"
+      ]
+    },
+    {
+      "title": "Bazel vs Incredibuild (2026)",
+      "url": "https://www.peerspot.com/products/comparisons/bazel_vs_incredibuild",
+      "platform": "peerspot.com",
+      "summary": "用户对比 Bazel 和 Incredibuild，常见竞品包括 EngFlow、Jenkins、TeamCity 等。",
+      "relevance": "high",
+      "tags": [
+        "竞品对比",
+        "Bazel",
+        "EngFlow"
+      ]
+    },
+    {
+      "title": "EngFlow Makes C++ Builds 21x Faster and Software a Lot Safer - The New Stack",
+      "url": "https://thenewstack.io/engflow-makes-c-builds-21x-faster-and-software-a-lot-safer",
+      "platform": "thenewstack.io",
+      "summary": "The New Stack 报道 EngFlow 宣称 C++ 构建加速 21 倍，并强调安全性。",
+      "relevance": "high",
+      "tags": [
+        "EngFlow",
+        "竞品",
+        "性能"
+      ]
+    },
+    {
+      "title": "Optimizing Automated Build Performance - Incredibuild",
+      "url": "https://www.incredibuild.com/blog/optimizing-automated-build-performance",
+      "platform": "incredibuild.com",
+      "summary": "Incredibuild 博客文章，讨论优化自动化构建性能，并提及 AI coding agents 需要执行层。",
+      "relevance": "medium",
+      "tags": [
+        "博客",
+        "AI",
+        "自动化"
+      ]
+    },
+    {
+      "title": "Incredibuild Announces New Platform | DEVOPSdigest",
+      "url": "https://www.devopsdigest.com/incredibuild-announces-new-platform",
+      "platform": "devopsdigest.com",
+      "summary": "DEVOPSdigest 报道 Incredibuild 发布新平台。",
+      "relevance": "medium",
+      "tags": [
+        "平台",
+        "发布"
+      ]
+    },
+    {
+      "title": "Distributed Build Performance Issue under Low-Bandwidth Network · Issue #248 · fastbuild/fastbuild · GitHub",
+      "url": "https://github.com/fastbuild/fastbuild/issues/248",
+      "platform": "github.com",
+      "summary": "FASTBuild GitHub Issue 显示低带宽网络下性能对比：Incredibuild 优于 FASTBuild，但 FASTBuild 缓存全命中时更快。",
+      "relevance": "high",
+      "tags": [
+        "FASTBuild",
+        "性能对比",
+        "低带宽"
+      ]
+    },
+    {
+      "title": "EngFlow — EngFlow and tipi.build Reveal CMake RBE Solution for C/C++",
+      "url": "https://www.engflow.com/news/2023-10-05",
+      "platform": "engflow.com",
+      "summary": "EngFlow 与 tipi.build 合作推出 CMake RBE 方案，支持 Bazel、Buck v2、CMake 等，获得 SOC 2 认证。",
+      "relevance": "high",
+      "tags": [
+        "EngFlow",
+        "CMake",
+        "RBE",
+        "SOC 2"
+      ]
+    },
+    {
+      "title": "Top IncrediBuild Alternatives & Competitors in 2026",
+      "url": "https://www.trustradius.com/products/incredibuild/competitors",
+      "platform": "trustradius.com",
+      "summary": "TrustRadius 列出 Incredibuild 主要竞品：Azure DevOps、Jenkins、Gradle、TeamCity 等。",
+      "relevance": "high",
+      "tags": [
+        "竞品",
+        "替代品"
+      ]
+    },
+    {
+      "title": "IncrediBuild Reviews & Ratings 2026 | TrustRadius",
+      "url": "https://www.trustradius.com/products/incredibuild/reviews",
+      "platform": "trustradius.com",
+      "summary": "TrustRadius 上 Incredibuild 的用户评价和评分页面。",
+      "relevance": "medium",
+      "tags": [
+        "评价",
+        "用户反馈"
+      ]
+    },
+    {
+      "title": "Even faster builds with Incredibuild 10 and Visual Studio 17.6 ...",
+      "url": "https://devblogs.microsoft.com/cppblog/incredibuild-10-visual-studio-17-6",
+      "platform": "devblogs.microsoft.com",
+      "summary": "微软 C++ 博客介绍 Incredibuild 10 与 Visual Studio 17.6 的集成，强调缓存和分布式网格。",
+      "relevance": "high",
+      "tags": [
+        "微软",
+        "Visual Studio",
+        "集成"
+      ]
+    },
+    {
+      "title": "Top 7 Open Source Build Systems - Incredibuild",
+      "url": "https://www.incredibuild.com/blog/top-7-open-source-c-build-systems",
+      "platform": "incredibuild.com",
+      "summary": "Incredibuild 博客列出 7 大开源构建系统，包括 SCons 等。",
+      "relevance": "low",
+      "tags": [
+        "博客",
+        "开源"
+      ]
+    },
+    {
+      "title": "Choosing the right C++ build system: A comprehensive guide for ...",
+      "url": "https://www.incredibuild.com/blog/choosing-the-right-c-build-system-a-comprehensive-guide-for-developers",
+      "platform": "incredibuild.com",
+      "summary": "Incredibuild 博客指南，推荐其产品可加速任何构建系统。",
+      "relevance": "low",
+      "tags": [
+        "博客",
+        "指南"
+      ]
+    },
+    {
+      "title": "C++服务编译耗时优化原理及实践",
+      "url": "https://tech.meituan.com/2020/12/10/apache-kylin-practice-in-meituan.html",
+      "platform": "tech.meituan.com",
+      "summary": "美团技术博客介绍使用 Distcc、CCache 等开源工具进行编译优化，提及分布式编译适用大型项目。",
+      "relevance": "medium",
+      "tags": [
+        "美团",
+        "开源",
+        "Distcc",
+        "CCache"
+      ]
+    },
+    {
+      "title": "最佳C++编程AI：精通现代标准，调试模板并构建从C++11到C++26的生产系统",
+      "url": "https://www.jenova.ai/zh/resources/best-ai-for-cpp-coding",
+      "platform": "jenova.ai",
+      "summary": "介绍 C++ 编程 AI 工具，提及 C++26 标准进展。",
+      "relevance": "low",
+      "tags": [
+        "AI",
+        "C++"
+      ]
+    },
+    {
+      "title": "分布式编译- 服务器编程新手入门- Server Programming Guide",
+      "url": "https://liuhaohua.com/server-programming-guide/build-system/distributed-compiling",
+      "platform": "liuhaohua.com",
+      "summary": "技术教程介绍使用 distcc 和 ccache 搭建分布式编译缓存。",
+      "relevance": "low",
+      "tags": [
+        "教程",
+        "Distcc",
+        "CCache"
+      ]
+    }
+  ],
+  "signals": [
+    {
+      "signal": "Incredibuild 获得 3500 万美元 B 轮融资",
+      "direction": "up",
+      "evidence": "Hiro Capital 领投，表明资本市场对其 AI SDLC 平台转型的认可。",
+      "category": "行业"
+    },
+    {
+      "signal": "Incredibuild 推出 AI agent 安全沙箱方案",
+      "direction": "new",
+      "evidence": "The New Stack 报道，Incredibuild 针对 AI agent 在开发者机器上运行的安全问题提出解决方案。",
+      "category": "产品"
+    },
+    {
+      "signal": "EngFlow 与 tipi.build 合作推出 CMake RBE 方案",
+      "direction": "up",
+      "evidence": "EngFlow 获得 SOC 2 认证，支持 CMake 等构建系统，直接挑战 Incredibuild 的跨平台能力。",
+      "category": "竞品"
+    },
+    {
+      "signal": "FASTBuild 在低带宽网络下性能不如 Incredibuild，但缓存全命中时更快",
+      "direction": "stable",
+      "evidence": "GitHub Issue 测试数据：100Mbps 下 Incredibuild 13.6 分钟 vs FASTBuild 43.5 分钟；1Gbps 下接近；缓存全命中 FASTBuild 6.5 分钟。",
+      "category": "技术"
+    },
+    {
+      "signal": "开源工具 (Distcc, CCache) 持续被企业采用",
+      "direction": "up",
+      "evidence": "美团技术博客和教程网站均推荐使用 Distcc 和 CCache 进行分布式编译优化。",
+      "category": "行业"
+    },
+    {
+      "signal": "Incredibuild 强调安全合规（ISO 9001/27001, SBOM）",
+      "direction": "up",
+      "evidence": "官网和分布式处理页面突出安全供应链和合规认证，与 EngFlow 的 SOC 2 形成竞争。",
+      "category": "产品"
+    }
+  ],
+  "trends": [
+    {
+      "trend": "AI 安全与 SDLC 加速融合",
+      "evidence": "Incredibuild 推出 AI agent 安全方案，同时 EngFlow 强调安全性，行业趋势向安全+性能双驱动发展。",
+      "momentum": "rising"
+    },
+    {
+      "trend": "跨平台构建支持成为竞争焦点",
+      "evidence": "EngFlow 支持 CMake、Bazel 等，Incredibuild 深度绑定 Visual Studio，但跨平台需求增长。",
+      "momentum": "rising"
+    },
+    {
+      "trend": "开源分布式编译工具生态壮大",
+      "evidence": "Distcc、CCache、FASTBuild 等被广泛使用，对商业产品形成替代压力。",
+      "momentum": "rising"
+    },
+    {
+      "trend": "低带宽网络环境下的分布式编译性能受关注",
+      "evidence": "FASTBuild 与 Incredibuild 的性能对比测试表明网络条件对分布式编译效果影响显著。",
+      "momentum": "stable"
+    }
+  ],
+  "companies_mentioned": [
+    "Incredibuild",
+    "EngFlow",
+    "FASTBuild",
+    "tipi.build",
+    "Bazel",
+    "CMake",
+    "Visual Studio",
+    "Jenkins",
+    "TeamCity",
+    "Azure DevOps",
+    "Gradle",
+    "Distcc",
+    "CCache",
+    "Hiro Capital",
+    "龙智"
+  ],
+  "hot_topics": [
+    "AI agent 安全",
+    "分布式编译性能对比",
+    "安全合规认证",
+    "跨平台构建",
+    "开源替代方案"
+  ]
+}

@@ -1,21 +1,24 @@
 # incredibuild — Research Memory
 
-最后更新: 2026-05-26
+最后更新: 2026-05-28
 
-- **公司/产品/项目**: Incredibuild, EngFlow, FASTBuild, Xmake, distcc, ccache, tipi.build, CMake, Visual Studio, Bazel
-- **重要趋势信号**:
-    - **Incredibuild 战略转型为 AI SDLC 平台** (方向: up, 强度: high)
-    - **开源工具 (Xmake, distcc, ccache) 替代压力增大** (方向: up, 强度: medium)
-    - **安全合规成为选型门槛** (方向: up, 强度: high)
-    - **EngFlow 以“性能+安全+生态”组合挑战 Incredibuild** (方向: up, 强度: high)
-    - **微软生态是 Incredibuild 护城河，但跨平台竞争加剧** (方向: stable, 强度: medium)
-- **值得长期跟踪的技术方向/话题**:
-    - AI 加速 SDLC 平台 (Incredibuild AI 平台客户采纳率)
-    - 开源构建工具生态整合 (FASTBuild CMake 集成后用户增长)
-    - 分布式编译安全合规认证 (ISO, SOC 2)
-    - 低带宽网络下的分布式编译性能 (FASTBuild vs Incredibuild 对比)
-- **竞品动态**:
-    - **Incredibuild**: 发布 AI 平台，转型为 AI SDLC 加速平台；发布 10.34.2 版本修复性能问题。
-    - **EngFlow**: 宣称 21 倍加速，获得 SOC 2 认证，与 tipi.build 合作推出 CMake RBE 方案。
-    - **FASTBuild**: 获得 CMake 官方集成，被 SourceForge 列为 Incredibuild 有力替代。
-    - **开源工具**: Xmake 内置分布式编译，distcc/ccache 被美团等公司用于编译优化。
+### 关键记忆点
+
+- **公司/产品/项目**：Incredibuild、EngFlow、tipi.build、FASTBuild、Distcc、CCache、Xmake、Bazel、Visual Studio、CMake、Hiro Capital
+- **重要趋势信号**：
+  - **Incredibuild 获 3500 万美元 B 轮融资**（方向：行业认可；强度：high）
+  - **AI agent 安全沙箱方案推出**（方向：产品创新；强度：high）
+  - **EngFlow 与 tipi.build 合作 CMake RBE 方案**（方向：竞品挑战；强度：high）
+  - **低带宽网络下 Incredibuild 性能优于 FASTBuild**（方向：技术对比；强度：medium）
+  - **开源工具 (Distcc, CCache) 替代压力上升**（方向：行业趋势；强度：high）
+  - **安全合规成为选型门槛**（方向：产品竞争；强度：high）
+- **值得长期跟踪的技术方向/话题**：
+  - AI SDLC 平台转型与安全沙箱
+  - 跨平台构建支持（CMake RBE 方案）
+  - 低带宽网络下的分布式编译优化
+  - 开源工具对企业商业产品的替代压力
+- **竞品动态**：
+  - **Incredibuild**：获 3500 万美元 B 轮融资，推 AI agent 安全沙箱，强调安全合规（ISO 9001/27001, SBOM）
+  - **EngFlow**：获 SOC 2 认证，与 tipi.build 合作推 CMake RBE 方案，宣称 C++ 构建加速 21 倍
+  - **FASTBuild**：低带宽下性能不如 Incredibuild，但缓存全命中时更快
+  - **开源工具**：Distcc、CCache 被企业持续采用，替代压力上升
