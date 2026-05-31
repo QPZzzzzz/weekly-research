@@ -1,0 +1,410 @@
+{
+  "topic": "Incredibuild 分布式编译 竞品对比 行业格局",
+  "label": "incredibuild",
+  "date": "2026-05-31",
+  "total_sources": 26,
+  "sources": [
+    {
+      "title": "IncrediBuild 进行联合编译 - 小 楼 一 夜 听 春 雨 - 博客园",
+      "url": "https://www.cnblogs.com/kex1n/archive/2010/08/12/2286478.html",
+      "platform": "博客园",
+      "summary": "介绍分布式编译原理及Incredibuild在Visual C++上的应用。",
+      "relevance": "low",
+      "tags": [
+        "分布式编译",
+        "Visual C++"
+      ]
+    },
+    {
+      "title": "友環公司-IncrediBuild 編程開發工具 測試與品質工具",
+      "url": "https://www.linksoft.com.tw/product/xoreax_incredibuild",
+      "platform": "友環公司",
+      "summary": "Incredibuild v10.31版本信息及分布式计算技术概述。",
+      "relevance": "medium",
+      "tags": [
+        "Incredibuild",
+        "版本信息",
+        "分布式计算"
+      ]
+    },
+    {
+      "title": "Incredibuild c++编译加速，更快的构建速度，更智能的开发周期 | 龙智 DragonSoft",
+      "url": "https://www.shdsd.com/incredibuild/index.html",
+      "platform": "龙智",
+      "summary": "龙智作为Incredibuild中国授权合作伙伴，提供加速开发流程服务。",
+      "relevance": "high",
+      "tags": [
+        "中国代理",
+        "龙智",
+        "开发加速"
+      ]
+    },
+    {
+      "title": "游戏开发构建加速_着色器编译加速_shader编译c++加速_ue4分布式编译加速_ue联合编译加速_Incredibuild",
+      "url": "https://www.incredibuild.cn/solutions/accelerate-gaming",
+      "platform": "Incredibuild官网",
+      "summary": "Incredibuild游戏开发解决方案，支持本地和云端加速。",
+      "relevance": "high",
+      "tags": [
+        "游戏开发",
+        "着色器编译",
+        "UE4"
+      ]
+    },
+    {
+      "title": "专家干货：如何搞定百万行代码项目 - Incredibuild",
+      "url": "https://www.incredibuild.cn/blog/the-pros-tactics-to-orchestrating-projects-with-a-million-lines-of-code",
+      "platform": "Incredibuild博客",
+      "summary": "讨论百万行代码项目管理及NPM供应链攻击。",
+      "relevance": "medium",
+      "tags": [
+        "百万行代码",
+        "供应链攻击"
+      ]
+    },
+    {
+      "title": "Unreal Engine AI 技术栈调研（2026） - 砥才人 - 博客园",
+      "url": "https://www.cnblogs.com/shiroe/p/19592287",
+      "platform": "博客园",
+      "summary": "对比UBA和Incredibuild在UE5项目中的构建加速优势。",
+      "relevance": "high",
+      "tags": [
+        "Unreal Engine",
+        "UBA",
+        "构建加速"
+      ]
+    },
+    {
+      "title": "AI agents are running wild on developer machines. Incredibuild has a fix. - The New Stack",
+      "url": "https://thenewstack.io/incredibuild-ai-agents-sandbox-coding",
+      "platform": "The New Stack",
+      "summary": "Incredibuild推出AI agent安全沙箱，应对AI编码代理安全挑战。",
+      "relevance": "high",
+      "tags": [
+        "AI agent",
+        "安全沙箱",
+        "新趋势"
+      ]
+    },
+    {
+      "title": "Release Notes",
+      "url": "https://docs.incredibuild.com/lin/latest/linux/release_notes.html",
+      "platform": "Incredibuild文档",
+      "summary": "Incredibuild for Linux 4.26.1版本发布说明。",
+      "relevance": "medium",
+      "tags": [
+        "Linux",
+        "版本发布"
+      ]
+    },
+    {
+      "title": "Incredibuild Unveils State-of-the-Art AI Platform to Accelerate the Entire Software Development Lifecycle",
+      "url": "https://www.prnewswire.com/news-releases/incredibuild-unveils-state-of-the-art-ai-platform-to-accelerate-the-entire-software-development-lifecycle-302560614.html",
+      "platform": "PRNewswire",
+      "summary": "Incredibuild推出AI平台，加速整个SDLC。",
+      "relevance": "high",
+      "tags": [
+        "AI平台",
+        "SDLC",
+        "产品发布"
+      ]
+    },
+    {
+      "title": "Downloads and Documentation Center",
+      "url": "https://docs.incredibuild.com/site_landing/download_docs_center.htm",
+      "platform": "Incredibuild文档",
+      "summary": "Incredibuild多平台下载及文档中心。",
+      "relevance": "low",
+      "tags": [
+        "下载",
+        "文档"
+      ]
+    },
+    {
+      "title": "Incredibuild: Accelerate Your Development",
+      "url": "https://www.incredibuild.com",
+      "platform": "Incredibuild官网",
+      "summary": "Incredibuild核心功能：缓存复用、分布式负载、安全SBOM。",
+      "relevance": "high",
+      "tags": [
+        "缓存",
+        "分布式",
+        "SBOM"
+      ]
+    },
+    {
+      "title": "Why we built Islo:  AI coding agents need an execution layer - Incredibuild",
+      "url": "https://www.incredibuild.com/blog/why-we-built-islo-ai-coding-agents-need-an-execution-layer",
+      "platform": "Incredibuild博客",
+      "summary": "Incredibuild推出Islo，为AI编码代理提供执行层。",
+      "relevance": "high",
+      "tags": [
+        "Islo",
+        "AI编码代理",
+        "执行层"
+      ]
+    },
+    {
+      "title": "EngFlow vs Incredibuild (2026)",
+      "url": "https://www.peerspot.com/products/comparisons/engflow_vs_incredibuild",
+      "platform": "Peerspot",
+      "summary": "EngFlow与Incredibuild在金融科技和健康科技领域的应用对比。",
+      "relevance": "high",
+      "tags": [
+        "EngFlow",
+        "竞品对比",
+        "金融科技"
+      ]
+    },
+    {
+      "title": "Top 10 Incredibuild Alternatives 2026",
+      "url": "https://www.peerspot.com/products/incredibuild-alternatives-and-competitors",
+      "platform": "Peerspot",
+      "summary": "列出Bazel、EngFlow等Incredibuild替代品。",
+      "relevance": "high",
+      "tags": [
+        "替代品",
+        "Bazel",
+        "EngFlow"
+      ]
+    },
+    {
+      "title": "FASTBuild vs. Incredibuild Comparison",
+      "url": "https://sourceforge.net/software/compare/FastBuild-vs-IncrediBuild",
+      "platform": "SourceForge",
+      "summary": "FASTBuild作为开源构建系统，与Incredibuild对比。",
+      "relevance": "medium",
+      "tags": [
+        "FASTBuild",
+        "开源",
+        "对比"
+      ]
+    },
+    {
+      "title": "Nocc – A Distributed C++ Compiler",
+      "url": "https://news.ycombinator.com/item?id=43007336",
+      "platform": "Hacker News",
+      "summary": "讨论Nocc及其他分布式C++编译器，包括Incredibuild。",
+      "relevance": "medium",
+      "tags": [
+        "Nocc",
+        "分布式编译器",
+        "讨论"
+      ]
+    },
+    {
+      "title": "EngFlow x Uber Amsterdam Build Meetup 2026 Scaling Builds - EngFlow Blog",
+      "url": "https://blog.engflow.com/2026/04/14/engflow-x-uber-amsterdam-build-meetup-2026-scaling-builds",
+      "platform": "EngFlow博客",
+      "summary": "EngFlow与Uber合办Meetup，讨论Bonanza分布式构建系统。",
+      "relevance": "high",
+      "tags": [
+        "EngFlow",
+        "Uber",
+        "Bonanza"
+      ]
+    },
+    {
+      "title": "Buildkite vs Incredibuild (2026)",
+      "url": "https://www.peerspot.com/products/comparisons/buildkite_vs_incredibuild",
+      "platform": "Peerspot",
+      "summary": "Buildkite与Incredibuild在构建自动化领域的市场份额对比。",
+      "relevance": "medium",
+      "tags": [
+        "Buildkite",
+        "市场份额",
+        "构建自动化"
+      ]
+    },
+    {
+      "title": "Top Incredibuild Alternatives & Competitors 2026 | SoftwareWorld",
+      "url": "https://www.softwareworld.co/competitors/incredibuild-alternatives",
+      "platform": "SoftwareWorld",
+      "summary": "列出Jira、GitLab等Incredibuild替代品。",
+      "relevance": "low",
+      "tags": [
+        "替代品",
+        "Jira",
+        "GitLab"
+      ]
+    },
+    {
+      "title": "Top IncrediBuild Alternatives & Competitors in 2026",
+      "url": "https://www.trustradius.com/products/incredibuild/competitors",
+      "platform": "TrustRadius",
+      "summary": "列出Azure DevOps等Incredibuild竞争对手。",
+      "relevance": "low",
+      "tags": [
+        "竞争对手",
+        "Azure DevOps"
+      ]
+    },
+    {
+      "title": "Incredibuild Product Details | Reviews, Pricing and Alternatives | 2026",
+      "url": "https://www.serchen.com/company/incredibuild/alternatives",
+      "platform": "Serchen",
+      "summary": "Incredibuild产品详情及Jelastic等替代品。",
+      "relevance": "low",
+      "tags": [
+        "产品详情",
+        "定价",
+        "替代品"
+      ]
+    },
+    {
+      "title": "Best Incredibuild Alternatives & Competitors",
+      "url": "https://sourceforge.net/software/product/IncrediBuild/alternatives",
+      "platform": "SourceForge",
+      "summary": "列出Distcc等Incredibuild替代品。",
+      "relevance": "medium",
+      "tags": [
+        "Distcc",
+        "替代品",
+        "开源"
+      ]
+    },
+    {
+      "title": "C++服务编译耗时优化原理及实践",
+      "url": "https://tech.meituan.com/2020/12/10/apache-kylin-practice-in-meituan.html",
+      "platform": "美团技术博客",
+      "summary": "美团使用Distcc和CCache进行分布式编译优化。",
+      "relevance": "medium",
+      "tags": [
+        "美团",
+        "Distcc",
+        "CCache"
+      ]
+    },
+    {
+      "title": "如何高效创建 C++ 并行构建？编译本质上是一个高度输出的分布式系统。但是，首先我们要如何建立这样一个系统的？如何有效地 - 掘金",
+      "url": "https://juejin.cn/post/7225875600643801149",
+      "platform": "掘金",
+      "summary": "讨论C++并行构建及include-what-you-use工具。",
+      "relevance": "low",
+      "tags": [
+        "C++",
+        "并行构建",
+        "工具"
+      ]
+    },
+    {
+      "title": "Qt Bridges for C# 深度技术解析 - 张善友 - 博客园",
+      "url": "https://www.cnblogs.com/shanyou/p/20135353",
+      "platform": "博客园",
+      "summary": "Qt C# Bridge技术解析及GA时间预测。",
+      "relevance": "low",
+      "tags": [
+        "Qt",
+        "C#",
+        "Bridge"
+      ]
+    },
+    {
+      "title": "安全与性能的双重奏：Rust与Zig如何重塑新生代系统编程格局当云计算、边缘计算与嵌入式系统的深度融合成为技术主流，Ru - 掘金",
+      "url": "https://juejin.cn/post/7603588665567264808",
+      "platform": "掘金",
+      "summary": "Rust与Zig在系统编程中的安全与性能对比。",
+      "relevance": "low",
+      "tags": [
+        "Rust",
+        "Zig",
+        "系统编程"
+      ]
+    }
+  ],
+  "signals": [
+    {
+      "signal": "Incredibuild推出AI平台及安全沙箱",
+      "direction": "up",
+      "evidence": "PRNewswire报道Incredibuild发布AI平台加速SDLC；The New Stack报道AI agent安全沙箱。",
+      "category": "产品"
+    },
+    {
+      "signal": "EngFlow与Uber合办Meetup推广Bonanza",
+      "direction": "up",
+      "evidence": "EngFlow博客报道与Uber合办Meetup，讨论Bonanza分布式构建系统。",
+      "category": "竞品"
+    },
+    {
+      "signal": "开源工具Distcc/CCache持续被推荐",
+      "direction": "stable",
+      "evidence": "美团技术博客推荐Distcc和CCache用于编译优化。",
+      "category": "行业"
+    },
+    {
+      "signal": "FASTBuild在缓存全命中场景性能领先",
+      "direction": "stable",
+      "evidence": "SourceForge对比显示FASTBuild在缓存全命中时优于Incredibuild。",
+      "category": "技术"
+    },
+    {
+      "signal": "Incredibuild中国代理商龙智推广本地化服务",
+      "direction": "up",
+      "evidence": "龙智官网提供Incredibuild咨询、销售、实施服务。",
+      "category": "行业"
+    },
+    {
+      "signal": "AI编码代理执行层Islo发布",
+      "direction": "new",
+      "evidence": "Incredibuild博客宣布推出Islo，为AI编码代理提供执行层。",
+      "category": "产品"
+    },
+    {
+      "signal": "Incredibuild市场份额增长",
+      "direction": "up",
+      "evidence": "Peerspot数据显示Incredibuild在构建自动化领域市场份额从0.7%升至1.4%。",
+      "category": "行业"
+    }
+  ],
+  "trends": [
+    {
+      "trend": "AI与SDLC深度融合",
+      "evidence": "Incredibuild推出AI平台和安全沙箱，Islo执行层，AI编码代理成为焦点。",
+      "momentum": "rising"
+    },
+    {
+      "trend": "分布式编译技术路线分化",
+      "evidence": "EngFlow的RBE架构与Incredibuild的中间件架构竞争，FASTBuild开源方案受关注。",
+      "momentum": "rising"
+    },
+    {
+      "trend": "开源工具替代商业工具压力持续",
+      "evidence": "Distcc/CCache被美团等企业推荐，FASTBuild在特定场景性能领先。",
+      "momentum": "stable"
+    },
+    {
+      "trend": "安全合规成为选型硬门槛",
+      "evidence": "Incredibuild获ISO 27001认证，EngFlow获SOC 2认证，SBOM功能受重视。",
+      "momentum": "rising"
+    },
+    {
+      "trend": "中国市场本地化服务需求增长",
+      "evidence": "龙智作为Incredibuild中国代理提供本地化支持，游戏开发场景突出。",
+      "momentum": "rising"
+    }
+  ],
+  "companies_mentioned": [
+    "Incredibuild",
+    "EngFlow",
+    "FASTBuild",
+    "Uber",
+    "Buildkite",
+    "Bazel",
+    "Distcc",
+    "CCache",
+    "龙智",
+    "亿道电子",
+    "Team17",
+    "Qt Group",
+    "Microsoft",
+    "Google Cloud"
+  ],
+  "hot_topics": [
+    "AI平台转型",
+    "AI agent安全沙箱",
+    "分布式编译技术对比",
+    "开源替代品",
+    "安全合规认证",
+    "中国市场本地化"
+  ]
+}

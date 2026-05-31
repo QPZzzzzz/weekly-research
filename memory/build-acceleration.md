@@ -1,21 +1,17 @@
 # build-acceleration — Research Memory
 
-最后更新: 2026-05-30
+最后更新: 2026-05-31
 
-- **公司/产品/项目**: 腾讯 yadcc、Meta Buck2、ccache 4.13.6、sccache、mold、Incredibuild、Bonanza、Visual Studio 2026 SPGO、Intel oneAPI、GitNexa、Kellton
+- **公司/产品/项目**: Visual Studio 2026, GitHub Copilot, IncrediBuild, Bonanza, Bazel, Zig, sccache, ccache, Buck2, yadcc, CircleCI, GitNexa, Kellton
 - **重要趋势信号**:
-  - **缓存优先策略向“预测性缓存”演进** (high): 行业共识从“被动缓存”转向AI驱动的“预测性缓存”，避免不必要的编译。
-  - **分布式编译工具生态繁荣** (high): 腾讯开源yadcc（512并发），Meta开源Buck2，工具选择增多。
-  - **编译优化延伸至运行时** (high): VS 2026 SPGO通过硬件采样实现5-15%运行时性能提升，无需合成训练场景。
-  - **AI驱动CI/CD管道成为主流** (high): 多家机构指南指出AI在预测缓存、自愈管道中的应用，从辅助工具升级为核心驱动力。
-  - **工具链集成测试存在盲区** (medium): sccache与mold兼容性问题（Issue #1755）暴露缓存与链接器组合使用的风险。
-  - **构建系统向“可替换执行引擎”模块化演进** (medium): Bonanza等系统实现Bazel兼容，核心引擎可替换，降低对单一系统的依赖。
-- **值得长期跟踪的技术方向**:
-  - AI驱动的预测性缓存与自愈CI/CD管道
-  - 分布式编译工具（yadcc、Buck2）的工业落地与社区生态
-  - 运行时性能优化（如SPGO）与编译器优化策略
-  - 构建系统模块化（可替换执行引擎）对现有生态的冲击
+    - **AI 主导构建优化 (high)**: VS 2026 集成 Copilot 构建性能工具，自动检测瓶颈并推荐优化。
+    - **分布式编译普惠化 (high)**: VS 2026 默认集成 IncrediBuild 引擎，降低使用门槛。
+    - **构建系统模块化 (high)**: Bonanza 等系统实现可替换执行引擎，降低锁定风险。
+    - **CI/CD 缓存策略成共识 (high)**: 多指南强调缓存可减少 60-70% CI 时间。
+    - **Zig 构建系统重构 (medium)**: 分离配置与执行，编译速度提升 90%，CPU 周期减少 95.9%。
+    - **sccache 跨机器共享缓存 (medium)**: 支持 Redis/S3，扩展缓存复用范围。
+- **值得长期跟踪的技术方向**: AI 预测性缓存、构建系统模块化设计、分布式编译平台原生集成、工具链集成测试。
 - **竞品动态**:
-  - **新产品**: 腾讯开源yadcc分布式编译系统；Bonanza等下一代Bazel兼容系统出现。
-  - **融资/合作**: 无明确融资信息，但Incredibuild定位为AI编码代理的执行层基础设施。
-  - **技术突破**: VS 2026引入SPGO技术；Intel oneAPI增强新处理器代码生成；Buck2用Rust重写，原生支持分布式。
+    - **新产品**: VS 2026 集成 Copilot 构建分析工具和 IncrediBuild 引擎；Bonanza 推出可替换执行引擎。
+    - **融资/合作**: IncrediBuild 引擎被微软官方集成。
+    - **技术突破**: Zig 构建系统重做实现 90% 速度提升；sccache 支持跨机器共享缓存。
