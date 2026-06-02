@@ -1,0 +1,35 @@
+{
+  "topic": "SDLC 中的 AI 工具 Cursor Copilot 代码生成 自动化 CICD",
+  "label": "ai-sdlc-tools",
+  "date": "2026-06-02",
+  "total_sources": 1,
+  "sources": [
+    {
+      "title": "无结果",
+      "url": "",
+      "platform": "未知",
+      "summary": "本次搜索未返回有效结果，无法提取新信息。",
+      "relevance": "low",
+      "tags": [
+        "无结果"
+      ]
+    }
+  ],
+  "signals": [
+    {
+      "signal": "搜索结果为空，需扩大搜索范围或调整关键词",
+      "direction": "stable",
+      "evidence": "本次搜索未返回任何有效内容，可能由于关键词过于具体或搜索源限制。",
+      "category": "行业"
+    }
+  ],
+  "trends": [
+    {
+      "trend": "无新趋势可识别",
+      "evidence": "搜索结果为空，无法支撑趋势判断。",
+      "momentum": "stable"
+    }
+  ],
+  "companies_mentioned": [],
+  "hot_topics": []
+}
