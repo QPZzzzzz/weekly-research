@@ -1,43 +1,29 @@
 # ai-sdlc-tools — Research Memory
 
-最后更新: 2026-06-02
+最后更新: 2026-06-04
 
-### 关键记忆点提取
+### 关键记忆点
 
-**公司/产品/项目**
-- Cursor（年化收入20亿美元，Composer 2.0）
-- GitHub Copilot（Agent Mode）
-- Claude Code
-- Augment Code
-- Antigravity 2.0
-- 文心快码/Comate（企业采纳率44%，C++代码质量第一）
-- DeepSeek V4（1%成本实现90% GPT-4性能）
-- Snyk、Checkmarx（AI代码审计）
-- Opsera（CI/CD集成）
-- Windsurf（Cascade代理系统）
-- Amazon Q Developer（AWS生态）
-- Tabnine（数据安全）
+- **公司/产品/项目**: Cursor, Copilot, Claude Code, Windsurf, Qwen-2.5-Coder, Snyk, Checkmarx, Allstacks, DORA, Modall, Sanciti AI, Jenova AI, TestSprite, Emorphis, Backslash, metacto, 文心快码, 阿里云, 腾讯云, CSDN, 博客园, myaiexp, NexaSphere, Verdent AI, Innowise, Keyhole Software, Omniflow, Evozon, Effectivesoft, uvik.net, resources.anthropic.com, developer.aliyun.com, blogs.emorphis.com, modall.ca, testsprite.com, sanciti.ai, backslash.security, dora.dev, metacto.com, innowise.com, keyholesoftware.com, omniflowai.com, cloud.tencent.com, gitcode.csdn.net, aicoding.csdn.net, deepseek.csdn.net, cnblogs.com, myaiexp.com, nexasphere.io, verdent.ai, evozon.com, effectivesoft.com, uvik.net
 
-**重要趋势信号**
-- **Agentic Coding爆发**：AI编码代理从辅助工具进化为自主开发者，可独立完成规划、编码、调试和部署。强度：high
-- **AI原生SDLC主流化**：AI贯穿开发全流程，人类角色转向架构师与决策者。强度：high
-- **信任鸿沟催生新市场**：AI编码采用率84%但信任度仅29%，驱动AI代码审计与治理工具需求爆发。强度：high
-- **CI/CD成为AI代理枢纽**：自动化测试、安全扫描、智能回滚成为标配。强度：high
-- **国产工具弯道超车**：文心快码、DeepSeek V4以高性价比打破海外垄断。强度：high
+- **重要趋势信号**:
+    - **代理驱动开发压缩周期**: 代理驱动开发将SDLC周期从数周压缩至数小时，成为主流范式。**强度: high**
+    - **信任鸿沟催生审计治理市场**: AI编码助手采用率84%但信任度仅29%，催生代码审计与治理新市场。**强度: high**
+    - **代码验证测试成为新瓶颈**: AI生成代码激增，代码验证和测试环节成为SDLC新瓶颈。**强度: high**
+    - **CI/CD系统AI化**: CI/CD系统集成AI安全检查和智能回滚成为标配。**强度: high**
+    - **国产AI编程工具平替**: 国产AI编程工具（如Qwen-2.5-Coder）性能对标国际竞品，平替成为现实。**强度: high**
+    - **AI编码工具市场分化**: AI编码工具市场分化，按场景选型（日常编码、新功能、调试）成为主流。**强度: medium**
+    - **AI辅助代码占比高**: AI辅助代码占比达46%+，全球AI支出1540亿美元。**强度: medium**
 
-**值得长期跟踪的技术方向**
-- 多Agent协作框架
-- 自然语言编程接口（非程序员开发应用）
-- AI代码审计与安全治理
-- 端到端自动化交付（代码到部署）
-- 点工具向全流程AI SDLC平台整合
+- **值得长期跟踪的技术方向/话题**:
+    - 代理驱动开发（Agentic Coding）的演进与落地
+    - AI生成代码的审计、验证与治理工具
+    - AI驱动的测试自动化与系统级理解
+    - CI/CD管道中AI代理的集成与调度
+    - 国产AI编程工具（如Qwen-2.5-Coder）的性能与生态发展
+    - 开发者角色从“写代码”向“架构师与决策者”转变
 
-**竞品动态**
-- Cursor：年化收入20亿美元，推出自主代理模式
-- GitHub Copilot：推出Agent Mode
-- Claude Code：成为市场领导者
-- DeepSeek V4：以1%成本实现90% GPT-4性能
-- 文心快码：C++代码生成质量排名第一，企业采纳率44%
-- Opsera + Cursor：打通CI/CD管道
-- Snyk + Claude：整合安全扫描
-- Windsurf：推出Cascade代理系统，支持多模态和并行会话
+- **竞品动态**:
+    - **新产品/功能**: Cursor Composer, Copilot Agent Mode, Windsurf Cascade代理系统, Claude Code终端任务，Sanciti AI全流程SDLC平台，Jenova AI全流程平台
+    - **融资/合作**: 无明确融资或合作信息
+    - **技术突破**: Qwen-2.5-Coder等国产模型在多项基准测试中性能对标GitHub Copilot和Cursor；Anthropic报告量化代理驱动开发对开发周期的压缩效果
