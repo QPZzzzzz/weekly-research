@@ -1,29 +1,39 @@
 # ai-sdlc-tools — Research Memory
 
-最后更新: 2026-06-04
+最后更新: 2026-06-06
 
-### 关键记忆点
+### 关键记忆点提取
 
-- **公司/产品/项目**: Cursor, Copilot, Claude Code, Windsurf, Qwen-2.5-Coder, Snyk, Checkmarx, Allstacks, DORA, Modall, Sanciti AI, Jenova AI, TestSprite, Emorphis, Backslash, metacto, 文心快码, 阿里云, 腾讯云, CSDN, 博客园, myaiexp, NexaSphere, Verdent AI, Innowise, Keyhole Software, Omniflow, Evozon, Effectivesoft, uvik.net, resources.anthropic.com, developer.aliyun.com, blogs.emorphis.com, modall.ca, testsprite.com, sanciti.ai, backslash.security, dora.dev, metacto.com, innowise.com, keyholesoftware.com, omniflowai.com, cloud.tencent.com, gitcode.csdn.net, aicoding.csdn.net, deepseek.csdn.net, cnblogs.com, myaiexp.com, nexasphere.io, verdent.ai, evozon.com, effectivesoft.com, uvik.net
+#### 公司/产品/项目
+- **AI编码助手**: Cursor Composer, Copilot Agent Mode, Claude Code, Codeium, 文心快码
+- **国产模型**: DeepSeek V4, Qwen-2.5-Coder
+- **代码审计/安全**: CodeAnt AI, Snyk, Checkmarx, Backslash
+- **AI SDLC平台**: Sanciti AI, Jenova AI, V2Soft
+- **其他**: Omniflow, Verdent AI, Northflank, LTM.com, Uvik
 
-- **重要趋势信号**:
-    - **代理驱动开发压缩周期**: 代理驱动开发将SDLC周期从数周压缩至数小时，成为主流范式。**强度: high**
-    - **信任鸿沟催生审计治理市场**: AI编码助手采用率84%但信任度仅29%，催生代码审计与治理新市场。**强度: high**
-    - **代码验证测试成为新瓶颈**: AI生成代码激增，代码验证和测试环节成为SDLC新瓶颈。**强度: high**
-    - **CI/CD系统AI化**: CI/CD系统集成AI安全检查和智能回滚成为标配。**强度: high**
-    - **国产AI编程工具平替**: 国产AI编程工具（如Qwen-2.5-Coder）性能对标国际竞品，平替成为现实。**强度: high**
-    - **AI编码工具市场分化**: AI编码工具市场分化，按场景选型（日常编码、新功能、调试）成为主流。**强度: medium**
-    - **AI辅助代码占比高**: AI辅助代码占比达46%+，全球AI支出1540亿美元。**强度: medium**
+#### 重要趋势信号
+- **代理驱动开发** (方向: up, 强度: high): SDLC周期从数周压缩至数小时，开发者角色转向架构师。
+- **信任鸿沟** (方向: up, 强度: high): AI编码助手采用率84%但信任度仅29%，催生代码审计与治理市场。
+- **测试瓶颈** (方向: up, 强度: high): AI加速代码生成，但验证和测试成为新瓶颈，AI测试自动化需求激增。
+- **国产平替** (方向: up, 强度: high): DeepSeek V4以1%成本实现顶级模型90%性能，中文适配优势显著。
+- **AI SDLC平台化** (方向: up, 强度: medium): 从点工具向全生命周期自动化平台演进，整合规划、编码、测试、部署。
+- **模型聚合平台** (方向: up, 强度: medium): 解决模型碎片化，提供统一接口和智能路由。
+- **低代码/无代码+AI Agent** (方向: up, 强度: medium): 推动“全民开发”，非专业开发者可构建复杂应用。
 
-- **值得长期跟踪的技术方向/话题**:
-    - 代理驱动开发（Agentic Coding）的演进与落地
-    - AI生成代码的审计、验证与治理工具
-    - AI驱动的测试自动化与系统级理解
-    - CI/CD管道中AI代理的集成与调度
-    - 国产AI编程工具（如Qwen-2.5-Coder）的性能与生态发展
-    - 开发者角色从“写代码”向“架构师与决策者”转变
+#### 值得长期跟踪的技术方向
+- **代理驱动开发**: 从代码生成到全流程自动化，关注其对开发者角色和团队结构的影响。
+- **AI代码审计与治理**: 信任鸿沟下的安全审查、基线扫描、遗留债务分离。
+- **AI测试自动化**: 系统级上下文理解、智能回归测试、自动生成测试用例。
+- **模型聚合与路由**: 统一接口、可视化管理、智能路由，降低模型切换成本。
+- **低代码/无代码+AI Agent**: 自然语言构建应用，改变传统开发模式。
 
-- **竞品动态**:
-    - **新产品/功能**: Cursor Composer, Copilot Agent Mode, Windsurf Cascade代理系统, Claude Code终端任务，Sanciti AI全流程SDLC平台，Jenova AI全流程平台
-    - **融资/合作**: 无明确融资或合作信息
-    - **技术突破**: Qwen-2.5-Coder等国产模型在多项基准测试中性能对标GitHub Copilot和Cursor；Anthropic报告量化代理驱动开发对开发周期的压缩效果
+#### 竞品动态
+- **新产品/融资/合作**:
+  - **Anthropic**: 发布《2026 Agentic Coding Trends Report》，量化代理驱动开发价值。
+  - **CodeAnt AI**: 推出集成到GitHub CI/CD的AI代码审查工具，强调基线扫描和遗留债务分离。
+  - **V2Soft**: 定义AI SDLC自动化平台新品类，强调全生命周期覆盖。
+  - **CSDN**: 推广模型聚合平台，解决模型碎片化问题。
+- **技术突破**:
+  - **DeepSeek V4**: 以1%成本实现顶级模型90%性能，国产平替成为现实。
+  - **腾讯云实测**: 6款顶流大模型对比，DeepSeek V4在中文适配和性价比上优势显著。
+  - **CI/CD AI化**: 集成AI安全检查和智能回滚成为标配，CodeAnt AI等工具提供具体方案。
