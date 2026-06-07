@@ -1,0 +1,428 @@
+{
+  "topic": "Incredibuild 分布式编译 竞品对比 行业格局",
+  "label": "incredibuild",
+  "date": "2026-06-07",
+  "total_sources": 26,
+  "sources": [
+    {
+      "title": "Incredibuild c++编译加速，更快的构建速度，更智能的开发周期 | 龙智 DragonSoft",
+      "url": "https://www.shdsd.com/incredibuild/index.html",
+      "platform": "龙智官网",
+      "summary": "龙智作为Incredibuild中国授权合作伙伴，推广其编译加速产品，强调无需更改代码即可加速开发周期。",
+      "relevance": "high",
+      "tags": [
+        "合作伙伴",
+        "中国市场",
+        "编译加速"
+      ]
+    },
+    {
+      "title": "Incredibuild - C++编译加速_分布式编译_联合编译",
+      "url": "https://www.incredibuild.cn",
+      "platform": "Incredibuild中文官网",
+      "summary": "Incredibuild官方中文网站，展示对开发人员、DevOps、领导者和IT经理的价值主张，强调缩短构建时间、降低成本。",
+      "relevance": "high",
+      "tags": [
+        "产品价值",
+        "用户角色",
+        "编译加速"
+      ]
+    },
+    {
+      "title": "Supported Platforms and Tools",
+      "url": "https://docs.incredibuild.com/lin/latest/linux/supported_platforms_tools.html?Highlight=tools",
+      "platform": "Incredibuild文档",
+      "summary": "Incredibuild Linux版本支持的发行版包括Ubuntu 20.04-24.04、RHEL 8.x/9.x、SUSE 15 SP4。",
+      "relevance": "medium",
+      "tags": [
+        "平台支持",
+        "Linux",
+        "兼容性"
+      ]
+    },
+    {
+      "title": "游戏开发构建加速_着色器编译加速_shader编译c++加速_ue4分布式编译加速_ue联合编译加速_Incredibuild",
+      "url": "https://www.incredibuild.cn/solutions/accelerate-gaming",
+      "platform": "Incredibuild中文官网",
+      "summary": "Incredibuild针对游戏开发场景，提供着色器编译和UE4/UE联合编译加速解决方案。",
+      "relevance": "medium",
+      "tags": [
+        "游戏开发",
+        "着色器编译",
+        "Unreal Engine"
+      ]
+    },
+    {
+      "title": "分布式编译。-阿里云开发者社区",
+      "url": "https://developer.aliyun.com/article/429705",
+      "platform": "阿里云开发者社区",
+      "summary": "阿里云开发者社区文章介绍分布式编译原理，提及Incredibuild 3.31过期解决办法，但内容较旧。",
+      "relevance": "low",
+      "tags": [
+        "分布式编译",
+        "阿里云",
+        "旧内容"
+      ]
+    },
+    {
+      "title": "Release Notes",
+      "url": "https://docs.incredibuild.com/win/10_22/windows/release_notes.html",
+      "platform": "Incredibuild文档",
+      "summary": "Incredibuild 10.22版本发布说明，包含构建缓存性能改进、TSL 1.2安全要求、离线代理保留等功能。",
+      "relevance": "high",
+      "tags": [
+        "版本更新",
+        "构建缓存",
+        "安全",
+        "代理管理"
+      ]
+    },
+    {
+      "title": "Version History - Incredibuild",
+      "url": "https://www.incredibuild.cn/incredibuild-version-history",
+      "platform": "Incredibuild中文官网",
+      "summary": "Incredibuild版本历史页面，展示NMake编译加速和DevTools配置文件新功能。",
+      "relevance": "medium",
+      "tags": [
+        "版本历史",
+        "NMake",
+        "DevTools"
+      ]
+    },
+    {
+      "title": "Incredibuild: Accelerate Your Development",
+      "url": "https://www.incredibuild.com",
+      "platform": "Incredibuild英文官网",
+      "summary": "Incredibuild官网首页，强调消除CI/CD和安全等待时间，提供通用加速层，并引用用户好评。",
+      "relevance": "high",
+      "tags": [
+        "产品定位",
+        "CI/CD",
+        "加速层"
+      ]
+    },
+    {
+      "title": "Release Notes",
+      "url": "https://docs.incredibuild.com/win/10_31_1/windows/release_notes.html",
+      "platform": "Incredibuild文档",
+      "summary": "Incredibuild 10.31.1版本发布说明，新增配置集、API管理许可证、缓存命中/未命中详情、预测执行等功能。",
+      "relevance": "high",
+      "tags": [
+        "版本更新",
+        "配置管理",
+        "API",
+        "缓存",
+        "预测执行"
+      ]
+    },
+    {
+      "title": "Release Notes",
+      "url": "https://docs.incredibuild.com/win/10_21/windows/release_notes.html",
+      "platform": "Incredibuild文档",
+      "summary": "Incredibuild 10.21版本发布说明，与10.31.1类似，包含配置集、API、缓存详情和预测执行功能。",
+      "relevance": "medium",
+      "tags": [
+        "版本更新",
+        "配置管理",
+        "API",
+        "缓存",
+        "预测执行"
+      ]
+    },
+    {
+      "title": "Distributed Processing: Scalable Build Performance",
+      "url": "https://www.incredibuild.com/distributed-processing",
+      "platform": "Incredibuild英文官网",
+      "summary": "Incredibuild分布式处理页面，展示美国金融机构编译时间减少95.8%、Safe Software成本降低67.2%等案例，并强调ISO 9001和ISO 27001合规认证。",
+      "relevance": "high",
+      "tags": [
+        "案例研究",
+        "性能提升",
+        "合规认证",
+        "成本降低"
+      ]
+    },
+    {
+      "title": "Incredibuild Unveils State-of-the-Art AI Platform to Accelerate the Entire Software Development Lifecycle",
+      "url": "https://www.prnewswire.com/news-releases/incredibuild-unveils-state-of-the-art-ai-platform-to-accelerate-the-entire-software-development-lifecycle-302560614.html",
+      "platform": "PRNewswire",
+      "summary": "Incredibuild发布AI平台，覆盖整个软件开发生命周期，基于缓存、预测执行、分布式计算等技术，已有超过22万开发者使用。",
+      "relevance": "high",
+      "tags": [
+        "AI平台",
+        "全生命周期",
+        "新闻发布",
+        "用户规模"
+      ]
+    },
+    {
+      "title": "Bazel vs Incredibuild (2026)",
+      "url": "https://www.peerspot.com/products/comparisons/bazel_vs_incredibuild",
+      "platform": "Peerspot",
+      "summary": "Peerspot上Bazel与Incredibuild的对比，显示用户常将Incredibuild与Jenkins、TeamCity、EngFlow等比较。",
+      "relevance": "medium",
+      "tags": [
+        "竞品对比",
+        "Bazel",
+        "EngFlow",
+        "Jenkins"
+      ]
+    },
+    {
+      "title": "FASTBuild vs. Incredibuild Comparison",
+      "url": "https://sourceforge.net/software/compare/FastBuild-vs-IncrediBuild",
+      "platform": "SourceForge",
+      "summary": "SourceForge上FASTBuild与Incredibuild的对比，FASTBuild是开源高性能构建系统，支持编译、缓存和网络分发。",
+      "relevance": "medium",
+      "tags": [
+        "竞品对比",
+        "FASTBuild",
+        "开源"
+      ]
+    },
+    {
+      "title": "Incredibuild Partners: Collaborative Excellence",
+      "url": "https://www.incredibuild.com/partners",
+      "platform": "Incredibuild英文官网",
+      "summary": "Incredibuild合作伙伴页面，邀请加入合作伙伴计划，强调帮助客户实现成本优化的智能加速。",
+      "relevance": "medium",
+      "tags": [
+        "合作伙伴",
+        "生态"
+      ]
+    },
+    {
+      "title": "Even faster builds with Incredibuild 10 and Visual Studio 17.6 Preview 3",
+      "url": "https://devblogs.microsoft.com/cppblog/incredibuild-10-visual-studio-17-6",
+      "platform": "Microsoft DevBlogs",
+      "summary": "微软官方博客宣布Visual Studio 17.6 Preview 3集成Incredibuild 10，提供更快的构建加速功能。",
+      "relevance": "high",
+      "tags": [
+        "微软合作",
+        "Visual Studio",
+        "集成"
+      ]
+    },
+    {
+      "title": "什麼是 IncrediBuild",
+      "url": "https://learn.microsoft.com/zh-tw/shows/visual-studio-connect-event-2015/802",
+      "platform": "Microsoft Learn",
+      "summary": "微软Learn上关于Incredibuild的旧视频介绍，来自2015年Visual Studio Connect活动。",
+      "relevance": "low",
+      "tags": [
+        "微软",
+        "旧内容",
+        "视频"
+      ]
+    },
+    {
+      "title": "Incredibuild Review – Pros, Cons & Features 2026 - 2026",
+      "url": "https://softwarefinder.com/project-management-software/incredi-build/reviews",
+      "platform": "Software Finder",
+      "summary": "用户评价Incredibuild，评分较高，但希望进一步加速，当前在50台机器网格上运行。",
+      "relevance": "medium",
+      "tags": [
+        "用户评价",
+        "性能",
+        "网格计算"
+      ]
+    },
+    {
+      "title": "Distributed build systems BuildXL vs IncrediBuild - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/71742548/distributed-build-systems-buildxl-vs-incredibuild",
+      "platform": "Stack Overflow",
+      "summary": "Stack Overflow上关于BuildXL与Incredibuild区别的讨论，回答指出Incredibuild专注于加速大型构建。",
+      "relevance": "medium",
+      "tags": [
+        "竞品对比",
+        "BuildXL",
+        "分布式构建"
+      ]
+    },
+    {
+      "title": "Incredibuild vs. distcc Comparison",
+      "url": "https://sourceforge.net/software/compare/IncrediBuild-vs-distcc",
+      "platform": "SourceForge",
+      "summary": "SourceForge上Incredibuild与distcc的对比，Incredibuild强调无需更改代码即可实现8-10倍加速。",
+      "relevance": "medium",
+      "tags": [
+        "竞品对比",
+        "distcc",
+        "开源"
+      ]
+    },
+    {
+      "title": "Choosing the right C++ build system: A comprehensive guide for ...",
+      "url": "https://www.incredibuild.com/blog/choosing-the-right-c-build-system-a-comprehensive-guide-for-developers",
+      "platform": "Incredibuild博客",
+      "summary": "Incredibuild博客文章指导如何选择C++构建系统，并推荐Incredibuild作为加速工具。",
+      "relevance": "low",
+      "tags": [
+        "博客",
+        "C++",
+        "构建系统"
+      ]
+    },
+    {
+      "title": "c++ - MSBuild / Visual Studio distributed builds - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/1681677/msbuild-visual-studio-distributed-builds",
+      "platform": "Stack Overflow",
+      "summary": "Stack Overflow上关于MSBuild/Visual Studio分布式构建的讨论，提及Incredibuild作为选项。",
+      "relevance": "low",
+      "tags": [
+        "MSBuild",
+        "Visual Studio",
+        "分布式构建"
+      ]
+    },
+    {
+      "title": "最佳C++编程AI：精通现代标准，调试模板并构建从C++11到C++26的生产系统",
+      "url": "https://www.jenova.ai/zh/resources/best-ai-for-cpp-coding",
+      "platform": "Jenova AI",
+      "summary": "Jenova AI文章介绍C++编程AI，提及C++26标准、CMake 4.0等，但未直接涉及Incredibuild。",
+      "relevance": "low",
+      "tags": [
+        "C++26",
+        "AI",
+        "构建系统"
+      ]
+    },
+    {
+      "title": "分布式编译- 服务器编程新手入门- Server Programming Guide",
+      "url": "https://liuhaohua.com/server-programming-guide/build-system/distributed-compiling",
+      "platform": "个人博客",
+      "summary": "个人博客介绍分布式编译原理，推荐distcc和ccache搭建编译缓存。",
+      "relevance": "low",
+      "tags": [
+        "分布式编译",
+        "distcc",
+        "ccache"
+      ]
+    },
+    {
+      "title": "Yadcc 分布式C++ 编译器 - GitHub",
+      "url": "https://github.com/Tencent/yadcc",
+      "platform": "GitHub",
+      "summary": "腾讯开源分布式C++编译器yadcc，在大型项目上性能优于distcc和icecream。",
+      "relevance": "medium",
+      "tags": [
+        "开源",
+        "腾讯",
+        "yadcc",
+        "分布式编译"
+      ]
+    },
+    {
+      "title": "C++ 2026 的现状 : r/programming",
+      "url": "https://www.reddit.com/r/programming/comments/1qqzy7o/state_of_c_2026?tl=zh-hans",
+      "platform": "Reddit",
+      "summary": "Reddit上关于C++ 2026现状的讨论，但内容未直接涉及Incredibuild。",
+      "relevance": "low",
+      "tags": [
+        "C++",
+        "社区讨论"
+      ]
+    }
+  ],
+  "signals": [
+    {
+      "signal": "Incredibuild AI平台发布，覆盖全软件开发生命周期",
+      "direction": "new",
+      "evidence": "PRNewswire新闻稿：Incredibuild发布AI平台，基于缓存、预测执行、分布式计算，已有22万开发者使用。",
+      "category": "产品"
+    },
+    {
+      "signal": "Incredibuild 10.31.1版本新增配置集和API管理功能",
+      "direction": "up",
+      "evidence": "官方Release Notes：新增配置集、许可证API、缓存命中详情、预测执行支持。",
+      "category": "产品"
+    },
+    {
+      "signal": "微软Visual Studio深度集成Incredibuild 10",
+      "direction": "stable",
+      "evidence": "微软DevBlogs：VS 17.6 Preview 3集成Incredibuild 10，提供更快构建。",
+      "category": "合作"
+    },
+    {
+      "signal": "Incredibuild强调安全合规，持有ISO 9001和ISO 27001认证",
+      "direction": "up",
+      "evidence": "Incredibuild分布式处理页面展示合规认证，并提及SBOM生成。",
+      "category": "产品"
+    },
+    {
+      "signal": "开源工具FASTBuild、Bazel、distcc持续分流用户",
+      "direction": "stable",
+      "evidence": "SourceForge和Peerspot上用户对比FASTBuild、Bazel与Incredibuild，开源工具关注度稳定。",
+      "category": "竞品"
+    },
+    {
+      "signal": "腾讯开源yadcc分布式编译器，性能优于distcc和icecream",
+      "direction": "new",
+      "evidence": "GitHub上yadcc项目，在大型C++项目上性能优势明显。",
+      "category": "竞品"
+    },
+    {
+      "signal": "Incredibuild中国合作伙伴龙智持续推广",
+      "direction": "stable",
+      "evidence": "龙智官网提供Incredibuild咨询、销售、实施、培训服务。",
+      "category": "市场"
+    },
+    {
+      "signal": "用户对Incredibuild性能评价高，但希望进一步加速",
+      "direction": "stable",
+      "evidence": "Software Finder用户评价：在50台机器网格上运行，仍希望更快的速度。",
+      "category": "用户反馈"
+    }
+  ],
+  "trends": [
+    {
+      "trend": "Incredibuild从编译加速工具向AI全生命周期平台转型",
+      "evidence": "PRNewswire新闻稿：AI平台覆盖开发到部署，已有22万用户。",
+      "momentum": "rising"
+    },
+    {
+      "trend": "构建缓存和共享缓存集群成为核心功能",
+      "evidence": "多个Release Notes强调缓存性能改进、预测执行和缓存命中详情。",
+      "momentum": "rising"
+    },
+    {
+      "trend": "安全合规成为企业选型关键门槛",
+      "evidence": "Incredibuild强调ISO 9001/27001认证和SBOM生成。",
+      "momentum": "rising"
+    },
+    {
+      "trend": "开源分布式编译工具持续发展，分流部分用户",
+      "evidence": "FASTBuild、Bazel、yadcc等开源项目活跃，用户对比增多。",
+      "momentum": "stable"
+    },
+    {
+      "trend": "C++26标准发布推动编译需求增长",
+      "evidence": "Jenova AI文章提及C++26标准，Reddit讨论C++ 2026现状。",
+      "momentum": "rising"
+    }
+  ],
+  "companies_mentioned": [
+    "Incredibuild",
+    "龙智",
+    "Microsoft",
+    "Adobe",
+    "EngFlow",
+    "FASTBuild",
+    "Bazel",
+    "distcc",
+    "BuildXL",
+    "腾讯",
+    "Jenkins",
+    "TeamCity",
+    "GitLab",
+    "CircleCI"
+  ],
+  "hot_topics": [
+    "AI全生命周期平台",
+    "构建缓存",
+    "安全合规与SBOM",
+    "C++26标准",
+    "开源分布式编译",
+    "Visual Studio集成"
+  ]
+}
