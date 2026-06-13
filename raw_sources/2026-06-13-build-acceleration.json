@@ -1,0 +1,491 @@
+{
+  "topic": "编译加速 分布式编译 C++ 行业 build cache 趋势",
+  "label": "build-acceleration",
+  "date": "2026-06-13",
+  "total_sources": 29,
+  "sources": [
+    {
+      "title": "C++分布式编译：工具选择与性能优化全攻略_文心快码",
+      "url": "https://comate.baidu.com/zh/page/8ih37692bec",
+      "platform": "百度文心快码",
+      "summary": "系统梳理了Icecream、xmake、Kubernetes等分布式编译方案，并提供性能优化策略。",
+      "relevance": "high",
+      "tags": [
+        "分布式编译",
+        "Icecream",
+        "xmake",
+        "Kubernetes",
+        "性能优化"
+      ]
+    },
+    {
+      "title": "[C++] 提高 C++ 项目编译速度的神兵利器",
+      "url": "https://wenfh2020.com/2024/11/25/cpp-build-tools",
+      "platform": "个人博客",
+      "summary": "汇总了ccache、distcc、tmpfs等传统编译加速工具的使用方法。",
+      "relevance": "medium",
+      "tags": [
+        "ccache",
+        "distcc",
+        "tmpfs",
+        "编译加速"
+      ]
+    },
+    {
+      "title": "分布式编译加速_C++分布式编译_C++分布式编译加速_C++并行编译_Incredibuild",
+      "url": "https://www.incredibuild.cn/product/dev-acceleration",
+      "platform": "Incredibuild官网",
+      "summary": "Incredibuild产品页面，强调其分布式编译和并行编译能力。",
+      "relevance": "high",
+      "tags": [
+        "Incredibuild",
+        "分布式编译",
+        "并行编译"
+      ]
+    },
+    {
+      "title": "Incredibuild - C++编译加速_分布式编译_联合编译",
+      "url": "https://www.incredibuild.cn",
+      "platform": "Incredibuild官网",
+      "summary": "Incredibuild官网首页，推广其编译加速解决方案。",
+      "relevance": "medium",
+      "tags": [
+        "Incredibuild",
+        "编译加速"
+      ]
+    },
+    {
+      "title": "Programming with C++20 2026 | CppCon",
+      "url": "https://cppcon.org/class-2026-programming-with-cpp20",
+      "platform": "CppCon",
+      "summary": "CppCon 2026课程，介绍C++20协程等新特性。",
+      "relevance": "low",
+      "tags": [
+        "C++20",
+        "协程",
+        "CppCon"
+      ]
+    },
+    {
+      "title": "初识FASTBuild  一个大幅提升C/C++项目编译速度的分布式编译工具 - 你好阿汤哥 - 博客园",
+      "url": "https://www.cnblogs.com/tangxin-blog/p/8635438.html",
+      "platform": "博客园",
+      "summary": "介绍FASTBuild作为开源分布式编译工具的特点和使用方法。",
+      "relevance": "medium",
+      "tags": [
+        "FASTBuild",
+        "分布式编译",
+        "开源"
+      ]
+    },
+    {
+      "title": "What's New for C++ Developers in Visual Studio 2026 (18.1 - 18.6)",
+      "url": "https://devblogs.microsoft.com/cppblog/whats-new-for-c-developers-in-visual-studio-2026-18-1-18-6",
+      "platform": "微软官方博客",
+      "summary": "Visual Studio 2026集成GitHub Copilot构建性能分析，支持迭代构建分析。",
+      "relevance": "high",
+      "tags": [
+        "Visual Studio 2026",
+        "GitHub Copilot",
+        "构建分析",
+        "AI"
+      ]
+    },
+    {
+      "title": "C++ Distributed Builds: Strategies to Reduce Build Times | Modern C++ DevOps",
+      "url": "https://moderncppdevops.com/2024/06/24/distributing-builds",
+      "platform": "技术博客",
+      "summary": "讨论分布式构建策略，强调ccache与distcc结合使用。",
+      "relevance": "medium",
+      "tags": [
+        "分布式构建",
+        "ccache",
+        "distcc",
+        "缓存"
+      ]
+    },
+    {
+      "title": "Choosing the right C++ build system: A comprehensive guide for developers - Incredibuild",
+      "url": "https://www.incredibuild.com/blog/choosing-the-right-c-build-system-a-comprehensive-guide-for-developers",
+      "platform": "Incredibuild博客",
+      "summary": "Incredibuild撰写的C++构建系统选择指南，强调其分布式编译优势。",
+      "relevance": "medium",
+      "tags": [
+        "构建系统",
+        "Incredibuild",
+        "分布式编译"
+      ]
+    },
+    {
+      "title": "Speed Up C++ Compilation - Technical Feedback - Developer Forum",
+      "url": "https://devtalk.blender.org/t/speed-up-c-compilation/30508",
+      "platform": "Blender开发者论坛",
+      "summary": "Blender社区讨论编译加速，认为Unity Builds最有效，C++20模块不实用。",
+      "relevance": "high",
+      "tags": [
+        "Unity Builds",
+        "C++20模块",
+        "Blender",
+        "编译加速"
+      ]
+    },
+    {
+      "title": "People who use distributed builds, how do you handle many compilers? : r/cpp",
+      "url": "https://www.reddit.com/r/cpp/comments/y7ykx7/people_who_use_distributed_builds_how_do_you",
+      "platform": "Reddit",
+      "summary": "Reddit讨论分布式构建中多编译器处理的最佳实践。",
+      "relevance": "low",
+      "tags": [
+        "分布式构建",
+        "多编译器",
+        "Reddit"
+      ]
+    },
+    {
+      "title": "2 tips to make your C++ projects compile 3 times faster | Red Hat Developer",
+      "url": "https://developers.redhat.com/blog/2019/05/15/2-tips-to-make-your-c-projects-compile-3-times-faster",
+      "platform": "Red Hat开发者博客",
+      "summary": "Red Hat提供使用distcc和Docker加速C++编译的技巧。",
+      "relevance": "medium",
+      "tags": [
+        "distcc",
+        "Docker",
+        "编译加速",
+        "Red Hat"
+      ]
+    },
+    {
+      "title": "sccache 基于rust 类似ccache 的编译cache 工具 - 荣锋亮 - 博客园",
+      "url": "https://www.cnblogs.com/rongfengliang/p/17018565.html",
+      "platform": "博客园",
+      "summary": "介绍sccache作为基于Rust的编译缓存工具，支持本地和云存储。",
+      "relevance": "high",
+      "tags": [
+        "sccache",
+        "Rust",
+        "编译缓存",
+        "云存储"
+      ]
+    },
+    {
+      "title": "sccache : r/rust",
+      "url": "https://www.reddit.com/r/rust/comments/15w5ac2/sccache?tl=zh-hans",
+      "platform": "Reddit",
+      "summary": "Reddit上关于sccache的讨论，提及使用Redis共享缓存可提升30%效率。",
+      "relevance": "medium",
+      "tags": [
+        "sccache",
+        "Redis",
+        "缓存",
+        "Rust"
+      ]
+    },
+    {
+      "title": "sccache 0.2.6 - Docs.rs",
+      "url": "https://docs.rs/crate/sccache/0.2.6",
+      "platform": "Docs.rs",
+      "summary": "sccache 0.2.6版本的文档，描述其作为共享编译缓存工具的功能。",
+      "relevance": "low",
+      "tags": [
+        "sccache",
+        "文档",
+        "编译缓存"
+      ]
+    },
+    {
+      "title": "ccache vs sccache - compare differences and reviews? | LibHunt",
+      "url": "https://www.libhunt.com/compare-ccache-vs-sccache",
+      "platform": "LibHunt",
+      "summary": "ccache与sccache的对比，sccache支持云存储。",
+      "relevance": "medium",
+      "tags": [
+        "ccache",
+        "sccache",
+        "对比",
+        "云存储"
+      ]
+    },
+    {
+      "title": "sccache : r/rust",
+      "url": "https://www.reddit.com/r/rust/comments/15w5ac2/sccache",
+      "platform": "Reddit",
+      "summary": "Reddit讨论sccache与GNU链接器的性能差异。",
+      "relevance": "low",
+      "tags": [
+        "sccache",
+        "链接器",
+        "性能"
+      ]
+    },
+    {
+      "title": "Sccache for caching Rust compilation - announcements - The Rust Programming Language Forum",
+      "url": "https://users.rust-lang.org/t/sccache-for-caching-rust-compilation/10960",
+      "platform": "Rust论坛",
+      "summary": "Rust论坛用户分享sccache在Servo项目中的使用经验。",
+      "relevance": "medium",
+      "tags": [
+        "sccache",
+        "Rust",
+        "Servo",
+        "编译缓存"
+      ]
+    },
+    {
+      "title": "Why use Bazel or Buck instead of cmake, xmake, meson, etc.? : r/cpp",
+      "url": "https://www.reddit.com/r/cpp/comments/192jeuc/why_use_bazel_or_buck_instead_of_cmake_xmake",
+      "platform": "Reddit",
+      "summary": "Reddit讨论为何选择Bazel或Buck而非CMake、xmake等。",
+      "relevance": "medium",
+      "tags": [
+        "Bazel",
+        "Buck2",
+        "CMake",
+        "构建系统"
+      ]
+    },
+    {
+      "title": "6 Months of Testing C++ Build Systems: Here’s What You Need to Know - Kea Sigma Delta",
+      "url": "https://keasigmadelta.com/blog/6-months-of-testing-c-build-systems-heres-what-you-need-to-know",
+      "platform": "个人博客",
+      "summary": "经过6个月测试，推荐CMake、Meson和Bazel。",
+      "relevance": "medium",
+      "tags": [
+        "CMake",
+        "Meson",
+        "Bazel",
+        "构建系统"
+      ]
+    },
+    {
+      "title": "Bazel: { Fast, Correct } — Choose One - JWillikers",
+      "url": "https://www.jwillikers.com/bazel-fast-correct-choose-one",
+      "platform": "技术博客",
+      "summary": "分析Bazel的优缺点，指出其快速但正确性可能受影响。",
+      "relevance": "medium",
+      "tags": [
+        "Bazel",
+        "构建系统",
+        "性能",
+        "正确性"
+      ]
+    },
+    {
+      "title": "Build faster with Buck2: Our open source build system",
+      "url": "https://engineering.fb.com/2023/04/06/open-source/buck2-open-source-large-scale-build-system",
+      "platform": "Meta工程博客",
+      "summary": "Meta宣布开源Buck2，强调其用Rust编写核心，支持分布式构建。",
+      "relevance": "high",
+      "tags": [
+        "Buck2",
+        "Meta",
+        "开源",
+        "Rust",
+        "分布式构建"
+      ]
+    },
+    {
+      "title": "Buck2: Our open source build system | Hacker News",
+      "url": "https://news.ycombinator.com/item?id=35470371",
+      "platform": "Hacker News",
+      "summary": "Hacker News上对Buck2开源的讨论，认为其代表新一代构建系统。",
+      "relevance": "medium",
+      "tags": [
+        "Buck2",
+        "开源",
+        "构建系统",
+        "Hacker News"
+      ]
+    },
+    {
+      "title": "CI/CD Pipeline Optimization Guide for 2026 | GitNexa | GitNexa Blog | GitNexa",
+      "url": "https://www.gitnexa.com/blogs/cicd-pipeline-optimization",
+      "platform": "GitNexa博客",
+      "summary": "2026年CI/CD优化指南，强调云成本压力和10分钟规则。",
+      "relevance": "high",
+      "tags": [
+        "CI/CD",
+        "优化",
+        "10分钟规则",
+        "云成本"
+      ]
+    },
+    {
+      "title": "Building a Production-Ready CI/CD Pipeline: The Complete 2026 ...",
+      "url": "https://medium.com/@krishnafattepurkar/building-a-production-ready-ci-cd-pipeline-the-complete-2026-guide-b3d6a661ecd8",
+      "platform": "Medium",
+      "summary": "2026年CI/CD管道构建指南，强调10分钟规则和Docker优化。",
+      "relevance": "high",
+      "tags": [
+        "CI/CD",
+        "10分钟规则",
+        "Docker",
+        "优化"
+      ]
+    },
+    {
+      "title": "CI/CD: Automation & Delivery - DevOps Conference & Camps",
+      "url": "https://devopscon.io/continuous-integration-continuous-delivery",
+      "platform": "DevOpsCon",
+      "summary": "DevOpsCon会议页面，关注CI/CD自动化和交付。",
+      "relevance": "low",
+      "tags": [
+        "CI/CD",
+        "DevOps",
+        "会议"
+      ]
+    },
+    {
+      "title": "CI/CD Pipeline Strategy: The 2026 Startup Growth System",
+      "url": "https://www.youtube.com/watch?v=oqfZaB9vgbQ",
+      "platform": "YouTube",
+      "summary": "YouTube视频，讨论2026年CI/CD管道策略。",
+      "relevance": "low",
+      "tags": [
+        "CI/CD",
+        "策略",
+        "YouTube"
+      ]
+    },
+    {
+      "title": "🦊 GitLab CI Optimization: 15+ Tips for Faster Pipelines - DEV Community",
+      "url": "https://dev.to/zenika/gitlab-ci-optimization-15-tips-for-faster-pipelines-55al",
+      "platform": "DEV Community",
+      "summary": "GitLab CI优化技巧，包括并行化和缓存。",
+      "relevance": "medium",
+      "tags": [
+        "GitLab CI",
+        "优化",
+        "并行化",
+        "缓存"
+      ]
+    },
+    {
+      "title": "4 Ways to Improve Your CI/CD Pipeline - Doppler",
+      "url": "https://www.doppler.com/blog/4-ways-to-improve-your-ci-cd-pipeline",
+      "platform": "Doppler博客",
+      "summary": "CI/CD管道改进方法，强调并行化、缓存和优化。",
+      "relevance": "medium",
+      "tags": [
+        "CI/CD",
+        "并行化",
+        "缓存",
+        "优化"
+      ]
+    }
+  ],
+  "signals": [
+    {
+      "signal": "CI/CD“10分钟规则”成为行业刚性约束",
+      "direction": "up",
+      "evidence": "GitNexa和Medium的2026年CI/CD优化指南均强调管道时长应控制在5-10分钟，否则开发者会切换上下文。",
+      "category": "行业"
+    },
+    {
+      "signal": "sccache确立主流编译缓存工具地位",
+      "direction": "up",
+      "evidence": "多篇博客和论坛讨论sccache，支持云存储，被用于Rust和C++项目。",
+      "category": "技术"
+    },
+    {
+      "signal": "AI集成构建分析从概念走向产品",
+      "direction": "up",
+      "evidence": "Visual Studio 2026集成GitHub Copilot构建性能分析，支持迭代构建分析。",
+      "category": "产品"
+    },
+    {
+      "signal": "现代构建系统(Bazel, Buck2)加速挑战传统CMake地位",
+      "direction": "up",
+      "evidence": "Meta开源Buck2，Hacker News讨论其代表新一代构建系统；Reddit讨论Bazel vs CMake。",
+      "category": "技术"
+    },
+    {
+      "signal": "C++20模块在大型项目中应用前景依然黯淡",
+      "direction": "stable",
+      "evidence": "Blender开发者论坛认为Unity Builds仍是现实选择，C++20模块不实用。",
+      "category": "技术"
+    },
+    {
+      "signal": "Incredibuild持续推广其分布式编译方案",
+      "direction": "stable",
+      "evidence": "Incredibuild官网和博客持续发布内容，强调其分布式编译能力。",
+      "category": "竞品"
+    },
+    {
+      "signal": "分布式编译工具多样化，Icecream、xmake、Kubernetes方案涌现",
+      "direction": "up",
+      "evidence": "百度文心快码文章系统梳理了多种分布式编译方案，包括Icecream、xmake和Kubernetes。",
+      "category": "技术"
+    },
+    {
+      "signal": "云存储成为编译缓存关键",
+      "direction": "up",
+      "evidence": "sccache支持S3、GCS等云存储，ccache vs sccache对比中强调此优势。",
+      "category": "技术"
+    },
+    {
+      "signal": "FASTBuild作为开源分布式编译工具被提及",
+      "direction": "stable",
+      "evidence": "博客园文章介绍FASTBuild，但讨论热度不高。",
+      "category": "产品"
+    },
+    {
+      "signal": "Red Hat推广distcc+Docker方案",
+      "direction": "stable",
+      "evidence": "Red Hat开发者博客提供使用distcc和Docker加速编译的教程。",
+      "category": "竞品"
+    }
+  ],
+  "trends": [
+    {
+      "trend": "CI/CD管道优化成为2026年核心关注点",
+      "evidence": "多篇2026年指南强调10分钟规则、云成本压力和Docker优化。",
+      "momentum": "rising"
+    },
+    {
+      "trend": "分布式编译和缓存技术持续演进",
+      "evidence": "从distcc、ccache到sccache、Icecream、xmake，工具不断丰富。",
+      "momentum": "rising"
+    },
+    {
+      "trend": "AI辅助构建分析开始产品化",
+      "evidence": "Visual Studio 2026集成GitHub Copilot构建性能分析。",
+      "momentum": "rising"
+    },
+    {
+      "trend": "现代构建系统(Bazel, Buck2)逐渐获得认可",
+      "evidence": "Meta开源Buck2，社区讨论其优势。",
+      "momentum": "rising"
+    },
+    {
+      "trend": "C++20模块采用缓慢",
+      "evidence": "Blender社区认为Unity Builds更实用。",
+      "momentum": "stable"
+    },
+    {
+      "trend": "云原生编译方案兴起",
+      "evidence": "Kubernetes方案被提及，sccache支持云存储。",
+      "momentum": "rising"
+    }
+  ],
+  "companies_mentioned": [
+    "百度",
+    "Incredibuild",
+    "微软",
+    "Meta",
+    "Red Hat",
+    "Google",
+    "Blender"
+  ],
+  "hot_topics": [
+    "CI/CD 10分钟规则",
+    "sccache",
+    "分布式编译",
+    "AI构建分析",
+    "Bazel vs CMake",
+    "Buck2",
+    "Unity Builds",
+    "C++20模块",
+    "云存储缓存",
+    "Kubernetes编译"
+  ]
+}
