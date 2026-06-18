@@ -1,20 +1,31 @@
 # build-acceleration — Research Memory
 
-最后更新: 2026-06-16
+最后更新: 2026-06-18
 
-- **公司/产品/项目**: Visual Studio 2026 (微软)、yadcc (腾讯)、Buck2 (Meta)、mold、sccache、ccache、Bazel、Incredibuild、GitHub Copilot
-- **重要趋势信号**:
-    - **AI集成构建分析产品化**: 微软在VS 2026中集成Copilot构建性能分析，进入Public Preview。强度: high
-    - **大型公司自研分布式编译**: 腾讯开源yadcc，支持512核并行编译，面向工业生产。强度: high
-    - **现代构建系统挑战传统**: Buck2开源引发讨论，但大规模迁移尚未发生。强度: medium
-    - **工具链兼容性问题**: sccache与mold链接器存在缓存失效问题。强度: medium
-    - **CI/CD“10分钟规则”成共识**: 管道时长需控制在5-10分钟，驱动编译加速。强度: high
-- **值得长期跟踪的技术方向/话题**:
-    - AI辅助构建优化（如Copilot集成）
-    - 分布式编译系统（如yadcc、Incredibuild）
-    - 现代构建系统（Buck2、Bazel vs CMake）
-    - 编译缓存与高性能链接器（sccache、ccache、mold）的兼容性
-- **竞品动态**:
-    - **新产品**: 腾讯开源yadcc分布式编译系统；Meta开源Buck2构建系统
-    - **融资/合作**: 无
-    - **技术突破**: Visual Studio 2026集成AI构建性能分析；ccache更新至4.13.6
+### 公司/产品/项目
+- **微软**: Visual Studio 2026, GitHub Copilot (C++ 构建性能分析)
+- **Incredibuild**: AI Sandbox, CI/CD Acceleration
+- **RECC**: 开源远程执行缓存编译器 (对标 sccache/ccache)
+- **sccache**: 与 mold 链接器存在缓存失效问题 (Issue #1755)
+- **ccache**: 4.13.6 版本 (2026年5月)
+- **Buck2 / Bazel**: 现代构建系统，但大规模迁移尚未发生
+- **CMake**: 生态地位稳固
+
+### 重要趋势信号
+- **AI 集成构建分析产品化**: 微软和 Incredibuild 将 AI 作为核心功能推向市场，竞争加剧。**强度: high**
+- **CI/CD “10分钟规则”成为行业共识**: 管道时长控制在5-10分钟，驱动编译加速刚性需求。**强度: high**
+- **开源远程执行缓存编译器 RECC 出现**: 为编译缓存领域注入新变量，可能打破现有格局。**强度: medium**
+- **现代构建系统挑战传统**: Buck2/Bazel 讨论热度不减，但 CMake 主导地位短期难撼。**强度: medium** (减弱)
+- **编译缓存工具与链接器兼容性问题**: sccache 与 mold 问题未解，影响工具链选择。**强度: medium** (减弱)
+
+### 值得长期跟踪的技术方向/话题
+- **AI 辅助构建优化**: 从概念验证到产品化落地，成为标配能力。
+- **分布式编译与缓存**: 开源方案 (RECC) 与商业方案 (Incredibuild) 竞争。
+- **现代构建系统迁移**: Buck2/Bazel 在大型项目中的实际应用案例。
+- **编译缓存工具兼容性**: sccache 与 mold 等链接器的解决方案进展。
+
+### 竞品动态
+- **微软**: Visual Studio 2026 正式集成 GitHub Copilot 进行 C++ 构建性能分析。
+- **Incredibuild**: 推出 AI Sandbox 和 CI/CD Acceleration 新功能，向 AI 和 CI/CD 场景深度整合。
+- **RECC**: 在 CppCon 上作为开源项目亮相，提供远程执行缓存新选择。
+- **sccache / ccache**: 持续更新，但 sccache 与 mold 的兼容性问题 (Issue #1755) 仍未解决。
