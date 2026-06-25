@@ -1,24 +1,29 @@
 # incredibuild — Research Memory
 
-最后更新: 2026-06-23
+最后更新: 2026-06-25
 
-### 关键记忆点
+### 公司/产品/项目
+- **Incredibuild**: 推出 Islo AI 沙箱、Build Runner (Beta)，战略转向 AI 原生开发平台。
+- **EngFlow**: 在金融科技、健康科技领域与 Incredibuild 竞争，强调 SOC 2 安全认证。
+- **腾讯 yadcc**: 开源分布式编译方案，性能优于 distcc/icecream，活跃度高。
+- **FASTBuild**: 低带宽性能差（100Mbps 下耗时 43.5 分钟 vs Incredibuild 13.6 分钟）。
+- **C++26**: 新标准增加编译复杂度，推动分布式编译成为刚需。
 
-- **公司/产品/项目**: Incredibuild、Islo (AI沙箱)、Build Runner (Beta)、EngFlow、FASTBuild、yadcc (腾讯开源)、distcc、Visual Studio 17.6、GitHub Actions。
-- **重要趋势信号**:
-    - **Incredibuild 转型 AI 原生平台** (high): 推出 AI 沙箱 Islo，定位为“AI编码代理的执行层”，战略重心从编译加速转向赋能 AI 开发。
-    - **CI/CD 加速成为增长点** (high): Incredibuild 推出 Build Runner 加速 GitHub Actions，EngFlow 强调 CI 集成，解决流水线构建瓶颈。
-    - **安全合规成核心壁垒** (high): Incredibuild 获 ISO 9001/27001，EngFlow 通过 SOC 2，成为金融、汽车等行业采购关键。
-    - **C++ 开发者增长驱动需求** (high): 三年增长 50%，C++26 新标准增加编译复杂度，分布式编译从“可选”变“刚需”。
-    - **低带宽性能优势显著** (medium): 100Mbps 下 Incredibuild 耗时 (13.6分钟) 仅为 FASTBuild (43.5分钟) 的 1/3。
-    - **用户反馈稳定性问题** (low): Software Finder 指出存在稳定性问题，可能影响口碑。
-- **值得长期跟踪的技术方向/话题**:
-    - AI 原生开发全生命周期平台（Incredibuild 转型方向）。
-    - CI/CD 流水线中的分布式编译集成（如 GitHub Actions、Jenkins）。
-    - 开源替代方案（如 yadcc）的性能与易用性突破。
-    - C++26 新标准对编译性能的实际影响。
-- **竞品动态**:
-    - **Incredibuild**: 与 Visual Studio 17.6 深度集成；推出 Islo (AI沙箱) 和 Build Runner (Beta)；获 ISO 9001/27001 认证。
-    - **EngFlow**: 声称 C++ 构建加速 21 倍；通过 SOC 2 Type 2 审计；强调安全合规。
-    - **腾讯 yadcc**: GitHub 上活跃，针对工业生产环境优化，提供低成本开源替代。
-    - **FASTBuild**: 在低带宽场景下性能远逊于 Incredibuild，但仍被 Unity 社区讨论作为选型之一。
+### 重要趋势信号
+- **Incredibuild 转型 AI 原生平台** (方向: 新趋势, 强度: high): 推出 Islo AI 沙箱和 Build Runner，从编译工具转向全生命周期平台。
+- **CI/CD 加速成为增长点** (方向: 增强, 强度: high): Build Runner 进入 Beta，重点推广，战略重要性提升。
+- **低带宽性能优势** (方向: 稳定, 强度: medium): Incredibuild 在 100Mbps 下性能是 FASTBuild 的 3 倍以上，成为选型壁垒。
+- **C++26 推动分布式编译刚需** (方向: 增强, 强度: medium): 编译复杂度增加，扩大市场总规模。
+- **用户规模增长** (方向: 增强, 强度: medium): 服务 600+ 企业，22 万开发者加速 9400 万次构建。
+
+### 值得长期跟踪的技术方向/话题
+- **AI 原生开发平台**: Incredibuild 的 Islo AI 沙箱作为 AI 编码代理执行层，关注其生态和采纳率。
+- **分布式编译在低带宽场景的优化**: 跨国团队和远程开发者的关键需求。
+- **开源替代方案**: 腾讯 yadcc 的社区活跃度和性能宣称，可能分流商业产品客户。
+- **C++26 编译复杂度影响**: 实际项目中编译时间增加幅度及分布式编译采纳率变化。
+
+### 竞品动态
+- **Incredibuild**: 发布 AI 平台（Islo 沙箱 + Build Runner），用户规模数据首次公开（22 万开发者，600+ 企业）。
+- **EngFlow**: 在金融科技、健康科技领域建立根据地，通过 SOC 2 认证形成差异化竞争。
+- **腾讯 yadcc**: 开源活跃，宣称性能优于 distcc/icecream，对商业产品构成潜在威胁。
+- **FASTBuild**: 低带宽性能短板被公开讨论，成为竞争劣势。
