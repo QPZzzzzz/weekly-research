@@ -1,31 +1,33 @@
 # incredibuild — Research Memory
 
-最后更新: 2026-06-28
+最后更新: 2026-06-30
 
-### 关键记忆点提取
+### 公司/产品/项目
+- **Incredibuild**: 核心产品，正转型为AI原生开发平台。
+- **EngFlow**: 直接竞品，主攻金融科技和健康科技。
+- **Visual Studio 2026**: 与Incredibuild深度集成。
+- **FASTBuild**: 开源替代，性能短板明显。
+- **Bazel**: 替代品，用户评分极低（1/5）。
+- **Islo AI沙盒 / Build Runner**: Incredibuild 2026年5月发布的新产品。
+- **腾讯 yadcc**: 历史信号，本期未覆盖，需关注。
 
-**公司/产品/项目**
-- **Incredibuild**: 转型为AI原生开发平台，推出Islo AI沙箱和Build Runner。
-- **EngFlow**: 获SOC 2认证，推出CMake RBE方案，挑战高端合规市场。
-- **腾讯 yadcc**: 开源，性能优于distcc/icecream，瞄准成本敏感用户。
-- **FASTBuild**: 低带宽性能短板（100Mbps下仅为Incredibuild的1/3）。
-- **C++26**: 标准特性冻结，编译复杂度增加，分布式编译成刚需。
+### 重要趋势信号
+- **Incredibuild AI原生平台转型加速** (方向: up, 强度: high): 从编译加速扩展到开发全生命周期，推广Islo AI沙盒和Build Runner。
+- **EngFlow在金融科技和健康科技领域竞争加剧** (方向: up, 强度: high): 正面竞争，合规认证（SOC 2 vs ISO）成为关键战场。
+- **Incredibuild与Visual Studio 2026深度集成** (方向: up, 强度: high): 巩固Windows/C++生态护城河，增加用户迁移成本。
+- **Bazel作为替代品评分低** (方向: down, 强度: medium): 用户满意度低，可能推动用户转向EngFlow或Incredibuild。
+- **FASTBuild作为开源替代持续存在** (方向: stable, 强度: medium): 性能短板未改进，定位成本敏感场景。
+- **C++社区活动活跃** (方向: stable, 强度: low): CppCon 2026有主题演讲，可能间接推动分布式编译需求。
 
-**重要趋势信号**
-- **Incredibuild AI平台转型** (方向: up, 强度: high): 从编译加速扩展到全生命周期加速，基于缓存和分布式计算。
-- **C++26标准冻结** (方向: up, 强度: high): 编译复杂度确定性增加，推动分布式编译需求。
-- **低带宽性能壁垒** (方向: stable, 强度: high): Incredibuild在100Mbps下性能是FASTBuild的3倍，构成商业护城河。
-- **EngFlow合规竞争** (方向: up, 强度: high): SOC 2认证+CMake RBE，正面冲击Incredibuild在金融/医疗市场。
-- **腾讯yadcc开源** (方向: up, 强度: high): 性能优于主流开源方案，威胁成本敏感用户。
+### 值得长期跟踪的技术方向/话题
+- **AI驱动的开发平台**: Incredibuild转型方向，关注AI沙盒和Build Runner的采用率。
+- **合规认证竞争**: SOC 2 vs ISO 9001/27001，影响高价值行业准入。
+- **开源工具生态演变**: FASTBuild、Bazel、yadcc等工具的社区动态和性能改进。
+- **C++26标准影响**: 新特性可能增加编译复杂度，间接推动分布式编译需求。
 
-**值得长期跟踪的技术方向/话题**
-- **AI原生开发平台**: Incredibuild的Islo AI沙箱和Build Runner如何影响开发流程。
-- **低带宽分布式编译优化**: 商业产品与开源方案在弱网环境下的性能差距。
-- **C++26编译复杂度**: 新标准对大型项目编译时间的量化影响。
-- **合规认证竞争**: SOC 2、ISO 27001等认证在金融/医疗行业的市场准入作用。
-
-**竞品动态**
-- **EngFlow**: 获SOC 2认证，推出CMake RBE方案，宣称5-10倍加速。
-- **腾讯 yadcc**: 开源发布，性能优于distcc/icecream，社区采用速度待观察。
-- **FASTBuild**: 低带宽性能问题被公开讨论，成为与商业产品对比的短板。
-- **Incredibuild**: 用户规模22万开发者、600+企业、9400万次构建，市场领导地位稳固。
+### 竞品动态
+- **Incredibuild**: 发布Islo AI沙盒和Build Runner；强化ISO 9001/27001认证；与Visual Studio 2026深度集成；成功案例（BANDAI NAMCO编译时间从50分钟降至18分钟）。
+- **EngFlow**: 在金融科技和健康科技领域渗透；C++构建加速21倍；强调安全性提升。
+- **FASTBuild**: 仍被社区使用，但低带宽性能仅为Incredibuild的1/3，未发现改进。
+- **Bazel**: 用户评分低（1/5），学习曲线陡峭，易用性不足。
+- **腾讯 yadcc**: 历史信号，本期未覆盖，需关注其社区热度是否回升。
