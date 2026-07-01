@@ -1,32 +1,36 @@
 # ai-sdlc-tools — Research Memory
 
-最后更新: 2026-06-30
+最后更新: 2026-07-01
 
-### 公司/产品/项目
-- **AI编码工具**: Cursor, Claude Code, Copilot, Windsurf, Trae, DeepSeek V4, 文心快码, 通义灵码
-- **模型**: GPT-5.5, Gemini 3.1 Pro, DeepSeek V4
-- **其他**: AtomGit, FinOps Foundation, Backslash, QA.tech, Augment Code
+### 关键记忆点提取
 
-### 重要趋势信号
-- **AI编码工具采用率超97%，但价值证明成新瓶颈** (high): 普及饱和，焦点转向ROI量化。
-- **代理驱动开发压缩SDLC周期至小时级** (high): 交付效率飞跃，但测试成为新瓶颈。
-- **AI生成代码引入15-18%更多漏洞，测试范式从“编写”转向“引导”** (high): 安全与质量治理左移。
-- **AI代码审查嵌入CI/CD成为第一道关卡** (high): 实现“开发即治理”。
-- **国产AI编程工具强势崛起，国际模型与国产模型双轨并行** (high): 性价比竞争加剧，市场分化。
-- **代码质量改善有限（可读性+3.62%，可靠性+2.94%），信任危机持续** (high): AI生成代码需视为“不可信输入”。
-- **开发者组合使用多种AI工具，无单一工具胜任所有任务** (medium): 多工具组合成为主流工作模式。
-- **自然语言编程接口兴起，非程序员参与开发** (medium): 降低开发门槛，催生新协作模式。
-- **FinOps左移，成本管理嵌入开发早期** (medium): 实时成本可见性工具需求增长。
+#### 公司/产品/项目
+- **国际**: Cursor, GitHub Copilot, Claude Code, Devin 2.0, Windsurf, Trae, Amazon Q Developer, Tabnine, CodeRabbit, Snyk, Checkmarx, TestSprite, Mabl, QA.tech, V2Soft, Sanciti AI, Antigravity 2.0, Gemini Code Assist (已终止)
+- **国产**: DeepSeek V4, 文心快码, 通义灵码, AtomGit, CSDN
+- **开源**: OpenAI Codex CLI, Goose, Cline, RooCode
 
-### 值得长期跟踪的技术方向
-- **AI代理驱动开发**: 如何协调多代理、管理复杂任务。
-- **AI驱动的测试自动化**: 从“编写用例”到“引导验证”的范式转变。
-- **AI代码安全治理**: 供应链安全、代码审计、合规性。
-- **自然语言编程接口**: 降低非技术人员参与门槛。
-- **AI编码工具的价值证明与效能度量**: ROI分析、可观测性工具。
-- **国产AI编程工具生态**: 本土化、性价比、数据安全。
+#### 重要趋势信号
+- **信任鸿沟催生审计治理市场**: 采用率84%但信任度仅29%，AI代码引入15-18%更多漏洞。方向: up, 强度: high
+- **代理驱动开发压缩SDLC**: 周期从数周压缩至数小时，CI/CD中AI代理采用率79%。方向: up, 强度: high
+- **测试成为新瓶颈**: 代码生成加速但验证滞后，AI测试自动化需求激增。方向: up, 强度: high
+- **国产工具性价比凸显**: DeepSeek V4以1%成本实现90%性能，文心快码企业采纳率>44%。方向: up, 强度: high
+- **对话式开发平台兴起**: 市场从248亿增至322亿美元，Gartner预测2027年>65%团队视传统IDE为可选。方向: up, 强度: medium
+- **多Agent协作平台出现**: Antigravity 2.0内部使用93个Agent协同工作。方向: new, 强度: medium
+- **AI代码审查成为CI/CD第一道关卡**: 自动处理机械检查，安全治理成采购核心指标。方向: up, 强度: medium
+- **开发者组合使用多种AI工具**: 无单一工具胜任所有任务，按场景选型成主流。方向: new, 强度: medium
 
-### 竞品动态
-- **新产品/融资/合作**: 无明确融资或合作信息，但工具横评显示Cursor、Claude Code、Copilot、Windsurf、Trae等竞争激烈。
-- **技术突破**: DeepSeek V4以1%成本实现顶级模型90%能力；Trae拿下中文新手市场；文心快码企业采纳率超44%。
-- **市场格局**: 国际模型（GPT-5.5, Gemini 3.1 Pro）与国产模型（DeepSeek V4, 文心快码, 通义灵码）双轨并行，竞争焦点从功能转向生态整合和性价比。
+#### 值得长期跟踪的技术方向
+- **Agentic Coding**: 代理驱动开发、多Agent协作、规范驱动开发
+- **AI测试自动化**: 从编写测试用例转向引导AI验证
+- **自然语言编程接口**: 非程序员参与开发，Vibe Coding范式
+- **AI代码安全治理**: 代码审计、安全扫描、效能度量工具
+- **FinOps左移**: 成本管理嵌入开发早期
+
+#### 竞品动态
+- **Copilot 2026**: 支持多模型切换（GPT-5.4、Claude Sonnet 4.6、Gemini 2.5 Pro），从单一模型绑定转向模型市场策略
+- **Devin 2.0**: 定位尴尬，被Cursor、Claude Code等工具超越
+- **Gemini Code Assist**: 2026年6月18日停止服务，用户需迁移至Antigravity
+- **Windsurf**: 推出Cascade代理系统，支持多模态和并行会话，被Cognition AI收购
+- **Antigravity 2.0**: 从编程环境变为多Agent编排平台，内部93个Agent协同工作
+- **文心快码**: 在IDC评估中获8项满分，前端能力突出，企业采纳率>44%
+- **DeepSeek V4**: 以1%成本实现顶级模型90%性能，占据性价比生态位

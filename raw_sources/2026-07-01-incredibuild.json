@@ -1,0 +1,355 @@
+{
+  "topic": "Incredibuild 分布式编译 竞品对比 行业格局",
+  "label": "incredibuild",
+  "date": "2026-07-01",
+  "total_sources": 22,
+  "sources": [
+    {
+      "title": "c++编译加速_分布式编译_CI/CD加速_Incredibuild_快编大师",
+      "url": "https://www.incredibuild.cn/technology",
+      "platform": "incredibuild.cn",
+      "summary": "介绍Incredibuild核心进程虚拟化技术，利用空闲CPU加速编译",
+      "relevance": "high",
+      "tags": [
+        "产品技术",
+        "进程虚拟化",
+        "分布式处理"
+      ]
+    },
+    {
+      "title": "Incredibuild - C++编译加速_分布式编译_联合编译",
+      "url": "https://www.incredibuild.cn",
+      "platform": "incredibuild.cn",
+      "summary": "Incredibuild作为领先编译加速平台，强调加速开发周期和上市时间",
+      "relevance": "high",
+      "tags": [
+        "产品概述",
+        "加速开发",
+        "成本优化"
+      ]
+    },
+    {
+      "title": "Incredibuild c++编译加速，更快的构建速度，更智能的开发周期 | 龙智 DragonSoft",
+      "url": "https://www.shdsd.com/incredibuild/index.html",
+      "platform": "shdsd.com",
+      "summary": "介绍Incredibuild在Windows和Linux系统支持，以及本地、云端、家庭环境部署",
+      "relevance": "medium",
+      "tags": [
+        "部署方式",
+        "跨平台",
+        "集成"
+      ]
+    },
+    {
+      "title": "Introduction to Incredibuild",
+      "url": "https://docs.incredibuild.com/win/10_26/windows/introduction.html",
+      "platform": "docs.incredibuild.com",
+      "summary": "官方文档介绍Incredibuild作为革命性工具，提升编译任务速度和效率",
+      "relevance": "high",
+      "tags": [
+        "官方文档",
+        "产品介绍",
+        "技术原理"
+      ]
+    },
+    {
+      "title": "IncrediBuild 进行联合编译 - 小 楼 一 夜 听 春 雨 - 博客园",
+      "url": "https://www.cnblogs.com/kex1n/archive/2010/08/12/2286478.html",
+      "platform": "博客园",
+      "summary": "博客介绍IncrediBuild用于C/C++编译加速，无缝集成Visual Studio",
+      "relevance": "low",
+      "tags": [
+        "历史文章",
+        "Visual Studio集成",
+        "C++"
+      ]
+    },
+    {
+      "title": "Incredibuild: Accelerate Your Development",
+      "url": "https://www.incredibuild.com",
+      "platform": "incredibuild.com",
+      "summary": "官网展示成功案例，强调与Visual Studio等微软产品无缝集成",
+      "relevance": "high",
+      "tags": [
+        "官网",
+        "成功案例",
+        "集成"
+      ]
+    },
+    {
+      "title": "Distributed builds using FASTBuild or Incredibuild? - Unity Engine - Unity Discussions",
+      "url": "https://discussions.unity.com/t/distributed-builds-using-fastbuild-or-incredibuild/1627016",
+      "platform": "Unity Discussions",
+      "summary": "社区讨论FASTBuild与Incredibuild对比，提及分布式编译缓存方案",
+      "relevance": "medium",
+      "tags": [
+        "竞品对比",
+        "FASTBuild",
+        "Unity"
+      ]
+    },
+    {
+      "title": "Tools Spotlight: Incredibuild - Incredibuild",
+      "url": "https://www.incredibuild.com/news/tools-spotlight-incredibuild-html",
+      "platform": "incredibuild.com",
+      "summary": "2013年文章介绍Incredibuild的分布式计算和进程虚拟化技术",
+      "relevance": "low",
+      "tags": [
+        "历史文章",
+        "技术介绍"
+      ]
+    },
+    {
+      "title": "Version History - Incredibuild",
+      "url": "https://www.incredibuild.cn/incredibuild-version-history",
+      "platform": "incredibuild.cn",
+      "summary": "版本历史中新增AllowRemoteIf选项，支持条件性远程执行",
+      "relevance": "medium",
+      "tags": [
+        "版本更新",
+        "功能增强",
+        "远程执行"
+      ]
+    },
+    {
+      "title": "Incredibuild Unveils State-of-the-Art AI Platform to Accelerate the Entire Software Development Lifecycle",
+      "url": "https://www.prnewswire.com/news-releases/incredibuild-unveils-state-of-the-art-ai-platform-to-accelerate-the-entire-software-development-lifecycle-302560614.html",
+      "platform": "PRNewswire",
+      "summary": "Incredibuild发布AI平台，加速整个软件开发生命周期",
+      "relevance": "high",
+      "tags": [
+        "AI平台",
+        "转型",
+        "新闻稿"
+      ]
+    },
+    {
+      "title": "Distributed Processing: Scalable Build Performance",
+      "url": "https://www.incredibuild.com/distributed-processing",
+      "platform": "incredibuild.com",
+      "summary": "展示分布式处理能力，成功案例包括Archosaur Games编译时间减少76%",
+      "relevance": "high",
+      "tags": [
+        "分布式处理",
+        "成功案例",
+        "游戏开发"
+      ]
+    },
+    {
+      "title": "FASTBuild vs. Incredibuild Comparison",
+      "url": "https://sourceforge.net/software/compare/FastBuild-vs-IncrediBuild",
+      "platform": "SourceForge",
+      "summary": "FASTBuild与Incredibuild对比，FASTBuild为开源高性能构建系统",
+      "relevance": "medium",
+      "tags": [
+        "竞品对比",
+        "FASTBuild",
+        "开源"
+      ]
+    },
+    {
+      "title": "FASTBuild - Features",
+      "url": "https://www.fastbuild.org/docs/features.html",
+      "platform": "fastbuild.org",
+      "summary": "FASTBuild功能包括构建统计、进度条等",
+      "relevance": "low",
+      "tags": [
+        "FASTBuild",
+        "功能",
+        "开源"
+      ]
+    },
+    {
+      "title": "Introduction to Incredibuild",
+      "url": "https://docs.incredibuild.com/win/v10_2_2/windows/introduction.html",
+      "platform": "docs.incredibuild.com",
+      "summary": "旧版文档介绍Incredibuild加速编译任务和开发工具",
+      "relevance": "medium",
+      "tags": [
+        "官方文档",
+        "旧版",
+        "产品介绍"
+      ]
+    },
+    {
+      "title": "Improving your build times with IncrediBuild and Visual Studio 2015 - Visual Studio Blog",
+      "url": "https://devblogs.microsoft.com/visualstudio/improving-your-build-times-with-incredibuild-and-visual-studio-2015",
+      "platform": "Microsoft DevBlogs",
+      "summary": "微软博客介绍Incredibuild与Visual Studio 2015集成，提升构建速度10-20%",
+      "relevance": "medium",
+      "tags": [
+        "微软合作",
+        "Visual Studio",
+        "集成"
+      ]
+    },
+    {
+      "title": "Incredibuild Partners: Collaborative Excellence",
+      "url": "https://www.incredibuild.com/partners",
+      "platform": "incredibuild.com",
+      "summary": "合作伙伴页面展示与龙智等公司的合作案例",
+      "relevance": "medium",
+      "tags": [
+        "合作伙伴",
+        "渠道",
+        "案例"
+      ]
+    },
+    {
+      "title": "CMake + FASTBuild: Distributed, Cached, and Fast",
+      "url": "https://www.kitware.com/cmake-fastbuild-distributed-cached-and-fast",
+      "platform": "Kitware",
+      "summary": "Kitware文章介绍CMake与FASTBuild集成，实现分布式和缓存构建",
+      "relevance": "medium",
+      "tags": [
+        "CMake",
+        "FASTBuild",
+        "集成"
+      ]
+    },
+    {
+      "title": "IncrediBuild - Market Share, Competitor Insights in Build And Deployment Automation",
+      "url": "https://www.6sense.com/tech/build-and-deployment-automation/incredibuild-market-share",
+      "platform": "6sense",
+      "summary": "市场分析显示Incredibuild在构建和部署自动化领域有129家客户，大企业为主",
+      "relevance": "high",
+      "tags": [
+        "市场份额",
+        "客户分析",
+        "行业数据"
+      ]
+    },
+    {
+      "title": "Choosing the right C++ build system: A comprehensive guide for ...",
+      "url": "https://www.incredibuild.com/blog/choosing-the-right-c-build-system-a-comprehensive-guide-for-developers",
+      "platform": "incredibuild.com",
+      "summary": "Incredibuild博客文章比较不同C++构建系统，强调选择合适系统的重要性",
+      "relevance": "high",
+      "tags": [
+        "构建系统",
+        "比较指南",
+        "C++"
+      ]
+    },
+    {
+      "title": "Yadcc 分布式C++ 编译器 - GitHub",
+      "url": "https://github.com/Tencent/yadcc",
+      "platform": "GitHub",
+      "summary": "腾讯开源分布式C++编译器yadcc的GitHub仓库",
+      "relevance": "medium",
+      "tags": [
+        "开源",
+        "腾讯",
+        "分布式编译"
+      ]
+    },
+    {
+      "title": "加速开发进程",
+      "url": "https://www.incredibuild.cn/product/dev-acceleration",
+      "platform": "incredibuild.cn",
+      "summary": "介绍Incredibuild加速开发进程的方法，包括缓存、并行分布等",
+      "relevance": "high",
+      "tags": [
+        "开发加速",
+        "方法论",
+        "产品功能"
+      ]
+    },
+    {
+      "title": "分布式编译- 服务器编程新手入门- Server Programming Guide",
+      "url": "https://liuhaohua.com/server-programming-guide/build-system/distributed-compiling",
+      "platform": "liuhaohua.com",
+      "summary": "技术指南介绍distcc等分布式编译工具，提及Incredibuild作为商业方案",
+      "relevance": "low",
+      "tags": [
+        "分布式编译",
+        "distcc",
+        "技术指南"
+      ]
+    }
+  ],
+  "signals": [
+    {
+      "signal": "Incredibuild AI平台转型加速",
+      "direction": "up",
+      "evidence": "PRNewswire新闻稿宣布发布AI平台，覆盖整个软件开发生命周期",
+      "category": "产品"
+    },
+    {
+      "signal": "Incredibuild与Visual Studio深度集成持续强化",
+      "direction": "up",
+      "evidence": "多个来源强调与Visual Studio无缝集成，微软博客提及合作",
+      "category": "产品"
+    },
+    {
+      "signal": "FASTBuild作为开源替代持续存在但性能差距明显",
+      "direction": "stable",
+      "evidence": "SourceForge对比和Unity讨论显示FASTBuild性能不如Incredibuild",
+      "category": "竞品"
+    },
+    {
+      "signal": "腾讯yadcc开源项目活跃度需关注",
+      "direction": "new",
+      "evidence": "GitHub仓库存在，但搜索结果中提及较少，需进一步跟踪",
+      "category": "竞品"
+    },
+    {
+      "signal": "Incredibuild客户以大企业为主",
+      "direction": "stable",
+      "evidence": "6sense数据显示31家客户员工数超过10000人",
+      "category": "行业"
+    },
+    {
+      "signal": "游戏行业是Incredibuild重要应用领域",
+      "direction": "up",
+      "evidence": "成功案例包括Archosaur Games和Life Beyond Studios，编译时间大幅减少",
+      "category": "行业"
+    },
+    {
+      "signal": "分布式编译需求随C++项目规模增长而增加",
+      "direction": "up",
+      "evidence": "博客文章强调大型C++项目构建时间可长达数小时，推动分布式编译需求",
+      "category": "技术"
+    }
+  ],
+  "trends": [
+    {
+      "trend": "Incredibuild从编译加速工具向AI原生开发平台转型",
+      "evidence": "发布AI平台，覆盖开发全生命周期",
+      "momentum": "rising"
+    },
+    {
+      "trend": "分布式编译与缓存结合成为主流方案",
+      "evidence": "Unity讨论中提及分布式编译缓存，Kitware文章介绍CMake+FASTBuild集成缓存",
+      "momentum": "rising"
+    },
+    {
+      "trend": "开源分布式编译工具持续发展但商业产品仍占主导",
+      "evidence": "FASTBuild和yadcc存在，但Incredibuild市场份额和客户规模领先",
+      "momentum": "stable"
+    },
+    {
+      "trend": "游戏和金融科技行业成为分布式编译重点应用领域",
+      "evidence": "成功案例集中在游戏公司，EngFlow在金融科技领域竞争",
+      "momentum": "rising"
+    }
+  ],
+  "companies_mentioned": [
+    "Incredibuild",
+    "FASTBuild",
+    "腾讯",
+    "EngFlow",
+    "Bazel",
+    "龙智",
+    "Archosaur Games",
+    "Life Beyond Studios",
+    "BANDAI NAMCO"
+  ],
+  "hot_topics": [
+    "AI原生开发平台",
+    "分布式编译缓存",
+    "Visual Studio集成",
+    "C++构建系统选择",
+    "游戏开发加速"
+  ]
+}
