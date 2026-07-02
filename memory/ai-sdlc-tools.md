@@ -1,36 +1,19 @@
 # ai-sdlc-tools — Research Memory
 
-最后更新: 2026-07-01
+最后更新: 2026-07-02
 
-### 关键记忆点提取
-
-#### 公司/产品/项目
-- **国际**: Cursor, GitHub Copilot, Claude Code, Devin 2.0, Windsurf, Trae, Amazon Q Developer, Tabnine, CodeRabbit, Snyk, Checkmarx, TestSprite, Mabl, QA.tech, V2Soft, Sanciti AI, Antigravity 2.0, Gemini Code Assist (已终止)
-- **国产**: DeepSeek V4, 文心快码, 通义灵码, AtomGit, CSDN
-- **开源**: OpenAI Codex CLI, Goose, Cline, RooCode
-
-#### 重要趋势信号
-- **信任鸿沟催生审计治理市场**: 采用率84%但信任度仅29%，AI代码引入15-18%更多漏洞。方向: up, 强度: high
-- **代理驱动开发压缩SDLC**: 周期从数周压缩至数小时，CI/CD中AI代理采用率79%。方向: up, 强度: high
-- **测试成为新瓶颈**: 代码生成加速但验证滞后，AI测试自动化需求激增。方向: up, 强度: high
-- **国产工具性价比凸显**: DeepSeek V4以1%成本实现90%性能，文心快码企业采纳率>44%。方向: up, 强度: high
-- **对话式开发平台兴起**: 市场从248亿增至322亿美元，Gartner预测2027年>65%团队视传统IDE为可选。方向: up, 强度: medium
-- **多Agent协作平台出现**: Antigravity 2.0内部使用93个Agent协同工作。方向: new, 强度: medium
-- **AI代码审查成为CI/CD第一道关卡**: 自动处理机械检查，安全治理成采购核心指标。方向: up, 强度: medium
-- **开发者组合使用多种AI工具**: 无单一工具胜任所有任务，按场景选型成主流。方向: new, 强度: medium
-
-#### 值得长期跟踪的技术方向
-- **Agentic Coding**: 代理驱动开发、多Agent协作、规范驱动开发
-- **AI测试自动化**: 从编写测试用例转向引导AI验证
-- **自然语言编程接口**: 非程序员参与开发，Vibe Coding范式
-- **AI代码安全治理**: 代码审计、安全扫描、效能度量工具
-- **FinOps左移**: 成本管理嵌入开发早期
-
-#### 竞品动态
-- **Copilot 2026**: 支持多模型切换（GPT-5.4、Claude Sonnet 4.6、Gemini 2.5 Pro），从单一模型绑定转向模型市场策略
-- **Devin 2.0**: 定位尴尬，被Cursor、Claude Code等工具超越
-- **Gemini Code Assist**: 2026年6月18日停止服务，用户需迁移至Antigravity
-- **Windsurf**: 推出Cascade代理系统，支持多模态和并行会话，被Cognition AI收购
-- **Antigravity 2.0**: 从编程环境变为多Agent编排平台，内部93个Agent协同工作
-- **文心快码**: 在IDC评估中获8项满分，前端能力突出，企业采纳率>44%
-- **DeepSeek V4**: 以1%成本实现顶级模型90%性能，占据性价比生态位
+- **公司/产品/项目：** 文心快码、Cursor、Copilot、Claude Code、Windsurf、Antigravity 2.0、DeepSeek V4、Northflank、Augment Code、Anthropic、Uvik、Fortune Business Insights、SegmentFault、CSDN、DEV Community、Coaio
+- **重要趋势信号：**
+    - **AI编码工具向代理工作流演进，选型标准转向编排能力 (High)**
+    - **AI代码审查成为CI/CD瓶颈，自动化PR审查和测试生成成刚需 (High)**
+    - **国产AI编程工具（文心快码）性价比凸显，企业采纳率超44% (High)**
+    - **70%成熟开发者组合使用2-4款AI工具，无万能工具 (High)**
+    - **FinOps左移，成本管理嵌入开发早期 (Medium)**
+    - **自然语言编程接口兴起，非程序员可参与开发 (Medium)**
+    - **SDLC中生成式AI市场高速增长，CAGR 35.30% (Medium)**
+- **长期跟踪方向：** 代理工作流编排能力、AI代码审查与CI/CD集成、国产AI编程工具平替、多工具组合策略、FinOps左移、自然语言编程接口、SDLC中生成式AI市场增长
+- **竞品动态：**
+    - **文心快码：** 在8个核心维度获满分，C++代码生成质量第一，企业采纳率超44%，成为国际工具强力平替。
+    - **Cursor/Claude Code/Copilot/Windsurf：** 工具已进化为“智能搭档”，设计哲学迥异，开发者按场景选型。
+    - **DeepSeek V4：** 开源模型，成本仅为国际顶级模型1%，为国产工具提供底层支持。
+    - **Anthropic：** 发布《2026年代理编码趋势报告》，量化代理驱动开发对SDLC周期的压缩效果（从周级到小时级）。
