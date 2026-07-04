@@ -1,31 +1,21 @@
 # incredibuild — Research Memory
 
-最后更新: 2026-07-02
+最后更新: 2026-07-04
 
-### 关键记忆点提取
-
-#### 公司/产品/项目
-- **Incredibuild**: 发布Islo AI沙盒、Build Guard、Build Runner，获构建缓存专利，获ISO 9001/27001认证。
-- **EngFlow**: 与tipi.build合作推CMake RBE方案，获SOC 2认证。
-- **FASTBuild**: 开源工具，获CMake集成，但低带宽性能差（100Mbps下比Incredibuild慢3倍）。
-- **C++26**: 新特性（反射、模式匹配）将增加编译复杂度。
-
-#### 重要趋势信号
-- **Incredibuild AI平台转型加速** (high): 从编译加速升级为AI全生命周期平台，发布三款产品。
-- **低带宽场景性能成为商业壁垒** (high): 100Mbps下Incredibuild快3倍，商业产品与开源工具核心分水岭。
-- **安全合规认证成为选型门槛** (high): ISO 9001/27001、SOC 2认证成企业准入门槛。
-- **C++26标准增加编译复杂度** (medium): 新特性将延长单机编译时间，拉动分布式编译需求。
-- **EngFlow与tipi.build合作推CMake RBE方案** (medium): 直接威胁Incredibuild，降低CMake生态接入门槛。
-- **开源工具分流成本敏感用户** (medium): FASTBuild获CMake集成，但低带宽性能短板限制侵蚀商业市场。
-
-#### 值得长期跟踪的技术方向/话题
-- **AI原生开发平台**: Incredibuild向AI全生命周期转型，关注其产品落地与市场反馈。
-- **低带宽场景优化**: 混合办公、跨国团队核心痛点，商业产品差异化关键。
-- **C++26标准影响**: 编译复杂度增加，分布式编译需求长期增长驱动力。
-- **CMake生态集成**: EngFlow与tipi.build合作，关注CMake RBE方案市场反馈。
-- **构建缓存专利**: Incredibuild专利商业化应用，可能推出新功能。
-
-#### 竞品动态
-- **Incredibuild**: 发布AI平台三款产品，获构建缓存专利，获ISO双认证。
-- **EngFlow**: 与tipi.build合作推CMake RBE方案，获SOC 2认证，宣传21倍加速能力。
-- **FASTBuild**: 获CMake集成，但低带宽性能差，开源免费吸引部分开发者。
+- **公司/产品/项目**: Incredibuild, FASTBuild, EngFlow, tipi.build, Garden, Islo AI沙盒, BuildXL, Ansible, Tencent/yadcc, CMake, AWS Marketplace, Epic MegaGrants
+- **重要趋势信号**:
+    - **Incredibuild 向 AI 全生命周期平台转型** (方向: up, 强度: high) - 通过收购 Garden、发布 AI 平台，从编译加速工具升级为端到端开发平台，构建竞争壁垒。
+    - **低带宽场景性能是商业产品核心壁垒** (方向: up, 强度: high) - 100Mbps下Incredibuild比开源FASTBuild快3倍以上，混合办公需求强化此优势。
+    - **CMake生态集成成为竞品争夺焦点** (方向: new, 强度: medium) - EngFlow与tipi.build合作推出CMake RBE方案，威胁Incredibuild在C/C++构建领域地位。
+    - **安全合规认证成为企业级选型准入门槛** (方向: stable, 强度: medium) - Incredibuild获ISO认证，EngFlow获SOC 2认证，金融/游戏客户必备。
+    - **Incredibuild在构建自动化大市场份额小，但细分领域优势明显** (方向: stable, 强度: low) - 市场份额远低于Ansible，核心竞争力在C/C++分布式编译。
+- **值得长期跟踪的技术方向/话题**:
+    - Incredibuild AI平台的实际效果与客户接受度
+    - FASTBuild能否优化低带宽性能，威胁商业市场
+    - CMake生态集成对分布式编译产品选型的影响
+    - 腾讯yadcc等开源方案对商业产品的潜在威胁
+- **竞品动态**:
+    - **EngFlow**: 与tipi.build合作推出CMake RBE方案，威胁Incredibuild。
+    - **FASTBuild**: 1Gbps网络下性能接近Incredibuild，但低带宽差距大；被成本敏感用户推荐。
+    - **Tencent/yadcc**: 腾讯开源分布式编译方案，满足内部大规模定制化需求。
+    - **Incredibuild**: 收购Garden、发布AI平台、持续优化版本（10.9/10.31.1），通过Epic MegaGrants和AWS Marketplace拓展生态。
