@@ -1,21 +1,20 @@
 # incredibuild — Research Memory
 
-最后更新: 2026-07-04
+最后更新: 2026-07-05
 
-- **公司/产品/项目**: Incredibuild, FASTBuild, EngFlow, tipi.build, Garden, Islo AI沙盒, BuildXL, Ansible, Tencent/yadcc, CMake, AWS Marketplace, Epic MegaGrants
+- **公司/产品/项目**: Incredibuild, Islo (AI沙箱), Garden (DevOps工具), EngFlow, tipi.build, FASTBuild, 腾讯 yadcc, CMake, Ansible
 - **重要趋势信号**:
-    - **Incredibuild 向 AI 全生命周期平台转型** (方向: up, 强度: high) - 通过收购 Garden、发布 AI 平台，从编译加速工具升级为端到端开发平台，构建竞争壁垒。
-    - **低带宽场景性能是商业产品核心壁垒** (方向: up, 强度: high) - 100Mbps下Incredibuild比开源FASTBuild快3倍以上，混合办公需求强化此优势。
-    - **CMake生态集成成为竞品争夺焦点** (方向: new, 强度: medium) - EngFlow与tipi.build合作推出CMake RBE方案，威胁Incredibuild在C/C++构建领域地位。
-    - **安全合规认证成为企业级选型准入门槛** (方向: stable, 强度: medium) - Incredibuild获ISO认证，EngFlow获SOC 2认证，金融/游戏客户必备。
-    - **Incredibuild在构建自动化大市场份额小，但细分领域优势明显** (方向: stable, 强度: low) - 市场份额远低于Ansible，核心竞争力在C/C++分布式编译。
+    - **Incredibuild 向 AI 全生命周期平台转型** (方向: up, 强度: high) - 发布 AI 平台 Islo 并收购 Garden，从编译加速扩展到 AI 开发、测试和 CI/CD 全流程。
+    - **CMake 生态集成成为竞争焦点** (方向: new, 强度: medium) - EngFlow 与 tipi.build 推出 CMake RBE 方案，直接威胁 Incredibuild 的 C/C++ 市场；FASTBuild 因 CMake 集成停滞受批评。
+    - **低带宽性能是商业产品核心护城河** (方向: up, 强度: high) - 混合办公趋势下，Incredibuild 在 100Mbps 下比 FASTBuild 快 3 倍以上，强化企业采购理由。
+    - **腾讯 yadcc 开源方案构成潜在威胁** (方向: new, 强度: medium) - 支持 1000+ 核并行编译，适合大规模定制和预算敏感团队。
+    - **安全合规认证成为企业选型准入门槛** (方向: stable, 强度: medium) - 金融/游戏客户必备 ISO 或 SOC 2 认证，缺乏则被排除。
 - **值得长期跟踪的技术方向/话题**:
-    - Incredibuild AI平台的实际效果与客户接受度
-    - FASTBuild能否优化低带宽性能，威胁商业市场
-    - CMake生态集成对分布式编译产品选型的影响
-    - 腾讯yadcc等开源方案对商业产品的潜在威胁
+    - AI 驱动的开发全生命周期加速平台 (Incredibuild 转型)
+    - CMake 生态与分布式编译的集成 (EngFlow vs FASTBuild)
+    - 开源高并发编译方案 (腾讯 yadcc) 的社区采用与威胁
+    - 低带宽环境下编译性能的优化与竞争
 - **竞品动态**:
-    - **EngFlow**: 与tipi.build合作推出CMake RBE方案，威胁Incredibuild。
-    - **FASTBuild**: 1Gbps网络下性能接近Incredibuild，但低带宽差距大；被成本敏感用户推荐。
-    - **Tencent/yadcc**: 腾讯开源分布式编译方案，满足内部大规模定制化需求。
-    - **Incredibuild**: 收购Garden、发布AI平台、持续优化版本（10.9/10.31.1），通过Epic MegaGrants和AWS Marketplace拓展生态。
+    - **新产品/合作**: EngFlow 与 tipi.build 合作推出 CMake RBE 方案；腾讯开源 yadcc。
+    - **融资/收购**: Incredibuild 收购 Garden 以强化 DevOps 全生命周期加速。
+    - **技术突破**: Incredibuild 发布 AI 平台 Islo，利用缓存和预测执行技术。
