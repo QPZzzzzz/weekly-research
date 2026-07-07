@@ -1,20 +1,18 @@
 # build-acceleration — Research Memory
 
-最后更新: 2026-07-05
+最后更新: 2026-07-07
 
-- **公司/产品/项目**：Microsoft Visual Studio 2026、Incredibuild、sccache、mold、ccache、Bazel、Buck2、CMake、yadcc、homcc、美团、GitHub Copilot
-- **重要趋势信号**：
-  - **AI驱动编译优化竞争升级**：微软VS 2026集成Copilot自动优化构建，直接对标Incredibuild的AI Sandbox和Build Cache。强度：high
-  - **CI/CD“10分钟规则”成硬共识**：管道超10分钟影响生产力，大型C++项目需分布式编译+缓存压缩时间（如美团案例45分钟→8分钟）。强度：high
-  - **sccache生态承压**：与mold链接器兼容性问题（Issue #1755）未修复，用户可能回流ccache。强度：medium
-  - **Bazel/Buck2讨论热但迁移壁垒大**：优势明显，但CMake主导地位稳固，迁移成本高。强度：medium
-- **值得长期跟踪的技术方向/话题**：
-  - sccache与mold兼容性修复进展及用户迁移路径
-  - ccache生态是否因sccache问题回升
-  - 分布式编译开源项目（yadcc, homcc）社区活跃度变化
-- **竞品动态**：
-  - **微软**：VS 2026集成AI构建优化工具，对标Incredibuild
-  - **Incredibuild**：持续推广AI Sandbox和Build Cache，面临VS 2026竞争
-  - **sccache**：与mold兼容性问题未修复，生态稳定性受质疑
-  - **ccache**：可能因sccache问题重新获得关注
-  - **Bazel/Buck2**：讨论热度高，但迁移壁垒大，适合大型新项目
+- **公司/产品/项目**: Visual Studio 2026, Incredibuild (AI Sandbox, Build Cache), sccache, ccache, mold, Bazel, Buck2, CMake, FASTBuild, Copilot
+- **重要趋势信号**:
+    - **AI驱动编译优化成竞争焦点** (方向: up, 强度: high): 微软VS 2026集成Copilot优化构建，直接对标Incredibuild的AI方案。
+    - **CI/CD“10分钟规则”成硬共识** (方向: up, 强度: high): 管道超10分钟破坏生产力，推动分布式编译和缓存需求刚性增长。
+    - **sccache生态承压加剧** (方向: down, 强度: high): v0.16.0发布但mold兼容性问题未修复，用户可能回流ccache。
+    - **Bazel/Buck2讨论热但迁移壁垒大** (方向: stable, 强度: medium): 优势明显但迁移成本高，CMake主导地位稳固。
+    - **FASTBuild作为开源分布式编译工具被提及** (方向: new, 强度: low): 支持缓存和网络分发，值得跟踪社区活跃度。
+- **值得长期跟踪的技术方向/话题**: AI驱动编译优化、分布式构建缓存、sccache vs ccache生态演变、Bazel/Buck2迁移壁垒、FASTBuild发展。
+- **竞品动态**:
+    - **微软**: VS 2026集成Copilot实现上下文感知重构和构建优化，直接对标Incredibuild。
+    - **Incredibuild**: 推广AI Sandbox和Build Cache，应对微软竞争。
+    - **sccache**: 发布v0.16.0，但mold兼容性问题未修复，生态稳定性受质疑。
+    - **ccache**: 持续更新，2026年5月发布4.13.6，维护稳定，可能吸引sccache用户回流。
+    - **FASTBuild**: 作为开源分布式编译工具被提及，但社区活跃度未知。
