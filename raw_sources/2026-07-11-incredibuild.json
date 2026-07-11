@@ -1,0 +1,372 @@
+{
+  "topic": "Incredibuild 分布式编译 竞品对比 行业格局",
+  "label": "incredibuild",
+  "date": "2026-07-11",
+  "total_sources": 25,
+  "sources": [
+    {
+      "title": "Incredibuild c++编译加速，更快的构建速度，更智能的开发周期 | 龙智 DragonSoft",
+      "url": "https://www.shdsd.com/incredibuild/index.html",
+      "platform": "龙智官网",
+      "summary": "龙智作为Incredibuild中国授权合作伙伴，推广其编译加速产品，强调无需更改代码即可加速开发周期。",
+      "relevance": "medium",
+      "tags": [
+        "Incredibuild",
+        "中国合作伙伴",
+        "编译加速"
+      ]
+    },
+    {
+      "title": "Incredibuild - C++编译加速_分布式编译_联合编译",
+      "url": "https://www.incredibuild.cn",
+      "platform": "Incredibuild中国官网",
+      "summary": "Incredibuild官方中国站点，展示对开发人员、发布经理、领导者和IT经理的价值主张，强调缩短构建时间、降低成本。",
+      "relevance": "high",
+      "tags": [
+        "Incredibuild",
+        "产品价值",
+        "编译加速"
+      ]
+    },
+    {
+      "title": "Resources - Incredibuild",
+      "url": "https://www.incredibuild.com/resources",
+      "platform": "Incredibuild官网",
+      "summary": "Incredibuild资源页面，重点推广AI沙盒产品Islo（2026年5月发布）和免费CI加速试用，强调AI编码代理的执行层。",
+      "relevance": "high",
+      "tags": [
+        "Incredibuild",
+        "Islo",
+        "AI沙盒",
+        "CI加速"
+      ]
+    },
+    {
+      "title": "Incredibuild: Accelerate Your Development",
+      "url": "https://www.incredibuild.com",
+      "platform": "Incredibuild官网",
+      "summary": "Incredibuild首页，突出Islo AI沙盒和免费CI加速，定位为加速CI/CD和开发流程的平台。",
+      "relevance": "high",
+      "tags": [
+        "Incredibuild",
+        "Islo",
+        "CI加速"
+      ]
+    },
+    {
+      "title": "Release Notes",
+      "url": "https://docs.incredibuild.com/win/10_21/windows/release_notes.html",
+      "platform": "Incredibuild文档",
+      "summary": "Incredibuild 10.9版本发布，改进了构建缓存性能、安全性（TSL 1.2）、缓存命中率细节和离线代理保留功能。",
+      "relevance": "medium",
+      "tags": [
+        "Incredibuild",
+        "版本更新",
+        "构建缓存"
+      ]
+    },
+    {
+      "title": "Incredibuild Announces New Platform | DEVOPSdigest",
+      "url": "https://www.devopsdigest.com/incredibuild-announces-new-platform",
+      "platform": "DEVOPSdigest",
+      "summary": "Incredibuild宣布新平台，但文章内容被其他新闻（Cequence、Harness、SnapLogic）覆盖，未提供具体细节。",
+      "relevance": "low",
+      "tags": [
+        "Incredibuild",
+        "平台发布"
+      ]
+    },
+    {
+      "title": "Incredibuild Accelerates End-to-End Software Development with Garden Acquisition - Incredibuild",
+      "url": "https://www.incredibuild.com/blog/incredibuild-accelerates-end-to-end-software-development-with-garden-acquisition",
+      "platform": "Incredibuild博客",
+      "summary": "Incredibuild收购Garden，以加速端到端软件开发，相关博客文章提及AI成熟度基础设施问题、Islo构建原因和SBOM挑战。",
+      "relevance": "high",
+      "tags": [
+        "Incredibuild",
+        "收购",
+        "Garden",
+        "端到端开发"
+      ]
+    },
+    {
+      "title": "Incredibuild Overview",
+      "url": "https://www.getapp.com/development-tools-software/a/incredibuild",
+      "platform": "GetApp",
+      "summary": "Incredibuild被描述为云和本地敏捷开发平台，服务于IT、金融、制造、汽车等行业，2026年6月更新。",
+      "relevance": "medium",
+      "tags": [
+        "Incredibuild",
+        "产品概述",
+        "行业应用"
+      ]
+    },
+    {
+      "title": "Release Notes",
+      "url": "https://docs.incredibuild.com/win/10_31_1/windows/release_notes.html",
+      "platform": "Incredibuild文档",
+      "summary": "Incredibuild 10.31.1版本发布，新增配置集、许可证分配API、构建数据API、缓存命中/未命中原因、预测执行支持等。",
+      "relevance": "medium",
+      "tags": [
+        "Incredibuild",
+        "版本更新",
+        "API",
+        "预测执行"
+      ]
+    },
+    {
+      "title": "End of Life Policy - Incredibuild",
+      "url": "https://www.incredibuild.com/end-of-life-policy",
+      "platform": "Incredibuild官网",
+      "summary": "Incredibuild的生命周期终止政策页面，同时推广Islo和免费CI加速。",
+      "relevance": "low",
+      "tags": [
+        "Incredibuild",
+        "生命周期政策"
+      ]
+    },
+    {
+      "title": "Bazel vs Incredibuild (2026)",
+      "url": "https://www.peerspot.com/products/comparisons/bazel_vs_incredibuild",
+      "platform": "Peerspot",
+      "summary": "Bazel与Incredibuild的对比页面，列出Jenkins、TeamCity、EngFlow、GitLab、AWS CodePipeline等作为Incredibuild的竞争对手。",
+      "relevance": "high",
+      "tags": [
+        "竞品对比",
+        "Bazel",
+        "Jenkins",
+        "TeamCity",
+        "EngFlow"
+      ]
+    },
+    {
+      "title": "FASTBuild vs. Incredibuild Comparison",
+      "url": "https://sourceforge.net/software/compare/FastBuild-vs-IncrediBuild",
+      "platform": "SourceForge",
+      "summary": "FASTBuild被描述为高性能开源构建系统，支持可扩展编译、缓存和网络分发，与Incredibuild形成对比。",
+      "relevance": "medium",
+      "tags": [
+        "竞品对比",
+        "FASTBuild",
+        "开源"
+      ]
+    },
+    {
+      "title": "Choosing the right C++ build system: A comprehensive guide for developers - Incredibuild",
+      "url": "https://www.incredibuild.com/blog/choosing-the-right-c-build-system-a-comprehensive-guide-for-developers",
+      "platform": "Incredibuild博客",
+      "summary": "Incredibuild发布C++构建系统选择指南，强调其工具可加速所选构建系统，提供免费试用。",
+      "relevance": "medium",
+      "tags": [
+        "Incredibuild",
+        "C++",
+        "构建系统",
+        "指南"
+      ]
+    },
+    {
+      "title": "EngFlow Makes C++ Builds 21x Faster and Software a Lot Safer - The New Stack",
+      "url": "https://thenewstack.io/engflow-makes-c-builds-21x-faster-and-software-a-lot-safer",
+      "platform": "The New Stack",
+      "summary": "EngFlow声称使C++构建速度提升21倍，并提高软件安全性，是Incredibuild的潜在竞争对手。",
+      "relevance": "high",
+      "tags": [
+        "竞品",
+        "EngFlow",
+        "C++构建加速"
+      ]
+    },
+    {
+      "title": "Distributed builds using FASTBuild or Incredibuild? - Unity Engine - Unity Discussions",
+      "url": "https://discussions.unity.com/t/distributed-builds-using-fastbuild-or-incredibuild/1627016",
+      "platform": "Unity Discussions",
+      "summary": "Unity社区讨论在分布式构建中使用FASTBuild还是Incredibuild，提及Incredibuild使Unity游戏运行快20倍。",
+      "relevance": "medium",
+      "tags": [
+        "社区讨论",
+        "FASTBuild",
+        "Unity",
+        "分布式构建"
+      ]
+    },
+    {
+      "title": "Top IncrediBuild Alternatives & Competitors in 2026",
+      "url": "https://www.trustradius.com/products/incredibuild/competitors",
+      "platform": "TrustRadius",
+      "summary": "列出Jenkins和TeamCity作为Incredibuild的主要替代品，Jenkins评分8.3/10。",
+      "relevance": "high",
+      "tags": [
+        "竞品",
+        "Jenkins",
+        "TeamCity"
+      ]
+    },
+    {
+      "title": "IncrediBuild - Market Share, Competitor Insights in Build And Deployment Automation",
+      "url": "https://www.6sense.com/tech/build-and-deployment-automation/incredibuild-market-share",
+      "platform": "6sense",
+      "summary": "Incredibuild在构建和部署自动化市场的主要竞争对手是Ansible（50.86%）、Bitbucket Pipelines（8.19%）和Oracle Application Express（6.85%）。",
+      "relevance": "high",
+      "tags": [
+        "市场份额",
+        "竞品",
+        "Ansible",
+        "Bitbucket Pipelines"
+      ]
+    },
+    {
+      "title": "Incredibuild: Pricing, Free Demo & Features | Software Finder - 2026",
+      "url": "https://softwarefinder.com/project-management-software/incredi-build",
+      "platform": "Software Finder",
+      "summary": "Incredibuild相比竞争对手需要更少的计算能力，列出ClickUp、BigTime、Miro作为替代品（可能不准确）。",
+      "relevance": "low",
+      "tags": [
+        "Incredibuild",
+        "定价",
+        "竞品"
+      ]
+    },
+    {
+      "title": "Distributed build systems BuildXL vs IncrediBuild - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/71742548/distributed-build-systems-buildxl-vs-incredibuild",
+      "platform": "Stack Overflow",
+      "summary": "Stack Overflow上关于BuildXL与Incredibuild的对比问题，寻求两者差异的清晰解释。",
+      "relevance": "medium",
+      "tags": [
+        "竞品对比",
+        "BuildXL",
+        "分布式构建"
+      ]
+    },
+    {
+      "title": "开源公告｜C++分布式编译系统yadcc开源了 - 腾讯云",
+      "url": "https://cloud.tencent.com/developer/article/1832308",
+      "platform": "腾讯云",
+      "summary": "腾讯开源yadcc分布式编译系统，支持~1700编译核心、512并发编译，每天编译300万+目标文件。",
+      "relevance": "high",
+      "tags": [
+        "开源",
+        "yadcc",
+        "腾讯",
+        "分布式编译"
+      ]
+    },
+    {
+      "title": "分布式编译- 服务器编程新手入门 - Haohua Liu",
+      "url": "https://liuhaohua.com/server-programming-guide/build-system/distributed-compiling",
+      "platform": "个人博客",
+      "summary": "介绍distcc和ccache搭建分布式编译缓存，作为C/C++分布式编译的常用工具。",
+      "relevance": "low",
+      "tags": [
+        "分布式编译",
+        "distcc",
+        "ccache"
+      ]
+    }
+  ],
+  "signals": [
+    {
+      "signal": "Incredibuild发布AI沙盒产品Islo，加速向AI全生命周期平台转型",
+      "direction": "new",
+      "evidence": "Incredibuild官网和资源页面多次推广Islo，定位为AI编码代理的执行层，2026年5月发布。",
+      "category": "产品"
+    },
+    {
+      "signal": "Incredibuild收购Garden，加速端到端软件开发",
+      "direction": "new",
+      "evidence": "Incredibuild官方博客宣布收购Garden，旨在扩展端到端开发能力。",
+      "category": "产品"
+    },
+    {
+      "signal": "Incredibuild推出免费CI加速试用，提供8倍更快的CI运行器",
+      "direction": "new",
+      "evidence": "官网和资源页面推广免费CI加速试用，声称8倍速度提升。",
+      "category": "产品"
+    },
+    {
+      "signal": "Incredibuild在构建和部署自动化市场份额较低，Ansible占主导",
+      "direction": "down",
+      "evidence": "6sense数据显示Ansible占50.86%市场份额，Incredibuild未进入前三。",
+      "category": "竞品"
+    },
+    {
+      "signal": "EngFlow声称C++构建速度提升21倍，成为Incredibuild有力竞争者",
+      "direction": "up",
+      "evidence": "The New Stack报道EngFlow使C++构建快21倍，且强调安全性。",
+      "category": "竞品"
+    },
+    {
+      "signal": "腾讯开源yadcc分布式编译系统，支持大规模并行编译",
+      "direction": "new",
+      "evidence": "腾讯云公告yadcc开源，支持~1700核心和512并发，对预算敏感团队构成威胁。",
+      "category": "竞品"
+    },
+    {
+      "signal": "社区持续对比Incredibuild与FASTBuild、BuildXL、Bazel等，但缺乏新突破",
+      "direction": "stable",
+      "evidence": "Stack Overflow、Unity Discussions、Peerspot等平台持续出现对比讨论，但未见颠覆性结论。",
+      "category": "行业"
+    },
+    {
+      "signal": "Incredibuild持续发布版本更新，增强缓存、API和预测执行功能",
+      "direction": "up",
+      "evidence": "10.9和10.31.1版本发布，改进构建缓存、安全性、API和预测执行。",
+      "category": "产品"
+    }
+  ],
+  "trends": [
+    {
+      "trend": "Incredibuild从传统编译加速向AI全生命周期平台转型",
+      "evidence": "发布Islo AI沙盒、收购Garden、推出免费CI加速，表明其战略重心转向AI和端到端开发。",
+      "momentum": "rising"
+    },
+    {
+      "trend": "开源分布式编译系统（如yadcc、FASTBuild）对商业产品构成竞争压力",
+      "evidence": "腾讯开源yadcc支持大规模并行编译，FASTBuild在社区中持续被讨论，对预算敏感团队有吸引力。",
+      "momentum": "rising"
+    },
+    {
+      "trend": "构建和部署自动化市场由通用DevOps工具（如Ansible、Jenkins）主导",
+      "evidence": "6sense数据显示Ansible占50.86%市场份额，Jenkins和TeamCity被列为Incredibuild主要替代品。",
+      "momentum": "stable"
+    },
+    {
+      "trend": "C++构建加速领域竞争加剧，EngFlow等新玩家涌现",
+      "evidence": "EngFlow声称21倍速度提升，获得媒体关注，成为Incredibuild的直接竞争对手。",
+      "momentum": "rising"
+    },
+    {
+      "trend": "社区对分布式编译工具的选择趋于成熟，但缺乏重大创新",
+      "evidence": "Stack Overflow、Unity Discussions等平台持续对比现有工具，但未见突破性新技术。",
+      "momentum": "stable"
+    }
+  ],
+  "companies_mentioned": [
+    "Incredibuild",
+    "龙智",
+    "Adobe",
+    "腾讯",
+    "EngFlow",
+    "Garden",
+    "Ansible",
+    "Bitbucket Pipelines",
+    "Oracle",
+    "Jenkins",
+    "TeamCity",
+    "GitLab",
+    "AWS",
+    "Harness",
+    "SnapLogic",
+    "Cequence Security"
+  ],
+  "hot_topics": [
+    "AI沙盒Islo",
+    "免费CI加速",
+    "收购Garden",
+    "yadcc开源",
+    "EngFlow竞争",
+    "构建缓存改进",
+    "预测执行",
+    "API增强"
+  ]
+}

@@ -1,23 +1,20 @@
 # build-acceleration — Research Memory
 
-最后更新: 2026-07-09
+最后更新: 2026-07-11
 
-- **公司/产品/项目**：Microsoft Visual Studio 2026、Incredibuild AI Sandbox & Build Cache、sccache、ccache、腾讯云 yadcc、distcc、FASTBuild、Bazel、Buck2、CMake、MSVC
-- **重要趋势信号**：
-    - AI驱动编译优化成为竞争焦点（方向：up，强度：high）——微软VS 2026集成Copilot，Incredibuild推AI Sandbox应对
-    - CI/CD管道优化需求刚性增长（方向：up，强度：high）——多篇2026指南强调并行与缓存，“10分钟规则”成硬共识
-    - sccache生态承压，ccache稳定更新（方向：down，强度：medium）——sccache v0.16.0 mold问题未修复，ccache 4.13.6稳定发布
-    - 开源分布式编译工具涌现（方向：new，强度：medium）——腾讯云开源yadcc，distcc持续维护，FASTBuild被提及
-    - Visual Studio 2026成为C++开发重要更新（方向：up，强度：high）——GA发布，集成Copilot、C++23、MSVC性能提升
-- **值得长期跟踪的技术方向/话题**：
-    - AI在编译优化中的深度集成（如Copilot与第三方工具竞争）
-    - 开源分布式编译工具（yadcc、distcc、FASTBuild）的社区活跃度与实际采用
-    - Bazel/Buck2的迁移壁垒与CMake主导地位变化
-    - sccache vs ccache的用户回流趋势
-- **竞品动态**：
-    - Microsoft：VS 2026 GA，集成Copilot、C++23、MSVC性能提升，直接与Incredibuild竞争
-    - Incredibuild：推广AI Sandbox和Build Cache，应对微软竞争
-    - sccache：v0.16.0发布，但mold兼容性问题未修复，生态承压
-    - ccache：4.13.6稳定发布，可能吸引用户回流
-    - 腾讯云：开源yadcc，加入分布式编译工具生态
-    - distcc：持续维护，与ccache组合使用
+- **公司/产品/项目**: Visual Studio 2026, Incredibuild, GitHub Copilot, sccache, ccache, yadcc (腾讯云), distcc, FASTBuild, Bazel, Buck2, Pigweed, mold 链接器
+- **重要趋势信号**:
+    - **AI驱动编译优化成为竞争焦点** (high): VS 2026 集成 Copilot, Incredibuild 推 AI Sandbox, 多篇指南强调 AI 可观测性。
+    - **CI/CD管道优化需求刚性增长** (high): 多篇2026指南强调“10分钟规则”、构建缓存、并行化，云成本压力驱动。
+    - **开源分布式编译工具涌现** (medium): 腾讯云开源 yadcc, FASTBuild 被 Unreal Engine 社区采用。
+    - **Bazel/Buck2作为下一代构建系统受关注** (medium): Pigweed 计划迁移至 Bazel，讨论从“能否替代”转向“如何迁移”。
+    - **sccache生态承压，ccache稳定更新** (medium): sccache v0.16.0 未修复 mold 兼容性问题，ccache 4.13.6 稳定发布。
+- **值得长期跟踪的技术方向/话题**:
+    - Bazel/Buck2 迁移案例（如 Pigweed）的实际进展与社区反馈。
+    - AI 可观测性在 CI/CD 中的具体落地效果与工具成熟度。
+    - FASTBuild 在 Unreal Engine 社区的采用率变化。
+- **竞品动态**:
+    - **微软**: VS 2026 集成 Copilot、C++23 支持、MSVC 性能提升，直接与 Incredibuild 竞争。
+    - **Incredibuild**: 推出 AI Sandbox 和 Build Cache 应对微软竞争。
+    - **腾讯云**: 开源 yadcc，加入分布式编译工具生态。
+    - **Mozilla/Meta/Google**: 维护 sccache (Mozilla)、Buck2 (Meta)、Bazel (Google)，影响行业技术路线。
