@@ -1,18 +1,27 @@
 # incredibuild — Research Memory
 
-最后更新: 2026-07-16
+最后更新: 2026-07-18
 
-- **公司/产品**: Incredibuild（AI沙箱Islo、免费CI加速）、EngFlow、FASTBuild、腾讯yadcc、Ansible、Jenkins、TeamCity、Bazel、GitLab、BuildXL、Visual Studio 2026
-- **重要趋势信号**:
-  - Incredibuild战略转向AI全生命周期平台，发布AI沙箱Islo（强度: high）
-  - EngFlow竞争升级，声称C++构建加速21倍并强调安全优势（强度: high）
-  - 开源方案FASTBuild和yadcc威胁扩散，形成低端市场压力（强度: high）
-  - Incredibuild提供免费CI加速（8倍）以吸引用户（强度: high）
-  - Incredibuild在构建自动化市场份额极低，定位分布式编译细分领域（强度: medium）
-  - Visual Studio 2026增强C++开发体验，可能间接影响分布式编译需求（强度: low）
-- **值得长期跟踪的技术方向**: 分布式编译加速、AI开发基础设施平台、开源编译方案（yadcc、FASTBuild）、CI/CD免费策略与价格战、微软在构建加速方面的后续动作
-- **竞品动态**:
-  - EngFlow通过媒体发布性能数据（21倍加速）和安全优势，直接挑战Incredibuild
-  - 腾讯开源yadcc，性能优于ccache/distcc，社区活跃
-  - FASTBuild被列为免费多平台替代品
-  - Incredibuild推出免费CI加速计划，意图低价获客
+### 关键记忆点
+
+- **公司/产品/项目：** Incredibuild, EngFlow, FASTBuild, yadcc (腾讯), stashed.io, Islo (AI沙箱), Visual Studio 2026
+- **重要趋势信号：**
+  - **Incredibuild 战略转向 AI 平台**：发布 AI 沙箱 Islo，从分布式编译转向 AI 开发基础设施。强度：high
+  - **EngFlow 竞争升级**：声称 C++ 构建加速 21 倍，强调安全优势，直接对标 Incredibuild。强度：high
+  - **开源方案威胁扩散**：FASTBuild 和 yadcc 在社区中成为免费替代品，形成低端市场压力。强度：high
+  - **Incredibuild 免费 CI 加速**：推出免费计划（8 倍加速），以低价获客。强度：medium
+  - **Incredibuild 市场份额极低**：在构建自动化类别中份额极小，主要对手为 Ansible 等通用工具。强度：medium
+  - **社区对替代品兴趣增加**：stashed.io（带缓存）等新竞品被讨论。强度：medium
+  - **Visual Studio 2026 关注构建加速**：微软会议预告可能影响第三方工具需求。强度：low
+  - **Incredibuild 停止支持旧版本**：推动用户升级，可能引发流失。强度：medium
+- **值得长期跟踪的技术方向/话题：**
+  - **AI 与开发基础设施融合**：Incredibuild 的 AI 沙箱 Islo 代表趋势。
+  - **分布式编译的缓存优化**：stashed.io 等新方案强调缓存。
+  - **开源方案 vs 商业产品**：yadcc、FASTBuild 对商业产品的压力。
+  - **微软 Visual Studio 的构建加速改进**：可能重塑 Windows 平台需求。
+- **竞品动态：**
+  - **EngFlow**：通过媒体和社区营销，声称 21 倍加速，安全优势。
+  - **FASTBuild**：Unity 社区中作为 Incredibuild 免费替代品。
+  - **yadcc**：腾讯开源，性能优于 ccache/distcc，活跃于 GitHub。
+  - **stashed.io**：新竞品，以缓存为核心卖点。
+  - **Incredibuild**：推出免费 CI 加速计划，停止支持旧版本，推动 AI 转型。
