@@ -1,33 +1,21 @@
 # incredibuild — Research Memory
 
-最后更新: 2026-07-28
+最后更新: 2026-07-30
 
-### 关键记忆点（2026年7月）
+### 关键记忆点
 
-#### 公司/产品/项目
-- **Incredibuild**：核心产品为分布式编译加速，正转型为AI平台。
-- **EngFlow**：新兴竞品，主打21倍加速与安全。
-- **FASTBuild**：开源分布式编译方案，被视为Incredibuild免费替代品。
-- **yadcc**：腾讯开源分布式编译项目，活跃于GitHub。
-- **Islo**：Incredibuild于2026年5月发布的AI沙箱，定位为“AI编码代理执行层”。
-
-#### 重要趋势信号
-- **Incredibuild战略转向AI沙箱Islo**（强度：high）：官网、新闻、博客全面推广，从编译加速工具向AI平台转型。
-- **开源方案（FASTBuild、yadcc）形成“上下夹击”**（强度：high）：性能追赶、价格优势，侵蚀中低端市场。
-- **EngFlow获行业媒体背书**（强度：medium）：The New Stack报道其21倍加速与安全卖点，威胁高端市场。
-- **Incredibuild推出免费CI加速计划**（强度：medium）：官网推广“8× faster CI runners for free”，应对价格冲击。
-- **Incredibuild市场份额极低**（强度：high）：6sense数据显示在构建和部署自动化类别中远低于Ansible等通用工具。
-- **社区对Incredibuild的负面反馈**（强度：high）：用户抱怨骚扰式销售、认证问题，品牌忠诚度下降。
-- **Unity社区对Incredibuild的局限性认知**（强度：medium）：仅对IL2CPP（C++）有效，对C#编译收益甚微。
-
-#### 值得长期跟踪的技术方向/话题
-- **AI沙箱Islo的实际采用率与用户反馈**：决定Incredibuild转型成败。
-- **开源方案（FASTBuild、yadcc）社区活跃度与性能突破**：性能提升将压缩Incredibuild生存空间。
-- **EngFlow市场渗透率与用户满意度**：决定Incredibuild在高端市场的命运。
-- **免费CI加速计划对Incredibuild用户获取的影响**：观察转化率和用户留存。
-
-#### 竞品动态
-- **EngFlow**：获The New Stack报道，强调21倍加速与安全，直接对标Incredibuild核心价值。
-- **FASTBuild**：在Unity社区被广泛推荐为免费替代品，持续活跃。
-- **yadcc**：腾讯开源项目，提供透明适配、全局调度、分布式缓存，设计文档详细。
-- **通用CI/CD工具（Ansible、Bitbucket Pipelines、Azure DevOps）**：市场份额远高于Incredibuild，构成降维打击。
+- **公司/产品/项目：** Incredibuild, Islo AI 沙箱, FASTBuild, yadcc (腾讯), EngFlow, Bazel, Azure DevOps, Jenkins, Ansible, 龙智
+- **重要趋势信号：**
+    - **Incredibuild 全面转向 AI 平台 (方向: up, 强度: high):** 推出 Islo AI 沙箱，定位为“AI 编码代理执行层”，试图重塑品牌。
+    - **用户价格敏感度飙升 (方向: down, 强度: high):** 用户抱怨价格从 600 美元涨至 3000 美元，积极寻找替代方案，核心用户群面临流失风险。
+    - **开源方案 (FASTBuild, yadcc) 活跃度上升 (方向: up, 强度: high):** 在 Unity 社区和 GitHub 持续活跃，成为价格敏感用户的首选替代品。
+    - **EngFlow 在高端市场形成威胁 (方向: up, 强度: high):** Peerspot 对比频率达 21%，直接挑战 Incredibuild 的核心价值主张。
+    - **Incredibuild 市场份额极低 (方向: stable, 强度: high):** 在 CI/CD 工具市场中份额远低于通用型工具，市场天花板较低。
+- **值得长期跟踪的技术方向/话题：**
+    - **AI 原生开发平台 (Islo AI 沙箱):** 其开发者社区采用率和反馈将决定 Incredibuild 转型成败。
+    - **分布式编译开源方案性能突破:** FASTBuild 和 yadcc 的性能提升将直接削弱 Incredibuild 的核心价值。
+    - **免费 CI 加速计划效果:** 用户转化率和留存效果是观察 Incredibuild 能否“止血”的关键。
+- **竞品动态：**
+    - **Incredibuild:** 推出“免费 CI 加速计划”以应对用户流失。
+    - **EngFlow:** 凭借“21 倍加速”和“安全”卖点，在高端市场渗透率上升。
+    - **FASTBuild / yadcc:** 作为免费开源方案，社区活跃度稳定，技术文档完善。

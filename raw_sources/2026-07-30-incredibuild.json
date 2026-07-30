@@ -1,0 +1,427 @@
+{
+  "topic": "Incredibuild 分布式编译 竞品对比 行业格局",
+  "label": "incredibuild",
+  "date": "2026-07-30",
+  "total_sources": 26,
+  "sources": [
+    {
+      "title": "Incredibuild Blog: Software Development Insights",
+      "url": "https://www.incredibuild.com/blog",
+      "platform": "Incredibuild官网",
+      "summary": "博客首页推广Islo AI沙箱、Unity Shader编译优化、免费CI加速计划",
+      "relevance": "high",
+      "tags": [
+        "产品推广",
+        "AI沙箱",
+        "CI加速",
+        "Unity"
+      ]
+    },
+    {
+      "title": "Incredibuild c++编译加速，更快的构建速度，更智能的开发周期 | 龙智 DragonSoft",
+      "url": "https://www.shdsd.com/incredibuild/index.html",
+      "platform": "龙智官网",
+      "summary": "中国授权合作伙伴龙智推广Incredibuild，强调加速编译、测试和发布",
+      "relevance": "medium",
+      "tags": [
+        "中国渠道",
+        "合作伙伴",
+        "编译加速"
+      ]
+    },
+    {
+      "title": "分布式编译IncrediBuild 安装使用(转载)-CSDN博客",
+      "url": "https://blog.csdn.net/xp178171640/article/details/117771702",
+      "platform": "CSDN",
+      "summary": "技术博客记录Incredibuild Coordinator服务启动失败及排查",
+      "relevance": "low",
+      "tags": [
+        "技术问题",
+        "运维"
+      ]
+    },
+    {
+      "title": "Incredibuild: Accelerate Your Development",
+      "url": "https://www.incredibuild.com",
+      "platform": "Incredibuild官网",
+      "summary": "官网首页突出Islo AI沙箱、AI原生开发博客、免费CI加速",
+      "relevance": "high",
+      "tags": [
+        "产品推广",
+        "AI沙箱",
+        "CI加速"
+      ]
+    },
+    {
+      "title": "Xoreax IncrediBuild_百度百科",
+      "url": "https://baike.baidu.com/item/Xoreax%20IncrediBuild/7305251",
+      "platform": "百度百科",
+      "summary": "百度百科条目，概述Incredibuild定义、技术、发展历程",
+      "relevance": "low",
+      "tags": [
+        "百科",
+        "背景信息"
+      ]
+    },
+    {
+      "title": "IncrediBuild 进行联合编译 - 小 楼 一 夜 听 春 雨 - 博客园",
+      "url": "https://www.cnblogs.com/kex1n/archive/2010/08/12/2286478.html",
+      "platform": "博客园",
+      "summary": "2010年博客介绍Incredibuild用于Visual Studio C++编译加速",
+      "relevance": "low",
+      "tags": [
+        "历史资料",
+        "Visual Studio"
+      ]
+    },
+    {
+      "title": "Incredibuild Offers Distributed Compiling for MSVC",
+      "url": "https://www.gamedeveloper.com/game-platforms/incredibuild-offers-distributed-compiling-for-msvc",
+      "platform": "Game Developer",
+      "summary": "行业媒体文章提及Incredibuild为MSVC提供分布式编译",
+      "relevance": "medium",
+      "tags": [
+        "行业媒体",
+        "MSVC",
+        "游戏开发"
+      ]
+    },
+    {
+      "title": "Distributed builds using FASTBuild or Incredibuild? - Unity Engine - Unity Discussions",
+      "url": "https://discussions.unity.com/t/distributed-builds-using-fastbuild-or-incredibuild/1627016",
+      "platform": "Unity Discussions",
+      "summary": "Unity社区讨论FASTBuild与Incredibuild的选择",
+      "relevance": "high",
+      "tags": [
+        "社区讨论",
+        "FASTBuild",
+        "Unity",
+        "竞品对比"
+      ]
+    },
+    {
+      "title": "Incredibuild Unveils State-of-the-Art AI Platform to Accelerate the Entire Software Development Lifecycle",
+      "url": "https://www.prnewswire.com/news-releases/incredibuild-unveils-state-of-the-art-ai-platform-to-accelerate-the-entire-software-development-lifecycle-302560614.html",
+      "platform": "PRNewswire",
+      "summary": "新闻稿宣布Incredibuild推出AI平台，基于缓存、预测执行、分布式计算等",
+      "relevance": "high",
+      "tags": [
+        "新闻稿",
+        "AI平台",
+        "战略转型"
+      ]
+    },
+    {
+      "title": "How Incredible Is Incredibuild? | Games From Within",
+      "url": "https://gamesfromwithin.com/how-incredible-is-incredibuild",
+      "platform": "Games From Within",
+      "summary": "博客文章质疑Incredibuild的实际效果，指出其局限性",
+      "relevance": "medium",
+      "tags": [
+        "评测",
+        "质疑",
+        "游戏开发"
+      ]
+    },
+    {
+      "title": "c++ - MSBuild / Visual Studio distributed builds - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/1681677/msbuild-visual-studio-distributed-builds",
+      "platform": "Stack Overflow",
+      "summary": "开发者讨论MSBuild分布式编译方案，提及Incredibuild价格从600涨至3000美元",
+      "relevance": "high",
+      "tags": [
+        "开发者反馈",
+        "价格问题",
+        "替代方案"
+      ]
+    },
+    {
+      "title": "Bazel vs Incredibuild (2026)",
+      "url": "https://www.peerspot.com/products/comparisons/bazel_vs_incredibuild",
+      "platform": "Peerspot",
+      "summary": "对比平台显示Bazel、Jenkins、TeamCity、EngFlow等与Incredibuild的对比频率",
+      "relevance": "medium",
+      "tags": [
+        "竞品对比",
+        "Bazel",
+        "EngFlow"
+      ]
+    },
+    {
+      "title": "FASTBuild vs. Incredibuild Comparison",
+      "url": "https://sourceforge.net/software/compare/FastBuild-vs-IncrediBuild",
+      "platform": "SourceForge",
+      "summary": "FASTBuild被描述为高性能开源构建系统，支持分布式编译和缓存",
+      "relevance": "high",
+      "tags": [
+        "FASTBuild",
+        "开源",
+        "竞品对比"
+      ]
+    },
+    {
+      "title": "News Archive - Incredibuild",
+      "url": "https://www.incredibuild.com/news",
+      "platform": "Incredibuild官网",
+      "summary": "新闻存档页面，内容与博客首页类似",
+      "relevance": "medium",
+      "tags": [
+        "新闻存档",
+        "产品推广"
+      ]
+    },
+    {
+      "title": "Incredibuild_百度百科",
+      "url": "https://baike.baidu.com/item/Incredibuild/61772524",
+      "platform": "百度百科",
+      "summary": "百度百科条目，概述Incredibuild背景、发展、市场影响",
+      "relevance": "low",
+      "tags": [
+        "百科",
+        "背景信息"
+      ]
+    },
+    {
+      "title": "Incredibuild - Build Faster",
+      "url": "https://il.linkedin.com/company/incredibuild",
+      "platform": "LinkedIn",
+      "summary": "LinkedIn公司页面，显示类似公司和收购信息",
+      "relevance": "low",
+      "tags": [
+        "公司信息",
+        "收购"
+      ]
+    },
+    {
+      "title": "Google Cloud Build vs Incredibuild (2026)",
+      "url": "https://www.peerspot.com/products/comparisons/google-cloud-build_vs_incredibuild",
+      "platform": "Peerspot",
+      "summary": "对比平台显示Google Cloud Build与Incredibuild的对比",
+      "relevance": "low",
+      "tags": [
+        "竞品对比",
+        "Google Cloud Build"
+      ]
+    },
+    {
+      "title": "Top IncrediBuild Alternatives & Competitors in 2026",
+      "url": "https://www.trustradius.com/products/incredibuild/competitors",
+      "platform": "TrustRadius",
+      "summary": "列出Azure DevOps、Jenkins、Gradle等作为Incredibuild替代品",
+      "relevance": "medium",
+      "tags": [
+        "竞品列表",
+        "替代方案"
+      ]
+    },
+    {
+      "title": "Top 10 Incredibuild Alternatives 2026",
+      "url": "https://www.peerspot.com/products/incredibuild-alternatives-and-competitors",
+      "platform": "Peerspot",
+      "summary": "列出IBM Rational Build Forge、Bazel等替代品",
+      "relevance": "medium",
+      "tags": [
+        "竞品列表",
+        "替代方案"
+      ]
+    },
+    {
+      "title": "Incredibuild Alternatives, Competitors & Similar Software",
+      "url": "https://www.getapp.com/development-tools-software/a/incredibuild/alternatives",
+      "platform": "GetApp",
+      "summary": "列出Incredibuild的替代软件",
+      "relevance": "medium",
+      "tags": [
+        "竞品列表",
+        "替代方案"
+      ]
+    },
+    {
+      "title": "Top 7 Open Source Build Systems - Incredibuild",
+      "url": "https://www.incredibuild.com/blog/top-7-open-source-c-build-systems",
+      "platform": "Incredibuild官网",
+      "summary": "Incredibuild博客列出7个开源构建系统，包括FASTBuild等",
+      "relevance": "high",
+      "tags": [
+        "开源构建系统",
+        "博客",
+        "竞品分析"
+      ]
+    },
+    {
+      "title": "C++编译加速：从并行编译到模块化设计的全链路优化_文心快码",
+      "url": "https://comate.baidu.com/zh/page/8yi7l692bec",
+      "platform": "百度文心快码",
+      "summary": "文章介绍C++编译加速方案，提及分布式编译架构",
+      "relevance": "low",
+      "tags": [
+        "C++编译",
+        "优化方案"
+      ]
+    },
+    {
+      "title": "[C++] 提高 C++ 项目编译速度的神兵利器",
+      "url": "https://wenfh2020.com/2024/11/25/cpp-build-tools",
+      "platform": "个人博客",
+      "summary": "博客列举ccache、distcc等编译加速工具",
+      "relevance": "low",
+      "tags": [
+        "编译加速",
+        "工具列表"
+      ]
+    },
+    {
+      "title": "C++项目的分布式编译系统",
+      "url": "https://blog.csdn.net/babyblue_963/article/details/130354879",
+      "platform": "CSDN",
+      "summary": "博客讨论分布式编译系统，但内容被无关信息覆盖",
+      "relevance": "low",
+      "tags": [
+        "分布式编译",
+        "技术文章"
+      ]
+    },
+    {
+      "title": "初识FASTBuild 一个大幅提升C/C++项目编译速度的分布式 ...",
+      "url": "https://www.cnblogs.com/tangxin-blog/p/8635438.html",
+      "platform": "博客园",
+      "summary": "2018年博客介绍FASTBuild的使用和配置",
+      "relevance": "medium",
+      "tags": [
+        "FASTBuild",
+        "教程",
+        "开源"
+      ]
+    },
+    {
+      "title": "Yadcc 分布式C++ 编译器",
+      "url": "https://github.com/Tencent/yadcc",
+      "platform": "GitHub",
+      "summary": "腾讯开源分布式C++编译器，设计特点包括透明适配、全局调度、分布式缓存",
+      "relevance": "high",
+      "tags": [
+        "yadcc",
+        "腾讯",
+        "开源",
+        "分布式编译"
+      ]
+    }
+  ],
+  "signals": [
+    {
+      "signal": "Incredibuild全面转向AI平台，推出Islo AI沙箱",
+      "direction": "up",
+      "evidence": "官网、博客、新闻稿均重点推广Islo AI沙箱，定位为AI编码代理执行层",
+      "category": "产品"
+    },
+    {
+      "signal": "免费CI加速计划吸引用户",
+      "direction": "up",
+      "evidence": "官网推广'8× faster CI runners for free'，提供早期访问",
+      "category": "产品"
+    },
+    {
+      "signal": "用户对Incredibuild价格敏感度上升",
+      "direction": "down",
+      "evidence": "Stack Overflow用户抱怨价格从600涨至3000美元，寻求替代方案",
+      "category": "用户"
+    },
+    {
+      "signal": "开源方案FASTBuild和yadcc持续活跃",
+      "direction": "up",
+      "evidence": "FASTBuild在Unity社区被推荐，yadcc在GitHub有详细设计文档",
+      "category": "竞品"
+    },
+    {
+      "signal": "EngFlow在高端市场形成威胁",
+      "direction": "up",
+      "evidence": "Peerspot对比中EngFlow与Incredibuild对比频率21%，且获行业媒体背书",
+      "category": "竞品"
+    },
+    {
+      "signal": "Incredibuild市场份额极低",
+      "direction": "stable",
+      "evidence": "6sense数据显示在构建和部署自动化类别中远低于Ansible等通用工具",
+      "category": "行业"
+    },
+    {
+      "signal": "Unity社区对Incredibuild的局限性认知",
+      "direction": "stable",
+      "evidence": "社区讨论指出仅对IL2CPP有效，对C#编译收益甚微",
+      "category": "用户"
+    },
+    {
+      "signal": "Incredibuild中国渠道合作",
+      "direction": "stable",
+      "evidence": "龙智作为中国授权合作伙伴进行推广",
+      "category": "渠道"
+    }
+  ],
+  "trends": [
+    {
+      "trend": "Incredibuild从编译加速工具向AI平台转型",
+      "evidence": "推出Islo AI沙箱，新闻稿强调AI平台，博客内容转向AI原生开发",
+      "momentum": "rising"
+    },
+    {
+      "trend": "开源分布式编译方案侵蚀Incredibuild市场",
+      "evidence": "FASTBuild、yadcc等开源项目活跃，社区推荐度上升",
+      "momentum": "rising"
+    },
+    {
+      "trend": "用户对商业编译加速工具的价格敏感度增加",
+      "evidence": "Stack Overflow等平台用户抱怨价格高，寻求免费或低价替代品",
+      "momentum": "rising"
+    },
+    {
+      "trend": "通用CI/CD工具对专业编译加速工具的降维打击",
+      "evidence": "Ansible、Azure DevOps等市场份额远高于Incredibuild",
+      "momentum": "stable"
+    },
+    {
+      "trend": "AI编码代理执行层成为新热点",
+      "evidence": "Incredibuild推出Islo，定位为AI编码代理执行层",
+      "momentum": "rising"
+    }
+  ],
+  "companies_mentioned": [
+    "Incredibuild",
+    "EngFlow",
+    "FASTBuild",
+    "yadcc (腾讯)",
+    "Bazel",
+    "Jenkins",
+    "TeamCity",
+    "GitLab",
+    "Azure DevOps",
+    "Google Cloud Build",
+    "IBM Rational Build Forge",
+    "Gradle",
+    "CircleCI",
+    "Harness",
+    "AWS CodePipeline",
+    "Buddy",
+    "GoCD",
+    "CloudBees Codeship",
+    "Komodor",
+    "Sett",
+    "Kypso",
+    "Lusha",
+    "Faye",
+    "ScaleOps",
+    "Navina",
+    "Jeen.ai",
+    "Lema AI",
+    "龙智"
+  ],
+  "hot_topics": [
+    "AI沙箱Islo",
+    "免费CI加速",
+    "FASTBuild vs Incredibuild",
+    "yadcc分布式编译",
+    "EngFlow安全加速",
+    "Incredibuild价格争议",
+    "Unity IL2CPP编译加速",
+    "开源构建系统"
+  ]
+}
