@@ -1,33 +1,23 @@
 # build-acceleration — Research Memory
 
-最后更新: 2026-07-30
+最后更新: 2026-08-01
 
-### 公司/产品/项目
-- **腾讯 yadcc**：开源分布式编译系统，性能标杆（1000核集群编译LLVM仅3分11秒）。
-- **Mozilla sccache**：v0.16.0发布，生态成熟，但出现与mold链接器的兼容性问题。
-- **Pigweed**：知名嵌入式项目，计划迁移至Bazel作为主要构建系统。
-- **Incredibuild**：商业构建加速方案，宣称可加速CI运行器8倍，并开始覆盖Bazel优化。
-- **ccache**：4.13.6发布，无重大更新，进入稳定维护期。
-- **Microsoft**：Pure Virtual C++ 2026会议涵盖C++/Rust互操作、AI驱动工具和构建性能；MSVC构建工具预览版修复LTCG和链接器问题。
+## 关键记忆点
 
-### 重要趋势信号
-- **开源分布式编译进入性能竞赛**（方向：up，强度：high）：腾讯yadcc树立新标杆，性能远超传统方案。
-- **构建缓存成为CI/CD标配**（方向：up，强度：high）：多个案例显示引入缓存可降低构建时间95%（如45分钟→8分钟）。
-- **下一代构建系统迁移加速**（方向：up，强度：high）：讨论焦点从“是否采用”转向“如何迁移”，Pigweed等知名项目计划迁移至Bazel。
-- **商业方案跟进开源趋势**（方向：up，强度：medium）：Incredibuild开始覆盖Bazel优化，表明商业厂商积极适应市场需求。
-- **sccache与mold兼容性问题**（方向：stable，强度：medium）：技术摩擦点，可能导致用户无法同时享受两者优势。
-- **ccache进入稳定维护期**（方向：stable，强度：low）：无重大创新，市场关注度自然下降。
+- **公司/项目**：腾讯yadcc、Mozilla sccache、Wasmer sccache fork、Incredibuild、Pigweed、Buck2（Meta）、Microsoft（VS 2026/MSVC）、ccache、mold、distcc
 
-### 值得长期跟踪的技术方向/话题
-- **分布式编译性能竞赛**：关注yadcc等开源工具的性能突破和生态发展。
-- **下一代构建系统迁移实践**：Bazel/Buck2在嵌入式、大型项目中的迁移案例和最佳实践。
-- **构建缓存优化**：缓存策略在CI/CD中的深度应用和效果量化。
-- **高性能工具链兼容性**：mold链接器与sccache等工具的兼容性问题及解决方案。
-- **商业vs开源构建加速方案**：Incredibuild等商业方案与开源工具（yadcc、sccache）的竞争与合作。
-- **C++/Rust互操作与AI驱动构建**：微软Pure Virtual C++ 2026会议提及，可能影响未来构建工具链。
+- **信号：开源分布式编译进入性能竞赛**（up，high）— 腾讯yadcc千核集群编译LLVM仅3分11秒，15倍加速比，性能对标商业方案
 
-### 竞品动态
-- **腾讯yadcc**：开源分布式编译系统，性能数据亮眼（15倍加速），成为本周最受关注的开源项目。
-- **Incredibuild**：商业化推广覆盖Bazel优化，宣称可加速CI运行器8倍，是本周重要竞品动态。
-- **Mozilla sccache**：v0.16.0发布，但出现与mold的兼容性问题，需关注后续解决方案。
-- **Microsoft**：Pure Virtual C++ 2026会议涵盖构建性能主题；MSVC构建工具预览版修复增量链接稳定性问题。
+- **信号：构建缓存成为CI/CD标配**（up，high）— sccache/ccache缓存可降构建时间最高95%（45分钟→8分钟），缓存命中率成核心KPI
+
+- **信号：下一代构建系统迁移加速**（up，high）— Pigweed正式提案迁移至Bazel（SEED 0111），讨论焦点从"是否采用"转向"如何迁移"
+
+- **信号：商业方案跟进开源趋势**（up，medium）— Incredibuild开始覆盖Bazel优化，宣称加速CI运行器8倍，商业与开源从对立走向融合
+
+- **信号：sccache与mold兼容性问题**（stable，medium）— v0.16.0出现兼容性问题，工具链组合兼容性成选型隐性变量
+
+- **信号：ccache进入稳定维护期**（stable，low）— 4.13.6无重大更新，关注度自然下降
+
+- **竞品动态**：Incredibuild内容策略转向覆盖Bazel/CMake生态；Microsoft发布VS 2026（接近完整C++23）；Wasmer fork增强sccache云存储能力
+
+- **长期跟踪方向**：① 分布式编译集群调度效率与网络传输优化；② Bazel/Buck2生态迁移成本与CMake地位挑战；③ 商业方案与开源工具深度整合模式（"开源核心+商业增强"）；④ 工具链组合兼容性摩擦（编译器+缓存+链接器+分布式层）
