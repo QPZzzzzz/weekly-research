@@ -1,34 +1,16 @@
 # build-acceleration — Research Memory
 
-最后更新: 2026-08-04
+最后更新: 2026-08-07
 
-## 关键记忆点提取
+## 关键记忆点
 
-### 公司/产品/项目
-- **腾讯 yadcc**：1700 核心集群，日编译 300 万+目标文件，LLVM 编译 3 分 11 秒（15 倍加速）
-- **IncrediBuild**：集成至 Visual Studio 2026（引擎级），宣称加速 CI 运行器 8 倍
-- **Microsoft**：VS 2026 内置 IncrediBuild 引擎，CMake 4.1.1，C++23 完整支持
-- **NativeLink**：CMake 项目远程构建缓存与执行方案，开源可自托管
-- **sccache**：Mozilla/Databend 生产验证降编译时间最高 95%，OpenDAL 成为组件
-- **ccache**：4.13.6 发布，MSVC 缓存支持提升
-- **mold**：与 sccache v0.16.0 存在兼容性问题
-
-### 重要趋势信号
-- **商业与开源深度整合**（high）："开源核心+商业增强"成主流，MSVC 引擎级集成 IncrediBuild
-- **远程构建缓存/执行服务兴起**（medium）：NativeLink 提供"不迁移构建系统"的加速路径，直击 Bazel 迁移痛点
-- **构建缓存成 CI/CD 标配**（high）：缓存命中率成核心 KPI，案例 45→8 分钟（降 82%）
-- **sccache 深入 Rust 生态**（medium）：OpenDAL 集成增强存储后端抽象，可能带动其他语言生态
-- **分布式编译性能竞赛消退**（low）：yadcc 已确立标杆，进入渐进优化期
-
-### 长期跟踪方向
-- **远程执行服务（RE）作为独立加速层**：2026-2027 年可能增长最快的细分赛道
-- **工具链兼容性测试矩阵**：ccache/sccache + mold/lld + distcc/yadcc + CMake/Bazel 组合爆炸风险
-- **缓存命中率进入工程效能 dashboard 标准指标集**（预计 2027 年）
-- **sccache + 存储抽象（OpenDAL）范式**：可能成为"缓存工具+存储抽象"参考范式
-- **Bazel/Buck2 迁移紧迫性下降**：NativeLink 模式若被验证，可能延缓迁移浪潮
-
-### 竞品动态
-- **Microsoft × IncrediBuild**：引擎级整合，从"插件捆绑"升级为"平台基础设施"
-- **NativeLink**：新进入者，定位"构建系统无关"加速层，开源+自托管
-- **腾讯 yadcc**：开源方案达商业级性能，竞争焦点转向调度效率与吞吐量
-- **sccache**：从通用缓存工具向"语言生态基础设施"演进（OpenDAL 集成）
+- **sccache**：从 Rust 生态工具跃迁为 C++ 编译缓存主流选择，云存储 + 多语言（C/C++/Rust/CUDA）支持，Mozilla/Databend 验证编译时间降 95%，OpenDAL 存储抽象层集成增强后端灵活性 | 趋势：up | 强度：high
+- **IncrediBuild**：从分布式编译工具升级为“构建效能全栈平台”，产品线扩展至 CI 运行器加速、缓存、可观测性，VS 2026 引擎级集成，可能引发与 APM 厂商（Grafana/Dynatrace）交叉竞争 | 趋势：up | 强度：medium
+- **缓存命中率成为 CI/CD 工程效能核心 KPI**：从“技术指标”上升为“管理指标”，预计 2027 年进入工程效能 dashboard 标准指标集 | 趋势：up | 强度：high
+- **distcc**：仍为分布式编译“入门首选”，免费易用，10 台机器 112 核 30 分钟→8 分半（3.5 倍加速），但需与 ccache/sccache 配合，“分布式编译 + 本地缓存”为社区标准实践 | 趋势：stable | 强度：medium
+- **远程执行服务（RE）成为“第三条道路”**：NativeLink 等提供不迁移构建系统的加速路径，降低 Bazel 迁移紧迫性，可能形成“CMake + RE 服务”新主流组合，2026-2027 年增长最快细分赛道 | 趋势：up | 强度：medium
+- **Bazel 迁移讨论降温**：6 个月实测推荐 CMake 首选，Bazel“强大但复杂”，迁移热度减弱 | 趋势：down | 强度：low
+- **FASTBuild**：分布式编译工具，预告缓存功能，关注度稳定但非主流 | 趋势：stable | 强度：low
+- **ccache 信号消退**：进入稳定维护期，关注度被 sccache 崛起转移，MSVC 缓存支持提升未产生新讨论 | 趋势：down | 强度：low
+- **yadcc 调度效率/网络传输优化关注度下降**：腾讯 1700 核心集群标杆已确立，竞争焦点转向缓存集成与工具链整合 | 趋势：down | 强度：low
+- **值得长期跟踪**：sccache × OpenDAL 集成深度（可能成为跨语言缓存标准范式）、IncrediBuild 可观测性扩展（构建效能监控新竞争）、NativeLink 等 RE 服务采用情况
