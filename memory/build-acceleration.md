@@ -1,36 +1,38 @@
 # build-acceleration — Research Memory
 
-最后更新: 2026-08-13
+最后更新: 2026-08-15
 
 ## 关键记忆点
 
 ### 公司/产品/项目
-- **微软 Visual Studio 2026**：C++23 接近完整、集成 GitHub Copilot、改进 MSVC 性能、扩展 ARM64 ASan
-- **IncrediBuild**：推出 AI 沙箱 Islo，发布《7 Signs Your CI/CD Pipeline Needs Build Acceleration》
-- **sccache**：被 Google Android 采用，支持 S3/GCS/Redis 远程存储，Rust 原生支持
-- **ccache**：进入维护期（最新 4.13.6），独立存在感下降
-- **NativeLink + CMake**：RE 服务组合应用，早期信号
-- **Pigweed**：Bazel 转为主要构建系统，CMake 继续支持，GN 进入维护模式
-- **华为云 CodeArts Build**：提供分布式编译 + 增量编译加速（Gcc/Clang）
-- **Intel oneAPI DPC++/C++ 2026.0**：提升构建和迭代速度
-- **distcc + ccache**：中小型项目仍为主流组合
+- **微软**：VS 2026 集成 Copilot AI 构建优化，接近完整支持 C++23，ARM64 ASan
+- **IncrediBuild**：AI 沙箱 Islo，CI/CD 加速，定位转型为"构建效能全栈平台"
+- **腾讯**：开源分布式编译系统 yadcc（国内大厂内部工具外输信号）
+- **Google**：Android 官方采用 sccache 作为编译缓存工具
+- **NativeLink**：RE 服务 + CMake 组合，可能颠覆分布式编译格局
+- **sccache**（wasmerio）：确立主流编译缓存地位，支持 C/C++/Rust/CUDA + 云存储
+- **ccache**：进入维护期（4.13.6），被 sccache 降维打击
+- **Pigweed**：Bazel 设为主要构建系统，CMake 继续支持，GN 进入维护模式
+- **美团**：C++ 编译优化实践（分布式编译、PCH、ccache）
+- **FASTBuild**：分布式编译工具，热度有限
 
-### 重要趋势信号
-- **AI 驱动构建优化产品化**：方向 up，强度 **high**（VS 2026 Copilot、IncrediBuild Islo、Pure Virtual C++ 2026 三大玩家同期布局）
-- **CI/CD 构建加速上升为管理 KPI**：方向 up，强度 **high**（构建速度与开发者留存直接关联，采购决策者扩展至工程效能 VP/CTO）
-- **RE 服务（Remote Execution）与 CMake 组合**：方向 stable，强度 **medium**（若 NativeLink 降低接入门槛，可能颠覆现有分布式编译格局）
-- **ccache 消退，sccache 成主流**：方向 down，强度 **low**（跨语言 + 云原生存储对单语言 + 本地存储的降维打击）
-- **Bazel 热度下降，CMake 保持主流**：方向 stable，强度 **low**
+### 趋势信号
+- **AI 驱动构建优化产品化**（up, high）：三大玩家同期布局，从概念进入交付
+- **CI/CD 构建加速成为管理 KPI**（up, high）：采购决策链扩展至 VP/CTO 层级
+- **RE 服务 + CMake 降低接入门槛**（up, medium）：从早期信号变为具体方案，最具颠覆性潜力
+- **sccache 成为主流编译缓存**（up, high）：Google 背书是关键转折点，热度不再上升但地位确立
+- **Bazel 热度下降，CMake 保持主流**（stable）：讨论从"下一代"转向质疑
+- **分布式编译工具多样化**（new, medium）：腾讯 yadcc 开源，市场快速扩张期信号
 
-### 值得长期跟踪的技术方向
-- **AI 驱动的智能构建调度与缓存策略优化**（IDE 原生集成 vs 独立工具链扩展两条路径）
-- **RE 服务（Remote Execution）降低接入门槛**——中小团队无需迁移 Bazel 即可享受远程执行
-- **sccache 与 mold 兼容性修复**（Issue #1755 本期未提及，若已解决将完善"编译缓存 + 高速链接"链路）
-- **VS 2026 对第三方构建加速工具的替代压力**——未来 12 个月与 IncrediBuild 在 CI/CD 场景直接竞争加剧
+### 长期跟踪方向
+- **AI 构建优化两条路线竞争**：VS 内置（IDE 集成）vs IncrediBuild 独立工具链，12 个月内明朗
+- **RE 服务 + CMake 实际落地案例**：是否真正降低中小团队接入门槛
+- **sccache 与 mold 兼容性修复进展**：完善"编译缓存 + 高速链接"链路
+- **腾讯 yadcc 能否在分布式编译市场占据一席之地**
+- **构建加速作为业务指标**：IncrediBuild 教育市场将构建速度视为业务竞争力
 
 ### 竞品动态
-- **IncrediBuild**：向"构建效能全栈平台"转型，面向管理层内容营销获客
-- **微软**：VS 2026 内置性能改进 + AI 集成，侵蚀第三方工具差异化价值
-- **华为云**：云厂商加速入场分布式编译赛道
-- **美团技术团队**：分享 C++ 编译优化实践，指出分布式编译适合大规模项目
-- **真实性能数据**：distcc 实践——16 核单机 30 分钟 → 10 台机器 112 核 8 分半
+- **IncrediBuild**：密集内容营销（3+ 份报告），面向管理层输出"构建速度 = 业务竞争力"叙事
+- **腾讯 yadcc**：开源分布式编译，与 IncrediBuild 形成竞争
+- **NativeLink + CMake**：挑战"分布式编译必须绑定 Bazel"的传统认知，威胁 IncrediBuild、华为云 CodeArts Build 等
+- **sccache**：替代 distcc + ccache 组合，挤压 distcc 讨论空间
