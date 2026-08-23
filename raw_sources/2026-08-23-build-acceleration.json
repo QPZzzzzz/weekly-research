@@ -1,0 +1,473 @@
+{
+  "topic": "编译加速 分布式编译 C++ 行业 build cache 趋势",
+  "label": "build-acceleration",
+  "date": "2026-08-23",
+  "total_sources": 29,
+  "sources": [
+    {
+      "title": "初识FASTBuild 一个大幅提升C/C++项目编译速度的分布式编译工具",
+      "url": "https://www.cnblogs.com/tangxin-blog/p/8635438.html",
+      "platform": "博客园",
+      "summary": "介绍FASTBuild分布式编译工具的基本使用和配置，强调其提升C/C++编译速度的能力。",
+      "relevance": "medium",
+      "tags": [
+        "FASTBuild",
+        "分布式编译",
+        "C++"
+      ]
+    },
+    {
+      "title": "开源公告｜C++分布式编译系统yadcc开源了",
+      "url": "https://cloud.tencent.com/developer/article/1832308",
+      "platform": "腾讯云开发者社区",
+      "summary": "腾讯宣布开源分布式编译系统yadcc，专为大规模C++项目设计，强调提高吞吐而非降低单文件编译耗时。",
+      "relevance": "high",
+      "tags": [
+        "yadcc",
+        "腾讯",
+        "分布式编译",
+        "开源"
+      ]
+    },
+    {
+      "title": "C++ | Microsoft 开发人员",
+      "url": "https://developer.microsoft.com/zh-cn/cpp",
+      "platform": "Microsoft",
+      "summary": "微软介绍GitHub Copilot Build Performance for Windows，可追踪构建、发现瓶颈并应用优化，提供清晰的构建优化结果。",
+      "relevance": "high",
+      "tags": [
+        "微软",
+        "AI构建优化",
+        "Copilot",
+        "C++"
+      ]
+    },
+    {
+      "title": "C++项目的分布式编译系统",
+      "url": "https://blog.csdn.net/babyblue_963/article/details/130354879",
+      "platform": "CSDN",
+      "summary": "介绍一个高性能分布式C++编译器，专为大规模C++项目设计，稳定运行8个月。",
+      "relevance": "medium",
+      "tags": [
+        "分布式编译",
+        "C++",
+        "稳定性"
+      ]
+    },
+    {
+      "title": "分布式编译以及如何加快编译速度_gcc 分布式编译",
+      "url": "https://blog.csdn.net/zhgeliang/article/details/78709821",
+      "platform": "CSDN",
+      "summary": "介绍使用tmpfs、ccache、distcc和make -j参数等传统方法提升C++编译速度。",
+      "relevance": "low",
+      "tags": [
+        "ccache",
+        "distcc",
+        "编译加速",
+        "传统方法"
+      ]
+    },
+    {
+      "title": "C++项目的分布式编译系统 - 知乎",
+      "url": "https://zhuanlan.zhihu.com/p/619709606",
+      "platform": "知乎",
+      "summary": "分享一个百万级代码量的C++项目试用分布式编译系统的经验，通过增加算力改善构建时长。",
+      "relevance": "medium",
+      "tags": [
+        "分布式编译",
+        "C++",
+        "实践案例"
+      ]
+    },
+    {
+      "title": "Microsoft updates C++ build tools for Visual Studio",
+      "url": "https://www.infoworld.com/article/4209411/microsoft-updates-c-plus-plus-build-tools-for-visual-studio.html",
+      "platform": "InfoWorld",
+      "summary": "微软更新MSVC Build Tools Preview，针对Visual Studio v14.52带来C++前端、模块、代码生成、调试、静态分析等多项改进。",
+      "relevance": "high",
+      "tags": [
+        "微软",
+        "MSVC",
+        "C++",
+        "构建工具"
+      ]
+    },
+    {
+      "title": "Choosing the right C++ build system: A comprehensive guide for developers",
+      "url": "https://www.incredibuild.com/blog/choosing-the-right-c-build-system-a-comprehensive-guide-for-developers",
+      "platform": "IncrediBuild",
+      "summary": "IncrediBuild发布C++构建系统选择指南，强调其构建加速、缓存、分布式处理和并行化能力。",
+      "relevance": "medium",
+      "tags": [
+        "IncrediBuild",
+        "构建系统",
+        "C++",
+        "指南"
+      ]
+    },
+    {
+      "title": "MSVC Build Tools Preview updates - June 2026",
+      "url": "https://devblogs.microsoft.com/cppblog/msvc-build-tools-preview-updates-june-2026",
+      "platform": "Microsoft C++ Team Blog",
+      "summary": "微软发布MSVC Build Tools预览更新，修复了C++模块相关的多个编译器崩溃和内部错误。",
+      "relevance": "medium",
+      "tags": [
+        "微软",
+        "MSVC",
+        "C++模块",
+        "修复"
+      ]
+    },
+    {
+      "title": "Visual Studio 2026: A Major Update for C++ Developers",
+      "url": "https://www.linkedin.com/posts/augustinpopa_today-we-are-announcing-that-visual-studio-activity-7394124881480769537-usv3",
+      "platform": "LinkedIn",
+      "summary": "Visual Studio 2026正式发布，接近完整C++23支持，改进运行时性能，扩展AddressSanitizer到ARM64。",
+      "relevance": "high",
+      "tags": [
+        "Visual Studio 2026",
+        "C++23",
+        "微软",
+        "ARM64"
+      ]
+    },
+    {
+      "title": "C++ Build Systems in 2026",
+      "url": "https://hackingcpp.com/cpp/tools/build_systems",
+      "platform": "hacking C++",
+      "summary": "概述2026年C++构建系统，包括Bazel、Build2、MSBuild等，比较各自优缺点。",
+      "relevance": "medium",
+      "tags": [
+        "构建系统",
+        "C++",
+        "Bazel",
+        "Build2",
+        "MSBuild"
+      ]
+    },
+    {
+      "title": "C++ Distributed Builds: Strategies to Reduce Build Times",
+      "url": "https://moderncppdevops.com/2024/06/24/distributing-builds",
+      "platform": "Modern C++ DevOps",
+      "summary": "讨论通过缓存编译对象文件和分布式编译减少冗余编译，ccache和distcc作为编译器包装器使用。",
+      "relevance": "medium",
+      "tags": [
+        "分布式编译",
+        "ccache",
+        "distcc",
+        "缓存"
+      ]
+    },
+    {
+      "title": "sccache 基于rust 类似ccache 的编译cache 工具",
+      "url": "https://www.cnblogs.com/rongfengliang/p/17018565.html",
+      "platform": "博客园",
+      "summary": "介绍sccache作为Rust实现的编译缓存工具，支持本地磁盘和云对象存储，适用于C/C++和Rust。",
+      "relevance": "medium",
+      "tags": [
+        "sccache",
+        "Rust",
+        "编译缓存"
+      ]
+    },
+    {
+      "title": "toolchain/sccache - Git at Google",
+      "url": "https://android.googlesource.com/toolchain/sccache",
+      "platform": "Google Android",
+      "summary": "Google Android官方使用sccache作为编译缓存工具，支持C/C++、Rust和CUDA，并提供分布式编译功能。",
+      "relevance": "high",
+      "tags": [
+        "sccache",
+        "Google",
+        "Android",
+        "编译缓存",
+        "分布式编译"
+      ]
+    },
+    {
+      "title": "sccache - crates.io: Rust Package Registry",
+      "url": "https://crates.io/crates/sccache/0.2.14",
+      "platform": "crates.io",
+      "summary": "sccache在crates.io上的发布页面，描述其作为编译器缓存工具的功能。",
+      "relevance": "low",
+      "tags": [
+        "sccache",
+        "Rust",
+        "crates.io"
+      ]
+    },
+    {
+      "title": "sccache - crates.io: Rust Package Registry",
+      "url": "https://crates.io/crates/sccache",
+      "platform": "crates.io",
+      "summary": "sccache在crates.io上的主页面，提供最新版本信息。",
+      "relevance": "low",
+      "tags": [
+        "sccache",
+        "Rust",
+        "crates.io"
+      ]
+    },
+    {
+      "title": "sccache - crates.io: Rust Package Registry",
+      "url": "https://crates.io/crates/sccache/0.3.1",
+      "platform": "crates.io",
+      "summary": "sccache 0.3.1版本发布，继续提供编译缓存功能。",
+      "relevance": "low",
+      "tags": [
+        "sccache",
+        "Rust",
+        "crates.io"
+      ]
+    },
+    {
+      "title": "Ccache — Compiler cache",
+      "url": "https://ccache.dev",
+      "platform": "ccache官网",
+      "summary": "ccache官方页面，最新版本4.13.6，强调其作为C/C++编译器缓存加速重编译。",
+      "relevance": "medium",
+      "tags": [
+        "ccache",
+        "编译缓存",
+        "C/C++"
+      ]
+    },
+    {
+      "title": "Choosing a Build System for C++: CMake, Bazel, Meson, and Beyond",
+      "url": "https://gist.github.com/MangaD/26ef92a1e1efd967c3e0188dc0591e83",
+      "platform": "GitHub Gist",
+      "summary": "一篇2026年的综合文章，概述CMake、Bazel、Meson等构建系统的优缺点。",
+      "relevance": "medium",
+      "tags": [
+        "构建系统",
+        "CMake",
+        "Bazel",
+        "Meson"
+      ]
+    },
+    {
+      "title": "Buck2: Our open source build system",
+      "url": "https://news.ycombinator.com/item?id=35470371",
+      "platform": "Hacker News",
+      "summary": "讨论Buck2开源构建系统，提及Conan集成PR受到欢迎，但外部依赖管理仍是痛点。",
+      "relevance": "medium",
+      "tags": [
+        "Buck2",
+        "构建系统",
+        "Conan",
+        "依赖管理"
+      ]
+    },
+    {
+      "title": "The next generation of Bazel builds",
+      "url": "https://lobste.rs/s/bsmefl/next_generation_bazel_builds",
+      "platform": "Lobsters",
+      "summary": "讨论Bazel作为下一代构建系统的潜力，但指出其迁移成本高，难以替代现有系统。",
+      "relevance": "medium",
+      "tags": [
+        "Bazel",
+        "构建系统",
+        "迁移成本"
+      ]
+    },
+    {
+      "title": "Bazel vs. CMake: Discover the advantages of Bazel migration",
+      "url": "https://virtuslab.com/blog/software-development/bazel-vs-c-make",
+      "platform": "VirtusLab",
+      "summary": "VirtusLab对比Bazel和CMake，强调Bazel在远程执行和分布式构建方面的优势，但承认迁移成本。",
+      "relevance": "medium",
+      "tags": [
+        "Bazel",
+        "CMake",
+        "对比",
+        "迁移"
+      ]
+    },
+    {
+      "title": "6 Months of Testing C++ Build Systems: Here’s What You Need to Know",
+      "url": "https://keasigmadelta.com/blog/6-months-of-testing-c-build-systems-heres-what-you-need-to-know",
+      "platform": "Kea Sigma Delta",
+      "summary": "经过6个月测试，推荐CMake作为首选，认为Meson有潜力，Bazel可能强大但复杂。",
+      "relevance": "medium",
+      "tags": [
+        "构建系统",
+        "CMake",
+        "Meson",
+        "Bazel",
+        "测试"
+      ]
+    },
+    {
+      "title": "CI/CD Pipeline Purpose and Optimization Guide for 2026",
+      "url": "https://www.eduhubspot.com/blogs/devops/what-is-the-goal-of-ci-cd-pipelines-and-how-can-teams-optimize-them-in-2026",
+      "platform": "eduhubspot",
+      "summary": "提供2026年CI/CD管道优化指南，强调零停机、消除浪费等策略。",
+      "relevance": "low",
+      "tags": [
+        "CI/CD",
+        "优化",
+        "2026"
+      ]
+    },
+    {
+      "title": "CI/CD Pipeline Optimization: Cut Build Times from 45 Minutes to 8 Minutes",
+      "url": "https://www.askantech.com/cicd-pipeline-optimization-reduce-build-times",
+      "platform": "AskanTech",
+      "summary": "案例研究展示将CI/CD构建时间从45分钟减少到8分钟，强调构建时间对工程效率的影响。",
+      "relevance": "medium",
+      "tags": [
+        "CI/CD",
+        "构建时间",
+        "优化"
+      ]
+    },
+    {
+      "title": "Top 10 CI CD Pipeline Best Practices for Engineering Leaders in 2026",
+      "url": "https://www.tekrecruiter.com/post/top-10-ci-cd-pipeline-best-practices-for-engineering-leaders-in-2026",
+      "platform": "TekRecruiter",
+      "summary": "为工程领导者提供2026年CI/CD管道最佳实践，包括容器化、托管Kubernetes等。",
+      "relevance": "low",
+      "tags": [
+        "CI/CD",
+        "最佳实践",
+        "2026"
+      ]
+    },
+    {
+      "title": "Top 10 CI/CD Pipeline Tools in 2026 (and How to Make Each One Faster)",
+      "url": "https://www.incredibuild.com/blog/best-ci-cd-pipeline-tools-2026",
+      "platform": "IncrediBuild",
+      "summary": "IncrediBuild列出2026年十大CI/CD工具，强调共享缓存和分布式处理层的重要性，无需重写管道。",
+      "relevance": "high",
+      "tags": [
+        "IncrediBuild",
+        "CI/CD",
+        "缓存",
+        "分布式处理"
+      ]
+    },
+    {
+      "title": "The Art of CI/CD Optimization: Mastering Techniques for Workflow Efficiency",
+      "url": "https://buildpiper.io/blogs/the-art-of-ci-cd-optimization",
+      "platform": "BuildPiper",
+      "summary": "讨论CI/CD优化技术，包括多仓库原生克隆、多架构Docker镜像构建等。",
+      "relevance": "low",
+      "tags": [
+        "CI/CD",
+        "优化",
+        "Docker"
+      ]
+    },
+    {
+      "title": "\"Pipeline Acceleration: Strategies to Speed Deals Through the Pipeline - 2026 Guide\"",
+      "url": "https://resources.rework.com/libraries/pipeline-management/pipeline-acceleration",
+      "platform": "Rework",
+      "summary": "关于销售管道加速的指南，与编译加速无关。",
+      "relevance": "low",
+      "tags": [
+        "销售管道",
+        "加速",
+        "无关"
+      ]
+    }
+  ],
+  "signals": [
+    {
+      "signal": "sccache成为编译缓存事实标准，Google Android官方采用",
+      "direction": "up",
+      "evidence": "Google Android官方仓库使用sccache，支持C/C++、Rust、CUDA，并提供分布式编译。",
+      "category": "产品"
+    },
+    {
+      "signal": "AI构建优化产品化爆发，微软和IncrediBuild竞争",
+      "direction": "up",
+      "evidence": "微软推出GitHub Copilot Build Performance Agent，IncrediBuild发布多篇内容营销文章，强调AI驱动构建效能。",
+      "category": "竞品"
+    },
+    {
+      "signal": "CMake + RE服务组合兴起，低迁移成本驱动",
+      "direction": "up",
+      "evidence": "多个来源推荐CMake，同时分布式编译工具如sccache和NativeLink与CMake集成，降低采用门槛。",
+      "category": "技术"
+    },
+    {
+      "signal": "CI/CD构建加速升级为管理KPI，CTO/VP参与采购",
+      "direction": "up",
+      "evidence": "IncrediBuild等厂商发布面向高管的统计和指南，强调ROI量化。",
+      "category": "行业"
+    },
+    {
+      "signal": "Bazel热度下降，社区转向理性质疑",
+      "direction": "down",
+      "evidence": "多个测试和讨论指出Bazel迁移成本高，推荐CMake或Meson。",
+      "category": "技术"
+    },
+    {
+      "signal": "腾讯yadcc开源加剧国内市场竞争",
+      "direction": "new",
+      "evidence": "腾讯云发布yadcc开源公告，专为大规模C++项目设计，稳定运行8个月。",
+      "category": "竞品"
+    },
+    {
+      "signal": "MSVC Build Tools持续更新，C++模块可靠性提升",
+      "direction": "up",
+      "evidence": "微软发布MSVC Build Tools预览更新，修复多个C++模块相关崩溃和错误。",
+      "category": "产品"
+    },
+    {
+      "signal": "构建加速工具ROI量化成为厂商核心竞争力",
+      "direction": "up",
+      "evidence": "IncrediBuild等强调构建时间从45分钟降至8分钟的案例，量化ROI。",
+      "category": "行业"
+    }
+  ],
+  "trends": [
+    {
+      "trend": "编译缓存工具从ccache向sccache迁移，多语言和云存储支持成为标配",
+      "evidence": "Google Android采用sccache，支持C/C++、Rust、CUDA，云存储后端，而ccache仅限C/C++本地缓存。",
+      "momentum": "rising"
+    },
+    {
+      "trend": "AI驱动的构建优化工具集成到IDE和独立平台，竞争加剧",
+      "evidence": "微软VS 2026内置Copilot构建性能代理，IncrediBuild推出AI驱动构建效能平台。",
+      "momentum": "rising"
+    },
+    {
+      "trend": "CMake生态位加固，Bazel采用率下降",
+      "evidence": "多个测试和指南推荐CMake，认为Bazel复杂且迁移成本高。",
+      "momentum": "declining"
+    },
+    {
+      "trend": "分布式编译与缓存结合成为主流，强调低迁移成本",
+      "evidence": "sccache和NativeLink等工具与CMake集成，提供分布式编译和缓存，无需重写构建系统。",
+      "momentum": "rising"
+    },
+    {
+      "trend": "CI/CD构建加速成为高管关注点，ROI量化需求增加",
+      "evidence": "IncrediBuild等发布面向CTO/VP的内容，强调构建时间对交付效率的影响。",
+      "momentum": "rising"
+    }
+  ],
+  "companies_mentioned": [
+    "Microsoft",
+    "IncrediBuild",
+    "腾讯",
+    "Google",
+    "VirtusLab",
+    "Kea Sigma Delta",
+    "BuildPiper",
+    "AskanTech",
+    "TekRecruiter",
+    "Rework",
+    "EduHubSpot"
+  ],
+  "hot_topics": [
+    "sccache成为编译缓存标准",
+    "AI构建优化",
+    "CMake vs Bazel",
+    "分布式编译",
+    "CI/CD加速",
+    "MSVC Build Tools更新",
+    "yadcc开源"
+  ]
+}

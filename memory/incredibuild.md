@@ -1,12 +1,33 @@
 # incredibuild — Research Memory
 
-最后更新: 2026-08-22
+最后更新: 2026-08-23
 
-- **Incredibuild**：Windows 10.37.0 新增 high-tech 编译器支持；Linux 4.29.0 支持 AOSP 17 + 免费 CI 加速；主推 Islo AI 沙盒（2026年5月发布）；mindshare 从 0.7% 升至 1.4%（2026年6月）
-- **趋势信号（high）**：AI 辅助开发导致代码量激增，CI/CD 基础设施成本压力上升，构建加速从“效率工具”升级为“业务刚需”（来源：Incredibuild 博客 20 项统计）
-- **趋势信号（medium）**：产品迭代从“修复模式”切换至“功能增强模式”，AI 转型进入实质落地阶段（Windows/Linux 版本更新 + Islo AI 沙盒 + 免费 CI 加速组合拳）
-- **趋势信号（medium）**：开源合围强化，FASTBuild、distcc、ccache 功能接近商业产品 80%，Incredibuild 发布防御性内容营销（“Top 7 Open Source Build Systems”）
-- **趋势信号（low）**：EngFlow 威胁持续下降，Peerspot 信息不足、Reddit 反馈差，威胁评级维持 low；竞争格局从“三足鼎立”走向“一超多强”
-- **竞品动态**：EngFlow 衰落，无有力直接商业竞争者；主要竞争来自开源工具（FASTBuild、yadcc）和更广泛 CI/CD 平台（Ansible 50.80%、Bitbucket Pipelines 8.22%）
-- **长期跟踪方向**：免费 CI 加速计划转化率（能否从“卖许可证”转向“卖平台”）；FASTBuild 在 Unity 社区迁移进度；yadcc 在中小团队采用情况（结合国产替代政策）；Incredibuild 产品迭代是否持续增加新功能
-- **中国市场**：龙智为 Incredibuild 中国授权代理（聚焦游戏和金融），本期无新动态，但历史记忆保留；yadcc（腾讯云开源）可能形成替代效应
+## 关键记忆点
+
+### 公司/产品/项目
+- **Incredibuild**：分布式编译加速工具，2000+ 企业客户（Epic、微软），Windows 10.37.0 / Linux 4.29.0-4.29.2 版本更新
+- **Islo AI 沙盒**：Incredibuild 2026年5月发布，AI 编码代理持续执行环境，官网头号推广位
+- **yadcc**：腾讯云开源分布式编译工具，每天编译产出 300 万+ 目标文件
+- **FASTBuild**：开源工具，Unity 社区有实际采用
+- **EngFlow**：商业竞品，依赖 Bazel 生态，威胁持续下降
+- **龙智**：Incredibuild 中国授权合作伙伴，聚焦游戏和金融行业
+
+### 重要趋势信号
+- **AI 辅助开发推动构建加速需求上升**（high）：AI 编码工具导致代码量激增，构建加速从"效率工具"升级为"业务刚需"
+- **开源工具形成替代压力**（high）：yadcc 规模化应用数据（300 万+ 目标文件/天）让开源替代从"可能性"变为"现实威胁"
+- **免费 CI 加速计划可能推动商业模式转型**（medium）：从"卖许可证"向"卖平台"转型，短期收入可能承压
+- **EngFlow 威胁持续下降**（low）：信息不足、反馈差，无进一步下降空间
+- **中国市场代理渠道稳定，但开源替代可能影响**（low）：yadcc 结合国产替代政策可能构成结构性威胁
+
+### 值得长期跟踪的技术方向
+- **AI 编码代理与构建加速融合**：AI 生成代码需频繁验证迭代，构建需求指数级增长
+- **进程拦截机制 vs 修改构建系统**：Incredibuild 无侵入式加速在异构环境中更具吸引力
+- **免费 CI 加速计划的转化率**：能否从"卖许可证"转向"卖平台"，未来 2-3 个季度关键看点
+- **yadcc 在中小团队的采用情况**：结合国产替代政策，可能形成"农村包围城市"替代路径
+- **FASTBuild 在 Unity 社区的迁移进度**：Unity 是 Incredibuild 重要客户群，直接影响基本盘
+
+### 竞品动态
+- **Incredibuild**：产品迭代进入"功能增强模式"，AI 转型实质性落地；发布"Top 7 Open Source Build Systems"防御性内容营销；mindshare 从 0.7% 升至 1.4%
+- **yadcc**：腾讯云开源，基于 ccache、distcc 设计，已在腾讯内部大规模验证
+- **EngFlow**：The New Stack 仍有媒体曝光，但市场关注度和用户口碑持续下滑
+- **6sense 数据**：构建自动化领域主要竞争对手是 Ansible（50.80%）和 Bitbucket Pipelines（8.22%），而非 EngFlow
