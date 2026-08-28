@@ -1,0 +1,428 @@
+{
+  "topic": "Incredibuild 分布式编译 竞品对比 行业格局",
+  "label": "incredibuild",
+  "date": "2026-08-28",
+  "total_sources": 28,
+  "sources": [
+    {
+      "title": "Release Notes - IncrediBuild Documentation",
+      "url": "https://docs.incredibuild.com/linux/release-notes",
+      "platform": "Incredibuild官方文档",
+      "summary": "Incredibuild Linux 4.29.2版本更新Apache至2.4.68，4.29.0版本新增AOSP 17支持并引入免费CI加速计划。",
+      "relevance": "high",
+      "tags": [
+        "产品更新",
+        "安全",
+        "AOSP",
+        "免费CI加速"
+      ]
+    },
+    {
+      "title": "Resources - Incredibuild",
+      "url": "https://www.incredibuild.com/resources",
+      "platform": "Incredibuild官网",
+      "summary": "官网资源页重点推广Islo AI沙盒（2026年5月发布）、Unity Shader编译博客和免费CI加速计划。",
+      "relevance": "high",
+      "tags": [
+        "AI沙盒",
+        "Unity",
+        "CI加速",
+        "营销"
+      ]
+    },
+    {
+      "title": "Incredibuild Blog: Software Development Insights",
+      "url": "https://www.incredibuild.com/blog",
+      "platform": "Incredibuild博客",
+      "summary": "博客首页同样突出Islo AI沙盒和免费CI加速计划，显示AI与CI加速为当前核心推广方向。",
+      "relevance": "high",
+      "tags": [
+        "AI沙盒",
+        "CI加速",
+        "内容营销"
+      ]
+    },
+    {
+      "title": "Incredibuild: Accelerate Your Development",
+      "url": "https://www.incredibuild.com",
+      "platform": "Incredibuild官网",
+      "summary": "官网首页将Islo AI沙盒置于头号推广位，强调AI编码代理的持续执行环境。",
+      "relevance": "high",
+      "tags": [
+        "AI沙盒",
+        "产品定位"
+      ]
+    },
+    {
+      "title": "We Now Supports Microsoft Visual Studio 2015 and Windows 10",
+      "url": "https://www.incredibuild.com/news/incredibuild-now-supports-microsoft-visual-studio-2015-and-windows-10",
+      "platform": "Incredibuild新闻",
+      "summary": "宣布支持Visual Studio 2015和Windows 10，但页面被Islo和CI加速内容占据，历史新闻权重降低。",
+      "relevance": "low",
+      "tags": [
+        "Visual Studio",
+        "Windows 10",
+        "兼容性"
+      ]
+    },
+    {
+      "title": "End of Life Policy - Incredibuild",
+      "url": "https://www.incredibuild.com/end-of-life-policy",
+      "platform": "Incredibuild官网",
+      "summary": "提供产品生命周期政策，页面同样被最新推广内容覆盖。",
+      "relevance": "low",
+      "tags": [
+        "生命周期",
+        "政策"
+      ]
+    },
+    {
+      "title": "Tools Spotlight: Incredibuild - Incredibuild",
+      "url": "https://www.incredibuild.com/news/tools-spotlight-incredibuild-html",
+      "platform": "Incredibuild新闻",
+      "summary": "工具聚焦文章，但内容被最新推广覆盖，具体细节不明确。",
+      "relevance": "low",
+      "tags": [
+        "工具",
+        "推广"
+      ]
+    },
+    {
+      "title": "Incredibuild Integrations: Extend Your Workflow",
+      "url": "https://www.incredibuild.com/integration",
+      "platform": "Incredibuild官网",
+      "summary": "集成页面展示扩展工作流能力，但未列出具体集成对象。",
+      "relevance": "medium",
+      "tags": [
+        "集成",
+        "工作流"
+      ]
+    },
+    {
+      "title": "Incredibuild Provides Game-Changing Development Acceleration Technology to Epic MegaGrants Recipients - Incredibuild",
+      "url": "https://www.incredibuild.com/news/incredibuild-provides-game-changing-development-acceleration-technology-to-epic-megagrants-recipients",
+      "platform": "Incredibuild新闻",
+      "summary": "向Epic MegaGrants获得者提供加速技术，强化游戏行业合作。",
+      "relevance": "medium",
+      "tags": [
+        "Epic",
+        "游戏",
+        "合作"
+      ]
+    },
+    {
+      "title": "Incredibuild: Acceleration Solutions For Linux & Android",
+      "url": "https://www.incredibuild.com/news/incredibuild-releases-acceleration-solutions-for-linux-and-android",
+      "platform": "Incredibuild新闻",
+      "summary": "发布Linux和Android加速解决方案，扩展平台支持。",
+      "relevance": "medium",
+      "tags": [
+        "Linux",
+        "Android",
+        "加速"
+      ]
+    },
+    {
+      "title": "Compare FASTBuild vs. Incredibuild in 2026",
+      "url": "https://slashdot.org/software/comparison/FastBuild-vs-IncrediBuild",
+      "platform": "Slashdot",
+      "summary": "对比FASTBuild和Incredibuild，强调Incredibuild的8-10倍加速和无侵入式特点。",
+      "relevance": "high",
+      "tags": [
+        "FASTBuild",
+        "竞品对比",
+        "无侵入"
+      ]
+    },
+    {
+      "title": "EngFlow vs Incredibuild (2026)",
+      "url": "https://www.peerspot.com/products/comparisons/engflow_vs_incredibuild",
+      "platform": "PeerSpot",
+      "summary": "对比EngFlow和Incredibuild，Incredibuild拥有2000+客户（Epic、Microsoft等），EngFlow信息不足。",
+      "relevance": "high",
+      "tags": [
+        "EngFlow",
+        "竞品对比",
+        "客户"
+      ]
+    },
+    {
+      "title": "Bazel vs Incredibuild (2026)",
+      "url": "https://www.peerspot.com/products/comparisons/bazel_vs_incredibuild",
+      "platform": "PeerSpot",
+      "summary": "对比Bazel和Incredibuild，显示Incredibuild常与TeamCity、Jenkins、EngFlow等比较。",
+      "relevance": "medium",
+      "tags": [
+        "Bazel",
+        "竞品对比"
+      ]
+    },
+    {
+      "title": "Top 10 Incredibuild Alternatives 2026",
+      "url": "https://www.peerspot.com/products/incredibuild-alternatives-and-competitors",
+      "platform": "PeerSpot",
+      "summary": "列出Incredibuild替代品，EngFlow评分仅1/5，Incredibuild评分8.0/10。",
+      "relevance": "high",
+      "tags": [
+        "替代品",
+        "评分",
+        "EngFlow"
+      ]
+    },
+    {
+      "title": "FASTBuild Reviews in 2026",
+      "url": "https://sourceforge.net/software/product/FastBuild",
+      "platform": "SourceForge",
+      "summary": "FASTBuild页面引用Incredibuild的8-10倍加速描述，显示两者对比常见。",
+      "relevance": "medium",
+      "tags": [
+        "FASTBuild",
+        "评价"
+      ]
+    },
+    {
+      "title": "Incredibuild reviews 2026",
+      "url": "https://www.peerspot.com/products/incredibuild-reviews",
+      "platform": "PeerSpot",
+      "summary": "Incredibuild用户评价，Elbit Systems DevOps负责人给出4.0分，用于加速C#构建。",
+      "relevance": "medium",
+      "tags": [
+        "用户评价",
+        "C#"
+      ]
+    },
+    {
+      "title": "Bamboo vs Incredibuild comparison - PeerSpot",
+      "url": "https://www.peerspot.com/products/comparisons/bamboo_vs_incredibuild",
+      "platform": "PeerSpot",
+      "summary": "Bamboo与Incredibuild对比，Incredibuild排名#27，mindshare从0.8%升至1.3%。",
+      "relevance": "medium",
+      "tags": [
+        "Bamboo",
+        "市场份额"
+      ]
+    },
+    {
+      "title": "Top IncrediBuild Alternatives & Competitors in 2026",
+      "url": "https://www.trustradius.com/products/incredibuild/competitors",
+      "platform": "TrustRadius",
+      "summary": "列出Incredibuild替代品，包括Azure DevOps（评分8.0）。",
+      "relevance": "medium",
+      "tags": [
+        "替代品",
+        "Azure DevOps"
+      ]
+    },
+    {
+      "title": "Incredibuild Alternatives, Competitors & Similar Software",
+      "url": "https://www.getapp.com/development-tools-software/a/incredibuild/alternatives",
+      "platform": "GetApp",
+      "summary": "GetApp列出Incredibuild替代品，但具体内容未显示。",
+      "relevance": "low",
+      "tags": [
+        "替代品"
+      ]
+    },
+    {
+      "title": "IncrediBuild - Market Share, Competitor Insights in Build And Deployment Automation",
+      "url": "https://6sense.com/tech/build-and-deployment-automation/incredibuild-market-share",
+      "platform": "6sense",
+      "summary": "6sense数据显示Incredibuild主要竞争对手为Ansible（49.55%）、Bitbucket Pipelines（10.00%）、Oracle Application Express（6.44%）。",
+      "relevance": "high",
+      "tags": [
+        "市场份额",
+        "Ansible",
+        "Bitbucket Pipelines"
+      ]
+    },
+    {
+      "title": "IncrediBuild - Market Share, Competitor Insights in Build And Deployment Automation",
+      "url": "https://www.6sense.com/tech/build-and-deployment-automation/incredibuild-market-share",
+      "platform": "6sense",
+      "summary": "另一来源显示Ansible占50.80%，Bitbucket Pipelines占8.22%，Oracle Application Express占6.77%。",
+      "relevance": "high",
+      "tags": [
+        "市场份额",
+        "Ansible",
+        "Bitbucket Pipelines"
+      ]
+    },
+    {
+      "title": "CI/CD in 2026: 20 Statistics That Reveal Why Build Speed Is a Business Problem - Incredibuild",
+      "url": "https://www.incredibuild.com/blog/cicd-pipeline-statistics-trends-2026",
+      "platform": "Incredibuild博客",
+      "summary": "Incredibuild发布CI/CD统计文章，强调构建速度成为业务问题，并提及Jenkins和TeamCity的局限性。",
+      "relevance": "high",
+      "tags": [
+        "CI/CD",
+        "构建速度",
+        "行业趋势"
+      ]
+    },
+    {
+      "title": "r/programming - C++ 2026 的现状",
+      "url": "https://www.reddit.com/r/programming/comments/1qqzy7o/state_of_c_2026?tl=",
+      "platform": "Reddit",
+      "summary": "Reddit讨论C++ 2026现状，提及C++代码生成器用于分布式系统，但非直接相关。",
+      "relevance": "low",
+      "tags": [
+        "C++",
+        "分布式系统"
+      ]
+    },
+    {
+      "title": "分布式编译以及如何加快编译速度原创",
+      "url": "https://blog.csdn.net/zhgeliang/article/details/78709821",
+      "platform": "CSDN",
+      "summary": "CSDN博客介绍分布式编译原理，提及C++项目使用多台机器构建，但未涉及Incredibuild。",
+      "relevance": "low",
+      "tags": [
+        "分布式编译",
+        "C++"
+      ]
+    },
+    {
+      "title": "C++ 2026 的现状: r/programming - Reddit",
+      "url": "https://www.reddit.com/r/programming/comments/1qqzy7o/state_of_c_2026?tl=zh-hans",
+      "platform": "Reddit",
+      "summary": "Reddit中文版讨论C++ 2026现状，提及代码生成器，但非直接相关。",
+      "relevance": "low",
+      "tags": [
+        "C++",
+        "分布式系统"
+      ]
+    },
+    {
+      "title": "初识FASTBuild 一个大幅提升C/C++项目编译速度的分布式 ...",
+      "url": "https://www.cnblogs.com/tangxin-blog/p/8635438.html",
+      "platform": "博客园",
+      "summary": "博客介绍FASTBuild作为分布式编译工具，提升C/C++编译速度，显示开源工具在社区中的使用。",
+      "relevance": "medium",
+      "tags": [
+        "FASTBuild",
+        "开源",
+        "C/C++"
+      ]
+    },
+    {
+      "title": "Incredibuild c++编译加速，更快的构建速度，更智能的开发周期 | 龙智 DragonSoft",
+      "url": "https://www.shdsd.com/incredibuild/index.html",
+      "platform": "龙智官网",
+      "summary": "龙智作为Incredibuild中国授权合作伙伴，宣称编译加速10倍，覆盖游戏和金融行业。",
+      "relevance": "high",
+      "tags": [
+        "龙智",
+        "中国",
+        "游戏",
+        "金融"
+      ]
+    },
+    {
+      "title": "C++服务编译耗时优化原理及实践",
+      "url": "https://tech.meituan.com/2020/12/10/C-+-+-Practice-in-DQU.html",
+      "platform": "美团技术博客",
+      "summary": "美团技术博客讨论分布式编译（Distcc等）适用场景，指出中小项目可能不需要分布式加速。",
+      "relevance": "medium",
+      "tags": [
+        "分布式编译",
+        "适用场景",
+        "美团"
+      ]
+    }
+  ],
+  "signals": [
+    {
+      "signal": "Incredibuild官网全面转向AI沙盒和免费CI加速推广",
+      "direction": "up",
+      "evidence": "多个官网页面（首页、资源页、博客）均将Islo AI沙盒置于头号推广位，并突出免费CI加速计划。",
+      "category": "产品"
+    },
+    {
+      "signal": "Incredibuild在构建自动化领域市场份额被Ansible等主导",
+      "direction": "stable",
+      "evidence": "6sense数据显示Ansible占约50%市场份额，Incredibuild份额较小，但mindshare从0.8%升至1.3%。",
+      "category": "竞品"
+    },
+    {
+      "signal": "EngFlow威胁持续处于极低水平",
+      "direction": "stable",
+      "evidence": "PeerSpot评分仅1/5，对比页面显示其信息不足，与历史记忆一致。",
+      "category": "竞品"
+    },
+    {
+      "signal": "开源工具（FASTBuild、yadcc）在社区和大型企业中获得验证",
+      "direction": "up",
+      "evidence": "FASTBuild在博客园有使用教程，美团技术博客讨论Distcc等开源方案，yadcc在腾讯大规模使用（历史记忆）。",
+      "category": "竞品"
+    },
+    {
+      "signal": "构建速度成为业务问题，CI/CD统计内容营销强化",
+      "direction": "up",
+      "evidence": "Incredibuild发布CI/CD统计文章，强调构建速度影响业务，并提及Jenkins和TeamCity的局限性。",
+      "category": "行业"
+    },
+    {
+      "signal": "Incredibuild支持AOSP 17，扩展Android生态",
+      "direction": "up",
+      "evidence": "Linux 4.29.0版本新增AOSP 17支持。",
+      "category": "产品"
+    }
+  ],
+  "trends": [
+    {
+      "trend": "AI编码代理与构建加速融合加速",
+      "evidence": "Islo AI沙盒发布并成为官网头号推广位，定位为AI编码代理的持续执行环境。",
+      "momentum": "rising"
+    },
+    {
+      "trend": "开源工具替代压力持续上升",
+      "evidence": "FASTBuild在社区有实际使用，yadcc在腾讯大规模验证，成本优势构成威胁。",
+      "momentum": "rising"
+    },
+    {
+      "trend": "免费CI加速计划推动商业模式转型",
+      "evidence": "Incredibuild推出免费CI加速计划，从卖许可证向卖平台转型。",
+      "momentum": "rising"
+    },
+    {
+      "trend": "EngFlow威胁持续下降",
+      "evidence": "PeerSpot评分1/5，市场份额和关注度极低。",
+      "momentum": "declining"
+    },
+    {
+      "trend": "中国市场渠道稳定但开源替代压力",
+      "evidence": "龙智作为中国授权合作伙伴持续推广，但开源工具和政策压力存在。",
+      "momentum": "stable"
+    }
+  ],
+  "companies_mentioned": [
+    "Incredibuild",
+    "EngFlow",
+    "FASTBuild",
+    "Ansible",
+    "Bitbucket Pipelines",
+    "Oracle Application Express",
+    "Azure DevOps",
+    "Bamboo",
+    "Jenkins",
+    "TeamCity",
+    "Bazel",
+    "Epic Games",
+    "Microsoft",
+    "Playstation",
+    "Nintendo",
+    "Samsung",
+    "Elbit Systems",
+    "龙智",
+    "美团",
+    "腾讯"
+  ],
+  "hot_topics": [
+    "AI沙盒（Islo）",
+    "免费CI加速计划",
+    "分布式编译",
+    "构建速度优化",
+    "开源构建工具",
+    "竞品对比"
+  ]
+}
