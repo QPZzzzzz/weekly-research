@@ -1,35 +1,35 @@
 # build-acceleration — Research Memory
 
-最后更新: 2026-08-28
+最后更新: 2026-08-29
 
 ## 关键记忆点
 
-### 公司/产品/项目
-- **微软**：Visual Studio 2026 集成 GitHub Copilot Build Performance（自动追踪/定位/优化构建瓶颈）
-- **IncrediBuild**：AI 沙盒 Islo + CI 加速产品（宣称 8x 更快 CI runners）
-- **Google**：Android 官方采用 sccache（支持 C/C++/Rust/CUDA + 分布式编译）
-- **Meta**：Buck2 开源构建系统（Rust 核心 + Starlark 规则）
-- **美团**：C++ 编译优化实践（分布式编译 + PCH + CCache 组合）
-- **腾讯 yadcc**：本期零提及，竞争力下降
+### 涉及公司/产品/项目
+- 微软（GitHub Copilot Build Performance、Visual Studio 2026）
+- IncrediBuild（Islo AI沙盒、CI加速产品）
+- Google（Android采用sccache）
+- Meta（Buck2开源构建系统）
+- FASTBuild、EngFlow、Wasmer（sccache维护方）、Coralogix、龙智（IncrediBuild中国代理）
 
 ### 重要趋势信号
-- **AI 构建优化产品化**（high）：微软 Copilot Build Performance + IncrediBuild Islo 双线推进，从"专家经验驱动"转向"AI 数据驱动"
-- **sccache 确立编译缓存事实标准**（high）：Google 官方背书，云存储支持（S3/GCS/Azure）构筑壁垒
-- **分布式编译 + 缓存结合成主流**（high）：FASTBuild、sccache 原生支持，美团实践验证，从"可选策略"变"主流实践"
-- **CI/CD 管道加速成焦点**（high）：AI 辅助编程致提交量激增，共享缓存 + 分布式处理层成核心抓手
-- **CMake 主导地位强化，Bazel 热度下滑**（medium）：工程实用主义取代技术理想主义，CMake + 远程执行（RE）成低迁移成本路径
-- **Buck2 作为 Bazel 替代方案讨论增多**（medium）：需观察其 CMake 集成能力
+- **AI构建优化产品化落地**（up, high）：微软Copilot Build Performance与IncrediBuild Islo双线推进，从专家经验转向数据驱动
+- **sccache成编译缓存事实标准**（up, high）：Google官方采用+云存储（S3/GCS/Azure）支持构筑核心壁垒
+- **分布式编译+缓存结合成主流**（up, high）：FASTBuild/sccache原生支持，美团实践验证，从可选策略变默认架构
+- **CI/CD管道加速成焦点**（up, high）：AI辅助编程引爆提交量，共享缓存为核心抓手，案例45min→8min（降幅82%）
+- **CMake主导地位强化，Bazel热度下滑**（stable, medium）：CMake+远程执行（RE）成低迁移成本分布式路径
+- **Buck2作为Bazel替代方案讨论增多**（up, medium）：Rust核心+Starlark规则，与Conan集成进展待观察
+- **VS 2026构建性能负面反馈**（down, medium）：与微软AI优化正面叙事形成反差，可能成竞品营销切入点
 
-### 值得长期跟踪的技术方向
-- **AI 沙盒（如 IncrediBuild Islo）在构建优化中的应用**——可能扩展至更多开发场景
-- **CI/CD 管道加速与共享缓存集成**——可能成为 2027 年标准实践
-- **C++20 模块在编译加速中的应用**——长期跟踪，本期未提及，工具链进展缓慢
-- **远程执行（RE）服务与 CMake 组合**——低迁移成本的分布式构建路径
+### 长期跟踪方向
+- C++20模块在编译加速中的应用（本期未提及，但可能根本性改变C++构建模型）
+- Buck2与Conan集成成熟度（若成熟可能打破CMake一家独大格局）
+- 共享缓存预计2027年成为CI/CD基础设施标准组件
+- AI辅助编程对构建管道的持续压力与解法演进
 
 ### 竞品动态
-- **微软**：VS 2026 集成 Copilot Build Performance，C++23 符合性提升，MSVC 构建工具预览版更新
-- **IncrediBuild**：AI 沙盒 Islo + CI 加速产品，ROI 量化叙事（45min→8min），发布构建系统选择指南
-- **Google**：Android 官方采用 sccache，最强背书
-- **Meta**：Buck2 开源，讨论增多但采用门槛仍高
-- **ccache**：持续更新（4.13.6），但功能覆盖被 sccache 超越
-- **FASTBuild**：游戏行业标配（Unity/Blob 构建），分布式 + 缓存组合
+- **微软**：VS 2026发布，MSVC性能提升，Unreal Engine基准测试提升6%；Copilot Build Performance集成至开发者工作流
+- **IncrediBuild**：推广AI沙盒Islo，宣称8x更快的CI runners；ROI量化叙事（45min→8min）吸引企业客户；龙智代理宣传游戏开发10倍加速
+- **Google**：Android官方采用sccache（最强背书）
+- **Meta**：Buck2开源持续获关注，但采用门槛仍高
+- **EngFlow**：分布式构建效果引发讨论，21x加速为最佳案例，效果因架构而异
+- **Coralogix**：推出专门CI/CD加速可观测性解决方案
