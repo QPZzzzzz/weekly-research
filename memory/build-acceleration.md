@@ -1,36 +1,43 @@
 # build-acceleration — Research Memory
 
-最后更新: 2026-09-01
+最后更新: 2026-09-03
 
-## 关键记忆点
+## 关键记忆点提取
 
 ### 公司/产品/项目
-- **sccache**（Mozilla）— 编译缓存事实标准，支持 S3/GCS/Redis 远程存储，Google Android 构建官方采用
-- **RECC** — 融合 ccache 缓存 + distcc 分布式编译能力
-- **FASTBuild** — 原生支持分布式编译+缓存，游戏行业（UE4）广泛使用
-- **TencentBlueKing/bk-turbo** — 腾讯蓝鲸跨平台分布式编译加速平台
-- **Buck2**（Meta）— Rust 核心 + Starlark 规则，单一增量依赖图，Bazel 替代方案
-- **IncrediBuild** — Build Runners 早鸟计划（CI 提速 4-8 倍），Islo AI 沙盒
-- **distcc** — 经典分布式编译，理论最大加速 3 倍
+- IncrediBuild（CI加速产品，Islo AI沙盒，Build Runners）
+- sccache（mozilla开源编译器缓存）
+- mold（链接器）
+- Databend（Rust数据库，CI编译优化实践）
+- Pigweed（Google嵌入式框架）
+- Bazel / Buck2 / CMake / GN（构建系统）
+- Visual Studio 2026（微软C++工具链）
+- GitHub Copilot（AI编程）
+- OpenDAL（Databend统一存储层）
+- ccache / distcc / FASTBuild（经典编译加速工具）
 
-### 趋势信号
-- **分布式编译+缓存融合成为默认架构范式**（high）— "缓存优先、分布式兜底"加速闭环
-- **sccache 确立编译缓存标准地位**（high）— 从本地工具向云原生基础设施组件转移
-- **CI/CD 加速成为企业刚需**（high）— 商业化产品加速落地，与平台工程方向一致
-- **Buck2 讨论显著升温**（high）— 反映行业对 Bazel 复杂性的反思，但 CMake 生态集成不成熟
-- **共享缓存成为 CI/CD 标准组件**（high）— 信号强度从中→高强化
-- **C++20 模块影响构建模型**（medium，新信号）— 可能改变缓存粒度、分布式策略和构建图设计
-- **AI 构建优化产品化热度回落**（medium）— 从概念炒作期进入产品落地期
+### 重要趋势信号
+- **共享缓存成为CI/CD标准组件** — 主流CI平台未解决冗余计算，共享缓存+分布式处理层成为必备两层架构 | **high**
+- **AI生成代码驱动CI加速需求** — AI提交量激增使冗余计算从效率问题升级为成本危机 | **high**
+- **CI中增量编译效果不佳** — Databed验证sccache在CI中价值远高于本地 | **high**
+- **Pigweed转向Bazel** — Bazel在嵌入式领域获标志性胜利 | **medium**
+- **Buck2的Conan集成僵局** — 外部依赖管理集成是替代Bazel的核心瓶颈 | **medium**
+- **sccache与mold兼容性缺陷** — 工具链集成"最后一公里"问题 | **medium**
+- **VS 2026无分布式编译布局** — 微软在构建加速领域仍聚焦传统路径 | **low**
 
-### 长期跟踪方向
-- C++20 模块对构建系统的适配进度（CMake、sccache、ccache 等）
-- Buck2 与 Conan 集成 PR 进展（若合并将加速替代 Bazel 讨论）
-- CMake 生态主导地位 vs Bazel/Buck2 竞争格局
-- 分布式编译+缓存融合架构在企业级落地案例
+### 值得长期跟踪的技术方向
+- 共享缓存与分布式处理层融合架构（CI加速标准两层）
+- AI辅助编程对CI负载特征的影响（提交频率/数量变化）
+- Bazel在嵌入式领域的迁移潮（Pigweed是否带动）
+- Buck2的Conan集成PR进展（合并与否是关键节点）
+- sccache生态兼容性修复（mold问题是否引发修复）
+- VS 2026后续版本是否涉足分布式编译
+- C++20模块对构建模型的影响（早期阶段）
 
 ### 竞品动态
-- **IncrediBuild**：Build Runners 早鸟计划，45 分钟→8 分钟实际案例
-- **Meta**：开源 Buck2，Tweag 深度技术分析发布
-- **Google**：Android 构建官方采用 sccache
-- **腾讯**：bk-turbo 支持 C++/UE4 跨平台加速
-- **微软**：VS 中 Linux 项目构建 + Copilot Chat 集成（上期负面反馈已消退）
+- **IncrediBuild**：发布2026 CI/CD工具评测，推出Islo AI沙盒，Build Runners早鸟计划宣称CI提速4-8倍
+- **微软**：VS 2026 GA发布，接近完整C++23一致性，扩展AddressSanitizer到ARM64，预览GitHub Copilot C++能力，但无分布式编译集成
+- **Google Pigweed**：SEED 0111批准Bazel成为主要构建系统，CMake降级为"继续支持"，GN进入维护模式
+- **Buck2**：Conan集成PR讨论热烈但未合并，外部依赖管理集成不成熟
+- **sccache**：采用广度扩大，但mold兼容性问题暴露生态成熟度不足
+- **经典方案（ccache/distcc/FASTBuild）**：中小团队仍广泛应用，distcc 10台机器112核将编译时间从30分钟降至8.5分钟
