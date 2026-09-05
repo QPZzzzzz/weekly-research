@@ -1,43 +1,38 @@
 # build-acceleration — Research Memory
 
-最后更新: 2026-09-03
+最后更新: 2026-09-05
 
 ## 关键记忆点提取
 
-### 公司/产品/项目
-- IncrediBuild（CI加速产品，Islo AI沙盒，Build Runners）
-- sccache（mozilla开源编译器缓存）
-- mold（链接器）
-- Databend（Rust数据库，CI编译优化实践）
-- Pigweed（Google嵌入式框架）
-- Bazel / Buck2 / CMake / GN（构建系统）
-- Visual Studio 2026（微软C++工具链）
-- GitHub Copilot（AI编程）
-- OpenDAL（Databend统一存储层）
-- ccache / distcc / FASTBuild（经典编译加速工具）
+### 涉及的公司/产品/项目
+- **Microsoft**: Visual Studio 2026 GA（Copilot build performance、C++23 一致性、AddressSanitizer ARM64）
+- **Google**: Pigweed（SEED 0111 转向 Bazel）、Bazel
+- **Meta**: Buck2（Rust 核心 + Starlark 规则，Conan 集成 PR 未合并）
+- **IncrediBuild**: CI/CD 工具评测、C++ 构建系统指南
+- **FASTBuild**: Unity/Blob 构建 + 分布式编译持续更新
+- **sccache / ccache / mold / distcc**: 经典与新一代缓存/链接/分布式编译工具
+- **Databend**: sccache CI 实践验证
 
 ### 重要趋势信号
-- **共享缓存成为CI/CD标准组件** — 主流CI平台未解决冗余计算，共享缓存+分布式处理层成为必备两层架构 | **high**
-- **AI生成代码驱动CI加速需求** — AI提交量激增使冗余计算从效率问题升级为成本危机 | **high**
-- **CI中增量编译效果不佳** — Databed验证sccache在CI中价值远高于本地 | **high**
-- **Pigweed转向Bazel** — Bazel在嵌入式领域获标志性胜利 | **medium**
-- **Buck2的Conan集成僵局** — 外部依赖管理集成是替代Bazel的核心瓶颈 | **medium**
-- **sccache与mold兼容性缺陷** — 工具链集成"最后一公里"问题 | **medium**
-- **VS 2026无分布式编译布局** — 微软在构建加速领域仍聚焦传统路径 | **low**
+- **共享缓存成为 CI/CD 标准组件**（方向 up，强度 high）：缓存层是构建时间优化第一杠杆，可带来 10-20 倍提升，主流 CI 工具缓存机制仍粗糙
+- **AI 生成代码驱动 CI 加速需求**（方向 up，强度 high）：VS 2026 首次产品化 Copilot build performance，AI 提交量激增使冗余计算成为成本危机
+- **CI 中增量编译失效，共享缓存价值凸显**（方向 up，强度 high）：CI 每次从干净状态构建，sccache 在 CI 中 ROI 远高于本地优化
+- **Pigweed 转向 Bazel**（方向 up，强度 high）：嵌入式领域标志性事件，CMake 降级、GN 维护模式，可能带动嵌入式项目重估构建系统
+- **经典分布式编译工具仍广泛应用**（方向 stable，强度 medium）：distcc+ccache 在中小团队（10-50人）仍解决 80% 问题，工具分层共存而非简单替代
+- **Buck2 Conan 集成僵局**（方向 stable，强度 medium）：外部依赖管理是替代 Bazel 的核心瓶颈
+- **sccache 与 mold 兼容性缺陷**（方向 stable，强度 medium）：需配置 sloppiness，两个编译缓存不能组合使用
+- **VS 2026 无分布式编译布局**（方向 stable，强度 low）：聚焦 Copilot 和 Build Insights，与专用工具差异化竞争
 
 ### 值得长期跟踪的技术方向
-- 共享缓存与分布式处理层融合架构（CI加速标准两层）
-- AI辅助编程对CI负载特征的影响（提交频率/数量变化）
-- Bazel在嵌入式领域的迁移潮（Pigweed是否带动）
-- Buck2的Conan集成PR进展（合并与否是关键节点）
-- sccache生态兼容性修复（mold问题是否引发修复）
-- VS 2026后续版本是否涉足分布式编译
-- C++20模块对构建模型的影响（早期阶段）
+- **AI 辅助构建优化**：VS 2026 Copilot build performance 为首个产品化案例，关注实际效果与采纳度
+- **Bazel 嵌入式迁移潮**：Pigweed 之后是否有其他嵌入式项目跟进（工具链规则成熟度是关键变量）
+- **C++20 模块对构建模型的影响**：对编译缓存和分布式编译的语义影响尚待探索
+- **共享缓存后端架构**：Redis/S3/GCS 等后端的 CI 投入 ROI 高于本地优化
+- **工具选型分层化**：团队规模与基础设施投入的匹配度是核心选型驱动因素
 
 ### 竞品动态
-- **IncrediBuild**：发布2026 CI/CD工具评测，推出Islo AI沙盒，Build Runners早鸟计划宣称CI提速4-8倍
-- **微软**：VS 2026 GA发布，接近完整C++23一致性，扩展AddressSanitizer到ARM64，预览GitHub Copilot C++能力，但无分布式编译集成
-- **Google Pigweed**：SEED 0111批准Bazel成为主要构建系统，CMake降级为"继续支持"，GN进入维护模式
-- **Buck2**：Conan集成PR讨论热烈但未合并，外部依赖管理集成不成熟
-- **sccache**：采用广度扩大，但mold兼容性问题暴露生态成熟度不足
-- **经典方案（ccache/distcc/FASTBuild）**：中小团队仍广泛应用，distcc 10台机器112核将编译时间从30分钟降至8.5分钟
+- **Microsoft**: VS 2026 GA 发布，无分布式编译集成，选择 AI 嵌入构建分析路径
+- **Google**: Pigweed SEED 0111 正式批准 Bazel 为主要构建系统
+- **Meta**: Buck2 核心与语言规则分离架构，Conan 集成仍无实质进展
+- **IncrediBuild**: 发布 2026 十大 CI/CD 工具评测，指出主流工具缓存粗糙
+- **FASTBuild**: 持续更新，Unity/Blob 构建 + 分布式编译仍具竞争力

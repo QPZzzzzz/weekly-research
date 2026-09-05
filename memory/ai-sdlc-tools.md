@@ -1,44 +1,40 @@
 # ai-sdlc-tools — Research Memory
 
-最后更新: 2026-09-03
+最后更新: 2026-09-05
 
 ## 关键记忆点
 
-### 涉及的公司/产品/项目
-- **GitHub Copilot**：180万+付费用户，主导企业市场
-- **Cursor**：多模型代理编辑领先，多文件编辑最强
-- **Windsurf**：被Cognition AI以2.5亿美元收购，免费层最强
-- **Cognition AI（Devin）**：收购Windsurf补齐IDE集成能力
-- **Codeium**：免费层最强
-- **Claude Code**：长任务自主执行最强
-- **Copilot Workspace**：被视为未来"软件开发中心"，将深度集成Azure DevOps和GitHub Actions
-- **国际模型**：Claude Opus 4.7、GPT-5.5、Gemini 3.1 Pro领跑
-- **国产模型**：GLM-5.1、kimi 2.6、DeepSeek V4逼近
+**公司/产品/项目**
+- Cognition AI（2.5亿美元收购Windsurf）
+- GitHub Copilot / Copilot Workspace（180万+付费用户）
+- Cursor、Claude Code、Codeium、Augment Code、Windsurf
+- Snyk AI、Semgrep（安全扫描PR门禁）
+- 国产模型：GLM-5.1、Kimi 2.6、DeepSeek V4
+- 国际模型：Claude Opus 4.7、GPT-5.5、Gemini 3.1 Pro
 
-### 重要趋势信号
-- **信任鸿沟持续**：采用率97% vs 信任度29%，46%开发者不信任AI输出 — high
-- **上下文窗口扩展至百万级**：200K到1M+ tokens，实现仓库级理解 — high
-- **多智能体协同缺乏标准**：IDC预测2028年70%自建智能体项目失败 — high
-- **微调将取代RAG**：IDC预测2027年发生，开源权重模型使用率提升80% — high
-- **市场整合加速**：Windsurf被收购标志进入洗牌期 — high
-- **CI/CD验证成新瓶颈**：审查时间增加91%，暂存环境和测试管道承担更多验证责任 — high
-- **AI代码审查噪音问题**：简单添加AI审查器产生大量低质量噪音 — medium
-- **计算成本高企**：Agent自治任务Token消耗是传统补全5-10倍，制约中小企业 — medium
-- **AI生成代码安全漏洞风险**：45%测试任务引入漏洞，安全扫描工具作为PR门禁 — high
+**趋势信号**
+- AI编程工具平台化整合加速，单点工具生存空间收窄 — high
+- 信任鸿沟扩大：采用率97% vs 信任度29% — high
+- CI/CD验证成新瓶颈，审查时间增加91% — high
+- AI代码审查噪音问题升级为信任杀手 — high
+- 多智能体协同缺乏标准，70%自建项目预计失败 — medium-high
+- 多模型组合成新范式（从最强单模型转向协同） — high（新出现）
+- 微调将取代RAG，开源权重模型使用率提升80% — medium-high
+- AI生成代码安全漏洞风险持续高企（45%测试任务引入漏洞） — high
+- Agent任务Token消耗为传统补全5-10倍，成本高企 — medium-high
+- 国产模型性价比优势重塑市场格局 — medium-high
 
-### 值得长期跟踪的技术方向
-- **多智能体编排标准**：率先定义协作协议的公司可能成为"AI开发领域的Android"
-- **AI代码审查策略设计**：可能催生"AI审查策略工程师"新角色
-- **自然语言编程接口**：2027年将出现，非程序员借助AI搭建应用
-- **AI从辅助到决策者角色转变**：引发责任归属和治理问题
-- **混合模型策略与成本优化**：本地部署、模型路由等方案
-- **自动化测试市场**：2026年达404亿美元，预计2031年翻倍
-- **AI生成代码安全验证**：信任鸿沟催生的新市场机会
+**长期跟踪方向**
+- 多模型组合策略的落地实践与ROI数据
+- AI代码审查噪音解决方案（策略设计、人机协同）
+- CI/CD验证环节自动化工具与流程创新
+- 微调取代RAG的实际进展与开源模型使用率变化
+- 多智能体编排标准之争（谁成"AI开发领域Android"）
+- 上下文窗口百万级已成标配，热度降至medium
 
-### 竞品动态
-- **Cognition AI收购Windsurf**（2.5亿美元），向全栈平台（IDE + Agent + 基础设施）演进
-- **GitHub Copilot**：180万+付费用户，主导企业市场，自主性弱
-- **Cursor 3**：多文件编辑最强
-- **Claude Code**：长任务自主执行最强
-- **企业级工具能力升级**：理解整个代码仓库拓扑、依赖关系，解析UI设计图、架构图
-- **市场格局**：从"单点工具"转向"全流程平台"生态竞争，中小企业面临"选平台还是选工具"抉择
+**竞品动态**
+- Cognition AI收购Windsurf，行业进入洗牌期
+- Copilot Workspace深度集成Azure DevOps/GitHub Actions，定位"软件开发中心"
+- Cursor 2026年领先，GitHub Copilot主导企业市场，Codeium/Windsurf免费层最强
+- 国产模型（GLM-5.1、Kimi 2.6、DeepSeek V4）逼近/超越国际一线
+- 自动化测试市场2026年达404亿美元，预计2031年翻倍
