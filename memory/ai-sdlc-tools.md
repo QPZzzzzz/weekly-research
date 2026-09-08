@@ -1,40 +1,34 @@
 # ai-sdlc-tools — Research Memory
 
-最后更新: 2026-09-06
+最后更新: 2026-09-08
 
-## 关键记忆点
+## 关键记忆点提取
 
 ### 公司/产品/项目
-- **Cognition AI** 以2.5亿美元收购 **Windsurf**（平台化整合标志事件）
-- **GitHub Copilot**：市占率>55%，企业订阅>180万，Workspace集成Azure DevOps/GitHub Actions
-- **Cursor**：多模型agentic编辑领先
-- **Codeium/Windsurf**：免费层最强
-- **文心快码**：Multi-Agent矩阵差异化
-- **Snyk AI / Semgrep**：作为PR门禁被广泛采用
+- **国际**: GitHub Copilot Workspace、GitLab Duo、Cursor、Windsurf、Augment Code、Claude Code、Snyk AI、Semgrep、Qodo、Clears.ai、Anthropic Agent SDK、OpenAI Assistants API、微软 Semantic Kernel
+- **国产**: GLM-5.1、Kimi 2.6、DeepSeek V4、华为云码道（公测版，接入GLM-5.0、DeepSeek-V3.2）
+- **收购事件**: Cognition AI 以 2.5 亿美元收购 Windsurf
 
 ### 重要趋势信号
-- **平台化整合加速**（high）：单点工具→全流程平台，行业洗牌期
-- **信任鸿沟扩大**（high）：采用率97% vs 信任度29%，高风险任务信任缺失
-- **CI/CD验证成新瓶颈**（high）：审查时间+91%，staging/测试管道承压
-- **AI代码审查噪音=信任杀手**（high）：简单接入致团队一周内移除工具
-- **多智能体协同缺标准**（high）：70%自建项目预计失败
-- **多模型组合成新范式**（high）：Claude Opus 4.7架构设计、DeepSeek V4-Flash批量任务
-- **微调取代RAG**（high）：开源权重模型使用率+80%
-- **AI代码安全漏洞风险高企**（high）：45%测试任务引入漏洞
-- **Agent Token消耗5-10倍**（high）：成本问题成技术挑战
-- **国产模型性价比优势**（high，新出现）：GLM-5.1/Kimi 2.6/DeepSeek V4逼近超越国际一线
+- **采用率 vs 信任度矛盾尖锐** (high) — 采用率84% vs 信任度29%，验证成本转移至审查环节（+91%），竞争焦点转向"可验证性/可解释性"
+- **平台化整合成为生存法则** (high) — 单点工具因缺乏跨阶段数据闭环进入淘汰倒计时，未来12-18个月市场整合加速
+- **多智能体协同标准缺失** (high) — 2028年70%自建项目预计失败，瓶颈在工程标准（通信协议/冲突仲裁），标准之争类比iOS vs Android早期
+- **微调取代RAG成为确定性趋势** (high) — 2027年开源权重模型使用率预计+80%，推动MaaS和GPU训练资源需求增长
+- **CI/CD验证成为新瓶颈** (high) — 审查时间+91%，AI加速编码但未加速验证，自动化测试市场增长
+- **Agent Token消耗成本突出** (medium) — 完整Agent任务Token消耗为传统补全5-10倍，云端订阅成本抵消人力节约
+- **AI代码审查噪音问题降温** (medium→stable) — 行业已形成解决方案共识（策略设计、人机协同、分级审查）
 
-### 长期跟踪方向
-- 多模型组合策略落地实践与ROI数据（或成企业选型新标准）
-- AI代码审查噪音解决方案（策略设计、人机协同）成熟度
-- CI/CD验证环节自动化工具与流程创新（自动化测试市场2026年404亿美元→2031年翻倍）
-- 微调取代RAG实际进展与开源模型使用率变化
-- 多智能体编排标准之争（谁成"AI开发领域Android"）
-- 上下文窗口百万级已成标配（热度转stable，行业默认能力）
+### 长期跟踪技术方向
+- **多智能体通信协议与编排标准** — 谁定义标准谁可能成为"AI开发领域的Android"
+- **信任增强解决方案** — AI输出验证、自动测试生成、安全扫描闭环（Snyk AI/Semgrep作为PR门禁）
+- **模型无关架构的AI编程工具** — 支持多模型切换（Cursor已支持，Copilot扩展中）
+- **成本优化技术** — 模型蒸馏、缓存策略、混合部署
+- **微调基础设施** — GPU训练资源、模型运维、开源模型托管服务
 
 ### 竞品动态
-- **模型排名**：Java代码生成 Qwen3.5-Coder-32B > DeepSeek-V3.2-Coder > GLM-5-Coder
-- **国际第一梯队**：Claude 4.7、GPT-5.5、Gemini 3.1 Pro
-- **国产逼近超越**：GLM-5.1、Kimi 2.6、DeepSeek V4
-- **开发者首选**：Claude Opus 4.7（架构）、Kimi K2.6（性价比）、DeepSeek V4-Flash（日常）
-- **市场数据**：AI编程市场2026年128亿美元（年增24%），企业采纳率65%，自动化测试市场404亿美元
+- **国产模型性价比颠覆** — GLM-5.1、Kimi 2.6、DeepSeek V4逼近/超越Claude 4.7、GPT-5.5、Gemini 3.1 Pro，中文体验占优
+- **多模型组合实践落地** — Claude Opus 4.7（架构设计）+ DeepSeek V4-Flash（批量任务）+ Kimi K2.6（性价比）并行使用成常态
+- **华为云码道公测** — 接入GLM-5.0、DeepSeek-V3.2等模型，目标"人人可开发"
+- **北大Agent框架** — 挑战真实编程场景，重塑代码生成能力
+- **Qodo多代理架构** — 结合PR审查和测试生成，基准测试F1得分最高
+- **AI安全风险** — 45%测试任务引入漏洞，安全扫描工具作为PR门禁被广泛采用
