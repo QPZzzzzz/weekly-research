@@ -1,50 +1,55 @@
 # build-acceleration — Research Memory
 
-最后更新: 2026-09-13
+最后更新: 2026-09-15
 
-# 编译加速产业调研 · 关键记忆点
+# 关键记忆点
 
-## 一、涉及公司/产品/项目
+## 涉及的公司/产品/项目
 
-- **sccache**（mozilla）— Rust 实现编译器缓存，默认支持 S3/Redis/Memcached 等所有存储后端
-- **ccache** — 经典本地缓存工具，2026 年 4-5 月密集发布 4.13.4/4.13.5/4.13.6
-- **MSVC / Visual Studio 2026** — 连续两月修复 C++20 模块缓存适配，配合 Ninja 构建降至 28 秒
-- **FASTBuild** — Unity/Blob 构建提速 10 倍以上，兼容网络分发与缓存
-- **Incredibuild** — 企业级 DevSecOps 加速，中国授权合作伙伴为龙智（shdsd.com）
-- **Buck2 / Bazel** — 下一代构建系统，Conan 集成 PR 未合并，新增 vcpkg 需求
-- **Velocity CI**（gradle-build-accelerator）— 预测性/自适应构建加速方案
-- **distcc** — Docker 化分布式编译集群（Red Hat distcc-docker-images）
-- **CMake / Meson / Bazel** — 构建系统选型焦点，Meson 被认为最有前景
-- **RISC-V AI 系统软件栈 / LLVM libc++ / NuttX LLVM 21 / Ruyi Buddy Compiler** — 2026 C++ 大会热点
-- **字节跳动** — libstdc++ → libc++ 大规模迁移（基于 LLVM20）
+- **Microsoft / Visual Studio 2026**（18.7–18.10）：Copilot Chat 支持 `make my build faster` 自动优化闭环
+- **MSVC Build Tools 2026**（9月预览 / 14.50）：异常处理扫描优化、死代码搜索限制、接近 C++23 完全合规、ASan 扩展 ARM64
+- **sccache**（mozilla/sccache）：多级缓存 + 自动回填分层架构，GitHub 官方背书
+- **Incredibuild**：提出共享缓存 + 分布式处理层方案；中国授权合作伙伴为龙智（shdsd.com）
+- **Build2**：原生支持 C++ Modules、跨平台、可跳过可忽略变更重编译
+- **Buck2**：Conan 集成 PR 未合并，社区期望 vcpkg 支持
+- **ccache**：本期无新版本迭代，被 sccache 平台化叙事覆盖
+- **FASTBuild**：Unity 构建 + 网络分发 + 缓存一体化
+- **CMake / Bazel / Meson / Pants**：构建系统选型讨论对象
+- **CppCon 2026**：设 C++20 编程课程（Andreas Fertig，已取消）
 
-## 二、重要趋势信号
+## 重要趋势信号
 
-- **方向 up｜编译器缓存平台化** — GitHub 官方背书 sccache 并默认化存储后端，缓存从"自选工具"升级为"平台标准配置"｜强度 **high**
-- **方向 up｜MSVC 工具链原生优化侵蚀分布式编译收益** — 连续两月修复模块缓存，单机分钟级构建削弱多机分发边际收益｜强度 **high**
-- **方向 up｜CI/CD 构建加速工具化落地** — 10 分钟基准强化，45-90 分钟构建被视为结构性约束，Incredibuild 发布信号清单｜强度 **high**
-- **方向 stable｜分布式编译与缓存融合** — FASTBuild 将 Unity 构建+网络分发+缓存一体化，边界模糊化｜强度 **medium**
-- **方向 new｜编译器生态向 RISC-V 延伸** — LLVM libc++ 嵌入式移植成新战场，中国厂商参与度高｜强度 **medium**
-- **方向 new｜预测性/自适应 CI 加速萌芽** — Velocity CI 用预测算法动态分配资源，或从静态缓存向智能预判演进｜强度 **low**
-- **方向 stable｜分布式编译适用边界固化** — 仅单机编译数小时以上大型项目才适合分布式｜强度 **medium**
-- **方向 stable｜Buck2 依赖管理僵局** — Conan 集成未合并，vcpkg 需求持续｜强度 **low**
+- **↑ AI Agent 接管构建优化执行闭环**（high）：Copilot Chat 自动完成基线捕获→优化→测量→回滚，工具价值锚点从"提供能力"转向"被 Agent 调用"
+- **↑ MSVC 原生优化侵蚀分布式编译收益**（high）：单机编译时间持续压缩，中小项目分布式 ROI 可能率先归零
+- **↑ sccache 平台化与云存储后端标准**（high）：从"自选工具"转为"平台标准配置"，挤压 ccache 云原生叙事
+- **↑ CI/CD 10 分钟基准共识**（high）：基准与现实（45–90 分钟）鸿沟构成核心市场空间
+- **↑ Incredibuild 竞争焦点升级**（high）：从市场教育转向技术方案定义（共享缓存 + 分布式处理层）
+- **↑ C++ Modules 构建系统原生支持**（high）：Build2 抢先差异化，成选型新分水岭
+- **↓ 分布式编译与缓存融合**（low）：无新增融合证据，信号相对下降
+- **→ Buck2 依赖管理集成僵局**（low）：无进展也无恶化
 
-## 三、值得长期跟踪的技术方向/话题
+## 值得长期跟踪的技术方向/话题
 
-- 编译器缓存双轨格局（sccache 平台化 vs ccache 追赶）未来 2-3 季度市场份额分配
-- 工具链深度协同路线 vs 多机分发路线的决策边界移动
+- AI Agent 自动构建优化能否从 VS 2026 扩展至 CI/CD，形成端到端自动调优闭环
+- Build2 原生 C++ Modules 是否推动构建系统在模块化场景重新洗牌，CMake/Bazel 是否跟进
+- Incredibuild 共享缓存 + 分布式处理层方案是否被 CI 平台原生集成
 - MSVC 4GB 调试信息流与公共流 API 是否被 sccache/ccache 跟进适配
-- RISC-V AI 系统软件栈的 C++ 生态空间与中国厂商参与度
-- 预测性/自适应 CI 构建加速能否产品化替代静态缓存范式
-- FASTBuild Unity/Blob 融合是否推动分布式编译与缓存工具边界进一步模糊
-- C++20 模块在分布式/缓存场景的可用性进展
+- AI 驱动提交量增长对 CI 冗余计算缺口的放大效应，是否催生新构建加速产品形态
+- C++20 Modules 对依赖分析与增量编译粒度的根本性改变
 
-## 四、竞品动态
+## 竞品动态
 
-- **sccache**：获 GitHub Projects 官方 Threads 持续推广，默认构建支持所有存储后端，云原生场景拉开与 ccache 差距
-- **ccache**：密集三版本迭代（4.13.4/4.13.5/4.13.6），反映平台化压力下的功能追赶焦虑
-- **MSVC**：8-9 月连续更新，修复范围从跨模块边界扩展至序列化和调试信息处理
-- **Incredibuild**：发布 CI/CD 加速 7 信号清单与构建系统选型指南，企业级市场教育完成，竞争转向落地效果验证
-- **FASTBuild**：Unity/Blob 构建提速 10 倍以上，对纯分布式编译厂商构成产品定义挑战
-- **Buck2**：Conan 集成 PR 获好评但未合并，社区期望支持 vcpkg
-- **Velocity CI**：预测算法预判构建需求、动态分配资源，将 GitHub Actions 从线性管道转为自适应构建生态
+- **Microsoft**：VS 2026 正式版发布，Copilot Chat 接管构建优化决策闭环；MSVC 连续修复模块缓存适配
+- **sccache**：多级缓存分层架构落地，GitHub 官方 Threads 持续推广"构建时间减半"
+- **Incredibuild**：诊断所有 CI 平台未解决冗余计算问题，提出共享缓存 + 分布式处理层方案
+- **Build2**：原生 C++ Modules 支持建立差异化竞争优势
+- **Buck2**：Conan 集成 PR 获好评但未合并，依赖管理集成停滞
+- **ccache**：本期无新版本发布，传统本地缓存优势被 sccache 云原生叙事挤压
+
+## 已消退信号（下次调研留意）
+
+- ccache 密集版本迭代（可能进入稳定期）
+- RISC-V AI 系统软件栈与 LLVM libc++ 嵌入式移植（疑为会议周期性话题）
+- 预测性/自适应 CI 构建加速（Velocity CI，疑被 AI 构建优化叙事吸收）
+- 分布式编译适用边界固化（已融入 MSVC 侵蚀叙事）
+- CMake/Meson 构建系统选型焦点（周期性话题）
