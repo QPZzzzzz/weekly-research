@@ -1,0 +1,570 @@
+{
+  "topic": "SDLC 中的 AI 工具 Cursor Copilot 代码生成 自动化 CICD",
+  "label": "ai-sdlc-tools",
+  "date": "2026-09-17",
+  "total_sources": 29,
+  "sources": [
+    {
+      "title": "Beyond the Coding Assistant: How to Embed AI Across the Whole SDLC",
+      "url": "https://altimi.com/insights/beyond-the-coding-assistant-how-to-embed-ai-across-the-whole-sdlc",
+      "platform": "Altimi",
+      "summary": "编码助手仅加速写代码阶段，团队生成代码快两倍但交付速率不变，瓶颈转移至代码审查和测试，技术债悄然累积。",
+      "relevance": "high",
+      "tags": [
+        "SDLC",
+        "瓶颈转移",
+        "代码审查",
+        "技术债"
+      ]
+    },
+    {
+      "title": "AI Agents for Software Development: Safe SDLC Guide 2026",
+      "url": "https://sageitinc.com/reference-center/ai-agents-for-software-development",
+      "platform": "SageIT",
+      "summary": "AI 智能体可执行代码变更、测试用例、文档更新、PR 草稿和 Bug 修复，但架构、安全、合规和发布责任仍由人类承担。",
+      "relevance": "high",
+      "tags": [
+        "AI Agent",
+        "SDLC",
+        "人机协同",
+        "安全"
+      ]
+    },
+    {
+      "title": "AI in Software Development SDLC 2026: Agentic AI Guide",
+      "url": "https://trusinvatechsolutions.com/blogs/ai-in-software-development-sdlc-2026",
+      "platform": "TrusInva Tech Solutions",
+      "summary": "2026 年 AI 在 SDLC 中的采用已从 Copilot 式代码补全转向智能体工作流，覆盖需求分析到监控全流程。",
+      "relevance": "high",
+      "tags": [
+        "SDLC",
+        "Agentic AI",
+        "工作流",
+        "趋势"
+      ]
+    },
+    {
+      "title": "AI 编码智能体 | IBM",
+      "url": "https://www.ibm.com/cn-zh/products/ai-coding-agent",
+      "platform": "IBM",
+      "summary": "IBM Bob 协调 SDLC 规划、执行与验证，通过任务路由减少 AI 计算支出约 40%，获 Omdia 领导者称号。",
+      "relevance": "high",
+      "tags": [
+        "IBM Bob",
+        "企业级",
+        "成本控制",
+        "SDLC"
+      ]
+    },
+    {
+      "title": "AI Agents in the SDLC: What Ships in 2026",
+      "url": "https://www.genaiprotos.com/blog/ai-agents-in-the-sdlc",
+      "platform": "GenAI Protos",
+      "summary": "多数工程组织已部署 AI 编码工具，但难以证明其对周期时间、变更失败率等核心指标的实际影响。",
+      "relevance": "high",
+      "tags": [
+        "AI Agent",
+        "工程效能",
+        "ROI",
+        "度量"
+      ]
+    },
+    {
+      "title": "CODE Training Event Detail - AI-Assisted Software Development from Code to Copilot",
+      "url": "https://www.codemag.com/event/AIASD-09-21",
+      "platform": "CODE Magazine",
+      "summary": "CODE Magazine 举办 AI 辅助软件开发培训活动，覆盖从编码到 Copilot 的实践。",
+      "relevance": "low",
+      "tags": [
+        "培训",
+        "Copilot",
+        "AI 辅助开发"
+      ]
+    },
+    {
+      "title": "2026年AI编程助手横评：8款主流工具深度对比，Cursor/Copilot/Codeium怎么选？",
+      "url": "https://juejin.cn/post/7675947280040247347",
+      "platform": "掘金",
+      "summary": "横评 Cursor、Copilot、Codeium、Tabnine、JetBrains AI、CodeWhisperer 等 8 款工具，按价格和适用场景给出选择建议。",
+      "relevance": "high",
+      "tags": [
+        "工具横评",
+        "Cursor",
+        "Copilot",
+        "Codeium",
+        "选型"
+      ]
+    },
+    {
+      "title": "2026 年最佳 AI 程式碼編輯器：10 款完整評測（Cursor、Windsurf、Copilot 等）",
+      "url": "https://weavai.app/blog/2026/04/25/best-ai-code-editor-2026",
+      "platform": "AI 織夢部落格",
+      "summary": "Windsurf 以 Cascade 流程和多文件修改能力成为 C/P 值最高编辑器，Pro $15/月比 Cursor 便宜 25%；Claude Code 以 1M Token 上下文和 SWE-bench 高分主打终端推理。",
+      "relevance": "high",
+      "tags": [
+        "Windsurf",
+        "Claude Code",
+        "编辑器",
+        "横评"
+      ]
+    },
+    {
+      "title": "AI 编程工具选哪个？2026 年 Cursor、Claude Code、Copilot 横向对比",
+      "url": "https://developer.volcengine.com/articles/7652673916258779178",
+      "platform": "火山引擎开发者社区",
+      "summary": "按工作环境、任务类型和预算给出选择框架：编辑器选 Cursor、终端选 Claude Code、GitHub 生态选 Copilot，专业开发者倾向双工具组合。",
+      "relevance": "high",
+      "tags": [
+        "Cursor",
+        "Claude Code",
+        "Copilot",
+        "选型框架"
+      ]
+    },
+    {
+      "title": "2026年AI编程工具横评——Cursor、Copilot、Codeium到底选哪个？",
+      "url": "https://www.wangchenyu.com/aitool/155587.html",
+      "platform": "王尘宇",
+      "summary": "个人开发者选 Cursor 或 Codeium，Java/企业开发选 Copilot，国内中文项目选通义灵码；作者最终保留 Cursor Pro。",
+      "relevance": "medium",
+      "tags": [
+        "Cursor",
+        "Copilot",
+        "Codeium",
+        "通义灵码"
+      ]
+    },
+    {
+      "title": "Cursor vs Codeium vs Copilot：2026 年最强 AI 编程助手争霸赛",
+      "url": "https://gitcode.csdn.net/69c958b30a2f6a37c59b6345.html",
+      "platform": "AtomGit 开源社区",
+      "summary": "提供决策树选择指南：学生选 Copilot、预算有限选 Codeium、追求最强能力选 Cursor、企业功能选 Copilot Enterprise。",
+      "relevance": "medium",
+      "tags": [
+        "Cursor",
+        "Codeium",
+        "Copilot",
+        "决策树"
+      ]
+    },
+    {
+      "title": "2026年5款AI编程工具横评：Cursor、Copilot、Codeium谁更好用",
+      "url": "https://www.wangchenyu.com/aitool/155839.html",
+      "platform": "王尘宇",
+      "summary": "Copilot Tab 补全准确率约 80% 且几乎无延迟，适合 VS Code 用户；Codeium 改名 Windsurf 后免费版够用但代码理解深度略逊。",
+      "relevance": "medium",
+      "tags": [
+        "Copilot",
+        "Windsurf",
+        "补全",
+        "横评"
+      ]
+    },
+    {
+      "title": "Ultimate Guide - The Best AI CI/CD Testing Automation Tools of 2026",
+      "url": "https://www.testsprite.com/use-cases/en/the-top-ai-ci-cd-testing-automation-tools",
+      "platform": "TestSprite",
+      "summary": "按自动化深度、可扩展性、集成面和开发者体验评估 2026 年最佳 AI CI/CD 测试自动化工具，聚焦自愈测试和 AI 测试生成。",
+      "relevance": "high",
+      "tags": [
+        "CI/CD",
+        "测试自动化",
+        "自愈测试",
+        "工具"
+      ]
+    },
+    {
+      "title": "Top AI tools for CI/CD pipeline automation in 2026",
+      "url": "https://northflank.com/blog/top-ai-tools-cicd-pipeline-automation",
+      "platform": "Northflank",
+      "summary": "AI 生成代码导致提交频率增加、每次提交审查深度下降、Schema 和迁移变更更频繁，测试管道承担更多验证权重。",
+      "relevance": "high",
+      "tags": [
+        "CI/CD",
+        "代码审查",
+        "Schema 迁移",
+        "验证"
+      ]
+    },
+    {
+      "title": "Best Practices for Implementing Test Automation in CI/CD",
+      "url": "https://testquality.com/best-practices-for-implementing-test-automation-in-ci-cd",
+      "platform": "TestQuality",
+      "summary": "自动化测试市场 2026 年达 404.4 亿美元，预计 2031 年翻倍，企业将测试左移并与 DevOps 管道融合。",
+      "relevance": "high",
+      "tags": [
+        "测试自动化",
+        "CI/CD",
+        "市场数据",
+        "DevOps"
+      ]
+    },
+    {
+      "title": "SDLC AI Radar 2026",
+      "url": "https://www.ltm.com/insights/reports/sdlc-ai-radar-2026",
+      "platform": "LTM",
+      "summary": "AI 加速代码和内容生产后，瓶颈转向协调与集成，组织需确保生成正确的组件并使其协同工作。",
+      "relevance": "high",
+      "tags": [
+        "SDLC",
+        "协调",
+        "集成",
+        "瓶颈"
+      ]
+    },
+    {
+      "title": "Top tools for the AI SDLC in 2026",
+      "url": "https://northflank.com/blog/top-tools-for-the-ai-sdlc",
+      "platform": "Northflank",
+      "summary": "AI 代码审查在合并前捕获逻辑错误、安全模式和凭证泄露；Snyk AI 和 Semgrep 作为 PR 门禁运行。",
+      "relevance": "high",
+      "tags": [
+        "代码审查",
+        "Snyk AI",
+        "Semgrep",
+        "PR 门禁"
+      ]
+    },
+    {
+      "title": "AI Code Review in Your CI/CD Pipeline: 2026 Setup",
+      "url": "https://www.kunalganglani.com/blog/ai-code-review-github-actions",
+      "platform": "Kunal Ganglani",
+      "summary": "将 LLM 接入 CI 流程实现自动化 AI 代码审查，每个 PR 在人工审查前完成风格、Bug、安全和破坏性变更检查，需自建触发器和成本控制。",
+      "relevance": "high",
+      "tags": [
+        "AI 代码审查",
+        "CI/CD",
+        "GitHub Actions",
+        "LLM"
+      ]
+    },
+    {
+      "title": "IDC FutureScape 2026十大预测：当智能体走进开发流程，DevOps 正在被重新定义",
+      "url": "https://www.idc.com/resource-center/blog/idc-futurescape-2026",
+      "platform": "IDC",
+      "summary": "IDC 预测 Agent 将成为流水线常驻成员；到 2027 年 70% AI 用例由少数前沿模型支持；到 2028 年 70% 自建智能体项目因 ROI 不达标被放弃；微调将取代 RAG 推动开源权重模型使用率提升 80%。",
+      "relevance": "high",
+      "tags": [
+        "IDC",
+        "预测",
+        "Agent",
+        "微调",
+        "DevOps"
+      ]
+    },
+    {
+      "title": "2026 年 AI 编程实测：6 款顶流大模型对比，效率直接翻倍！",
+      "url": "https://cloud.tencent.com/developer/article/2670420",
+      "platform": "腾讯云开发者社区",
+      "summary": "国际模型 Claude 4.7、GPT-5.5、Gemini 3.1 Pro 稳坐第一梯队，百万上下文成标配；国产 GLM-5.1、Kimi 2.6、DeepSeek V4 全面逼近国际一线，性价比优势显著。",
+      "relevance": "high",
+      "tags": [
+        "大模型",
+        "Claude 4.7",
+        "GPT-5.5",
+        "国产模型",
+        "对比"
+      ]
+    },
+    {
+      "title": "Claude 4 核心成员：2027年，AI将自动化几乎所有白领工作",
+      "url": "https://www.huxiu.com/article/4411692.html",
+      "platform": "虎嗅网",
+      "summary": "Claude 4 核心成员 Douglas 表示模型在时间跨度上提升显著，能连续工作数小时自主完成复杂任务，2027 年 AI 将自动化几乎所有白领工作。",
+      "relevance": "medium",
+      "tags": [
+        "Claude 4",
+        "自动化",
+        "时间跨度",
+        "预测"
+      ]
+    },
+    {
+      "title": "2026 AI 编程趋势：从代码生成到工程自治，多模型协同的演进",
+      "url": "https://my.oschina.net/u/4855080/blog/19715023",
+      "platform": "OSChina",
+      "summary": "2026 年上半年 AI 编程从追求最强单模型转向多模型组合，从代码生成工具向工程自治系统演进。",
+      "relevance": "high",
+      "tags": [
+        "多模型协同",
+        "工程自治",
+        "趋势",
+        "范式转移"
+      ]
+    },
+    {
+      "title": "2026年10大AI开发APP工具深度测评：对话式生成、零代码搭建平台盘点",
+      "url": "https://adg.csdn.net/6a4c7369662f9a54cb8a836f.html",
+      "platform": "CSDN",
+      "summary": "阿里 Meoo 支持一句话生成全栈应用，内置 Qwen3.6-Plus、Kimi K2.5、GLM-5、MiniMax-M2.5 四大模型，Fast 模式 47 秒生成 H5，Swarms 蜂群模式支持多智能体协同。",
+      "relevance": "medium",
+      "tags": [
+        "阿里 Meoo",
+        "低代码",
+        "多智能体",
+        "全栈生成"
+      ]
+    },
+    {
+      "title": "面向复杂软件工程项目的Agentic AI Coding关键技术研究",
+      "url": "https://jobs.bytedance.com/campus/m/position/detail/7628617750193162549",
+      "platform": "字节跳动",
+      "summary": "字节跳动招聘 Agentic AI Coding 方向，目标为用户提供端到端生成真实软件的服务，覆盖需求分析到测试生成和自动化重构。",
+      "relevance": "medium",
+      "tags": [
+        "字节跳动",
+        "Agentic AI",
+        "端到端",
+        "招聘"
+      ]
+    },
+    {
+      "title": "How AI is Reshaping the Software Development Lifecycle in 2026",
+      "url": "https://www.champsoft.com/blogs/how-ai-is-reshaping-the-software-development-lifecycle-in-2026",
+      "platform": "ChampSoft",
+      "summary": "未来趋势包括常规更新全自主工作流、AI 即时识别和缓解漏洞、更快的开发周期和更创新的应用。",
+      "relevance": "medium",
+      "tags": [
+        "SDLC",
+        "自动化",
+        "安全",
+        "趋势"
+      ]
+    },
+    {
+      "title": "2026 Agentic Coding Trends Report",
+      "url": "https://resources.anthropic.com/hubfs/2026%20Agentic%20Coding%20Trends%20Report.pdf",
+      "platform": "Anthropic",
+      "summary": "早期采用者与后来者的差距正在扩大，掌握跨 SDLC 智能体协调的团队可在数小时内交付功能，将智能体编码扩展到非工程角色可释放更大生产力。",
+      "relevance": "high",
+      "tags": [
+        "Anthropic",
+        "Agentic Coding",
+        "报告",
+        "智能体协调"
+      ]
+    },
+    {
+      "title": "Software Development Industry Trends 2026",
+      "url": "https://yusmpgroup.com/blog/software-development-trends-2026",
+      "platform": "YuSMP Group",
+      "summary": "2026 年最大趋势：AI 辅助编码成为默认工具链、AI 智能体从试点进入生产、代码审查和质量工程成为新交付瓶颈、平台工程主流化、DevSecOps 从 shift-left 转向 shift-smart。",
+      "relevance": "high",
+      "tags": [
+        "行业趋势",
+        "代码审查",
+        "平台工程",
+        "DevSecOps"
+      ]
+    },
+    {
+      "title": "Software Development Life Cycle Top Trends In 2026",
+      "url": "https://blogs.emorphis.com/trends-software-development-life-cycle",
+      "platform": "Emorphis",
+      "summary": "CI/CD 管道默认包含安全检查、性能验证和回滚策略，组织越来越多招聘 Agentic AI 开发者管理模型性能和监控漂移。",
+      "relevance": "medium",
+      "tags": [
+        "CI/CD",
+        "安全",
+        "Agentic AI",
+        "监控"
+      ]
+    },
+    {
+      "title": "AI Software Development Statistics 2026",
+      "url": "https://www.omniflowai.com/blog/ai-software-development-statistics",
+      "platform": "Omniflow",
+      "summary": "AI 已深度嵌入现代软件的构建、部署和扩展方式，2026 年从自动化工具到低代码平台全面重塑开发工作流。",
+      "relevance": "medium",
+      "tags": [
+        "统计数据",
+        "AI 开发",
+        "低代码",
+        "工作流"
+      ]
+    }
+  ],
+  "signals": [
+    {
+      "signal": "AI 代码审查成为 CI/CD 新瓶颈，审查信噪比取代生成速度成核心壁垒",
+      "direction": "up",
+      "evidence": "Altimi 指出团队生成代码快两倍但交付速率不变，瓶颈转移至代码审查和测试；Northflank 指出每次提交审查深度下降，测试管道承担更多验证权重；YuSMP 将代码审查列为新交付瓶颈。",
+      "category": "技术"
+    },
+    {
+      "signal": "Agent 升级为 CI/CD 流水线常驻成员，带来通信协议、冲突仲裁、审计和 Token 治理新挑战",
+      "direction": "up",
+      "evidence": "IDC 预测 Agent 将成为流水线常驻成员而非外部插件；Anthropic 报告强调掌握跨 SDLC 智能体协调的团队可在数小时内交付功能。",
+      "category": "技术"
+    },
+    {
+      "signal": "AI 编码助手安全风险量化：4× 速度 vs 10× 风险，效率增益线性而风险放大指数级",
+      "direction": "up",
+      "evidence": "Northflank 指出 AI 生成代码带来凭证泄露等安全模式问题；Snyk AI 和 Semgrep 作为 PR 门禁运行建立安全税机制。",
+      "category": "技术"
+    },
+    {
+      "signal": "企业级 AI 编码智能体平台化竞争加剧，竞争维度转向合规、私有化和成本控制",
+      "direction": "up",
+      "evidence": "IBM Bob 通过任务路由减少 AI 计算支出约 40%，获 Omdia 领导者称号；Tabnine 支持本地部署满足金融、医疗、政企合规要求。",
+      "category": "竞品"
+    },
+    {
+      "signal": "Cursor ARR 达 20 亿美元，AI 原生 IDE 从功能竞争进入规模变现阶段",
+      "direction": "up",
+      "evidence": "Cursor Pro $20/月，Agent 功能被开发者评价为太省时间；Windsurf Pro $15/月比 Cursor 便宜 25% 形成价格竞争。",
+      "category": "竞品"
+    },
+    {
+      "signal": "AI 生成代码合规、知识产权和审计体系缺失，安全合规成 20% 评估权重",
+      "direction": "up",
+      "evidence": "SageIT 指出工程领导者仍对架构、安全、合规和发布负责；Tabnine 以本地部署和代码不上传云端满足合规要求。",
+      "category": "行业"
+    },
+    {
+      "signal": "微调将取代 RAG 成主流改造模式，推动开源权重模型使用率提升 80%",
+      "direction": "up",
+      "evidence": "IDC 预测到 2027 年微调将取代 RAG 成为 LLM 改造主流模式，推动开发者对开源权重模型使用率提升 80%。",
+      "category": "技术"
+    },
+    {
+      "signal": "自愈 CI/CD 管道成 2026 工程化落地重点，从被动验证到主动修复",
+      "direction": "new",
+      "evidence": "TestSprite 指南聚焦自愈测试和 AI 测试生成；Emorphis 指出 CI/CD 管道默认包含安全检查、性能验证和回滚策略。",
+      "category": "技术"
+    },
+    {
+      "signal": "AI 编码助手已成开发者标准配置，主流开发者每日使用",
+      "direction": "stable",
+      "evidence": "YuSMP 将 AI 辅助编码列为默认工具链；GenAI Protos 指出每个工程组织都已部署 AI 编码工具，一半部署了三个。",
+      "category": "行业"
+    },
+    {
+      "signal": "国产大模型编程能力全面逼近国际一线，性价比、中文体验和长上下文形成组合优势",
+      "direction": "up",
+      "evidence": "腾讯云实测显示 GLM-5.1、Kimi 2.6、DeepSeek V4 全面逼近甚至超越国际一线；阿里 Meoo 内置四大国产模型支持全栈生成。",
+      "category": "竞品"
+    },
+    {
+      "signal": "多模型协同成为新范式，从追求最强单模型转向多模型组合",
+      "direction": "new",
+      "evidence": "OSChina 指出 2026 年上半年 AI 编程从最强单模型转向多模型组合；火山引擎建议专业开发者采用双工具组合。",
+      "category": "技术"
+    },
+    {
+      "signal": "AI 智能体项目失败率高，70% 自建型项目将因 ROI 不达标被放弃",
+      "direction": "down",
+      "evidence": "IDC 预测到 2028 年 70% 自建型智能体 AI 项目将因未能达成 ROI 目标而被放弃，低估治理、运维和组织成本是主因。",
+      "category": "行业"
+    }
+  ],
+  "trends": [
+    {
+      "trend": "SDLC 瓶颈从代码生成端系统性转移至验证端（代码审查、测试、集成）",
+      "evidence": "Altimi、Northflank、LTM、YuSMP 多源一致指出生成加速后瓶颈转移至审查和测试，技术债累积。",
+      "momentum": "rising"
+    },
+    {
+      "trend": "AI 智能体从辅助工具演变为 CI/CD 流水线常驻成员和协调团队",
+      "evidence": "IDC 预测 Agent 成为流水线常驻成员；Anthropic 报告强调智能体协调能力；IBM Bob 协调 SDLC 全流程。",
+      "momentum": "rising"
+    },
+    {
+      "trend": "AI 代码审查工具市场独立化，Snyk AI/Semgrep 等作为 PR 门禁建立安全税机制",
+      "evidence": "Northflank 指出 Snyk AI 和 Semgrep 作为 PR 门禁运行；Kunal Ganglani 提供自建 AI 代码审查 CI/CD 方案。",
+      "momentum": "rising"
+    },
+    {
+      "trend": "多模型协同和双工具组合成为专业开发者主流工作模式",
+      "evidence": "OSChina 指出从最强单模型转向多模型组合；火山引擎建议 Cursor/Windsurf + Claude Code/Codex 组合。",
+      "momentum": "rising"
+    },
+    {
+      "trend": "企业级 AI 编码平台竞争从功能转向合规、私有化和成本控制",
+      "evidence": "IBM Bob 以成本控制切入企业市场减少 40% 计算支出；Tabnine 以本地部署满足合规；Copilot Enterprise 主打企业功能。",
+      "momentum": "rising"
+    },
+    {
+      "trend": "自愈 CI/CD 管道和 AI 测试自动化成为工程化落地重点",
+      "evidence": "TestSprite 聚焦自愈测试；测试自动化市场 2026 年达 404.4 亿美元预计 2031 年翻倍。",
+      "momentum": "rising"
+    },
+    {
+      "trend": "微调取代 RAG 成为 LLM 改造主流模式，推动开源权重模型使用率提升",
+      "evidence": "IDC 预测到 2027 年微调取代 RAG，开源权重模型使用率提升 80%。",
+      "momentum": "rising"
+    },
+    {
+      "trend": "AI 编程从代码生成工具向工程自治系统演进",
+      "evidence": "OSChina 指出 AI 编程从代码生成工具向工程自治系统演进；Anthropic 报告指出团队可在数小时内交付功能。",
+      "momentum": "rising"
+    },
+    {
+      "trend": "国产大模型在编程领域全面逼近国际一线，性价比优势显著",
+      "evidence": "腾讯云实测 GLM-5.1、Kimi 2.6、DeepSeek V4 全面逼近甚至超越国际一线；阿里 Meoo 内置四大国产模型。",
+      "momentum": "rising"
+    },
+    {
+      "trend": "AI 编码助手成为默认工具链，但 ROI 度量困难导致价值证明成为挑战",
+      "evidence": "GenAI Protos 指出多数领导者无法证明 AI 工具对核心指标的实际影响；IDC 预测 70% 自建项目因 ROI 不达标被放弃。",
+      "momentum": "stable"
+    }
+  ],
+  "companies_mentioned": [
+    "Cursor",
+    "GitHub Copilot",
+    "IBM",
+    "Anthropic",
+    "Snyk AI",
+    "Semgrep",
+    "Codeium",
+    "Windsurf",
+    "Tabnine",
+    "JetBrains",
+    "Amazon CodeWhisperer",
+    "Claude Code",
+    "OpenAI",
+    "Google",
+    "DeepSeek",
+    "GLM",
+    "Kimi",
+    "Qwen",
+    "MiniMax",
+    "阿里 Meoo",
+    "腾讯云微搭",
+    "百度秒哒",
+    "响指 HaiSnap",
+    "字节跳动",
+    "通义灵码",
+    "Omdia",
+    "IDC",
+    "LTM",
+    "Northflank",
+    "TestSprite",
+    "TestQuality",
+    "Altimi",
+    "SageIT",
+    "GenAI Protos",
+    "ChampSoft",
+    "Emorphis",
+    "Omniflow",
+    "YuSMP Group"
+  ],
+  "hot_topics": [
+    "AI 代码审查成为 CI/CD 新瓶颈",
+    "Agent 常驻 CI/CD 流水线的治理挑战",
+    "AI 生成代码安全风险量化（4× 速度 vs 10× 风险）",
+    "企业级 AI 编码智能体平台化竞争",
+    "Cursor ARR 20 亿美元规模变现",
+    "微调取代 RAG 趋势",
+    "自愈 CI/CD 管道",
+    "多模型协同与双工具组合",
+    "国产大模型编程能力逼近国际一线",
+    "AI 生成代码合规与知识产权审计",
+    "SDLC 瓶颈从生成端转向验证端",
+    "AI 智能体项目 ROI 失败率",
+    "低代码/零代码 AI 全栈生成平台",
+    "百万 Token 上下文成为标配",
+    "AI 编程工具选型框架"
+  ]
+}
