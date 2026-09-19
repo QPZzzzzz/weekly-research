@@ -1,0 +1,544 @@
+{
+  "topic": "SDLC 中的 AI 工具 Cursor Copilot 代码生成 自动化 CICD",
+  "label": "ai-sdlc-tools",
+  "date": "2026-09-19",
+  "total_sources": 27,
+  "sources": [
+    {
+      "title": "[智能体-517]：AI 软件工程全流程工具（完整SDLC 生命周期",
+      "url": "https://blog.csdn.net/HiWangWenBing/article/details/162314285",
+      "platform": "CSDN",
+      "summary": "梳理覆盖完整 SDLC 生命周期的 AI 软件工程工具清单，附带 2026 年 9 月会议截稿信息。",
+      "relevance": "medium",
+      "tags": [
+        "SDLC",
+        "工具全景",
+        "智能体"
+      ]
+    },
+    {
+      "title": "SDLC AI Radar 2026",
+      "url": "https://www.ltm.com/insights/reports/sdlc-ai-radar-2026",
+      "platform": "LTM",
+      "summary": "GitHub Copilot、Amazon CodeWhisperer、GitLab Duo、Tabnine、Cursor 等单智能体工具已进入 Scale 环，多数专业开发者每日使用 AI 编码辅助。",
+      "relevance": "high",
+      "tags": [
+        "SDLC",
+        "Scale",
+        "采用率",
+        "IDE"
+      ]
+    },
+    {
+      "title": "AI Coding Assistant Statistics 2026: Adoption & Trust",
+      "url": "https://uvik.net/blog/ai-coding-assistant-statistics",
+      "platform": "Uvik",
+      "summary": "开发者对部署、监控、项目规划等高风险任务仍持谨慎态度，多工具并行使用成常态，时间节省不等于质量提升。",
+      "relevance": "high",
+      "tags": [
+        "采用率",
+        "信任",
+        "多工具",
+        "质量"
+      ]
+    },
+    {
+      "title": "AI Coding Assistants in 2026: 4× Faster, 10× Riskier and ...",
+      "url": "https://www.kusari.dev/blog/ai-coding-assistants-in-2026-4x-faster-10x-riskier-the-hidden-security-cost",
+      "platform": "Kusari",
+      "summary": "AI 编码助手提速 4 倍但安全风险高 10 倍，不安全代码进入生产环境的规模随采用率同步扩大。",
+      "relevance": "high",
+      "tags": [
+        "安全",
+        "风险",
+        "量化",
+        "生产环境"
+      ]
+    },
+    {
+      "title": "AI Across the SDLC: The New Role of Developers in 2026",
+      "url": "https://www.backslash.security/blog/the-new-role-of-developers-ai-sdlc",
+      "platform": "Backslash Security",
+      "summary": "编码阶段从自动补全演进到多文件生成、仓库感知助手和智能体编码系统，vibe coding 成为新范式。",
+      "relevance": "high",
+      "tags": [
+        "SDLC",
+        "Agentic Coding",
+        "vibe coding",
+        "开发者角色"
+      ]
+    },
+    {
+      "title": "Top tools for the AI SDLC in 2026 | Blog — Northflank",
+      "url": "https://northflank.com/blog/top-tools-for-the-ai-sdlc",
+      "platform": "Northflank",
+      "summary": "盘点 2026 年 AI SDLC 顶级工具，并关联企业级编码智能体部署、沙箱平台与治理控制。",
+      "relevance": "high",
+      "tags": [
+        "SDLC",
+        "企业级",
+        "沙箱",
+        "治理"
+      ]
+    },
+    {
+      "title": "GitHub Copilot、Cursor、Codeium深度对比：谁才是AI编程工具之王？",
+      "url": "https://bbs.csdn.net/weixin_27791839/article/details/100281232",
+      "platform": "CSDN",
+      "summary": "基于数月真实项目实测，从底层架构、使用场景和适用人群维度深度对比 Copilot、Cursor、Codeium。",
+      "relevance": "high",
+      "tags": [
+        "Cursor",
+        "Copilot",
+        "Codeium",
+        "对比评测"
+      ]
+    },
+    {
+      "title": "AI编程助手2026实测：Cursor、GitHub Copilot、Windsurf、Augment Code深度对比",
+      "url": "https://zhuanlan.zhihu.com/p/2016091681271850675",
+      "platform": "知乎",
+      "summary": "两周实际项目交叉使用四款工具，从代码补全、多文件修改等维度进行实测对比。",
+      "relevance": "high",
+      "tags": [
+        "Cursor",
+        "Copilot",
+        "Windsurf",
+        "Augment Code",
+        "实测"
+      ]
+    },
+    {
+      "title": "AI 编程助手推荐：2026 年 10 款排名与真实价格 | Omid Saffari",
+      "url": "https://omidsaffari.com/zh-cn/blog/best-ai-coding-assistants-2026-zh-cn",
+      "platform": "Omid Saffari",
+      "summary": "基于厂商官网实时定价的 10 款 AI 编程助手排名，Cursor 和 Claude Code 领先，Windsurf 为性价比之选。",
+      "relevance": "high",
+      "tags": [
+        "排名",
+        "价格",
+        "Cursor",
+        "Claude Code",
+        "Windsurf"
+      ]
+    },
+    {
+      "title": "2026年AI编程工具全景图：从入门到高手的工具选择",
+      "url": "https://zhuanlan.zhihu.com/p/2012439575365170566",
+      "platform": "知乎",
+      "summary": "全景式梳理 AI 编程工具选择，Windsurf 主打 Cascade 流程，可独立完成复杂任务。",
+      "relevance": "medium",
+      "tags": [
+        "工具全景",
+        "Windsurf",
+        "Cascade"
+      ]
+    },
+    {
+      "title": "VSCode AI 编程插件横评：Copilot、Codeium、Cursor 怎么选？ - Marx's Blog",
+      "url": "https://marxchou.com/article/vscode-ai-coding-plugins-comparison",
+      "platform": "Marx's Blog",
+      "summary": "按需求场景给出选择建议，指出开发者普遍组合使用 Cursor 主编辑器 + Copilot 备胎 + Cline 处理复杂任务。",
+      "relevance": "medium",
+      "tags": [
+        "VSCode",
+        "插件",
+        "组合使用",
+        "Cline"
+      ]
+    },
+    {
+      "title": "Cursor vs GitHub Copilot 2026：AI Coding 工具實測比較 | MobileSetting",
+      "url": "https://www.mobilesetting.com.hk/Cursor%E5%B0%8D%E6%AF%94GitHubCopilot2026AICoding%E5%B7%A5%E5%85%B7%E5%AF%A6%E6%B8%AC",
+      "platform": "MobileSetting",
+      "summary": "从补全质量、语言支持、月费和适用场景四方面实测对比 Cursor 与 GitHub Copilot，两者均提供免费层。",
+      "relevance": "medium",
+      "tags": [
+        "Cursor",
+        "Copilot",
+        "实测",
+        "定价"
+      ]
+    },
+    {
+      "title": "Ultimate Guide - The Best AI CI/CD Testing Automation Tools of 2026",
+      "url": "https://www.testsprite.com/use-cases/en/the-top-ai-ci-cd-testing-automation-tools",
+      "platform": "TestSprite",
+      "summary": "按自动化深度、可扩展性、集成面和开发者体验评选 2026 年最佳 AI CI/CD 测试自动化工具，聚焦自愈测试和 AI 测试生成。",
+      "relevance": "high",
+      "tags": [
+        "CI/CD",
+        "测试自动化",
+        "自愈测试",
+        "AI 测试生成"
+      ]
+    },
+    {
+      "title": "Top AI tools for CI/CD pipeline automation in 2026 | Blog — Northflank",
+      "url": "https://northflank.com/blog/top-ai-tools-cicd-pipeline-automation",
+      "platform": "Northflank",
+      "summary": "AI 生成代码导致提交频率上升、每次审查深度下降，测试管道和 staging 承担更多验证权重，schema 迁移变更更频繁。",
+      "relevance": "high",
+      "tags": [
+        "CI/CD",
+        "流水线",
+        "审查深度",
+        "迁移"
+      ]
+    },
+    {
+      "title": "Best Practices for Implementing Test Automation in CI/CD",
+      "url": "https://testquality.com/best-practices-for-implementing-test-automation-in-ci-cd",
+      "platform": "TestQuality",
+      "summary": "自动化测试市场 2026 年达 404.4 亿美元，预计 2031 年翻倍，企业将测试左移并与 DevOps 管道融合。",
+      "relevance": "high",
+      "tags": [
+        "测试自动化",
+        "市场数据",
+        "CI/CD",
+        "左移"
+      ]
+    },
+    {
+      "title": "AI Code Review in CI/CD Pipeline: 2026 Setup Guide",
+      "url": "https://www.kunalganglani.com/blog/ai-code-review-github-actions",
+      "platform": "Kunalganglani",
+      "summary": "将 LLM 接入 CI 流程实现每个 PR 自动审查风格、bug、安全和破坏性变更，强调自建管道的触发、密钥、成本控制和门禁能力。",
+      "relevance": "high",
+      "tags": [
+        "AI 代码审查",
+        "CI/CD",
+        "PR 门禁",
+        "GitHub Actions"
+      ]
+    },
+    {
+      "title": "IDC - IDC FutureScape 2026十大预测：当智能体走进开发流程，DevOps 正在被重新定义",
+      "url": "https://www.idc.com/resource-center/blog/idc-futurescape-2026%E5%8D%81%E5%A4%A7%E9%A2%84%E6%B5%8B%EF%BC%9A%E5%BD%93%E6%99%BA%E8%83%BD%E4%BD%93%E8%B5%B0%E8%BF%9B%E5%BC%80%E5%8F%91%E6%B5%81%E7%A8%8B%EF%BC%8Cdevops-%E6%AD%A3%E5%9C%A8%E8%A2%AB",
+      "platform": "IDC",
+      "summary": "Agent 将成为流水线常驻成员；2027 年 70% AI 用例由少数前沿模型支持；2028 年 70% 自建智能体项目因 ROI 不达标被放弃；2029 年应用开发迭代速度提升 400%。",
+      "relevance": "high",
+      "tags": [
+        "IDC",
+        "预测",
+        "Agent",
+        "DevOps",
+        "ROI"
+      ]
+    },
+    {
+      "title": "2026 年 AI 编程实测：6 款顶流大模型对比，效率直接翻倍！-腾讯云开发者社区-腾讯云",
+      "url": "https://cloud.tencent.com/developer/article/2670420",
+      "platform": "腾讯云开发者社区",
+      "summary": "Claude 4.7、GPT-5.5、Gemini 3.1 Pro 稳坐第一梯队，GLM-5.1、Kimi 2.6、DeepSeek V4 全面逼近国际一线，竞争焦点转向复杂工程重构和端到端 Agent 自动化。",
+      "relevance": "high",
+      "tags": [
+        "大模型对比",
+        "Claude",
+        "GPT",
+        "国产模型",
+        "Agent"
+      ]
+    },
+    {
+      "title": "Cursor开发者习惯报告2026 | 编程革命 | 开发效率翻倍 | 代码质量提升 | 开发者差距拉大 | 上下文输入暴涨 | 自动化转变 | 模型成本差异 | AI开发的未来",
+      "url": "https://www.youtube.com/watch?v=ZzROmQ1aMiM",
+      "platform": "YouTube",
+      "summary": "Cursor 报告显示 36% 自动合并率，AI 安全审查已集成到 CI/CD 流水线，企业定制化 SDK 运行量爆发式增长，推动 Agent 基础设施向可编程平台演进。",
+      "relevance": "high",
+      "tags": [
+        "Cursor",
+        "自动合并",
+        "安全审查",
+        "企业 SDK",
+        "平台化"
+      ]
+    },
+    {
+      "title": "Claude 4 核心成员：2027年，AI将自动化几乎所有白领工作",
+      "url": "https://www.huxiu.com/article/4411692.html",
+      "platform": "虎嗅",
+      "summary": "Claude 4 核心成员预测 2027 年 AI 将自动化几乎所有白领工作，超级程序员模型只需大量代码和算力。",
+      "relevance": "low",
+      "tags": [
+        "预测",
+        "自动化",
+        "白领工作"
+      ]
+    },
+    {
+      "title": "深圳市“人工智能+”先进制造业行动计划（2026-2027年）",
+      "url": "https://gxj.sz.gov.cn/xxgk/xxgkml/qt/tzgg/content/post_12645602.html",
+      "platform": "深圳市工信局",
+      "summary": "深圳发布 AI+先进制造业行动计划，支持具身智能、AI 赋能高性能材料等方向，与 SDLC AI 工具主题关联较弱。",
+      "relevance": "low",
+      "tags": [
+        "政策",
+        "制造业",
+        "具身智能"
+      ]
+    },
+    {
+      "title": "2026 AI 编程趋势：从代码生成到工程自治，多模型协同的演进 ...",
+      "url": "https://my.oschina.net/u/4855080/blog/19715023",
+      "platform": "OSChina",
+      "summary": "2026 上半年 AI 编程从追求最强单模型转向多模型组合，标志从代码生成工具向工程自治系统演进。",
+      "relevance": "high",
+      "tags": [
+        "多模型协同",
+        "工程自治",
+        "趋势"
+      ]
+    },
+    {
+      "title": "How AI is Reshaping the Software Development Lifecycle in 2026 - ChampSoft",
+      "url": "https://www.champsoft.com/blogs/how-ai-is-reshaping-the-software-development-lifecycle-in-2026",
+      "platform": "ChampSoft",
+      "summary": "未来趋势包括常规更新全自动化、AI 即时识别缓解漏洞、更直观响应的用户体验，开发周期加快。",
+      "relevance": "medium",
+      "tags": [
+        "SDLC",
+        "自动化",
+        "安全",
+        "趋势"
+      ]
+    },
+    {
+      "title": "2026 Agentic Coding Trends Report",
+      "url": "https://resources.anthropic.com/hubfs/2026%20Agentic%20Coding%20Trends%20Report.pdf",
+      "platform": "Anthropic",
+      "summary": "早期采用者与后来者差距扩大，能规模化人类监督而不造成瓶颈的组织更具优势，掌握跨 SDLC 智能体协调的团队可在数小时内交付功能。",
+      "relevance": "high",
+      "tags": [
+        "Agentic Coding",
+        "Anthropic",
+        "人类监督",
+        "协调"
+      ]
+    },
+    {
+      "title": "AI Software Development Statistics 2026",
+      "url": "https://www.omniflowai.com/blog/ai-software-development-statistics",
+      "platform": "Omniflow",
+      "summary": "AI 已深度嵌入现代软件构建、部署和扩展方式，2026 年从辅助工具转向全流程重塑。",
+      "relevance": "medium",
+      "tags": [
+        "统计数据",
+        "SDLC",
+        "AI 嵌入"
+      ]
+    },
+    {
+      "title": "Top software development trends 2026: AI, devSecOps ...",
+      "url": "https://innowise.com/blog/top-software-development-trends",
+      "platform": "Innowise",
+      "summary": "AI 从助手升级为全功能决策者，低代码让任何人成为构建者，趋势通过自动化整个工作流和决策过程重塑经济。",
+      "relevance": "medium",
+      "tags": [
+        "趋势",
+        "devSecOps",
+        "低代码",
+        "决策者"
+      ]
+    },
+    {
+      "title": "Generative AI in Software Development Lifecycle Market Companies, Size & Trends 2026-2035",
+      "url": "https://www.precedenceresearch.com/generative-ai-in-software-development-lifecycle-market",
+      "platform": "Precedence Research",
+      "summary": "生成式 AI 在 SDLC 市场预计 2026-2035 年 CAGR 约 35.62%，主要玩家包括 GitHub、OpenAI、AWS、Google、JetBrains、Tabnine、Replit、Sourcegraph、Snyk。",
+      "relevance": "high",
+      "tags": [
+        "市场规模",
+        "CAGR",
+        "主要玩家",
+        "预测"
+      ]
+    }
+  ],
+  "signals": [
+    {
+      "signal": "AI 编码工具已从早期采用进入主流规模化阶段，多数专业开发者每日使用",
+      "direction": "stable",
+      "evidence": "LTM SDLC AI Radar 2026 将 Copilot、CodeWhisperer、GitLab Duo、Tabnine、Cursor 列入 Scale 环；Uvik 统计确认企业采用加速、大组织广泛铺开",
+      "category": "行业"
+    },
+    {
+      "signal": "AI 代码安全风险量化持续强化：4× 速度 vs 10× 风险，不安全代码进入生产规模扩大",
+      "direction": "up",
+      "evidence": "Kusari 报告明确 4× faster / 10× riskier；Backslash Security 指出不安全代码随采用率同步扩大",
+      "category": "技术"
+    },
+    {
+      "signal": "AI 代码审查成为 CI/CD 新瓶颈，审查信噪比取代生成速度成核心壁垒",
+      "direction": "up",
+      "evidence": "Northflank 指出 AI 生成代码导致提交频率上升、每次审查深度下降，测试管道承担更多验证权重；Kunalganglani 发布 AI 代码审查 CI/CD 搭建指南",
+      "category": "技术"
+    },
+    {
+      "signal": "Agent 升级为 CI/CD 流水线常驻成员，带来通信协议、冲突仲裁、审计、Token 治理四大挑战",
+      "direction": "up",
+      "evidence": "IDC FutureScape 2026 预测 Agent 将成为流水线常驻成员而非外部插件；Anthropic 报告强调跨 SDLC 智能体协调能力",
+      "category": "技术"
+    },
+    {
+      "signal": "多模型协同成新范式，从追求最强单模型转向多模型组合",
+      "direction": "up",
+      "evidence": "OSChina 文章指出 2026 上半年发生范式转移；Uvik 统计确认开发者多工具并行使用成常态；腾讯云文章展示国际+国产模型组合格局",
+      "category": "技术"
+    },
+    {
+      "signal": "企业定制化 SDK 运行量爆发式增长，Agent 基础设施向可编程平台演进",
+      "direction": "new",
+      "evidence": "Cursor 开发者习惯报告 2026 显示企业定制化 SDK 运行量爆发式增长，允许定制 Coding Agent、训练私有模型、集成内部代码库",
+      "category": "产品"
+    },
+    {
+      "signal": "AI 安全审查已集成到 CI/CD 流水线，实现安全审查全自动化",
+      "direction": "up",
+      "evidence": "Cursor 开发者习惯报告 2026 指出很多公司已将 AI 安全审查集成到 CI/CD 流水线；TestSprite 和 Kunalganglani 均聚焦 CI/CD 中的 AI 审查",
+      "category": "技术"
+    },
+    {
+      "signal": "AI 自动合并率达到 36%，简单常规变更已可自动合并，复杂核心逻辑仍需人工把关",
+      "direction": "new",
+      "evidence": "Cursor 开发者习惯报告 2026 披露 36% 自动合并率，主要覆盖简单常规代码变更",
+      "category": "产品"
+    },
+    {
+      "signal": "生成式 AI SDLC 市场高速增长，CAGR 约 35.62%",
+      "direction": "up",
+      "evidence": "Precedence Research 预测 2026-2035 年 CAGR 约 35.62%，主要玩家涵盖 GitHub、OpenAI、AWS、Google、JetBrains、Tabnine、Replit、Sourcegraph、Snyk",
+      "category": "行业"
+    },
+    {
+      "signal": "开发者对部署、监控、项目规划等高风险任务仍持谨慎态度，信任边界清晰",
+      "direction": "stable",
+      "evidence": "Uvik 统计显示开发者对高责任或生产风险任务保持谨慎；时间节省不等于质量提升，调试和返工抵消部分收益",
+      "category": "行业"
+    },
+    {
+      "signal": "自动化测试市场 2026 年达 404.4 亿美元，预计 2031 年翻倍",
+      "direction": "up",
+      "evidence": "TestQuality 引用市场数据，企业将测试左移并与 DevOps 管道融合驱动增长",
+      "category": "行业"
+    },
+    {
+      "signal": "AI 生成代码导致 schema 和迁移变更更频繁，需协调迁移策略",
+      "direction": "new",
+      "evidence": "Northflank 指出 AI 编码工具在同一迭代中同时生成应用逻辑和数据库 schema 变更，缺乏协调迁移会带来风险",
+      "category": "技术"
+    }
+  ],
+  "trends": [
+    {
+      "trend": "从代码生成工具向工程自治系统演进，多模型协同成为新范式",
+      "evidence": "OSChina 2026 AI 编程趋势文章明确范式转移；腾讯云文章展示国际+国产模型组合；Uvik 统计确认多工具并行使用",
+      "momentum": "rising"
+    },
+    {
+      "trend": "验证端瓶颈凸显：代码审查、测试自动化、集成验证工具市场价值捕获点从生成端迁移",
+      "evidence": "Northflank 指出审查深度下降、测试管道承担更多验证权重；TestQuality 自动化测试市场 404.4 亿美元；Kunalganglani 发布 AI 代码审查搭建指南",
+      "momentum": "rising"
+    },
+    {
+      "trend": "Agent 成为 CI/CD 流水线常驻成员，治理工程（通信协议、冲突仲裁、审计、Token 治理）成为关键挑战",
+      "evidence": "IDC FutureScape 2026 预测 Agent 常驻流水线；Anthropic 报告强调跨 SDLC 智能体协调；Northflank 关注企业级治理控制",
+      "momentum": "rising"
+    },
+    {
+      "trend": "AI 代码安全税机制形成：PR 门禁、凭证泄露检测、逻辑错误捕获成为 CI/CD 标配",
+      "evidence": "Kusari 4× 速度 vs 10× 风险量化；Cursor 报告 AI 安全审查集成 CI/CD；Kunalganglani 强调可阻断坏合并的门禁能力",
+      "momentum": "rising"
+    },
+    {
+      "trend": "企业定制化 SDK 和平台化成为 AI 编码工具竞争新维度",
+      "evidence": "Cursor 报告企业定制化 SDK 运行量爆发式增长；Northflank 关注企业级沙箱和治理控制；IDC 预测平台化与治理并行",
+      "momentum": "rising"
+    },
+    {
+      "trend": "自愈 CI/CD 管道和自愈测试成为 2026 工程化落地重点",
+      "evidence": "TestSprite 聚焦自愈测试和 AI 测试生成；TestQuality 讨论测试自动化最佳实践；Northflank 关注 CI/CD 管道自动化",
+      "momentum": "rising"
+    },
+    {
+      "trend": "AI 编码助手已成开发者标准配置，主流开发者每日使用",
+      "evidence": "LTM SDLC AI Radar 2026 将主流工具列入 Scale 环；Uvik 统计确认企业采用加速",
+      "momentum": "stable"
+    },
+    {
+      "trend": "国产大模型编程能力全面逼近国际一线，性价比+中文+长上下文组合优势",
+      "evidence": "腾讯云文章对比 GLM-5.1、Kimi 2.6、DeepSeek V4 与国际模型；Precedence Research 市场预测覆盖全球玩家",
+      "momentum": "rising"
+    },
+    {
+      "trend": "AI 智能体项目失败率高，70% 自建型项目将因 ROI 不达标被放弃",
+      "evidence": "IDC FutureScape 2026 预测 2028 年 70% 自建型智能体 AI 项目被放弃，低估治理、运维和组织成本是主因",
+      "momentum": "rising"
+    },
+    {
+      "trend": "微调将取代 RAG 成主流改造模式，推动开源权重模型使用率提升 80%",
+      "evidence": "IDC FutureScape 2026 预测 2027 年微调取代 RAG，开源权重模型使用率提升 80%",
+      "momentum": "rising"
+    }
+  ],
+  "companies_mentioned": [
+    "GitHub",
+    "Microsoft",
+    "OpenAI",
+    "Amazon",
+    "AWS",
+    "Google",
+    "JetBrains",
+    "Tabnine",
+    "Replit",
+    "Sourcegraph",
+    "Snyk",
+    "Cursor",
+    "Anysphere",
+    "Windsurf",
+    "Codeium",
+    "Augment Code",
+    "Cline",
+    "Claude",
+    "Anthropic",
+    "IDC",
+    "LTM",
+    "Northflank",
+    "TestSprite",
+    "TestQuality",
+    "Kusari",
+    "Backslash Security",
+    "ChampSoft",
+    "Omniflow",
+    "Innowise",
+    "Precedence Research",
+    "Uvik",
+    "GitLab",
+    "DeepCode",
+    "Kite",
+    "阿里",
+    "字节跳动",
+    "GLM",
+    "Kimi",
+    "DeepSeek",
+    "Qwen",
+    "MiniMax"
+  ],
+  "hot_topics": [
+    "AI 代码审查成为 CI/CD 新瓶颈",
+    "Agent 成为 CI/CD 流水线常驻成员",
+    "AI 编码安全风险量化：4× 速度 vs 10× 风险",
+    "多模型协同成新范式",
+    "企业定制化 SDK 爆发式增长",
+    "AI 自动合并率达 36%",
+    "自愈 CI/CD 管道",
+    "AI 安全审查集成 CI/CD 流水线",
+    "生成式 AI SDLC 市场 CAGR 35.62%",
+    "自动化测试市场 404.4 亿美元",
+    "Cursor vs Copilot vs Windsurf 实测对比",
+    "国产大模型编程能力逼近国际一线",
+    "AI 智能体项目 70% 失败率预测",
+    "微调取代 RAG 推动开源权重模型使用率提升 80%",
+    "AI 生成代码导致 schema 迁移变更频繁"
+  ]
+}
