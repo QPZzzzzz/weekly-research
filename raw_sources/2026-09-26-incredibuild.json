@@ -1,0 +1,476 @@
+{
+  "topic": "Incredibuild 分布式编译 竞品对比 行业格局",
+  "label": "incredibuild",
+  "date": "2026-09-26",
+  "total_sources": 28,
+  "sources": [
+    {
+      "title": "Release Notes - IncrediBuild Documentation (Windows)",
+      "url": "https://docs.incredibuild.com/windows/release-notes",
+      "platform": "Incredibuild Docs",
+      "summary": "Incredibuild Windows 10.37.1 于 2026-09-07 发布，改进 Rust 分发与缓存。",
+      "relevance": "high",
+      "tags": [
+        "产品更新",
+        "Rust",
+        "Windows"
+      ]
+    },
+    {
+      "title": "Release Notes - IncrediBuild Documentation (Linux)",
+      "url": "https://docs.incredibuild.com/linux/release-notes",
+      "platform": "Incredibuild Docs",
+      "summary": "Linux 4.30.0 支持 Manager 安装于 Docker，改进系统配置与安全。",
+      "relevance": "high",
+      "tags": [
+        "产品更新",
+        "Linux",
+        "Docker"
+      ]
+    },
+    {
+      "title": "Resources - Incredibuild",
+      "url": "https://www.incredibuild.com/resources",
+      "platform": "Incredibuild 官网",
+      "summary": "资源页置顶 Islo AI 沙盒、8× CI runner 免费早期访问、Unity Shader 编译博客。",
+      "relevance": "high",
+      "tags": [
+        "官网叙事",
+        "Islo",
+        "CI加速"
+      ]
+    },
+    {
+      "title": "Incredibuild Blog: Software Development Insights",
+      "url": "https://www.incredibuild.com/blog",
+      "platform": "Incredibuild 官网",
+      "summary": "博客页同样置顶 Islo AI 沙盒与 8× CI runner，传统分布式编译内容退居次要。",
+      "relevance": "high",
+      "tags": [
+        "官网叙事",
+        "Islo",
+        "CI加速"
+      ]
+    },
+    {
+      "title": "Incredibuild: Accelerate Your Development",
+      "url": "https://www.incredibuild.com",
+      "platform": "Incredibuild 官网",
+      "summary": "官网首页置顶 Islo AI 沙盒与 8× CI runner，全站叙事迁移至 AI 与 CI 加速。",
+      "relevance": "high",
+      "tags": [
+        "官网叙事",
+        "Islo",
+        "CI加速"
+      ]
+    },
+    {
+      "title": "End of Life Policy - Incredibuild",
+      "url": "https://www.incredibuild.com/end-of-life-policy",
+      "platform": "Incredibuild 官网",
+      "summary": "EOL 政策页同样置顶 Islo AI 沙盒与 8× CI runner 推广。",
+      "relevance": "medium",
+      "tags": [
+        "官网叙事",
+        "Islo"
+      ]
+    },
+    {
+      "title": "Incredibuild Integrations: Extend Your Workflow",
+      "url": "https://www.incredibuild.com/integration",
+      "platform": "Incredibuild 官网",
+      "summary": "集成页置顶 Islo AI 沙盒与 8× CI runner，集成生态围绕新叙事展开。",
+      "relevance": "medium",
+      "tags": [
+        "官网叙事",
+        "集成"
+      ]
+    },
+    {
+      "title": "Incredibuild Provides Game-Changing Development Acceleration Technology to Epic MegaGrants Recipients",
+      "url": "https://www.incredibuild.com/news/incredibuild-provides-game-changing-development-acceleration-technology-to-epic-megagrants-recipients",
+      "platform": "Incredibuild 官网",
+      "summary": "Incredibuild 继续为 Epic MegaGrants 获得者提供开发加速技术。",
+      "relevance": "medium",
+      "tags": [
+        "生态合作",
+        "Epic",
+        "游戏开发"
+      ]
+    },
+    {
+      "title": "llm Info",
+      "url": "https://www.incredibuild.com/llm-info",
+      "platform": "Incredibuild 官网",
+      "summary": "官方 LLM 信息页定义 Incredibuild 为通用构建加速平台，消除冗余 CI/CD 与编译等待。",
+      "relevance": "medium",
+      "tags": [
+        "品牌定位",
+        "CI/CD"
+      ]
+    },
+    {
+      "title": "EngFlow vs Incredibuild (2026)",
+      "url": "https://www.peerspot.com/products/comparisons/engflow_vs_incredibuild",
+      "platform": "PeerSpot",
+      "summary": "PeerSpot 对比页显示 EngFlow 与 Incredibuild 对比频率 21%，EngFlow 评分 0.0、0 评价。",
+      "relevance": "high",
+      "tags": [
+        "竞品对比",
+        "EngFlow",
+        "PeerSpot"
+      ]
+    },
+    {
+      "title": "Bazel vs Incredibuild (2026)",
+      "url": "https://www.peerspot.com/products/comparisons/bazel_vs_incredibuild",
+      "platform": "PeerSpot",
+      "summary": "PeerSpot 对比页列出 TeamCity 24%、Jenkins 23%、EngFlow 21%、GitLab 7%、CircleCI 7%、Harness 6% 的对比频率。",
+      "relevance": "high",
+      "tags": [
+        "竞品对比",
+        "Bazel",
+        "PeerSpot"
+      ]
+    },
+    {
+      "title": "Compare Bamboo vs Incredibuild",
+      "url": "https://www.peerspot.com/products/comparisons/bamboo_vs_incredibuild",
+      "platform": "PeerSpot",
+      "summary": "PeerSpot 对比页描述 Incredibuild 通过分布式计算减少构建瓶颈，Bamboo 为对比对象之一。",
+      "relevance": "medium",
+      "tags": [
+        "竞品对比",
+        "Bamboo",
+        "PeerSpot"
+      ]
+    },
+    {
+      "title": "Incredibuild Build Acceleration vs LangChain LangSmith (2026)",
+      "url": "https://www.peerspot.com/products/comparisons/incredibuild-build-acceleration_vs_langchain-langsmith",
+      "platform": "PeerSpot",
+      "summary": "PeerSpot 将 Incredibuild Build Acceleration 与 LangChain LangSmith 对比，反映品类标签泛化。",
+      "relevance": "medium",
+      "tags": [
+        "品类泛化",
+        "PeerSpot",
+        "AI"
+      ]
+    },
+    {
+      "title": "EngFlow Makes C++ Builds 21x Faster and Software a Lot Safer - The New Stack",
+      "url": "https://thenewstack.io/engflow-makes-c-builds-21x-faster-and-software-a-lot-safer",
+      "platform": "The New Stack",
+      "summary": "The New Stack 2026-09-10 报道 EngFlow 使 C++ 构建快 21 倍，媒体热度与 PeerSpot 口碑脱节。",
+      "relevance": "high",
+      "tags": [
+        "竞品动态",
+        "EngFlow",
+        "媒体"
+      ]
+    },
+    {
+      "title": "EngFlow Makes C++ Builds 21x Faster and Software a Lot ... - Reddit",
+      "url": "https://www.reddit.com/r/cpp/comments/1jtlo61/engflow_makes_c_builds_21x_faster_and_software_a",
+      "platform": "Reddit",
+      "summary": "Reddit r/cpp 讨论 EngFlow 远程执行与缓存，提及 Incredibuild 为简单集成方案。",
+      "relevance": "medium",
+      "tags": [
+        "竞品动态",
+        "EngFlow",
+        "社区"
+      ]
+    },
+    {
+      "title": "FASTBuild vs. Incredibuild Comparison",
+      "url": "https://sourceforge.net/software/compare/FastBuild-vs-IncrediBuild",
+      "platform": "SourceForge",
+      "summary": "SourceForge 提供 FASTBuild 与 Incredibuild 的价格、功能、评价对比。",
+      "relevance": "medium",
+      "tags": [
+        "竞品对比",
+        "FASTBuild"
+      ]
+    },
+    {
+      "title": "Top Incredibuild Alternatives in 2026",
+      "url": "https://slashdot.org/software/p/IncrediBuild/alternatives",
+      "platform": "Slashdot",
+      "summary": "Slashdot 列出 distcc 等 Incredibuild 替代方案，强调分布式编译开源选项。",
+      "relevance": "medium",
+      "tags": [
+        "替代方案",
+        "distcc",
+        "开源"
+      ]
+    },
+    {
+      "title": "Top IncrediBuild Alternatives & Competitors in 2026",
+      "url": "https://www.trustradius.com/products/incredibuild/competitors",
+      "platform": "TrustRadius",
+      "summary": "TrustRadius 显示最常对比对象包括 Jenkins、TeamCity、Azure DevOps、Bamboo 等通用 CI/CD 工具。",
+      "relevance": "medium",
+      "tags": [
+        "竞品对比",
+        "CI/CD",
+        "TrustRadius"
+      ]
+    },
+    {
+      "title": "Compare Garden vs. Incredibuild in 2026",
+      "url": "https://slashdot.org/software/comparison/Garden-vs-IncrediBuild",
+      "platform": "Slashdot",
+      "summary": "Slashdot 将 Garden 与 Incredibuild 对比，Garden 定位远程构建测试运行。",
+      "relevance": "low",
+      "tags": [
+        "竞品对比",
+        "Garden"
+      ]
+    },
+    {
+      "title": "Top 10 Incredibuild Alternatives & Competitors in 2026 | G2",
+      "url": "https://www.g2.com/products/incredibuild/competitors/alternatives",
+      "platform": "G2",
+      "summary": "G2 显示最佳替代为 CircleCI（约 4.4 星、501+ 评价），用户基于可靠性与易用性对比。",
+      "relevance": "medium",
+      "tags": [
+        "竞品对比",
+        "CircleCI",
+        "G2"
+      ]
+    },
+    {
+      "title": "Incredibuild Software Pricing, Alternatives & More 2026",
+      "url": "https://www.capterra.com/p/210494/Incredibuild",
+      "platform": "Capterra",
+      "summary": "Capterra 用户评价称 Incredibuild 分布式编译帮助 C++ 团队减少编译等待。",
+      "relevance": "medium",
+      "tags": [
+        "用户评价",
+        "Capterra"
+      ]
+    },
+    {
+      "title": "Incredibuild c++编译加速，更快的构建速度，更智能的开发周期 | 龙智 DragonSoft",
+      "url": "https://www.shdsd.com/incredibuild/index.html",
+      "platform": "龙智 DragonSoft",
+      "summary": "龙智作为 Incredibuild 中国授权合作伙伴，宣称 20 万+ 开发者、编译增速 10 倍。",
+      "relevance": "high",
+      "tags": [
+        "中国区渠道",
+        "龙智",
+        "量化宣称"
+      ]
+    },
+    {
+      "title": "C++ 构建加速指南.cdr",
+      "url": "https://www.incredibuild.cn/wp-content/uploads/2020/09/CN_The_Complete_Guide_to_Speed_Up_Your_CBuilds.pdf",
+      "platform": "Incredibuild 中国站",
+      "summary": "Incredibuild 中国站发布 C++ 构建加速指南，介绍分布式编译解决方案。",
+      "relevance": "medium",
+      "tags": [
+        "中国区内容",
+        "白皮书"
+      ]
+    },
+    {
+      "title": "[C++] 提高 C++ 项目编译速度的神兵利器",
+      "url": "https://wenfh2020.com/2024/11/25/cpp-build-tools",
+      "platform": "个人博客",
+      "summary": "中文技术博客汇总 ccache、distcc、tmpfs 等编译加速方案，Incredibuild 缺席。",
+      "relevance": "medium",
+      "tags": [
+        "开源替代",
+        "中文社区",
+        "ccache"
+      ]
+    },
+    {
+      "title": "[C++] 提高 C/C++ 项目编译速度的神兵利器",
+      "url": "https://zhuanlan.zhihu.com/p/11165843086",
+      "platform": "知乎",
+      "summary": "知乎文章讨论分布式编译工具与 ccache/distcc 组合，未提及 Incredibuild。",
+      "relevance": "medium",
+      "tags": [
+        "开源替代",
+        "中文社区",
+        "知乎"
+      ]
+    },
+    {
+      "title": "C++服务编译耗时优化原理及实践 | 美团 · 技术团队",
+      "url": "https://tech.meituan.com/2020/12/10/C-+-+-Practice-in-DQU.html",
+      "platform": "美团技术团队",
+      "summary": "美团 DQU 服务认为暂不需要分布式编译，以 PCH/CCache 替代。",
+      "relevance": "medium",
+      "tags": [
+        "中国大厂",
+        "美团",
+        "PCH/CCache"
+      ]
+    },
+    {
+      "title": "IncrediBuild分布式编译环境搭建-CSDN博客",
+      "url": "https://blog.csdn.net/lanseyouhu/article/details/12356503",
+      "platform": "CSDN",
+      "summary": "CSDN 博客介绍 Incredibuild 分布式编译环境搭建，但页面内容混杂其他技术文章。",
+      "relevance": "low",
+      "tags": [
+        "中文社区",
+        "教程"
+      ]
+    },
+    {
+      "title": "r/programming - C++ 2026 的现状",
+      "url": "https://www.reddit.com/r/programming/comments/1qqzy7o/state_of_c_2026?tl=zh-hans",
+      "platform": "Reddit",
+      "summary": "Reddit 讨论 C++ 2026 现状，涉及分布式系统与代码生成器，未直接提及 Incredibuild。",
+      "relevance": "low",
+      "tags": [
+        "行业讨论",
+        "C++",
+        "Reddit"
+      ]
+    }
+  ],
+  "signals": [
+    {
+      "signal": "全站叙事持续迁移至 Islo AI 沙盒与 8× CI runner，传统分布式编译退居次要",
+      "direction": "up",
+      "evidence": "官网首页、博客、资源页、集成页、EOL 页均置顶 Islo AI 沙盒与 8× CI runner 免费早期访问。",
+      "category": "产品"
+    },
+    {
+      "signal": "Rust 分发与缓存连续迭代，Windows 10.37.1 改进 Rust distribution and caching",
+      "direction": "up",
+      "evidence": "Windows 10.37.1 发布说明明确改进 Rust 分发与缓存；Linux 4.30.0 支持 Docker 安装 Manager。",
+      "category": "技术"
+    },
+    {
+      "signal": "PeerSpot 竞品对比格局稳定：TeamCity 24%、Jenkins 23%、EngFlow 21%、GitLab 7%、CircleCI 7%、Harness 6%",
+      "direction": "stable",
+      "evidence": "PeerSpot Bazel vs Incredibuild 页面列出上述对比频率。",
+      "category": "竞品"
+    },
+    {
+      "signal": "EngFlow 媒体热度与口碑持续脱节：The New Stack 报道 21× 加速，但 PeerSpot 评分 0.0、0 评价",
+      "direction": "stable",
+      "evidence": "The New Stack 2026-09-10 报道；PeerSpot EngFlow vs Incredibuild 页面显示评分 0.0、0 评价。",
+      "category": "竞品"
+    },
+    {
+      "signal": "品类标签泛化加剧：Incredibuild 被与 LangChain LangSmith 对比，并出现在 AI Software Development 类别",
+      "direction": "stable",
+      "evidence": "PeerSpot 出现 Incredibuild Build Acceleration vs LangChain LangSmith 对比页。",
+      "category": "行业"
+    },
+    {
+      "signal": "中国区渠道龙智持续推广，宣称 20 万+ 开发者、编译增速 10 倍",
+      "direction": "stable",
+      "evidence": "龙智 DragonSoft 页面宣称 Incredibuild 让超过 20 万名开发者开启敏捷，开发编译增速 10 倍。",
+      "category": "行业"
+    },
+    {
+      "signal": "开源替代方案中文社区持续讨论，Incredibuild 在 ccache/distcc 汇总中缺席",
+      "direction": "stable",
+      "evidence": "wenfh2020 博客与知乎文章汇总 ccache/distcc/tmpfs，均未提及 Incredibuild。",
+      "category": "行业"
+    },
+    {
+      "signal": "美团 DQU 仍以 PCH/CCache 替代分布式编译，认为暂不需要",
+      "direction": "stable",
+      "evidence": "美团技术团队文章明确 DQU 服务暂不需要分布式编译。",
+      "category": "竞品"
+    },
+    {
+      "signal": "G2 显示 CircleCI 为最佳替代（约 4.4 星、501+ 评价），通用 CI/CD 平台压制持续",
+      "direction": "stable",
+      "evidence": "G2 Incredibuild 替代页显示 CircleCI 评分约 4.4 星、501+ 评价。",
+      "category": "竞品"
+    },
+    {
+      "signal": "Epic MegaGrants 生态合作持续，游戏开发垂直场景保持存在感",
+      "direction": "stable",
+      "evidence": "Incredibuild 新闻页继续宣传为 Epic MegaGrants 获得者提供加速技术。",
+      "category": "行业"
+    }
+  ],
+  "trends": [
+    {
+      "trend": "Incredibuild 品牌叙事从分布式编译转向 AI 沙盒与 CI 加速",
+      "evidence": "官网全站置顶 Islo AI 沙盒与 8× CI runner，传统分布式编译内容退居次要。",
+      "momentum": "rising"
+    },
+    {
+      "trend": "Rust 构建加速成为技术迭代重点，利用 sccache 不成熟窗口期",
+      "evidence": "Windows 10.37.1 改进 Rust distribution and caching；Linux 4.30.0 支持 Docker。",
+      "momentum": "rising"
+    },
+    {
+      "trend": "竞品对比格局稳定，TeamCity/Jenkins/EngFlow 为前三对比对象",
+      "evidence": "PeerSpot 对比频率 TeamCity 24%、Jenkins 23%、EngFlow 21%。",
+      "momentum": "stable"
+    },
+    {
+      "trend": "EngFlow 媒体声量与商业化验证严重脱节",
+      "evidence": "The New Stack 报道 21× 加速，但 PeerSpot 评分 0.0、0 评价、排名 #37。",
+      "momentum": "stable"
+    },
+    {
+      "trend": "通用 CI/CD 平台压制与品类标签泛化，Incredibuild 被归入 AI Software Development 类别",
+      "evidence": "TrustRadius 对比对象含 Jenkins/TeamCity/Azure DevOps；PeerSpot 出现与 LangChain LangSmith 对比。",
+      "momentum": "stable"
+    },
+    {
+      "trend": "中国大厂编译工具链路线分化，腾讯自研开源、字节/小米自研、美团暂不需要",
+      "evidence": "美团文章明确暂不需要分布式编译；历史记忆显示腾讯 yadcc 开源、字节/小米自研。",
+      "momentum": "stable"
+    },
+    {
+      "trend": "开源替代方案（ccache/distcc）在中文社区持续被讨论，Incredibuild 缺席",
+      "evidence": "wenfh2020 博客、知乎文章汇总 ccache/distcc/tmpfs，均未提及 Incredibuild。",
+      "momentum": "stable"
+    },
+    {
+      "trend": "中国区渠道龙智持续推广，但量化宣称缺乏落地案例支撑",
+      "evidence": "龙智宣称 20 万+ 开发者、编译增速 10 倍，未见具体案例。",
+      "momentum": "stable"
+    }
+  ],
+  "companies_mentioned": [
+    "Incredibuild",
+    "EngFlow",
+    "TeamCity",
+    "Jenkins",
+    "GitLab",
+    "CircleCI",
+    "Harness",
+    "Bazel",
+    "FASTBuild",
+    "distcc",
+    "ccache",
+    "sccache",
+    "Bamboo",
+    "Azure DevOps",
+    "Garden",
+    "LangChain LangSmith",
+    "Epic MegaGrants",
+    "龙智 DragonSoft",
+    "美团",
+    "腾讯",
+    "字节跳动",
+    "小米"
+  ],
+  "hot_topics": [
+    "Islo AI 沙盒",
+    "8× CI runner",
+    "Rust 构建加速",
+    "EngFlow 21× 加速",
+    "PeerSpot 竞品对比格局",
+    "品类标签泛化",
+    "中国区渠道龙智",
+    "开源替代 ccache/distcc",
+    "美团 DQU 暂不需要分布式编译",
+    "Epic MegaGrants 生态合作"
+  ]
+}
