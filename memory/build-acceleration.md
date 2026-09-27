@@ -1,52 +1,56 @@
 # build-acceleration — Research Memory
 
-最后更新: 2026-09-26
+最后更新: 2026-09-27
 
-# 编译加速与分布式编译调研 · 关键记忆点
+# 关键记忆点
 
-## 一、涉及公司/产品/项目
+## 涉及公司/产品/项目
+- 腾讯 yadcc（分布式编译，已开源）
+- 美团 DQU（编译优化实践）
+- Incredibuild（企业级构建加速）
+- 微软 MSVC Build Tools 2026 预览
+- Mozilla sccache
+- Google Pigweed（SEED 0111）
+- Meta Buck2
+- FASTBuild
+- 龙智 DragonSoft
+- d-o-hub/do-harness（GitHub Issue #141）
+- mold（链接器）
+- ccache
 
-- **腾讯 yadcc**：C++ 分布式编译系统，腾讯内部大规模验证后开源
-- **sccache**：Mozilla 开源编译器缓存（Rust 实现）
-- **mold**：高速链接器
-- **Visual Studio 2026**：微软 IDE，正式发布
-- **Copilot @BuildPerfCpp**：VS 2026 内 AI 构建调优能力
-- **MSVC Build Tools**：2026 年 9 月预览更新
-- **Pigweed**：Google 主导嵌入式项目，SEED 0111 文档
-- **Incredibuild**：商业化分布式编译（经龙智 DragonSoft 代理）
-- **FASTBuild / Icecream / distcc**：开源分布式编译工具
-- **Bazel / Buck2 / GN / CMake / Meson**：构建系统
-- **ccache**：经典编译器缓存
+## 重要趋势信号
 
-## 二、重要趋势信号
+- **方向 stable | 强度 high** — sccache 与 mold 被明确界定为互补关系：缓存层管编译、链接层管链接，可干净组合
+- **方向 new | 强度 medium** — sccache+mold 从个人实践进入项目模板化配置，贡献者 onboarding 构建成本被显式记录
+- **方向 stable | 强度 high** — 分布式编译与缓存层分工叙事在中文社区持续强化：分布式提吞吐、缓存降单文件耗时
+- **方向 stable | 强度 high** — 分布式编译在中文社区从概念科普进入百万行级项目实际试用阶段
+- **方向 stable | 强度 medium** — Incredibuild 强化企业级低维护/低占用/工作负载无关定位，扩展 AOSP 与云实例场景
+- **方向 stable | 强度 medium** — CI/CD 缓存叙事持续破圈："10分钟→30秒"与"45分钟→8分钟"成为标准价值主张
+- **方向 stable | 强度 high** — C++ 构建系统选型共识固化：CMake 必学、Meson 最有前景、Bazel 可能很棒
+- **方向 stable | 强度 medium** — Bazel/Buck2 仍面临 C/C++ 依赖导入标准化缺失的质疑
+- **方向 stable | 强度 medium** — MSVC Build Tools 2026 年 9 月预览持续迭代 C++ Modules 与 ARM64 代码生成
 
-- **方向 new｜腾讯开源 yadcc**：分布式编译层新增中国大厂级玩家，明确"提吞吐不降单文件耗时"能力边界，与 build cache 互补｜强度 **high**
-- **方向 new｜sccache 与 mold 兼容性摩擦**：mold 链接器导致 sccache 缓存失效，首次暴露"缓存层+链接层"实际兼容性问题｜强度 **high**
-- **方向 up｜VS 2026 正式发布**：MSVC 运行时性能提升、ARM64 ASan 支持，从预告转为落地｜强度 **medium**
-- **方向 up｜Copilot @BuildPerfCpp 迭代构建优化**：AI 构建调优从第三方迁入 IDE 原生，形成"分析→迭代验证"闭环｜强度 **high**
-- **方向 up｜Pigweed SEED 0111**：Bazel 升为主构建系统，嵌入式 Bazel 化进入文档化落地期｜强度 **high**
-- **方向 up｜VS 2026 安装器限制构建工具版本**：最低锁定 MSVC 19.44，IDE 与构建工具解耦范式遭遇早期摩擦｜强度 **high**
-- **方向 up｜MSVC Build Tools 9 月预览更新**：编译器前端/优化器/链接器持续迭代｜强度 **medium**
-- **方向 stable｜CI/CD "10 分钟→30 秒"叙事**：build cache 价值主张持续破圈 DevOps｜强度 **medium**
-- **方向 stable｜Incredibuild 企业级定位**：强调低维护/低占用/工作负载无关，AI 转型叙事降温（high→medium）｜强度 **medium**
-- **方向 stable｜C++ 构建系统选型共识**：CMake 必学、Meson 最有前景、Bazel 可能很棒｜强度 **medium**
+## 值得长期跟踪的技术方向/话题
+- 构建加速"三层分工"架构（缓存层 + 分布式层 + 链接层）的层间接口标准化
+- sccache + mold 组合模板化配置是否扩散，是否引发工具链标准化讨论（类似 .editorconfig 地位）
+- 分布式编译在中文社区从百万行项目向更多企业级场景扩散的节奏
+- build cache 正确失效问题（从"是否使用"转向"如何正确失效"）
+- C/C++ 依赖导入标准化缺失对 Bazel/Buck2 通用替代能力的制约
+- 贡献者体验（Contributor Experience）中构建效率的标准化地位
 
-## 三、值得长期跟踪的技术方向/话题
+## 竞品动态
+- **腾讯 yadcc**：开源分布式编译系统，明确"只提吞吐不降单文件耗时"，与缓存互补
+- **美团 DQU**：分布式编译 + PCH + CCache 并列优化，指出 Shared Library 无法共享 PCH
+- **Incredibuild**：企业级低维护定位，AOSP 构建分发到工作站 + CI + 云实例
+- **微软**：MSVC Build Tools 2026 年 9 月预览，C++ Modules 修复 + ARM64 代码生成改进
+- **Pigweed**：SEED 0111 将 Bazel 升为主构建系统，GN 转维护模式，CMake 无限期支持
+- **Meta Buck2**：核心 Rust 编写，语言规则 Starlark，核心与规则分离
+- **d-o-hub/do-harness**：Issue #141 记录 sccache + mold 联合配置模板化
 
-- 腾讯 yadcc 与 sccache/ccache 缓存层的集成方式及自托管选型讨论
-- sccache-mold 类"缓存层×链接层"兼容性问题是否扩散至更多工具组合
-- 构建加速三层分工格局（缓存层+分布式层+链接层）的层间接口稳定性
-- VS 2026 ARM64 ASan 对 Windows on ARM 构建与 CI 实践的影响
-- 嵌入式社区是否跟进 Pigweed 的 Bazel 化决策
-- Copilot @BuildPerfCpp 是否引发其他 IDE/构建工具跟进 AI 调优
-- IDE 与构建工具版本解耦范式的可信度与用户接受度
-- Bazel/Buck2 作为下一代构建系统的替代能力（C/C++ 依赖导入标准化缺失）
-
-## 四、竞品动态
-
-- **腾讯 yadcc**：开源分布式编译系统，为国内企业提供新自托管选项，可能推动分布式编译与缓存层集成范式讨论
-- **Incredibuild**：经龙智 DragonSoft 强化企业级定位（低维护/低占用/工作负载无关）；Islo AI 沙箱与构建卫士无新增动态，进入落地观察期
-- **微软 VS 2026**：正式发布，AI 构建调优迁入 IDE 原生，对 Incredibuild 等第三方构成直接竞争压力
-- **Pigweed**：Bazel 升为主构建系统，Google 主导项目示范效应强
-- **sccache**：GitHub Projects 推广为"可将构建时间减半的开源编译器缓存"，但暴露与 mold 兼容性缺陷
-- **Meta Buck2 / Bazel**：Lobsters 讨论其替代现有开源构建系统能力，Tweag 指出 C/C++ 依赖导入缺乏标准方式
+## 已消退信号（下期需关注是否回归）
+- VS 2026 安装器限制 C++ 构建工具最低版本（上期 high）
+- VS 2026 正式发布（上期 medium）
+- Copilot @BuildPerfCpp 支持迭代构建优化（上期 high）
+- Pigweed SEED 0111 Bazel 升主构建系统（上期 high）
+- MSVC Build Tools 2026 年 9 月预览更新（上期 medium）
+- 自托管分布式编译方案持续被讨论（上期 medium）
