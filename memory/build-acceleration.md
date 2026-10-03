@@ -1,49 +1,56 @@
 # build-acceleration — Research Memory
 
-最后更新: 2026-10-01
+最后更新: 2026-10-03
 
-# 编译加速与分布式编译调研 — 关键记忆点
+# 编译加速与分布式编译 — 关键记忆点
 
 ## 涉及公司/产品/项目
-- **sccache**（Mozilla，Rust 编译缓存，云对象存储支持）
-- **mold**（链接器，与 sccache 组合出现兼容性问题）
-- **ccache**（C/C++ 编译器缓存，4.14.1 于 2026-09-27 发布）
-- **Incredibuild**（定位升级为 CI/CD 平台无关叠加层）
-- **Visual Studio 2026 / MSVC**（正式 GA，C++23 接近完整一致性）
-- **Pigweed**（SEED 0111：Bazel 升为主构建系统）
-- **Buck2**（Meta 开源构建系统，C/C++ 依赖导入标准化缺失）
-- **Bazel**（嵌入式领域构建系统集中趋势）
-- **CMake / Meson / GN**（选型共识：CMake 推荐学习，Meson 最有前景）
-- **腾讯 yadcc**（分布式编译系统，只提吞吐不降单文件耗时）
-- **rules_foreign_cc**（Bazel C/C++ 依赖导入改善工具）
+- **字节跳动**：数千万核 C++ 服务 libc++ 迁移（秦泽天，2026 全球系统软件技术大会）
+- **Incredibuild**：CI/CD 叠加层 + Islo AI 沙箱 + 8 倍速 CI runner
+- **Microsoft**：Visual Studio 2026 / MSVC Build Tools v14.52
+- **Meta**：Buck2 构建系统
+- **Google / Pigweed**：Bazel 升为主构建系统（SEED 0111）
+- **Mozilla**：sccache（Issue #1755 未解决）
+- **美团**：C++ 服务编译耗时优化实践
+- **Tweag**：Buck2 分析
+- **ccache**：v4.14.1（2026-09-27）
+- **distcc / FASTBuild**：经典分布式编译方案
 
 ## 重要趋势信号
-- **技术 | sccache+mold 兼容性裂缝** | 缓存层与链接层层间接口问题首次具象化，挑战"可干净组合"结论 | **high**
-- **竞品 | Incredibuild 定位升级** | 从分布式编译工具升级为 CI/CD 平台无关的共享缓存+分布式处理叠加层 | **high**
-- **产品 | VS 2026 GA** | MSVC 性能提升、C++23 一致性推进、Copilot C++ Private Preview | **high**
-- **行业 | CI/CD 缓存叙事转向** | 从"是否使用"转向"如何正确失效"，缓存失效配置成核心工程实践 | **high**
-- **产品 | VS 2026 安装器版本限制** | 最低仅允许 msvc 19.44，企业多版本工具链需求受阻 | **medium**
-- **产品 | ccache/sccache 双缓存并行** | ccache 深耕 C/C++，sccache 覆盖 Rust+云存储，格局稳固 | **medium**
-- **技术 | Bazel/Buck2 C/C++ 依赖导入标准化缺失** | rules_foreign_cc 改善但未根本解决 | **medium**
-- **技术 | Pigweed Bazel 升主构建系统** | GN 转维护模式（不早于 2026 可能移除），CMake 无限期支持 | **medium**
+- **new / high**：字节跳动数千万核 libc++ 迁移经验登上国际会议，中国大厂编译工程首次大规模输出
+- **new / high**：VS 2026 升级 18.3.0 后构建性能回归，与 GA 性能提升叙事矛盾
+- **up / high**：Incredibuild 从构建加速工具升级为 CI/CD 全流程平台（叠加层 + AI 沙箱）
+- **up / high**：CI/CD 缓存叙事从「是否缓存」转向「如何正确失效」
+- **up / high**：Pigweed 批准 Bazel 为主构建系统，嵌入式领域构建系统集中趋势加强
+- **up / medium**：MSVC v14.52 多维度改进（前端/模块/代码生成/链接器）
+- **stable / medium**：sccache + mold 兼容性问题持续（Issue #1755，2023-05 至今未解）
+- **stable / medium**：Bazel/Buck2 的 C/C++ 依赖导入仍缺标准化方案
+- **stable / low**：distcc/FASTBuild 中文社区讨论停留在概念科普，缺大规模落地案例
 
-## 值得长期跟踪的技术方向/话题
-- 构建加速三层架构（缓存层+分布式层+链接层）**层间接口标准化**需求，是否催生类似 `.editorconfig` 的规范
-- sccache+mold 兼容性问题是否扩散为工具链标准化讨论
-- CI/CD 缓存失效配置从工程实践向**标准化规范**演进
-- VS 2026 安装器 C++ 构建工具最低版本限制是否放宽
-- ccache 与 sccache 是否出现功能收敛或差异化定位调整
-- Bazel/Buck2 替代 autotools+Make/CMake 的迁移成本争议（可复现构建+分布式能力附加价值）
-- 中文社区分布式编译从概念科普向实际试用推进节奏
+## 值得长期跟踪的技术方向
+- 大规模 libc++ 迁移（ABI 兼容、性能特征、工具链适配）
+- CI/CD 缓存失效策略工程化（锁文件哈希、缓存污染防护）
+- Bazel/Buck2 在嵌入式与大型 C++ 项目的渗透
+- 构建系统选型：CMake vs Bazel vs Meson vs Buck2
+- sccache 与链接器（mold）兼容性标准化
+- 分布式编译工具的平台化演进（工具层 → 平台层）
+- AI 辅助开发场景在编译加速工具中的落地
 
 ## 竞品动态
-- **Incredibuild**：战略转向"CI/CD 平台无关叠加层"，无需重写管道，可能引发其他厂商跟进
-- **Visual Studio 2026**：正式 GA，MSVC 运行时性能改进、AddressSanitizer ARM64、Copilot C++ Private Preview
-- **ccache**：4.14.1（2026-09-27）/4.14（2026-08-23）/4.13.6（2026-05-04）连续发布，迭代稳定
-- **sccache**：Rust 社区持续采用，webrender 构建降至 17.3 秒案例被广泛引用
-- **腾讯 yadcc**：开源分布式编译系统，定位"只提吞吐不降单文件耗时"，与缓存层互补
-- **Pigweed**：Bazel 升为主构建系统，GN 转维护模式
+- **Incredibuild**：推出 Islo AI 沙箱 + 8 倍速 CI runner 早期访问；定位「共享缓存 + 分布式处理叠加层」，无需重写管道
+- **Microsoft**：VS 2026 GA 宣传性能提升，但 18.3.0 出现构建回归；MSVC v14.52 持续迭代
+- **Pigweed（Google）**：Bazel 升主构建系统，GN 转维护（不早于 2026 可能移除），CMake 无限期支持
+- **ccache**：4.14.1 稳定迭代，C/C++ 编译器缓存事实标准
+- **sccache（Mozilla）**：与 mold 组合使用缓存失效问题长期未解
+- **Meta Buck2**：C/C++ 依赖导入缺标准方式，CMake 集成不明确
 
-## 已消退信号（上期对比）
-- sccache+mold 组合从个人实践进入项目模板化配置（本期无新增扩散证据，兼容性问题或抑制推广）
-- 分布式编译在百万行级 C++ 项目中作为门禁构建排队问题解法被实际试用（本期无新增证据）
+## 早期信号观察清单
+1. VS 2026 构建性能回归是否扩散、是否影响企业升级决策
+2. 字节跳动 libc++ 迁移经验是否引发其他大厂跟进分享
+3. Incredibuild Islo AI 沙箱/CI runner 是否引发厂商跟进
+4. MSVC v14.52 改进与 VS 2026 回归矛盾是否推动微软修复
+5. sccache+mold 兼容性问题是否升级为工具链标准化讨论
+
+## 已消退信号
+- VS 2026 安装器限制 C++ 构建工具最低版本（被更高优先级问题覆盖）
+- CI/CD 缓存「10分钟→30秒」数字主张（叙事已升级为「如何正确失效」）

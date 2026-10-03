@@ -1,60 +1,56 @@
 # incredibuild — Research Memory
 
-最后更新: 2026-10-01
+最后更新: 2026-10-03
 
-# 调研记忆点 · Incredibuild 竞品对比与行业格局（2026-09）
+# 关键记忆点 · Incredibuild 竞品调研
 
-## 一、涉及公司 / 产品 / 项目
-
-- **Incredibuild**（锚点）：分布式编译 / 构建加速，正迁移至 AI 沙盒与 CI 加速平台
-- **Islo AI 沙盒**：Incredibuild 新叙事核心，2026-05 与 Incredibuild 10 同期发布
-- **8× CI Runner**：Incredibuild 新推产品，免费早期访问
-- **Incredibuild 10**：平台版本，2026-05 发布
-- **EngFlow**：竞品，主打 C++ 构建 21× 加速 + 安全性
-- **Buildkite**：被 Incredibuild 定位为"理想切入点"的 CI 工具
-- **Ansible**：Build And Deployment Automation 品类主导者（49.55%）
-- **Bitbucket Pipelines**：品类第二（10.00%）
-- **Oracle Application Express**：品类第三（6.44%）
-- **腾讯 yadcc**：中国区开源分布式编译替代方案
+## 涉及公司/产品/项目
+- **Incredibuild**：分布式编译加速工具，正转型 AI 开发加速平台
+- **Islo AI 沙盒**：2026年5月与 Incredibuild 10 同期发布，新叙事核心
+- **8× CI Runner**：免费早期访问中，新叙事双核之一
+- **Build Runner Beta / 编码代理沙箱 / Build Guard Beta**：中文资源页新列产品线
+- **EngFlow**：竞品，21× C++ 加速叙事，媒体强社区弱
+- **腾讯 yadcc**：中国区开源替代方案，中心调度/心跳/多版本编译器共存
 - **龙智 DragonSoft**：Incredibuild 中国区授权合作伙伴
-- **Life Beyond Studios**：UE5 构建 2 小时→6 分钟案例方
-- **Epic MegaGrants**：合作渠道，优先级下降
-- **其他对比对象**：Jenkins、TeamCity、Bazel、BuildXL、FASTBuild、ccache、distcc、Mixpanel、Adobe Analytics、Apache Maven
+- **Ansible / Bitbucket Pipelines / Oracle APEX**：Build Automation 品类前三
+- **Bamboo**：CI 工具，mindshare 下滑
+- **Buildkite**：被 Incredibuild 博客定位为"理想切入点"
+- **FASTBuild / Bazel / Azure DevOps**：对比/竞品页出现
 
-## 二、重要趋势信号
+## 重要趋势信号
+- **up｜官网全站叙事迁移**：Islo AI 沙盒 + 8× CI Runner 覆盖全站（含 EOL 页），传统分布式编译退居次要｜**high**
+- **up｜EngFlow 媒体压制**：21× C++ 加速叙事持续占据技术媒体高地｜**high**
+- **new｜Linux 4.30.0 Manager 支持 Docker 安装**：云原生 CI 渗透关键技术前提｜**medium**
+- **new｜新产品线浮现**：Build Runner Beta、编码代理沙箱、Build Guard Beta｜**medium**
+- **new｜TrustRadius 品类泛化**：新增 Azure DevOps 条目，延续非构建工具混入｜**medium**
+- **stable｜Build Automation 品类固化**：Ansible 49.55% 主导，Incredibuild 未进前三｜**medium**
+- **stable｜中国区替代压力**：yadcc 多平台可检索，Incredibuild 中文社区缺位｜**medium**
+- **stable｜龙智宣传缺案例**：20万+开发者、10× 增速，无具体落地案例｜**low**
+- **down｜Bamboo mindshare 下滑**：6.0%→4.2%，或为 8× CI Runner 创造窗口｜**low**
+- **减弱｜G2 不再强调 8-10× 倍数**：仅称"缩短构建时间"｜**low**
 
-- **方向 up｜叙事迁移**：官网全站置顶 Islo AI 沙盒与 8× CI Runner，传统分布式编译退居次要｜强度 **high**
-- **方向 up｜竞品媒体热度**：EngFlow 21× C++ 加速叙事持续占据媒体高地（The New Stack 2026-09-10）｜强度 **high**
-- **方向 stable｜品类格局固化**：Ansible 49.55% 主导，Incredibuild 被边缘化｜强度 **high**
-- **方向 new｜品类泛化**：TrustRadius 竞品列表新增 Mixpanel、Adobe Analytics、Apache Maven 等非构建工具｜强度 **medium**
-- **方向 stable｜侧翼策略延续**：官方博客将 Buildkite 定位为"理想切入点"｜强度 **medium**
-- **方向 stable｜传统产品线未停更**：Windows 10.34.x 连续迭代 Build Cache 与 Manager UI｜强度 **medium**
-- **方向 stable｜中国区替代压力**：腾讯 yadcc 多平台可检索，中文社区 Incredibuild 缺位｜强度 **medium**
-- **方向 stable｜性能定位**：G2 确认 8-10× 构建加速（vs EngFlow 21×）｜强度 **low**
-- **方向 stable｜垂直行业案例**：半导体/游戏方案页持续运营，UE5 构建 2h→6min｜强度 **low**
-- **方向 stable｜合作优先级下降**：Epic MegaGrants 页面被新叙事横幅覆盖｜强度 **low**
+## 值得长期跟踪的技术方向/话题
+- **AI 编码代理沙箱**：与 Islo 叙事一致，产品矩阵向 AI 方向扩张
+- **构建安全合规（Build Guard）**：超出传统分布式编译范畴
+- **云原生 CI 集成**：Docker 化 Manager + 8× CI Runner 协同，需验证落地案例
+- **构建缓存与可观测性**：中文资源页新增条目
+- **分布式编译品类边缘化**：在 Build And Deployment Automation 大品类中被泛化
+- **mindshare 2% 关口**：判断新叙事转化心智的关键阈值（上期1.3%，上年0.8%）
+- **Windows 版本线迭代**：10.34.x 与 10.37.1 版本号倒挂待确认
 
-## 三、值得长期跟踪的技术方向 / 话题
+## 竞品动态
+- **EngFlow**：The New Stack 2026-09-10 报道 21× C++ 加速 + 安全性提升；PeerSpot 对比频率 21%，但评分 0.0、排名 #37、mindshare 0.7%
+- **腾讯 yadcc**：腾讯云开发者社区 + 博客园同步开源公告，中心调度/心跳/本地守护进程/多版本编译器共存
+- **Bamboo**：mindshare 6.0%→4.2%（PeerSpot 2026-08）
+- **Buildkite**：被 Incredibuild 博客列为 CI/CD 第9名，称其缺缓存/分发、25分钟构建不变
+- **Ansible**：Build Automation 品类 49.55% 绝对主导
+- **Bitbucket Pipelines / Oracle APEX**：品类第2、3名（10.00% / 6.44%）
+- **龙智 DragonSoft**：中国区授权合作伙伴，宣传 20万+开发者、10× 增速，缺落地案例
+- **FASTBuild / Bazel / Azure DevOps**：持续出现在对比/竞品页
 
-- **Rust 分发与缓存迭代**：上期 Windows 10.37.1 高强度信号，本期缺位，需确认采集遗漏或迭代暂停
-- **Linux Docker 安装 Manager**：上期 4.30.0 高强度信号，本期缺位，需验证云原生 CI 落地案例
-- **AI/LLM 工具链漂移**：上期 GitHub Coding Agents 排名，本期缺位，需确认系列化或中断
-- **mindshare 突破 2% 关口**：上期 1.3%（上年 0.8%），本期无更新，判断新叙事转化心智的关键阈值
-- **TrustRadius 品类泛化扩展**：是否延伸至更多非构建工具
-- **Windows 10.34.x 与 10.37.1 版本线关系**：版本号倒挂，需确认并行或采集口径差异
-- **Epic MegaGrants 合作是否实质终止**
-- **Buildkite 侧翼策略是否扩展至 CircleCI、Drone 等**
-
-## 四、竞品动态
-
-- **EngFlow**：The New Stack 2026-09-10 再报 C++ 构建快 21× 并提升安全性；PeerSpot 对比频率 21%，但评分 0.0、排名 #37、mindshare 0.7%，呈"媒体强、社区弱"特征
-- **腾讯 yadcc**：腾讯云开发者社区与博客园持续可检索开源公告，详述中心调度、心跳、本地守护进程、多版本编译器共存等工业优化
-- **Ansible**：以 49.55% 主导 Build And Deployment Automation 品类
-- **Buildkite**：被 Incredibuild 官方博客列为第 9 名，指其缺缓存/分发能力、25 分钟构建不变
-- **Bazel / BuildXL / FASTBuild**：持续出现在 PeerSpot、Stack Overflow、SourceForge 对比页
-- **龙智 DragonSoft**：中国区授权合作伙伴，宣传 20 万+ 开发者、10× 编译增速，但缺具体落地案例
-
-## 五、下期重点验证项
-
-- 五项消退信号中三项为上期高强度（Rust 迭代、Docker 部署、mindshare 上升），集体缺位更可能是采集覆盖波动，需重点验证
-- 整体热度持平略降，新增信号以低强度为主
+## 下期重点验证
+- Build Runner Beta / 编码代理沙箱 / Build Guard Beta 是否形成正式产品线
+- Linux Docker Manager 是否带来云原生 CI 客户案例
+- Windows 版本说明页与中文技术社区（上期信号集体缺位，疑采集波动）
+- Bamboo 下滑是否持续并影响品类格局
+- mindshare 是否突破 2%

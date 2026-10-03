@@ -1,0 +1,490 @@
+{
+  "topic": "Incredibuild 分布式编译 竞品对比 行业格局",
+  "label": "incredibuild",
+  "date": "2026-10-03",
+  "total_sources": 25,
+  "sources": [
+    {
+      "title": "Resources - Incredibuild",
+      "url": "https://www.incredibuild.com/resources",
+      "platform": "Incredibuild 官网",
+      "summary": "官网资源页全站置顶 Islo AI 沙盒、Unity Shader 编译博客与 8× CI Runner 早期访问，传统分布式编译内容退居次要。",
+      "relevance": "high",
+      "tags": [
+        "官网",
+        "叙事迁移",
+        "Islo",
+        "CI加速"
+      ]
+    },
+    {
+      "title": "Incredibuild 10 - Incredibuild",
+      "url": "https://www.incredibuild.com/resources/incredibuild-10",
+      "platform": "Incredibuild 官网",
+      "summary": "Incredibuild 10 资源页同样被 Islo、游戏开发与 8× CI Runner 横幅覆盖，平台版本信息被新叙事包裹。",
+      "relevance": "high",
+      "tags": [
+        "Incredibuild 10",
+        "平台版本",
+        "叙事迁移"
+      ]
+    },
+    {
+      "title": "Incredibuild: Accelerate Your Development",
+      "url": "https://www.incredibuild.com",
+      "platform": "Incredibuild 官网",
+      "summary": "官网首页顶部持续推广 Islo AI 沙盒与 8× CI Runner 免费早期访问，主站定位向 AI 与 CI 加速倾斜。",
+      "relevance": "high",
+      "tags": [
+        "官网首页",
+        "Islo",
+        "8× CI Runner",
+        "定位迁移"
+      ]
+    },
+    {
+      "title": "End of Life Policy - Incredibuild",
+      "url": "https://www.incredibuild.com/end-of-life-policy",
+      "platform": "Incredibuild 官网",
+      "summary": "生命周期政策页亦被 Islo 与 8× CI Runner 横幅覆盖，说明新叙事已渗透至非产品页面。",
+      "relevance": "medium",
+      "tags": [
+        "官网",
+        "EOL",
+        "叙事渗透"
+      ]
+    },
+    {
+      "title": "Incredibuild:加速软件开发",
+      "url": "https://www.incredibuild.cn",
+      "platform": "Incredibuild 中文官网",
+      "summary": "中文站展示 Adobe、Bandai Namco、Cerence、Orderbase、ALGOTEC、ETC 等成功案例，强调构建、测试、发布全面加速与合规性。",
+      "relevance": "high",
+      "tags": [
+        "中文官网",
+        "成功案例",
+        "合规",
+        "垂直行业"
+      ]
+    },
+    {
+      "title": "IncrediBuild 进行联合编译 - 小 楼 一 夜 听 春 雨 - 博客园",
+      "url": "https://www.cnblogs.com/kex1n/archive/2010/08/12/2286478.html",
+      "platform": "博客园",
+      "summary": "2010 年旧文介绍 IncrediBuild 基于 Xoreax 多线程技术加速 C/C++ 编译并无缝集成 Visual Studio，属历史资料。",
+      "relevance": "low",
+      "tags": [
+        "历史资料",
+        "Visual Studio",
+        "分布式编译"
+      ]
+    },
+    {
+      "title": "Incredibuild: Pricing, Free Demo & Features | Software Finder - 2026",
+      "url": "https://softwarefinder.com/project-management-software/incredi-build",
+      "platform": "Software Finder",
+      "summary": "Software Finder 介绍 Incredibuild 将可用机器转为分布式计算网格，加速游戏着色器编译与渲染，缩短迭代周期。",
+      "relevance": "medium",
+      "tags": [
+        "第三方目录",
+        "游戏开发",
+        "着色器编译",
+        "分布式网格"
+      ]
+    },
+    {
+      "title": "Incredibuild Software Pricing, Alternatives & More 2026",
+      "url": "https://www.capterra.com/p/210494/Incredibuild",
+      "platform": "Capterra",
+      "summary": "Capterra 2026 年 9 月 29 日更新 Incredibuild 定价、替代品与功能，定位仍为 C++ 开发者加速编译与测试。",
+      "relevance": "medium",
+      "tags": [
+        "第三方目录",
+        "定价",
+        "替代品",
+        "C++"
+      ]
+    },
+    {
+      "title": "Release Notes - IncrediBuild Documentation",
+      "url": "https://docs.incredibuild.com/linux/release-notes",
+      "platform": "Incredibuild 文档",
+      "summary": "Linux 4.30.0 版本说明确认 Manager 可在 Docker 下安装，改进系统配置与安全，更新系统限制与 profile。",
+      "relevance": "high",
+      "tags": [
+        "Linux",
+        "Docker",
+        "Manager",
+        "版本迭代"
+      ]
+    },
+    {
+      "title": "News Archive - Incredibuild",
+      "url": "https://www.incredibuild.com/news",
+      "platform": "Incredibuild 官网",
+      "summary": "新闻归档页同样被 Islo、游戏开发与 8× CI Runner 横幅覆盖，新闻入口被新叙事主导。",
+      "relevance": "medium",
+      "tags": [
+        "新闻归档",
+        "叙事迁移"
+      ]
+    },
+    {
+      "title": "Incredibuild Reviews 2026: Details, Pricing, & Features",
+      "url": "https://www.g2.com/products/incredibuild/reviews",
+      "platform": "G2",
+      "summary": "G2 用户评价强调 Incredibuild 通过将构建分发到其他服务器/工作站大幅缩短大型项目构建时间。",
+      "relevance": "medium",
+      "tags": [
+        "G2",
+        "用户评价",
+        "构建分发",
+        "速度"
+      ]
+    },
+    {
+      "title": "EngFlow vs Incredibuild (2026)",
+      "url": "https://www.peerspot.com/products/comparisons/engflow_vs_incredibuild",
+      "platform": "PeerSpot",
+      "summary": "PeerSpot 对比 EngFlow 与 Incredibuild，称 Incredibuild 利用闲置算力减少瓶颈、易集成，适合复杂项目与紧迫工期。",
+      "relevance": "high",
+      "tags": [
+        "PeerSpot",
+        "EngFlow",
+        "竞品对比"
+      ]
+    },
+    {
+      "title": "Bazel vs Incredibuild (2026)",
+      "url": "https://www.peerspot.com/products/comparisons/bazel_vs_incredibuild",
+      "platform": "PeerSpot",
+      "summary": "PeerSpot 对比 Bazel 与 Incredibuild，重复强调 Incredibuild 分布式构建与易集成优势。",
+      "relevance": "medium",
+      "tags": [
+        "PeerSpot",
+        "Bazel",
+        "竞品对比"
+      ]
+    },
+    {
+      "title": "EngFlow Makes C++ Builds 21x Faster and Software a Lot Safer - The New Stack",
+      "url": "https://thenewstack.io/engflow-makes-c-builds-21x-faster-and-software-a-lot-safer",
+      "platform": "The New Stack",
+      "summary": "The New Stack 2026-09-10 报道 EngFlow 使 C++ 构建快 21 倍并提升软件安全性，竞品媒体热度持续。",
+      "relevance": "high",
+      "tags": [
+        "EngFlow",
+        "21×",
+        "媒体热度",
+        "C++"
+      ]
+    },
+    {
+      "title": "FASTBuild vs. Incredibuild Comparison",
+      "url": "https://sourceforge.net/software/compare/FastBuild-vs-IncrediBuild",
+      "platform": "SourceForge",
+      "summary": "SourceForge 提供 FASTBuild 与 Incredibuild 的价格、功能与评价对比表。",
+      "relevance": "medium",
+      "tags": [
+        "SourceForge",
+        "FASTBuild",
+        "竞品对比"
+      ]
+    },
+    {
+      "title": "Top IncrediBuild Alternatives & Competitors in 2026",
+      "url": "https://www.trustradius.com/products/incredibuild/competitors",
+      "platform": "TrustRadius",
+      "summary": "TrustRadius 竞品页出现 Azure DevOps 等条目，并提示集成信息不足，品类边界继续泛化。",
+      "relevance": "medium",
+      "tags": [
+        "TrustRadius",
+        "竞品列表",
+        "品类泛化",
+        "Azure DevOps"
+      ]
+    },
+    {
+      "title": "Bamboo vs Incredibuild comparison",
+      "url": "https://www.peerspot.com/products/comparisons/bamboo_vs_incredibuild",
+      "platform": "PeerSpot",
+      "summary": "PeerSpot 对比 Bamboo 与 Incredibuild，披露 2026 年 8 月 Build Automation 品类中 Bamboo mindshare 4.2%，较上年 6.0% 下降。",
+      "relevance": "high",
+      "tags": [
+        "PeerSpot",
+        "Bamboo",
+        "mindshare",
+        "品类数据"
+      ]
+    },
+    {
+      "title": "IncrediBuild - Market Share, Competitor Insights in Build And Deployment Automation",
+      "url": "https://www.6sense.com/tech/build-and-deployment-automation/incredibuild-market-share",
+      "platform": "6sense",
+      "summary": "6sense 显示 Build And Deployment Automation 品类前三为 Ansible 49.55%、Bitbucket Pipelines 10.00%、Oracle Application Express 6.44%，Incredibuild 被边缘化。",
+      "relevance": "high",
+      "tags": [
+        "6sense",
+        "市场份额",
+        "Ansible",
+        "品类格局"
+      ]
+    },
+    {
+      "title": "Top 10 CI/CD Pipeline Tools in 2026 (and How to Make Each One Faster)",
+      "url": "https://www.incredibuild.com/blog/best-ci-cd-pipeline-tools-2026",
+      "platform": "Incredibuild 博客",
+      "summary": "Incredibuild 官方博客将 Buildkite 列为第 9 名，称其缺缓存与分发能力、25 分钟构建不变，并称其接近 Incredibuild 理想切入点。",
+      "relevance": "high",
+      "tags": [
+        "官方博客",
+        "Buildkite",
+        "侧翼策略",
+        "CI/CD"
+      ]
+    },
+    {
+      "title": "r/programming - C++ 2026 的现状",
+      "url": "https://www.reddit.com/r/programming/comments/1qqzy7o/state_of_c_2026?tl=zh-hans",
+      "platform": "Reddit",
+      "summary": "Reddit r/programming 讨论 C++ 2026 现状，提及用于构建分布式系统的三层 C++ 代码生成器与快速编译器。",
+      "relevance": "low",
+      "tags": [
+        "Reddit",
+        "C++",
+        "分布式系统",
+        "社区讨论"
+      ]
+    },
+    {
+      "title": "[C++] 提高 C++ 项目编译速度的神兵利器",
+      "url": "https://wenfh2020.com/2024/11/25/cpp-build-tools",
+      "platform": "个人博客",
+      "summary": "中文技术博客汇总 ccache、distcc、tmpfs、make 等 C++ 编译加速工具与参考链接，属传统分布式编译知识。",
+      "relevance": "low",
+      "tags": [
+        "ccache",
+        "distcc",
+        "编译加速",
+        "中文社区"
+      ]
+    },
+    {
+      "title": "开源公告｜C++分布式编译系统yadcc开源了-腾讯云开发者社区-腾讯云",
+      "url": "https://cloud.tencent.com/developer/article/1832308",
+      "platform": "腾讯云开发者社区",
+      "summary": "腾讯开源 C++ 分布式编译系统 yadcc，详述中心调度、心跳、本地守护进程、多版本编译器共存等工业优化。",
+      "relevance": "high",
+      "tags": [
+        "腾讯",
+        "yadcc",
+        "开源",
+        "中国区替代"
+      ]
+    },
+    {
+      "title": "开源公告｜C++分布式编译系统yadcc开源了 - 腾讯云专区 - 博客园",
+      "url": "https://brands.cnblogs.com/tencentcloud/p/12002",
+      "platform": "博客园",
+      "summary": "博客园同步腾讯云 yadcc 开源公告，重复中心调度、心跳、本地守护进程与并发控制等工业场景优化。",
+      "relevance": "medium",
+      "tags": [
+        "腾讯",
+        "yadcc",
+        "开源",
+        "博客园"
+      ]
+    },
+    {
+      "title": "Incredibuild c++编译加速，更快的构建速度，更智能的开发周期 | 龙智 DragonSoft",
+      "url": "https://www.shdsd.com/incredibuild/index.html",
+      "platform": "龙智 DragonSoft",
+      "summary": "龙智作为 Incredibuild 中国授权合作伙伴，宣传 20 万+ 开发者、10× 编译增速与着色器加速，但缺具体落地案例。",
+      "relevance": "high",
+      "tags": [
+        "龙智",
+        "中国区",
+        "授权合作伙伴",
+        "10×"
+      ]
+    },
+    {
+      "title": "C++编译加速完全指南 - Incredibuild",
+      "url": "https://www.incredibuild.cn/resources/speed-up-your-cpp-builds",
+      "platform": "Incredibuild 中文官网",
+      "summary": "中文资源页推广 C++ 编译加速指南，同时列出构建缓存、分布式处理、可观测性、Build Runner Beta、编码代理沙箱等产品线。",
+      "relevance": "high",
+      "tags": [
+        "中文资源",
+        "C++",
+        "构建缓存",
+        "编码代理沙箱"
+      ]
+    }
+  ],
+  "signals": [
+    {
+      "signal": "官网全站置顶 Islo AI 沙盒与 8× CI Runner，传统分布式编译退居次要",
+      "direction": "up",
+      "evidence": "Resources、Incredibuild 10、首页、EOL、News 等页面均被 Islo 与 8× CI Runner 横幅覆盖",
+      "category": "产品"
+    },
+    {
+      "signal": "EngFlow 21× C++ 加速叙事持续占据媒体高地",
+      "direction": "up",
+      "evidence": "The New Stack 2026-09-10 报道 EngFlow 使 C++ 构建快 21 倍并提升安全性",
+      "category": "竞品"
+    },
+    {
+      "signal": "Build And Deployment Automation 品类格局固化，Ansible 49.55% 主导",
+      "direction": "stable",
+      "evidence": "6sense 显示前三为 Ansible 49.55%、Bitbucket Pipelines 10.00%、Oracle Application Express 6.44%",
+      "category": "行业"
+    },
+    {
+      "signal": "TrustRadius 竞品列表出现 Azure DevOps 等条目，品类泛化延续",
+      "direction": "new",
+      "evidence": "TrustRadius 竞品页出现 Azure DevOps，并提示集成信息不足",
+      "category": "行业"
+    },
+    {
+      "signal": "官方博客将 Buildkite 定位为接近 Incredibuild 理想切入点",
+      "direction": "stable",
+      "evidence": "Incredibuild 博客第 9 名 Buildkite，称其缺缓存/分发、25 分钟构建不变",
+      "category": "竞品"
+    },
+    {
+      "signal": "Linux 4.30.0 确认 Manager 可在 Docker 下安装",
+      "direction": "new",
+      "evidence": "docs.incredibuild.com/linux/release-notes 显示 4.30.0 支持 Docker 安装 Manager",
+      "category": "技术"
+    },
+    {
+      "signal": "中国区替代压力持续，腾讯 yadcc 多平台可检索",
+      "direction": "stable",
+      "evidence": "腾讯云开发者社区与博客园同步 yadcc 开源公告，详述工业优化",
+      "category": "竞品"
+    },
+    {
+      "signal": "龙智 DragonSoft 宣传 20 万+ 开发者、10× 编译增速但缺落地案例",
+      "direction": "stable",
+      "evidence": "龙智官网强调授权合作伙伴身份与 10× 增速，无具体客户案例",
+      "category": "行业"
+    },
+    {
+      "signal": "G2 用户评价确认 Incredibuild 构建分发与速度价值",
+      "direction": "stable",
+      "evidence": "G2 评价称通过分发构建到其他服务器/工作站大幅缩短大型项目构建时间",
+      "category": "产品"
+    },
+    {
+      "signal": "中文官网持续运营 Adobe、Bandai Namco、Cerence 等垂直行业案例",
+      "direction": "stable",
+      "evidence": "incredibuild.cn 展示 Adobe、Bandai Namco、Cerence、Orderbase、ALGOTEC、ETC 成功案例",
+      "category": "行业"
+    },
+    {
+      "signal": "Bamboo 在 Build Automation 品类 mindshare 从 6.0% 降至 4.2%",
+      "direction": "down",
+      "evidence": "PeerSpot 2026 年 8 月数据显示 Bamboo mindshare 4.2%，上年 6.0%",
+      "category": "竞品"
+    },
+    {
+      "signal": "中文资源页列出 Build Runner Beta、编码代理沙箱、Build Guard Beta 等新产品线",
+      "direction": "new",
+      "evidence": "incredibuild.cn C++ 编译加速指南页列出构建缓存、可观测性、Build Runner Beta、编码代理沙箱、Build Guard Beta",
+      "category": "产品"
+    }
+  ],
+  "trends": [
+    {
+      "trend": "Incredibuild 叙事从传统分布式编译向 AI 沙盒与 CI 加速平台迁移",
+      "evidence": "官网全站置顶 Islo AI 沙盒与 8× CI Runner，传统分布式编译内容退居次要",
+      "momentum": "rising"
+    },
+    {
+      "trend": "EngFlow 以 21× C++ 加速与安全性占据媒体高地，形成性能叙事压制",
+      "evidence": "The New Stack 2026-09-10 报道，PeerSpot 对比频率高但社区评分与 mindshare 低",
+      "momentum": "rising"
+    },
+    {
+      "trend": "Build And Deployment Automation 品类格局固化，Ansible 主导，Incredibuild 被边缘化",
+      "evidence": "6sense 显示 Ansible 49.55%、Bitbucket Pipelines 10.00%、Oracle Application Express 6.44%",
+      "momentum": "stable"
+    },
+    {
+      "trend": "品类边界泛化，竞品列表纳入 Azure DevOps 等非传统构建工具",
+      "evidence": "TrustRadius 竞品页出现 Azure DevOps，此前已纳入 Mixpanel、Adobe Analytics、Apache Maven",
+      "momentum": "rising"
+    },
+    {
+      "trend": "中国区开源替代方案 yadcc 持续可检索，Incredibuild 中文社区存在感不足",
+      "evidence": "腾讯云开发者社区与博客园同步 yadcc 开源公告，详述工业优化",
+      "momentum": "stable"
+    },
+    {
+      "trend": "Incredibuild 侧翼策略延续，将 Buildkite 定位为理想切入点",
+      "evidence": "官方博客第 9 名 Buildkite，称其缺缓存/分发、25 分钟构建不变",
+      "momentum": "stable"
+    },
+    {
+      "trend": "Linux 云原生部署能力增强，Manager 支持 Docker 安装",
+      "evidence": "Linux 4.30.0 版本说明确认 Manager 可在 Docker 下安装",
+      "momentum": "rising"
+    },
+    {
+      "trend": "垂直行业案例持续运营，游戏与半导体方案页保持曝光",
+      "evidence": "中文官网展示 Adobe、Bandai Namco、Cerence 等案例，Software Finder 强调游戏着色器编译",
+      "momentum": "stable"
+    }
+  ],
+  "companies_mentioned": [
+    "Incredibuild",
+    "Islo",
+    "EngFlow",
+    "Buildkite",
+    "Ansible",
+    "Bitbucket Pipelines",
+    "Oracle Application Express",
+    "Azure DevOps",
+    "Bamboo",
+    "Bazel",
+    "FASTBuild",
+    "ccache",
+    "distcc",
+    "腾讯",
+    "yadcc",
+    "龙智 DragonSoft",
+    "Adobe",
+    "Bandai Namco Studios",
+    "Cerence",
+    "Orderbase",
+    "ALGOTEC",
+    "Electronic Theatre Controls",
+    "Microsoft",
+    "Xoreax",
+    "SourceForge",
+    "TrustRadius",
+    "PeerSpot",
+    "G2",
+    "Capterra",
+    "6sense",
+    "Software Finder",
+    "The New Stack",
+    "Reddit"
+  ],
+  "hot_topics": [
+    "Islo AI 沙盒",
+    "8× CI Runner 早期访问",
+    "EngFlow 21× C++ 构建加速",
+    "Build And Deployment Automation 品类格局",
+    "Ansible 49.55% 市场份额",
+    "Buildkite 侧翼策略",
+    "腾讯 yadcc 开源分布式编译",
+    "Linux Manager Docker 安装",
+    "TrustRadius 品类泛化",
+    "游戏着色器编译加速",
+    "C++ 编译加速指南",
+    "龙智中国区授权合作"
+  ]
+}
