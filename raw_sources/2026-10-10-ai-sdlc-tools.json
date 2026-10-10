@@ -1,0 +1,566 @@
+{
+  "topic": "SDLC 中的 AI 工具 Cursor Copilot 代码生成 自动化 CICD",
+  "label": "ai-sdlc-tools",
+  "date": "2026-10-10",
+  "total_sources": 27,
+  "sources": [
+    {
+      "title": "SDLC AI Radar 2026",
+      "url": "https://www.ltm.com/insights/reports/sdlc-ai-radar-2026",
+      "platform": "LTM",
+      "summary": "单智能体 AI 开发工具（Copilot、CodeWhisperer、GitLab Duo、Tabnine、Cursor 等）已稳固进入 Scale ring，主流开发者日常使用 AI 编码辅助。",
+      "relevance": "high",
+      "tags": [
+        "单智能体",
+        "Scale ring",
+        "采用率"
+      ]
+    },
+    {
+      "title": "2026 年 AI 编程工具终极横评：从“代码补全”到“软件工程 Agent”的范式跃迁",
+      "url": "https://zhuanlan.zhihu.com/p/2072677086922289792",
+      "platform": "知乎",
+      "summary": "提出 A-SDLC 智能开发生命周期，AI 深度嵌入需求、设计、编码、测试、部署、运维全链路，并给出国内外工具选型建议。",
+      "relevance": "high",
+      "tags": [
+        "A-SDLC",
+        "范式跃迁",
+        "选型建议"
+      ]
+    },
+    {
+      "title": "AI Across the SDLC: The New Role of Developers in 2026",
+      "url": "https://www.backslash.security/blog/the-new-role-of-developers-ai-sdlc",
+      "platform": "Backslash Security",
+      "summary": "AI 已成为 SDLC 各阶段的主动参与者，并作为阶段间的连接组织，开发者角色转向验证者、策展人和编辑。",
+      "relevance": "high",
+      "tags": [
+        "开发者角色",
+        "连接组织",
+        "安全"
+      ]
+    },
+    {
+      "title": "Top 12 AI Developer Tools in 2026: Coding Assistants, Agents & Security Tools",
+      "url": "https://checkmarx.com/learn/ai-security/top-12-ai-developer-tools-in-2026-for-security-coding-and-quality",
+      "platform": "Checkmarx",
+      "summary": "Checkmarx 以自主安全代理检测、优先排序和对抗 AI 驱动威胁，覆盖 SDLC 全阶段安全。",
+      "relevance": "medium",
+      "tags": [
+        "安全工具",
+        "自主安全代理",
+        "SDLC"
+      ]
+    },
+    {
+      "title": "2026年AI驱动的SDLC及软件供应链安全技术应用指南",
+      "url": "https://www.sohu.com/a/1082574234_121955005",
+      "platform": "搜狐",
+      "summary": "AI Coding 经历四阶段，代码生产主体扩展为“人+模型+Agent+工具链”；Slopsquatting 针对 AI 幻觉包名，约 20% AI 生成代码引用不存在的包。",
+      "relevance": "high",
+      "tags": [
+        "供应链安全",
+        "Slopsquatting",
+        "幻觉包",
+        "MCP 攻击面"
+      ]
+    },
+    {
+      "title": "AI Coding Assistant Statistics 2026: Adoption & Trust",
+      "url": "https://uvik.net/blog/ai-coding-assistant-statistics",
+      "platform": "Uvik Software",
+      "summary": "开发者对部署、监控、规划等高风险任务持谨慎态度；多工具并行使用常态化；企业采用加速但时间节省不等于质量提升。",
+      "relevance": "high",
+      "tags": [
+        "采用率",
+        "信任赤字",
+        "多工具并行"
+      ]
+    },
+    {
+      "title": "AI编程工具测评：2026年该选Copilot、Cursor还是免费开源方案？",
+      "url": "https://agent.csdn.net/6a4e582c10ee7a33f289f373.html",
+      "platform": "CSDN",
+      "summary": "Copilot 国内体验不佳且收费分层，Cursor 2.4 以 Subagents 多任务并行实现“自动驾驶”级体验。",
+      "relevance": "medium",
+      "tags": [
+        "Copilot",
+        "Cursor",
+        "定价",
+        "Subagents"
+      ]
+    },
+    {
+      "title": "2026 AI 编码工具终极横评：Cursor vs Claude Code vs Windsurf vs Copilot",
+      "url": "https://aieii.com/posts/2026-03-20-ai-coding-agents-showdown",
+      "platform": "AIEII",
+      "summary": "Windsurf 以 $15/月性价比承接 Cursor 迁移用户，Cascade 追踪操作并自主生成 memories，但生态规模不如 Cursor。",
+      "relevance": "medium",
+      "tags": [
+        "Windsurf",
+        "Cascade",
+        "性价比",
+        "迁移用户"
+      ]
+    },
+    {
+      "title": "AI编程助手2026实测：Cursor、GitHub Copilot、Windsurf、Augment Code深度对比",
+      "url": "https://zhuanlan.zhihu.com/p/2016091681271850675",
+      "platform": "知乎",
+      "summary": "两周真实项目交叉使用四款工具，从代码补全、多文件上下文、Agent 模式、价格、隐私等维度系统对比。",
+      "relevance": "medium",
+      "tags": [
+        "实测对比",
+        "Agent 模式",
+        "隐私"
+      ]
+    },
+    {
+      "title": "2026 AI 编程工具市场格局分析：Copilot、Cursor 与国产方案的效能与治理",
+      "url": "https://www.heibaos.com/post/369563007320076/ai-coding-tools-market-landscape-2026",
+      "platform": "黑豹科技",
+      "summary": "AI 编程工具是效率杠杆而非人力替代，ROI 取决于治理成熟度；提出三档治理模型和企业 rollout 建议。",
+      "relevance": "high",
+      "tags": [
+        "市场格局",
+        "治理模型",
+        "ROI",
+        "企业部署"
+      ]
+    },
+    {
+      "title": "GitHub Copilot、Cursor、Codeium深度对比：谁才是AI编程工具之王？",
+      "url": "https://bbs.csdn.net/weixin_27791839/article/details/100281232",
+      "platform": "CSDN",
+      "summary": "基于鸿蒙、TypeScript 及 Python 开发环境对三款工具进行真实评测，强调工具链组合而非单点最优。",
+      "relevance": "low",
+      "tags": [
+        "鸿蒙",
+        "工具链组合",
+        "评测"
+      ]
+    },
+    {
+      "title": "2026年5款AI编程工具深度实测对比：Cursor、Claude Code、Copilot谁最强？",
+      "url": "https://zhuanlan.zhihu.com/p/2042294788519715724",
+      "platform": "知乎",
+      "summary": "双平台两周测试显示：Claude Code 代码补全准确率 91.3% 最高，Cursor 87.6%，Copilot 85.1%，Windsurf 83.2%。",
+      "relevance": "high",
+      "tags": [
+        "准确率",
+        "Claude Code",
+        "Cursor",
+        "Copilot"
+      ]
+    },
+    {
+      "title": "Top AI tools for CI/CD pipeline automation in 2026",
+      "url": "https://northflank.com/blog/top-ai-tools-cicd-pipeline-automation",
+      "platform": "Northflank",
+      "summary": "AI 生成代码导致提交频率增加、单次审查深度下降，staging 和测试管道承担更多验证权重，schema 迁移更频繁。",
+      "relevance": "high",
+      "tags": [
+        "CI/CD",
+        "提交频率",
+        "审查深度",
+        "迁移"
+      ]
+    },
+    {
+      "title": "Top tools for the AI SDLC in 2026",
+      "url": "https://northflank.com/blog/top-tools-for-the-ai-sdlc",
+      "platform": "Northflank",
+      "summary": "AI 代码审查在合并前捕获逻辑错误、安全模式和凭证泄露；AI 测试工具从规格生成用例并自愈；Snyk AI/Semgrep 作为 PR 门禁。",
+      "relevance": "high",
+      "tags": [
+        "代码审查",
+        "测试生成",
+        "自愈测试",
+        "PR 门禁"
+      ]
+    },
+    {
+      "title": "AI SDLC: How to Implement Claude Code (2026)",
+      "url": "https://www.ideaplan.io/blog/ai-sdlc-claude-code-codex-implementation-guide",
+      "platform": "Ideaplan",
+      "summary": "开发变为编排，AI 代理搭建功能、重构服务、解决错误；测试获得 AI 影响分析层，测试周期缩短 30-40%。",
+      "relevance": "high",
+      "tags": [
+        "Claude Code",
+        "编排",
+        "影响分析",
+        "测试周期"
+      ]
+    },
+    {
+      "title": "Continuous Verification for AI Accelerated Development",
+      "url": "https://www.linkedin.com/pulse/continuous-verification-ai-accelerated-development-2026-cicd-67gpe",
+      "platform": "LinkedIn",
+      "summary": "持续验证（Continuous Verification）成为 AI 加速开发下的 CI/CD 关键实践，结合规范驱动开发。",
+      "relevance": "medium",
+      "tags": [
+        "持续验证",
+        "规范驱动开发",
+        "CI/CD"
+      ]
+    },
+    {
+      "title": "AI SDLC Automation Platform: What It Is, Why Point Tools Fall Short, and How to Evaluate One in 2026",
+      "url": "https://www.v2soft.com/blogs/ai-sdlc-automation-platform-what-it-is-and-how-to-evaluate",
+      "platform": "V2Soft",
+      "summary": "真正的全栈 SDLC 自动化平台在架构上维护跨阶段共享数据模型，需求影响测试生成，安全发现反馈至代码审查。",
+      "relevance": "high",
+      "tags": [
+        "全栈自动化",
+        "共享数据模型",
+        "平台架构"
+      ]
+    },
+    {
+      "title": "2027 年，大模型依旧没有解决编程",
+      "url": "https://elliothu.me/blog/zh/coding-is-not-solved",
+      "platform": "Elliot Hu",
+      "summary": "代码生成成本降低但验证、运行维护和失败损失成本仍在；AI 无法捕获未进入工单的隐性需求，理解、验证和维护仍离不开人。",
+      "relevance": "high",
+      "tags": [
+        "成本模型",
+        "隐性需求",
+        "验证",
+        "维护"
+      ]
+    },
+    {
+      "title": "大模型应用开发工程师【阿里云2027届实习】",
+      "url": "https://www.nowcoder.com/jobs/detail/445261",
+      "platform": "牛客网",
+      "summary": "阿里云招聘大模型应用开发工程师，涉及 Prompt 工程、AI Agent 系统、LLMOps、MCP 生态建设等。",
+      "relevance": "low",
+      "tags": [
+        "招聘",
+        "LLMOps",
+        "MCP",
+        "Agent"
+      ]
+    },
+    {
+      "title": "AI编程神器2026终极排名！小白秒变大神，Claude、GPT谁才是代码生成之王？",
+      "url": "https://blog.csdn.net/m0_59235245/article/details/157402682",
+      "platform": "CSDN",
+      "summary": "中等参数专用编码模型（DeepSeek-Coder、Qwen-Coder）在编码领域优于通用大模型；2026 年趋势是“模型+IDE插件+Agent”组合。",
+      "relevance": "medium",
+      "tags": [
+        "专用编码模型",
+        "DeepSeek-Coder",
+        "Qwen-Coder",
+        "组合趋势"
+      ]
+    },
+    {
+      "title": "2026 年 AI 编程实测：6 款顶流大模型对比，效率直接翻倍！",
+      "url": "https://cloud.tencent.com/developer/article/2670420",
+      "platform": "腾讯云开发者社区",
+      "summary": "Claude Opus 4.7 登顶编程榜首，GPT-5.5、Gemini 3.1 Pro 稳居第一梯队；国产 GLM-5.1、Kimi K2.6、DeepSeek V4 全面逼近甚至超越国际一线。",
+      "relevance": "high",
+      "tags": [
+        "大模型对比",
+        "Claude Opus 4.7",
+        "国产模型",
+        "百万上下文"
+      ]
+    },
+    {
+      "title": "计算机：2027年软件开发者会做些什么？",
+      "url": "https://cn.linkedin.com/pulse/computer-what-software-developers-do-2027-darius-vasefi-5gwuc?tl=zh",
+      "platform": "LinkedIn",
+      "summary": "后端开发转向 API 组合与编排，AI 生成代码但开发者作为验证者、策展人和编辑。",
+      "relevance": "medium",
+      "tags": [
+        "开发者角色",
+        "API 编排",
+        "验证者"
+      ]
+    },
+    {
+      "title": "2026 Agentic Coding Trends Report",
+      "url": "https://resources.anthropic.com/hubfs/2026%20Agentic%20Coding%20Trends%20Report.pdf",
+      "platform": "Anthropic",
+      "summary": "早期采用者与后进者差距扩大；掌握跨 SDLC 代理协调的团队可在数小时内交付功能；代理编码向非技术角色扩展。",
+      "relevance": "high",
+      "tags": [
+        "代理编码",
+        "人机监督",
+        "跨 SDLC 协调",
+        "生产力差距"
+      ]
+    },
+    {
+      "title": "Best AI Software Development Trends in 2026",
+      "url": "https://www.akoode.com/blog/best-ai-software-development-trends-in-2026",
+      "platform": "Akoode",
+      "summary": "MLOps 2.0 覆盖 AI 模型全生命周期，包括数据版本化、实验跟踪、自动重训练、A/B 测试、金丝雀部署和漂移监控。",
+      "relevance": "medium",
+      "tags": [
+        "MLOps 2.0",
+        "模型生命周期",
+        "漂移监控"
+      ]
+    },
+    {
+      "title": "Top software development trends 2026: AI, devSecOps, and cloud-native architectures",
+      "url": "https://innowise.com/blog/top-software-development-trends",
+      "platform": "Innowise",
+      "summary": "AI 从助手变为全面决策者，自动化整个工作流和决策过程；低代码让任何人成为构建者。",
+      "relevance": "medium",
+      "tags": [
+        "决策者",
+        "工作流自动化",
+        "低代码"
+      ]
+    },
+    {
+      "title": "AI in software development: what the 2026 data shows",
+      "url": "https://linearb.io/library/ai-in-software-development",
+      "platform": "LinearB",
+      "summary": "基于 810 万 PR、4800 团队数据，AI PR 合并速度更快；IDE 助手与自主代理两种模式行为不同。",
+      "relevance": "high",
+      "tags": [
+        "PR 数据",
+        "IDE 助手",
+        "自主代理",
+        "基准报告"
+      ]
+    },
+    {
+      "title": "AI Software Development Statistics 2026",
+      "url": "https://www.omniflowai.com/blog/ai-software-development-statistics",
+      "platform": "Omniflow",
+      "summary": "AI 已深度嵌入软件构建、部署和扩展方式，从自动化工具到低代码平台重塑各层开发工作流。",
+      "relevance": "medium",
+      "tags": [
+        "统计数据",
+        "工作流重塑",
+        "低代码"
+      ]
+    }
+  ],
+  "signals": [
+    {
+      "signal": "单智能体 AI 开发工具已稳固进入 Scale ring，主流开发者日常使用 AI 编码辅助",
+      "direction": "stable",
+      "evidence": "LTM SDLC AI Radar 2026 确认 Copilot、CodeWhisperer、GitLab Duo、Tabnine、Cursor 等进入 Scale ring，多数专业开发者报告每日使用",
+      "category": "行业"
+    },
+    {
+      "signal": "A-SDLC（Agent 驱动软件开发生命周期）范式正式提出，AI 深度嵌入全链路",
+      "direction": "new",
+      "evidence": "知乎横评提出 A-SDLC 概念，AI 在需求阶段自动拆解模块、输出技术方案、生成 API 规范；Backslash 确认 AI 成为 SDLC 连接组织",
+      "category": "技术"
+    },
+    {
+      "signal": "AI 生成代码导致提交频率增加、单次审查深度下降，测试管道承担更多验证权重",
+      "direction": "up",
+      "evidence": "Northflank 指出 AI 生成代码移动更快，staging 和测试管道承载原本由代码审查承担的验证责任",
+      "category": "技术"
+    },
+    {
+      "signal": "AI 幻觉包名攻击（Slopsquatting）成为供应链安全新威胁",
+      "direction": "new",
+      "evidence": "USENIX Security 2025 分析 57.6 万 AI 生成代码样本，约 20% 引用不存在的包，43% 幻觉包名在相似提示下被一致复现",
+      "category": "行业"
+    },
+    {
+      "signal": "MCP 生态成为新的攻击面，Rug Pull、沙箱逃逸、资源窃取等手法已出现",
+      "direction": "new",
+      "evidence": "搜狐技术指南指出 MCP 生态攻击面扩大，2026 年相关安全事件开始出现",
+      "category": "技术"
+    },
+    {
+      "signal": "开发者对部署、监控、规划等高风险任务持谨慎态度，信任赤字持续",
+      "direction": "stable",
+      "evidence": "Uvik Software 统计确认开发者对高责任/生产风险任务保持谨慎，多工具并行使用常态化",
+      "category": "行业"
+    },
+    {
+      "signal": "代码生成成本降低但验证、运行维护和失败损失成本仍在，隐性需求无法被 AI 捕获",
+      "direction": "stable",
+      "evidence": "Elliot Hu 提出 Ctotal 公式，指出未进入工单的会议决策导致 AI 实现偏离业务意图",
+      "category": "技术"
+    },
+    {
+      "signal": "全栈 SDLC 自动化平台在架构上维护跨阶段共享数据模型，点工具难以企及",
+      "direction": "up",
+      "evidence": "V2Soft 指出真正平台在需求、测试、安全、代码审查间建立数据反馈闭环，AI 跨连接操作而非仅在阶段内",
+      "category": "产品"
+    },
+    {
+      "signal": "Claude Code 代码补全准确率 91.3% 领先，Cursor 87.6%，Copilot 85.1%",
+      "direction": "up",
+      "evidence": "知乎双平台两周实测数据，Claude Code 在复杂业务逻辑场景几乎不需修改",
+      "category": "产品"
+    },
+    {
+      "signal": "国产 AI IDE 以“自研模型+DeepSeek+免费+中文适配”加速追赶，字节 Trae 增长最快",
+      "direction": "up",
+      "evidence": "CSDN 测评指出字节自研模型+DeepSeek 免费 IDE 增长最快；黑豹科技预测 2026 H2 国内大模型组合或成政企默认配置",
+      "category": "竞品"
+    },
+    {
+      "signal": "Windsurf 以 $15/月性价比承接 Cursor 迁移用户，但生态规模仍受限",
+      "direction": "stable",
+      "evidence": "AIEII 横评指出 Windsurf Cascade 追踪操作并自主生成 memories，但生态和社区规模不如 Cursor",
+      "category": "竞品"
+    },
+    {
+      "signal": "AI 代理编码向非技术角色扩展，早期采用者与后进者差距扩大",
+      "direction": "up",
+      "evidence": "Anthropic 2026 Agentic Coding Trends Report 指出掌握跨 SDLC 代理协调的团队可在数小时内交付功能",
+      "category": "行业"
+    },
+    {
+      "signal": "MLOps 2.0 成熟为完整工程实践，覆盖模型全生命周期",
+      "direction": "up",
+      "evidence": "Akoode 指出 MLOps 2.0 涵盖数据版本化、实验跟踪、自动重训练、A/B 测试、金丝雀部署和漂移监控",
+      "category": "技术"
+    },
+    {
+      "signal": "AI PR 合并速度更快，IDE 助手与自主代理两种模式行为分化",
+      "direction": "up",
+      "evidence": "LinearB 基于 810 万 PR、4800 团队数据确认 AI PR 合并更快，两种模式行为不同",
+      "category": "行业"
+    }
+  ],
+  "trends": [
+    {
+      "trend": "从单智能体助手向多智能体/子代理协同演进，Cursor Subagents 实现多任务并行",
+      "evidence": "Cursor 2.4 Subagents 功能总代理分拆任务给小代理；Anthropic 报告强调代理协调能力",
+      "momentum": "rising"
+    },
+    {
+      "trend": "AI 代码审查与独立验证层成为 CI/CD 标配，Snyk AI/Semgrep 作为 PR 门禁",
+      "evidence": "Northflank 确认安全扫描工具作为 PR 门禁运行；CodeRabbit 独立审查层价值凸显",
+      "momentum": "rising"
+    },
+    {
+      "trend": "自愈测试、AI 测试生成、沙箱安全执行成为 AI CI/CD 标准配置",
+      "evidence": "Northflank 指出 AI 测试工具从规格生成用例并自愈；Modal/Northflank 沙箱环境成为关键基础设施",
+      "momentum": "rising"
+    },
+    {
+      "trend": "开发者角色转向验证者、策展人和编辑，后端开发转向 API 组合与编排",
+      "evidence": "Backslash、LinkedIn 文章、Anthropic 报告均确认角色转变趋势",
+      "momentum": "rising"
+    },
+    {
+      "trend": "持续验证（Continuous Verification）与规范驱动开发成为 AI 加速开发下的关键实践",
+      "evidence": "LinkedIn 文章专题讨论持续验证；iSoft 提及规范驱动开发蓝图",
+      "momentum": "rising"
+    },
+    {
+      "trend": "国产 AI 编程工具以免费+中文适配+自研模型组合加速追赶国际一线",
+      "evidence": "字节 Trae 增长最快；GLM-5.1/Kimi K2.6/DeepSeek V4 逼近国际一线；黑豹科技预测政企默认配置转向国产组合",
+      "momentum": "rising"
+    },
+    {
+      "trend": "AI 供应链安全风险升级，Slopsquatting 和 MCP 攻击面成为新焦点",
+      "evidence": "USENIX Security 2025 数据；搜狐技术指南列出十大核心风险",
+      "momentum": "rising"
+    },
+    {
+      "trend": "多工具并行使用常态化，工具管理/成本/安全治理复杂度上升",
+      "evidence": "Uvik Software 统计确认多工具并行；黑豹科技提出三档治理模型",
+      "momentum": "stable"
+    },
+    {
+      "trend": "超大规模仓库全局语义理解仍是 Agent 瓶颈",
+      "evidence": "Elliot Hu 指出理解、验证和维护离不开人；百万行遗留系统重构仍需 Claude Code 等专用工具",
+      "momentum": "stable"
+    },
+    {
+      "trend": "AI 代码幻觉率无法根除，单次 42%、自省修复至 78%",
+      "evidence": "SWE-Agent 数据双源确认；Slopsquatting 研究显示 20% AI 代码引用不存在包",
+      "momentum": "stable"
+    },
+    {
+      "trend": "Windsurf 热度消退，中型工具面临生存压力",
+      "evidence": "AIEII 横评指出 Windsurf 生态规模不如 Cursor；历史记忆确认热度下降",
+      "momentum": "declining"
+    },
+    {
+      "trend": "中等参数专用编码模型优于通用大模型的叙事被“模型+IDE插件+Agent”组合吸收",
+      "evidence": "CSDN 文章指出 2026 年趋势是组合而非单点模型",
+      "momentum": "declining"
+    }
+  ],
+  "companies_mentioned": [
+    "Gartner",
+    "GitHub",
+    "Microsoft",
+    "Cursor",
+    "Anthropic",
+    "Claude Code",
+    "Amazon",
+    "CodeWhisperer",
+    "GitLab",
+    "Tabnine",
+    "Codeium",
+    "Windsurf",
+    "CodeRabbit",
+    "Snyk",
+    "Semgrep",
+    "Checkmarx",
+    "Backslash Security",
+    "Northflank",
+    "Modal",
+    "TestSprite",
+    "TotalShiftLeft",
+    "LTM",
+    "Uvik Software",
+    "LinearB",
+    "V2Soft",
+    "Akoode",
+    "Innowise",
+    "Omniflow",
+    "Ideaplan",
+    "字节跳动",
+    "Trae",
+    "阿里云",
+    "通义灵码",
+    "百度",
+    "文心快码",
+    "DeepSeek",
+    "智谱",
+    "GLM",
+    "Kimi",
+    "月之暗面",
+    "Qwen",
+    "OpenAI",
+    "Google",
+    "Gemini",
+    "SWE-Agent",
+    "OpenHands",
+    "Augment Code",
+    "iSoft Technologies"
+  ],
+  "hot_topics": [
+    "A-SDLC 智能开发生命周期",
+    "Cursor Subagents 多任务并行",
+    "Claude Code 编程准确率登顶",
+    "AI 代码审查独立验证层",
+    "Slopsquatting 幻觉包名攻击",
+    "MCP 生态攻击面",
+    "自愈测试与 AI 测试生成",
+    "沙箱安全执行基础设施",
+    "持续验证 Continuous Verification",
+    "规范驱动开发",
+    "开发者角色转向验证者/策展人",
+    "国产 AI IDE 免费+中文适配",
+    "多工具并行治理模型",
+    "AI 代码幻觉率 42%/78%",
+    "超大规模仓库语义理解瓶颈",
+    "全栈 SDLC 自动化平台",
+    "MLOps 2.0",
+    "AI PR 合并速度",
+    "Windsurf 性价比迁移",
+    "企业级 AI 编码代理品类"
+  ]
+}
