@@ -1,0 +1,486 @@
+{
+  "topic": "编译加速 分布式编译 C++ 行业 build cache 趋势",
+  "label": "build-acceleration",
+  "date": "2026-10-11",
+  "total_sources": 30,
+  "sources": [
+    {
+      "title": "Visual Studio 2026 v18.10实测：C++编译加速与.NET热重载全解析",
+      "url": "https://bbs.csdn.net/weixin_26804345/article/details/100425114",
+      "platform": "CSDN",
+      "summary": "VS 2026 v18.10 安装策略新增工作负载锁定，避免更新时默认拉取额外组件，优化 C++ 开发环境配置。",
+      "relevance": "medium",
+      "tags": [
+        "Visual Studio",
+        "安装策略",
+        "C++开发"
+      ]
+    },
+    {
+      "title": "C++项目的分布式编译系统",
+      "url": "https://blog.csdn.net/babyblue_963/article/details/130354879",
+      "platform": "CSDN",
+      "summary": "介绍腾讯广告自研的 C++ 分布式编译系统，划分管理节点，加速 C++ 编译。",
+      "relevance": "medium",
+      "tags": [
+        "分布式编译",
+        "腾讯",
+        "Yadcc"
+      ]
+    },
+    {
+      "title": "2026 年最佳 5 款 C++ 编译器：性能、标准与工具链对比 | CppDepend Blog",
+      "url": "https://www.cppdepend.com/zh/blog/the-5-best-cpp-compilers-in-2026",
+      "platform": "CppDepend",
+      "summary": "对比 2026 年五款主流 C++ 编译器，Clang/LLVM 在诊断和工具生态方面领先。",
+      "relevance": "medium",
+      "tags": [
+        "编译器对比",
+        "Clang",
+        "LLVM"
+      ]
+    },
+    {
+      "title": "秦泽天 | 2026全球系统软件技术大会",
+      "url": "http://cpp-summit.org/speaker/1348?uid=c1050",
+      "platform": "cpp-summit.org",
+      "summary": "字节跳动工程师秦泽天将分享数据中心应用 libc++ 的落地与挑战，涉及数千万核生产 C++ 服务从 libstdc++ 迁移。",
+      "relevance": "high",
+      "tags": [
+        "字节跳动",
+        "libc++",
+        "LLVM",
+        "迁移"
+      ]
+    },
+    {
+      "title": "C++编译加速完全指南 - Incredibuild",
+      "url": "https://www.incredibuild.cn/resources/speed-up-your-cpp-builds",
+      "platform": "Incredibuild",
+      "summary": "Incredibuild 发布 C++ 编译加速指南，涵盖分布式编译、构建缓存、可观测性等产品能力。",
+      "relevance": "high",
+      "tags": [
+        "Incredibuild",
+        "分布式编译",
+        "构建缓存"
+      ]
+    },
+    {
+      "title": "初识FASTBuild 一个大幅提升C/C++项目编译速度的分布式编译工具 - 你好阿汤哥 - 博客园",
+      "url": "https://www.cnblogs.com/tangxin-blog/p/8635438.html",
+      "platform": "博客园",
+      "summary": "介绍开源分布式编译工具 FASTBuild，支持缓存和网络分发以加速 C/C++ 构建。",
+      "relevance": "medium",
+      "tags": [
+        "FASTBuild",
+        "分布式编译",
+        "开源"
+      ]
+    },
+    {
+      "title": "Best C++ IDEs of 2026: 12 Top Picks - Incredibuild",
+      "url": "https://www.incredibuild.com/blog/best-c-ides-guide",
+      "platform": "Incredibuild",
+      "summary": "Incredibuild 盘点 2026 年 12 款最佳 C++ IDE，并提及 Incredibuild 已捆绑在 Visual Studio 中加速 C++ 构建。",
+      "relevance": "medium",
+      "tags": [
+        "IDE",
+        "Incredibuild",
+        "Visual Studio"
+      ]
+    },
+    {
+      "title": "Visual Studio 2026 is here: faster, smarter, and a hit with early adopters - Visual Studio Blog",
+      "url": "https://devblogs.microsoft.com/visualstudio/visual-studio-2026-is-here-faster-smarter-and-a-hit-with-early-adopters",
+      "platform": "Microsoft DevBlogs",
+      "summary": "VS 2026 正式 GA，C++ 构建工具与 IDE 解耦，GitHub Copilot C++ 能力进入 Private Preview。",
+      "relevance": "high",
+      "tags": [
+        "Visual Studio 2026",
+        "GA",
+        "Copilot",
+        "构建工具解耦"
+      ]
+    },
+    {
+      "title": "What’s New for C++ Developers in Visual Studio 2026 (18.7 – 18.10) - C++ Team Blog",
+      "url": "https://devblogs.microsoft.com/cppblog/whats-new-for-c-developers-in-visual-studio-2026-18-7-18-10",
+      "platform": "Microsoft DevBlogs",
+      "summary": "VS 2026 18.7–18.10 更新修复模块回归、AVX-512 代码生成问题，ASan 扩展 ARM64 支持。",
+      "relevance": "high",
+      "tags": [
+        "MSVC",
+        "模块",
+        "ASan",
+        "ARM64"
+      ]
+    },
+    {
+      "title": "Top Techniques to Speed Up Your C++ Build Times | Incredibuild",
+      "url": "https://www.incredibuild.com/resources/speed-up-your-cpp-builds",
+      "platform": "Incredibuild",
+      "summary": "Incredibuild 发布加速 C++ 构建时间的顶级技术，推广 Islo AI 沙箱和免费 8× CI runner。",
+      "relevance": "high",
+      "tags": [
+        "Incredibuild",
+        "Islo",
+        "CI加速"
+      ]
+    },
+    {
+      "title": "Visual Studio 2026: A Major Update for C++ Developers | Augustin Popa posted on the topic | LinkedIn",
+      "url": "https://www.linkedin.com/posts/augustinpopa_today-we-are-announcing-that-visual-studio-activity-7394124881480769537-usv3",
+      "platform": "LinkedIn",
+      "summary": "微软宣布 VS 2026 GA，C++ 开发者获得接近完整 C++23 一致性、运行时性能提升和 Copilot 增强。",
+      "relevance": "high",
+      "tags": [
+        "Visual Studio 2026",
+        "C++23",
+        "Copilot"
+      ]
+    },
+    {
+      "title": "Microsoft updates C++ build tools for Visual Studio | InfoWorld",
+      "url": "https://www.infoworld.com/article/4209411/microsoft-updates-c-plus-plus-build-tools-for-visual-studio.html",
+      "platform": "InfoWorld",
+      "summary": "MSVC Build Tools 预览版更新，针对 VS v14.52 带来 C++ 前端、模块、代码生成、调试等多方面改进。",
+      "relevance": "high",
+      "tags": [
+        "MSVC",
+        "Build Tools",
+        "更新"
+      ]
+    },
+    {
+      "title": "C++ 编译加速 ccache mold 链接器 实践 数据对比 at DuckDuckGo",
+      "url": "https://duckduckgo.com/html?q=C%2B%2B+%E7%BC%96%E8%AF%91%E5%8A%A0%E9%80%9F+ccache+mold+%E9%93%BE%E6%8E%A5%E5%99%A8+%E5%AE%9E%E8%B7%B5+%E6%95%B0%E6%8D%AE%E5%AF%B9%E6%AF%94",
+      "platform": "DuckDuckGo",
+      "summary": "搜索结果聚合，包含 sccache vs ccache vs mold 对比文章，讨论如何组合使用避免冲突。",
+      "relevance": "medium",
+      "tags": [
+        "ccache",
+        "sccache",
+        "mold",
+        "对比"
+      ]
+    },
+    {
+      "title": "sccache vs ccache vs Icecream: Self-Hosted Build Cache & Distributed Compilation Guide 2026 | Pi Stack",
+      "url": "https://www.pistack.xyz/posts/2026-04-23-sccache-vs-ccache-vs-icecream-self-hosted-build-cache-2026",
+      "platform": "Pi Stack",
+      "summary": "2026 年自托管构建缓存与分布式编译指南，对比 sccache、ccache 和 Icecream 的配置与使用。",
+      "relevance": "high",
+      "tags": [
+        "sccache",
+        "ccache",
+        "Icecream",
+        "分布式编译"
+      ]
+    },
+    {
+      "title": "Remote Mac CI compile cache: sccache vs ccache in 2026 | MacPull",
+      "url": "https://macpull.com/blog/2026-remote-mac-sccache-ccache-ci-matrix.html",
+      "platform": "MacPull",
+      "summary": "远程 Mac CI 编译缓存对比 sccache 与 ccache，涉及 NFS 挂载优化和并发控制。",
+      "relevance": "medium",
+      "tags": [
+        "sccache",
+        "ccache",
+        "Mac CI",
+        "远程缓存"
+      ]
+    },
+    {
+      "title": "Sccache终极指南：如何将编译速度提升300%的完整教程",
+      "url": "https://blog.csdn.net/gitblog_01050/article/details/153809031",
+      "platform": "CSDN",
+      "summary": "sccache 使用教程，介绍如何利用远程存储（云对象存储）将编译速度提升 300%。",
+      "relevance": "medium",
+      "tags": [
+        "sccache",
+        "远程缓存",
+        "教程"
+      ]
+    },
+    {
+      "title": "sccache vs ccache vs mold: faster C/C++ builds - Big Iron",
+      "url": "https://www.bigiron.cc/guides/sccache-vs-ccache-vs-mold-faster-c-c-builds",
+      "platform": "Big Iron",
+      "summary": "对比 sccache、ccache 和 mold：ccache/sccache 缓存编译阶段，mold 替换链接器，三者可组合使用。",
+      "relevance": "high",
+      "tags": [
+        "sccache",
+        "ccache",
+        "mold",
+        "组合使用"
+      ]
+    },
+    {
+      "title": "sccache 基于rust 类似ccache 的编译cache 工具 - 荣锋亮 - 博客园",
+      "url": "https://www.cnblogs.com/rongfengliang/p/17018565.html",
+      "platform": "博客园",
+      "summary": "介绍 sccache 作为基于 Rust 的编译缓存工具，支持本地磁盘和云对象存储。",
+      "relevance": "medium",
+      "tags": [
+        "sccache",
+        "Rust",
+        "编译缓存"
+      ]
+    },
+    {
+      "title": "Choosing a Build System for C++: CMake, Bazel, Meson, and Beyond · GitHub",
+      "url": "https://gist.github.com/MangaD/26ef92a1e1efd967c3e0188dc0591e83",
+      "platform": "GitHub Gist",
+      "summary": "2026 年 C++ 构建系统选型综述，涵盖 CMake、Bazel、Meson 及构建编排工具。",
+      "relevance": "medium",
+      "tags": [
+        "构建系统",
+        "CMake",
+        "Bazel",
+        "Meson"
+      ]
+    },
+    {
+      "title": "Bazel vs Buck2: Performance, Caching & CI (2026) | Hermetiq",
+      "url": "https://www.hermetiq.com/blog/bazel-vs-buck2-vs-pants",
+      "platform": "Hermetiq",
+      "summary": "对比 Bazel 与 Buck2 在性能、缓存和 CI 方面的表现，Bazel 语言支持更广。",
+      "relevance": "high",
+      "tags": [
+        "Bazel",
+        "Buck2",
+        "缓存",
+        "CI"
+      ]
+    },
+    {
+      "title": "0111: Make Bazel Pigweed’s Primary Build System — Pigweed",
+      "url": "https://pigweed.dev/seed/0111.html",
+      "platform": "Pigweed",
+      "summary": "Pigweed SEED 0111 批准 Bazel 为主构建系统，GN 转维护模式，CMake 无限期支持。",
+      "relevance": "high",
+      "tags": [
+        "Pigweed",
+        "Bazel",
+        "构建系统"
+      ]
+    },
+    {
+      "title": "A Tour Around Buck2, Meta's New Build System",
+      "url": "https://tweag.io/blog/2023-07-06-buck2",
+      "platform": "Tweag",
+      "summary": "介绍 Meta 的 Buck2 构建系统，指出 Bazel 项目导入 C/C++ 依赖仍缺乏标准方式。",
+      "relevance": "medium",
+      "tags": [
+        "Buck2",
+        "Meta",
+        "C/C++依赖"
+      ]
+    },
+    {
+      "title": "The next generation of Bazel builds | Lobsters",
+      "url": "https://lobste.rs/s/bsmefl/next_generation_bazel_builds",
+      "platform": "Lobsters",
+      "summary": "讨论 Bazel 或 Buck2 作为下一代构建系统能否替代 autotools+Make 或 CMake，并带来可复现构建等价值。",
+      "relevance": "medium",
+      "tags": [
+        "Bazel",
+        "Buck2",
+        "构建系统未来"
+      ]
+    },
+    {
+      "title": "6 Months of Testing C++ Build Systems: Here’s What You Need to Know - Kea Sigma Delta",
+      "url": "https://keasigmadelta.com/blog/6-months-of-testing-c-build-systems-heres-what-you-need-to-know",
+      "platform": "Kea Sigma Delta",
+      "summary": "经过 6 个月测试 C++ 构建系统，推荐学习 CMake，认为 Meson 最有前途，Bazel 可能很棒。",
+      "relevance": "medium",
+      "tags": [
+        "构建系统",
+        "CMake",
+        "Meson",
+        "Bazel"
+      ]
+    },
+    {
+      "title": "CI/CD Pipeline Purpose and Optimization Guide for 2026",
+      "url": "https://www.eduhubspot.com/blogs/devops/what-is-the-goal-of-ci-cd-pipelines-and-how-can-teams-optimize-them-in-2026",
+      "platform": "EduHubSpot",
+      "summary": "2026 年 CI/CD 管道优化指南，强调零停机部署和消除浪费以减少管道运行时间。",
+      "relevance": "low",
+      "tags": [
+        "CI/CD",
+        "优化",
+        "零停机"
+      ]
+    },
+    {
+      "title": "Top 10 CI/CD Pipeline Best Practices for Engineering Leaders 2026",
+      "url": "https://www.tekrecruiter.com/post/top-10-ci-cd-pipeline-best-practices-for-engineering-leaders-in-2026",
+      "platform": "TekRecruiter",
+      "summary": "2026 年 CI/CD 管道最佳实践，强调反馈循环和指标驱动优化。",
+      "relevance": "low",
+      "tags": [
+        "CI/CD",
+        "最佳实践",
+        "指标"
+      ]
+    },
+    {
+      "title": "Top 10 CI/CD Pipeline Tools in 2026 (and How to Make Each One Faster)",
+      "url": "https://www.incredibuild.com/blog/best-ci-cd-pipeline-tools-2026",
+      "platform": "Incredibuild",
+      "summary": "Incredibuild 发布 2026 年十大 CI/CD 工具榜单，并讨论如何加速每个工具。",
+      "relevance": "high",
+      "tags": [
+        "CI/CD工具",
+        "Incredibuild",
+        "榜单"
+      ]
+    },
+    {
+      "title": "Building a Production-Ready CI/CD Pipeline: The Complete 2026 Guide | by Krishna Fattepurkar | Medium",
+      "url": "https://medium.com/@krishnafattepurkar/building-a-production-ready-ci-cd-pipeline-the-complete-2026-guide-b3d6a661ecd8",
+      "platform": "Medium",
+      "summary": "2026 年生产级 CI/CD 管道构建指南，强调缓存可将构建时间从 10 分钟降至 30 秒。",
+      "relevance": "medium",
+      "tags": [
+        "CI/CD",
+        "缓存",
+        "构建时间"
+      ]
+    },
+    {
+      "title": "The Art of CI/CD Optimization: Mastering Techniques for Workflow Efficiency",
+      "url": "https://buildpiper.io/blogs/the-art-of-ci-cd-optimization",
+      "platform": "BuildPiper",
+      "summary": "CI/CD 优化技巧，帮助平台团队大规模管理部署。",
+      "relevance": "low",
+      "tags": [
+        "CI/CD",
+        "优化",
+        "平台团队"
+      ]
+    },
+    {
+      "title": "Docker + CI/CD: 2026 Best Practices. - Jeevi Academy",
+      "url": "https://www.jeeviacademy.com/docker-ci-cd-2026-best-practices",
+      "platform": "Jeevi Academy",
+      "summary": "2026 年 Docker 与 CI/CD 最佳实践，包括更小镜像、左移容器安全等。",
+      "relevance": "low",
+      "tags": [
+        "Docker",
+        "CI/CD",
+        "最佳实践"
+      ]
+    }
+  ],
+  "signals": [
+    {
+      "signal": "VS 2026 构建工具与 IDE 解耦后，第三方缓存工具（ccache/sccache）生存空间是否被压缩",
+      "direction": "stable",
+      "evidence": "VS 2026 GA 后 C++ 构建工具可独立升级，但 Incredibuild 仍捆绑在 VS 中，第三方缓存工具生态未受明显冲击。",
+      "category": "产品"
+    },
+    {
+      "signal": "sccache 与 mold 组合兼容性问题持续被讨论，工具链组合复杂性成为 build cache 新痛点",
+      "direction": "stable",
+      "evidence": "多篇 2026 年文章对比 sccache、ccache、mold，强调三者解决不同问题并可组合使用，但需避免冲突。",
+      "category": "技术"
+    },
+    {
+      "signal": "自托管构建缓存与分布式编译方案（sccache/ccache/Icecream）在 2026 年获得更多实践指南",
+      "direction": "up",
+      "evidence": "Pi Stack、MacPull、Big Iron 等平台发布 2026 年自托管构建缓存对比指南，覆盖远程 Mac CI 等场景。",
+      "category": "技术"
+    },
+    {
+      "signal": "Bazel 作为 C++ 主构建系统的采用持续，但导入 C/C++ 依赖仍缺标准方式",
+      "direction": "stable",
+      "evidence": "Pigweed SEED 0111 批准 Bazel 为主构建系统；Tweag 文章指出 Bazel 项目导入 C/C++ 依赖仍需定制集成。",
+      "category": "技术"
+    },
+    {
+      "signal": "CI/CD 缓存叙事进入稳定期，10 分钟→30 秒命中成为事实标准",
+      "direction": "stable",
+      "evidence": "Medium 2026 指南再次引用缓存命中可将构建时间从 10 分钟降至 30 秒。",
+      "category": "行业"
+    },
+    {
+      "signal": "Incredibuild 持续扩展产品矩阵，推广 Islo AI 沙箱和免费 8× CI runner",
+      "direction": "up",
+      "evidence": "Incredibuild 官网多个页面推广 Islo AI 沙箱、免费 8× CI runner 和 2026 十大 CI/CD 工具榜单。",
+      "category": "竞品"
+    },
+    {
+      "signal": "字节跳动 libc++ 迁移演讲细节进一步公开，秦泽天确认数千万核生产 C++ 服务迁移",
+      "direction": "up",
+      "evidence": "2026 全球系统软件技术大会讲师页面显示秦泽天将分享字节跳动数据中心应用 libc++ 的落地与挑战。",
+      "category": "行业"
+    },
+    {
+      "signal": "FASTBuild 作为开源分布式编译工具仍被中文社区提及，但缺乏新进展",
+      "direction": "stable",
+      "evidence": "博客园文章介绍 FASTBuild 的缓存和网络分发能力，但发布时间较早，无 2026 年新动态。",
+      "category": "技术"
+    }
+  ],
+  "trends": [
+    {
+      "trend": "自托管构建缓存与分布式编译方案在 2026 年获得更多实践关注，sccache/ccache/Icecream 对比指南增多",
+      "evidence": "Pi Stack、MacPull、Big Iron 等平台发布 2026 年自托管构建缓存对比指南，覆盖远程 Mac CI 等场景。",
+      "momentum": "rising"
+    },
+    {
+      "trend": "VS 2026 构建工具与 IDE 解耦，编译器厂商上移策略进入执行阶段",
+      "evidence": "VS 2026 GA 后 C++ 构建工具可独立升级，MSVC Build Tools 预览版持续更新。",
+      "momentum": "rising"
+    },
+    {
+      "trend": "Bazel 作为 C++ 主构建系统采用持续，但导入 C/C++ 依赖标准化仍缺位",
+      "evidence": "Pigweed SEED 0111 批准 Bazel 为主构建系统；Tweag 文章指出 Bazel 项目导入 C/C++ 依赖仍需定制集成。",
+      "momentum": "stable"
+    },
+    {
+      "trend": "CI/CD 缓存叙事进入稳定期，10 分钟→30 秒命中成为事实标准",
+      "evidence": "Medium 2026 指南再次引用缓存命中可将构建时间从 10 分钟降至 30 秒。",
+      "momentum": "stable"
+    },
+    {
+      "trend": "Incredibuild 从编译加速工具向 CI/CD 全流程平台跃迁，产品矩阵持续扩展",
+      "evidence": "Incredibuild 官网推广 Islo AI 沙箱、免费 8× CI runner 和 2026 十大 CI/CD 工具榜单。",
+      "momentum": "rising"
+    },
+    {
+      "trend": "字节跳动 libc++ 迁移成为近年已知最大规模 C++ 运行时库迁移案例，中国大厂从使用者升级为定义者",
+      "evidence": "秦泽天演讲主题确认字节跳动数千万核生产 C++ 服务从 libstdc++ 迁移到 libc++。",
+      "momentum": "rising"
+    }
+  ],
+  "companies_mentioned": [
+    "字节跳动",
+    "Microsoft",
+    "Incredibuild",
+    "腾讯",
+    "Meta",
+    "Pigweed",
+    "CppDepend",
+    "Hermetiq",
+    "Tweag",
+    "FASTBuild",
+    "BuildPiper",
+    "MacPull",
+    "Big Iron",
+    "Pi Stack"
+  ],
+  "hot_topics": [
+    "VS 2026 GA 与 C++ 构建工具解耦",
+    "字节跳动 libc++ 数千万核迁移",
+    "sccache vs ccache vs mold 组合使用",
+    "自托管构建缓存与分布式编译指南",
+    "Bazel 作为 C++ 主构建系统",
+    "Incredibuild Islo AI 沙箱与 CI/CD 平台扩展",
+    "CI/CD 缓存 10 分钟→30 秒事实标准",
+    "Pigweed SEED 0111 Bazel 主构建系统"
+  ]
+}
