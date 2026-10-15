@@ -1,0 +1,474 @@
+{
+  "topic": "Incredibuild 分布式编译 竞品对比 行业格局",
+  "label": "incredibuild",
+  "date": "2026-10-15",
+  "total_sources": 27,
+  "sources": [
+    {
+      "title": "Release Notes - IncrediBuild Documentation (Windows)",
+      "url": "https://docs.incredibuild.com/windows/release-notes",
+      "platform": "Incredibuild Docs",
+      "summary": "Incredibuild 10.38.1（2026-10-08）新增 Unity 加速支持，含 shader compiler 与 Assets 打包分发。",
+      "relevance": "high",
+      "tags": [
+        "产品更新",
+        "Unity",
+        "游戏引擎",
+        "Windows"
+      ]
+    },
+    {
+      "title": "Release Notes - IncrediBuild Documentation (Linux)",
+      "url": "https://docs.incredibuild.com/linux/release-notes",
+      "platform": "Incredibuild Docs",
+      "summary": "Linux 4.30.1 改进 ib_console 调试模式；4.30.0 Manager 支持 Docker 安装，云原生 CI 适配推进。",
+      "relevance": "high",
+      "tags": [
+        "产品更新",
+        "Linux",
+        "Docker",
+        "CI"
+      ]
+    },
+    {
+      "title": "Incredibuild 官网首页",
+      "url": "https://www.incredibuild.com",
+      "platform": "Incredibuild",
+      "summary": "官网首屏主推 Islo AI 沙盒（2026-05 发布）与 8× CI Runner 早期访问，传统分布式编译下沉。",
+      "relevance": "high",
+      "tags": [
+        "叙事迁移",
+        "Islo",
+        "CI Runner"
+      ]
+    },
+    {
+      "title": "Resources - Incredibuild",
+      "url": "https://www.incredibuild.com/resources",
+      "platform": "Incredibuild",
+      "summary": "资源页同步展示 Islo AI 沙盒、Unity Shader 编译博客（2026-07）与 8× CI Runner 早期访问入口。",
+      "relevance": "high",
+      "tags": [
+        "叙事迁移",
+        "Unity",
+        "CI Runner"
+      ]
+    },
+    {
+      "title": "News Archive - Incredibuild",
+      "url": "https://www.incredibuild.com/news",
+      "platform": "Incredibuild",
+      "summary": "新闻归档页同样以 Islo、Unity Shader、8× CI Runner 为顶部系统更新，无传统分布式编译新叙事。",
+      "relevance": "medium",
+      "tags": [
+        "叙事迁移",
+        "新闻"
+      ]
+    },
+    {
+      "title": "Incredibuild 10 - Incredibuild",
+      "url": "https://www.incredibuild.com/resources/incredibuild-10",
+      "platform": "Incredibuild",
+      "summary": "Incredibuild 10 资源页仍存在，但被 Islo/CI Runner 顶部横幅覆盖，传统产品线曝光下降。",
+      "relevance": "medium",
+      "tags": [
+        "产品线",
+        "Incredibuild 10"
+      ]
+    },
+    {
+      "title": "Tools Spotlight: Incredibuild - Incredibuild",
+      "url": "https://www.incredibuild.com/news/tools-spotlight-incredibuild-html",
+      "platform": "Incredibuild",
+      "summary": "工具聚焦页保留，但页面顶部已被 Islo/Unity/CI Runner 系统更新占据。",
+      "relevance": "low",
+      "tags": [
+        "品牌",
+        "工具聚焦"
+      ]
+    },
+    {
+      "title": "Incredibuild Provides Game-Changing Development Acceleration Technology to Epic MegaGrants Recipients",
+      "url": "https://www.incredibuild.com/news/incredibuild-provides-game-changing-development-acceleration-technology-to-epic-megagrants-recipients",
+      "platform": "Incredibuild",
+      "summary": "Epic MegaGrants 合作新闻仍可访问，游戏生态合作延续，但无新增中国厂商案例。",
+      "relevance": "medium",
+      "tags": [
+        "游戏生态",
+        "Epic",
+        "合作"
+      ]
+    },
+    {
+      "title": "Visual Studio - Incredibuild",
+      "url": "https://www.incredibuild.com/integrations/visual-studio-bundled-inside",
+      "platform": "Incredibuild",
+      "summary": "Visual Studio 集成页仍存在，但 VS 2026 原生分布式编译构成平台吞噬风险。",
+      "relevance": "high",
+      "tags": [
+        "集成",
+        "Visual Studio",
+        "平台风险"
+      ]
+    },
+    {
+      "title": "EngFlow vs Incredibuild (2026)",
+      "url": "https://www.peerspot.com/products/comparisons/engflow_vs_incredibuild",
+      "platform": "PeerSpot",
+      "summary": "EngFlow 排名 37、0 评论、mindshare 0.7%；Incredibuild 排名 27、评分 8.0、1 条评论、sentiment 5.1。",
+      "relevance": "high",
+      "tags": [
+        "竞品对比",
+        "PeerSpot",
+        "EngFlow"
+      ]
+    },
+    {
+      "title": "Bazel vs Incredibuild (2026)",
+      "url": "https://www.peerspot.com/products/comparisons/bazel_vs_incredibuild",
+      "platform": "PeerSpot",
+      "summary": "Bazel 排名 25、0 评论、mindshare 1.3%（同比下降自 2.8%）；Incredibuild mindshare 1.2%。",
+      "relevance": "high",
+      "tags": [
+        "竞品对比",
+        "Bazel",
+        "PeerSpot"
+      ]
+    },
+    {
+      "title": "Top IncrediBuild Alternatives & Competitors in 2026",
+      "url": "https://www.trustradius.com/products/incredibuild/competitors",
+      "platform": "TrustRadius",
+      "summary": "TrustRadius 竞品页列出 Jenkins（8.2/10）、Atlassian Bamboo 等，Incredibuild 替代品以 CI 工具为主。",
+      "relevance": "medium",
+      "tags": [
+        "竞品对比",
+        "TrustRadius",
+        "CI"
+      ]
+    },
+    {
+      "title": "Compare FASTBuild vs. Incredibuild in 2026",
+      "url": "https://slashdot.org/software/comparison/FastBuild-vs-IncrediBuild",
+      "platform": "Slashdot",
+      "summary": "Slashdot 持续维护 FASTBuild vs Incredibuild 对比页，开源替代对比长期存在。",
+      "relevance": "medium",
+      "tags": [
+        "竞品对比",
+        "FASTBuild",
+        "开源"
+      ]
+    },
+    {
+      "title": "FASTBuild vs. Incredibuild Comparison",
+      "url": "https://sourceforge.net/software/compare/FastBuild-vs-IncrediBuild",
+      "platform": "SourceForge",
+      "summary": "SourceForge 对比页强调 FASTBuild 开源、跨平台、宣称 10× 以上提速，覆盖主机/主机/移动/复古系统。",
+      "relevance": "medium",
+      "tags": [
+        "竞品对比",
+        "FASTBuild",
+        "开源"
+      ]
+    },
+    {
+      "title": "IncrediBuild - Market Share, Competitor Insights in Build And Deployment Automation",
+      "url": "https://www.6sense.com/tech/build-and-deployment-automation/incredibuild-market-share",
+      "platform": "6sense",
+      "summary": "6sense 品类前三固化：Ansible 49.55%、Bitbucket Pipelines 10.00%、Oracle APEX 6.44%，Incredibuild 未进前三。",
+      "relevance": "high",
+      "tags": [
+        "市场份额",
+        "6sense",
+        "行业格局"
+      ]
+    },
+    {
+      "title": "Top 10 Incredibuild Alternatives & Competitors in 2026",
+      "url": "https://www.g2.com/products/incredibuild/competitors/alternatives",
+      "platform": "G2",
+      "summary": "G2 将 CircleCI、GitHub、CloudBees 列为 Incredibuild 最佳替代品，CI/CD 工具占据替代品前列。",
+      "relevance": "medium",
+      "tags": [
+        "竞品对比",
+        "G2",
+        "CI/CD"
+      ]
+    },
+    {
+      "title": "Top 10 CI/CD Pipeline Tools in 2026 (and How to Make Each One Faster)",
+      "url": "https://www.incredibuild.com/blog/best-ci-cd-pipeline-tools-2026",
+      "platform": "Incredibuild Blog",
+      "summary": "Incredibuild 官方博客将 Buildkite 定位为“接近理想切入点”，称其缺缓存与分发层，25 分钟构建不变。",
+      "relevance": "high",
+      "tags": [
+        "官方叙事",
+        "Buildkite",
+        "CI/CD"
+      ]
+    },
+    {
+      "title": "EngFlow Makes C++ Builds 21x Faster and Software a Lot ...",
+      "url": "https://www.reddit.com/r/cpp/comments/1jtlo61/engflow_makes_c_builds_21x_faster_and_software_a",
+      "platform": "Reddit r/cpp",
+      "summary": "Reddit r/cpp 讨论 EngFlow 远程执行与缓存使 C++ 构建快 21×，并对比 Incredibuild 为简单集成方案。",
+      "relevance": "high",
+      "tags": [
+        "竞品动态",
+        "EngFlow",
+        "社区声量"
+      ]
+    },
+    {
+      "title": "Distributed build systems BuildXL vs IncrediBuild",
+      "url": "https://stackoverflow.com/questions/71742548/distributed-build-systems-buildxl-vs-incredibuild",
+      "platform": "Stack Overflow",
+      "summary": "Stack Overflow 讨论 BuildXL vs IncrediBuild，指出 Incredibuild 聚焦大型 C++ 代码库并直接集成 Visual Studio。",
+      "relevance": "medium",
+      "tags": [
+        "竞品对比",
+        "BuildXL",
+        "Stack Overflow"
+      ]
+    },
+    {
+      "title": "Visual Studio 2026 v18.10实测：C++编译加速与.NET热重载全解析",
+      "url": "https://bbs.csdn.net/weixin_26804345/article/details/100425114",
+      "platform": "CSDN",
+      "summary": "CSDN 实测 VS 2026 v18.10 分布式编译加速、按需符号加载、跨进程共享内存、Copilot X 集成。",
+      "relevance": "high",
+      "tags": [
+        "平台风险",
+        "Visual Studio 2026",
+        "实测"
+      ]
+    },
+    {
+      "title": "VS2026 v18.10正式版：性能提升、跨平台调试与AI辅助实测",
+      "url": "https://bbs.csdn.net/weixin_34112399/article/details/100455124",
+      "platform": "CSDN",
+      "summary": "另一篇 CSDN 实测强调 VS 2026 v18.10 提速、C++ 跨平台调试与依赖管理、AI 辅助内嵌编辑器。",
+      "relevance": "high",
+      "tags": [
+        "平台风险",
+        "Visual Studio 2026",
+        "实测"
+      ]
+    },
+    {
+      "title": "Incredibuild是什么？分布式编译加速技术深度解析与应用场景",
+      "url": "https://dhorde.com/news/1523.html",
+      "platform": "dhorde.com",
+      "summary": "中文代理商页面介绍 Incredibuild 分布式编译加速，页面以 Aspose 系列教程为主，Incredibuild 内容边缘化。",
+      "relevance": "low",
+      "tags": [
+        "中文渠道",
+        "代理商",
+        "边缘化"
+      ]
+    },
+    {
+      "title": "Xoreax IncrediBuild",
+      "url": "https://baike.baidu.com/item/Xoreax%20IncrediBuild/7305251",
+      "platform": "百度百科",
+      "summary": "百度百科词条介绍 Xoreax 分布式编译技术，内容陈旧，未更新 Islo/CI Runner 新叙事。",
+      "relevance": "low",
+      "tags": [
+        "中文百科",
+        "陈旧",
+        "品牌"
+      ]
+    },
+    {
+      "title": "中国C++程序员的失业情况：2026年深度调研报告",
+      "url": "https://www.eet-china.com/mp/a520811.html",
+      "platform": "电子工程专辑",
+      "summary": "2026 年中国 C++ 就业结构性转折，大模型算法与传统方向薪资差 3-5 倍，大厂裁员 10%+，校招减半。",
+      "relevance": "high",
+      "tags": [
+        "行业格局",
+        "中国就业",
+        "C++"
+      ]
+    },
+    {
+      "title": "2026 年最佳 5 款 C++ 编译器：性能、标准与工具链对比",
+      "url": "https://www.cppdepend.com/zh/blog/the-5-best-cpp-compilers-in-2026",
+      "platform": "CppDepend Blog",
+      "summary": "C++ 编译器对比指南，Clang/LLVM 因诊断与工具生态领先，未提及 Incredibuild 等构建加速工具。",
+      "relevance": "low",
+      "tags": [
+        "编译器",
+        "工具链",
+        "行业"
+      ]
+    },
+    {
+      "title": "C++服务编译耗时优化原理及实践 | 美团 · 技术团队",
+      "url": "https://tech.meituan.com/2020/12/10/C-+-+-Practice-in-DQU.html",
+      "platform": "美团技术团队",
+      "summary": "美团技术博客讨论分布式编译（Distcc/Dmucs）、PCH、CCache，未提及 Incredibuild，中文社区系统性缺席。",
+      "relevance": "medium",
+      "tags": [
+        "中文社区",
+        "编译优化",
+        "缺席"
+      ]
+    },
+    {
+      "title": "C++26 完成特性冻结，2026 年内正式发布，性能与安全迎来全面升级",
+      "url": "https://www.21cto.com/article/1618848696497202",
+      "platform": "21CTO",
+      "summary": "C++26 特性冻结并年内发布，性能与安全升级，未涉及构建加速工具竞争格局。",
+      "relevance": "low",
+      "tags": [
+        "C++26",
+        "语言标准",
+        "行业"
+      ]
+    }
+  ],
+  "signals": [
+    {
+      "signal": "Incredibuild 10.38.1 新增 Unity 加速支持（shader compiler + Assets 打包分发），游戏引擎侧首次发布说明级证据",
+      "direction": "up",
+      "evidence": "Windows Release Notes 2026-10-08 明确列出 Unity acceleration support with shader compiler, and Assets bundling, distribution",
+      "category": "产品"
+    },
+    {
+      "signal": "Incredibuild 叙事重心迁移至 Islo AI 沙盒 + 8× CI Runner，传统分布式编译下沉为底层支撑",
+      "direction": "up",
+      "evidence": "官网首页、Resources、News Archive 顶部均为 Islo（2026-05 发布）与 8× CI Runner 早期访问，传统产品线曝光被覆盖",
+      "category": "产品"
+    },
+    {
+      "signal": "VS 2026 v18.10 原生分布式编译 + Copilot X 集成，平台吞噬风险从盲区转为可观测信号",
+      "direction": "new",
+      "evidence": "CSDN 两篇实测文章详述 VS 2026 v18.10 分布式编译加速、按需符号加载、跨进程共享内存、Copilot X",
+      "category": "竞品"
+    },
+    {
+      "signal": "官方竞品框架升级为“缓存侧 vs 分发侧”，Buildkite 被定位为“接近理想切入点”",
+      "direction": "up",
+      "evidence": "Incredibuild 官方博客 Top 10 CI/CD Pipeline Tools 2026 称 Buildkite 缺缓存与分发层，25 分钟构建不变",
+      "category": "竞品"
+    },
+    {
+      "signal": "EngFlow 声量-份额错配未收敛（PeerSpot 排名 37、0 评论、mindshare 0.7%）",
+      "direction": "stable",
+      "evidence": "PeerSpot EngFlow vs Incredibuild 页面显示 EngFlow 0 评论、mindshare 0.7%，与 Reddit 21× 声量形成反差",
+      "category": "竞品"
+    },
+    {
+      "signal": "Incredibuild 自身 PeerSpot 排名 27、评分 8.0、仅 1 条评论、sentiment 5.1",
+      "direction": "stable",
+      "evidence": "PeerSpot 页面数据与历史记忆一致，低基数未改善",
+      "category": "行业"
+    },
+    {
+      "signal": "6sense 品类前三固化（Ansible 49.55%、Bitbucket Pipelines 10.00%、Oracle APEX 6.44%），Incredibuild 未进前三",
+      "direction": "stable",
+      "evidence": "6sense Build And Deployment Automation 品类市场份额数据",
+      "category": "行业"
+    },
+    {
+      "signal": "中文技术社区编译加速讨论以 ccache/distcc/yadcc 为主，Incredibuild 系统性缺席",
+      "direction": "stable",
+      "evidence": "美团技术博客讨论 Distcc/Dmucs/PCH/CCache 未提 Incredibuild；百度百科词条陈旧；dhorde 代理商页面边缘化",
+      "category": "行业"
+    },
+    {
+      "signal": "Linux 4.30.x 云原生 CI 适配推进（Docker Manager、ib_console 调试）",
+      "direction": "up",
+      "evidence": "Linux Release Notes 4.30.0 Manager 支持 Docker 安装，4.30.1 改进 ib_console 调试模式",
+      "category": "产品"
+    },
+    {
+      "signal": "Bazel mindshare 同比下降至 1.3%（自 2.8%），Incredibuild mindshare 1.2%",
+      "direction": "down",
+      "evidence": "PeerSpot Bazel vs Incredibuild 页面显示 Bazel mindshare 1.3%，同比下降自 2.8%",
+      "category": "竞品"
+    },
+    {
+      "signal": "中国 C++ 就业结构性转折，大模型算法与传统方向薪资差 3-5 倍，大厂裁员 10%+",
+      "direction": "new",
+      "evidence": "电子工程专辑 2026 年深度调研报告，基于脉脉/BOSS直聘/猎聘数据",
+      "category": "行业"
+    }
+  ],
+  "trends": [
+    {
+      "trend": "Incredibuild 从分布式编译工具向 AI 沙盒 + CI Runner 平台叙事迁移",
+      "evidence": "官网首页、Resources、News 顶部均为 Islo（2026-05）与 8× CI Runner，传统产品线被覆盖",
+      "momentum": "rising"
+    },
+    {
+      "trend": "Visual Studio 2026 原生分布式编译构成平台吞噬风险",
+      "evidence": "CSDN 两篇实测文章详述 VS 2026 v18.10 分布式编译加速与 Copilot X 集成",
+      "momentum": "rising"
+    },
+    {
+      "trend": "游戏引擎侧加速成为 Incredibuild 差异化方向（Unity Shader + Assets 分发）",
+      "evidence": "Windows 10.38.1 新增 Unity 加速支持；官网 Unity Shader 编译博客 2026-07 发布",
+      "momentum": "rising"
+    },
+    {
+      "trend": "开源替代（FASTBuild）与 CI/CD 工具（Jenkins、CircleCI、GitHub）占据替代品认知",
+      "evidence": "SourceForge/Slashdot 持续对比 FASTBuild；G2 将 CircleCI/GitHub/CloudBees 列为最佳替代品",
+      "momentum": "stable"
+    },
+    {
+      "trend": "EngFlow 技术媒体声量高但市场转化乏力",
+      "evidence": "Reddit r/cpp 讨论 21× 加速，但 PeerSpot 0 评论、mindshare 0.7%",
+      "momentum": "stable"
+    },
+    {
+      "trend": "中文市场 Incredibuild 系统性缺席，本土替代（yadcc）与开源方案主导讨论",
+      "evidence": "美团技术博客讨论 Distcc/Dmucs/CCache 未提 Incredibuild；百度百科词条陈旧；代理商页面边缘化",
+      "momentum": "stable"
+    },
+    {
+      "trend": "中国 C++ 就业结构性收缩，可能影响编译加速工具的需求结构",
+      "evidence": "电子工程专辑 2026 年报告：大厂裁员 10%+、校招减半、薪资差 3-5 倍",
+      "momentum": "rising"
+    }
+  ],
+  "companies_mentioned": [
+    "Incredibuild",
+    "EngFlow",
+    "Visual Studio 2026",
+    "Microsoft",
+    "腾讯 yadcc",
+    "FASTBuild",
+    "Bazel",
+    "Buildkite",
+    "Jenkins",
+    "CircleCI",
+    "GitHub",
+    "CloudBees",
+    "Atlassian Bamboo",
+    "Ansible",
+    "Bitbucket Pipelines",
+    "Oracle APEX",
+    "BuildXL",
+    "Epic MegaGrants",
+    "龙智 DragonSoft",
+    "美团",
+    "Clang/LLVM",
+    "CppDepend"
+  ],
+  "hot_topics": [
+    "Incredibuild 10.38.1 Unity 加速支持",
+    "Islo AI 沙盒与 8× CI Runner 叙事迁移",
+    "Visual Studio 2026 v18.10 原生分布式编译",
+    "EngFlow 21× C++ 构建加速",
+    "FASTBuild 开源替代对比",
+    "Bazel mindshare 下降",
+    "6sense 品类前三固化",
+    "PeerSpot 低评论基数",
+    "中国 C++ 就业结构性转折",
+    "中文社区编译加速讨论缺席 Incredibuild",
+    "Linux 4.30.x Docker 云原生 CI 适配",
+    "Unity Shader 编译与 Assets 分发"
+  ]
+}
